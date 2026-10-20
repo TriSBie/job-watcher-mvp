@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #17203a;
+  --brand: #4f46e5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f4f5fb;
+  color: var(--ink);
+  font-family: ui-sans-system, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+.chip {
+  @apply inline-flex items-center rounded-full px-2 py-0.5 text-[11px] font-medium leading-5;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl bg-indigo-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-indigo-500 disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+.btn-ghost {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-700 transition hover:border-indigo-300 hover:text-indigo-700 disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+.input {
+  @apply w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm outline-none transition focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100;
+}
+
+.card {
+  @apply rounded-2xl border border-slate-200/80 bg-white shadow-[0_1px_3px_rgba(23,32,58,0.05)];
+}
+
+select.input {
+  @apply pr-8;
+}
