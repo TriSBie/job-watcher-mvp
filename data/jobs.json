@@ -1,7 +1,7 @@
 {
- "updatedAt": "2026-10-21T10:05:56.501Z",
+ "updatedAt": "2026-10-21T12:35:46.938Z",
  "sourceStatus": {
-  "linkedin": "error",
+  "linkedin": "ok",
   "itviec": "ok",
   "topdev": "ok"
  },
@@ -82,6 +82,86 @@
    },
    "sourceStatus": {
     "linkedin": "error",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-10-21T10:35:43.079Z",
+   "fetched": 212,
+   "added": 9,
+   "total": 60,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 92
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-10-21T11:05:50.746Z",
+   "fetched": 212,
+   "added": 9,
+   "total": 60,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 92
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-10-21T11:52:53.604Z",
+   "fetched": 212,
+   "added": 9,
+   "total": 60,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 92
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-10-21T12:14:45.955Z",
+   "fetched": 192,
+   "added": 5,
+   "total": 60,
+   "perSource": {
+    "linkedin": 0,
+    "itviec": 100,
+    "topdev": 92
+   },
+   "sourceStatus": {
+    "linkedin": "error",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-10-21T12:35:46.938Z",
+   "fetched": 212,
+   "added": 10,
+   "total": 61,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 92
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
     "itviec": "ok",
     "topdev": "ok"
    }
@@ -592,11 +672,9 @@
     "Phát triển kinh doanh",
     "Business/Sales",
     "PHP",
-    "UX/UI Design",
+    "Magento",
     "Java",
-    "JavaScript",
-    "Vue.js",
-    "Angular"
+    "MySQL"
    ],
    "firstSeenAt": 1792483383856
   },
@@ -726,24 +804,9 @@
     "Automation QA",
     "Selenium",
     "Postman",
-    "JavaScript",
-    "Node.js",
-    "Web/ Mobile",
-    "DevOps",
-    "Software Developer",
-    "Business Analyst",
-    "Integration Test",
-    "HR",
-    "C\\u0026B",
-    "English",
-    "Product Manager",
-    "IT Security",
-    "Cybersecurity",
-    "Product",
-    "Sales B2B",
-    "Agile \\u0026 Scrum",
-    "API",
-    "Banking \\u0026 Finance"
+    "Accounting",
+    "Financial Accounting",
+    "Internal Accounting"
    ],
    "firstSeenAt": 1792483383856
   },
@@ -928,6 +991,18 @@
    "firstSeenAt": 1792483383856
   },
   {
+   "id": "linkedin:4348881760",
+   "title": "Java Developer (Junior/Middle)",
+   "company": "Amaris Consulting | Part of Mantu",
+   "location": "Ho Chi Minh City, Vietnam",
+   "url": "https://vn.linkedin.com/jobs/view/java-developer-junior-middle-at-amaris-consulting-part-of-mantu-4348881760",
+   "source": "linkedin",
+   "postedAt": "2026-10-01",
+   "snippet": "",
+   "skills": [],
+   "firstSeenAt": 1792586146938
+  },
+  {
    "id": "itviec:ai-software-engineer-atomi-digital-5627",
    "title": "AI Software Engineer",
    "company": "ATOMI DIGITAL",
@@ -1047,7 +1122,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/middle-backend-developer-nestjs-cong-ty-tnhh-skydev-4851",
    "source": "itviec",
-   "postedAt": "2026-09-25",
+   "postedAt": "2026-09-24",
    "snippet": "",
    "skills": [
     "NestJS",
@@ -1056,25 +1131,6 @@
     "NoSQL",
     "CI/CD",
     ".Net Core"
-   ],
-   "firstSeenAt": 1792483383856
-  },
-  {
-   "id": "itviec:backend-developer-shinhan-ds-4838",
-   "title": "Backend Developer",
-   "company": "SHINHAN DS",
-   "location": "Ho Chi Minh",
-   "url": "https://itviec.com/it-jobs/backend-developer-shinhan-ds-4838",
-   "source": "itviec",
-   "postedAt": "2026-09-24",
-   "snippet": "",
-   "skills": [
-    "C language",
-    "Linux",
-    "Oracle",
-    "JavaScript",
-    "SQL",
-    "HTML5"
    ],
    "firstSeenAt": 1792483383856
   },
@@ -1113,6 +1169,25 @@
     "Spring",
     "SQL",
     "Agile"
+   ],
+   "firstSeenAt": 1792483383856
+  },
+  {
+   "id": "itviec:backend-developer-shinhan-ds-4838",
+   "title": "Backend Developer",
+   "company": "SHINHAN DS",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/backend-developer-shinhan-ds-4838",
+   "source": "itviec",
+   "postedAt": "2026-09-23",
+   "snippet": "",
+   "skills": [
+    "C language",
+    "Linux",
+    "Oracle",
+    "JavaScript",
+    "SQL",
+    "HTML5"
    ],
    "firstSeenAt": 1792483383856
   },
@@ -1164,10 +1239,9 @@
     "Magento",
     "Java",
     "MySQL",
-    "Korean",
     "Accounting",
-    "Business Planning",
-    "Planning"
+    "Financial Accounting",
+    "Internal Accounting"
    ],
    "firstSeenAt": 1792483383856
   },
