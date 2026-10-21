@@ -1,7 +1,7 @@
 {
- "updatedAt": "2026-10-21T09:35:55.807Z",
+ "updatedAt": "2026-10-21T10:05:56.501Z",
  "sourceStatus": {
-  "linkedin": "ok",
+  "linkedin": "error",
   "itviec": "ok",
   "topdev": "ok"
  },
@@ -66,6 +66,22 @@
    },
    "sourceStatus": {
     "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-10-21T10:05:56.501Z",
+   "fetched": 192,
+   "added": 6,
+   "total": 60,
+   "perSource": {
+    "linkedin": 0,
+    "itviec": 100,
+    "topdev": 92
+   },
+   "sourceStatus": {
+    "linkedin": "error",
     "itviec": "ok",
     "topdev": "ok"
    }
@@ -147,6 +163,25 @@
     "Drupal"
    ],
    "firstSeenAt": 1792573551769
+  },
+  {
+   "id": "itviec:full-stack-developer-ai-first-drupal-php-node-js-javac-technology-software-company-ltd-4624",
+   "title": "Full Stack Developer (AI-First) – Drupal/PHP & Node.js",
+   "company": "Javac Technology Software Company, Ltd",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/full-stack-developer-ai-first-drupal-php-node-js-javac-technology-software-company-ltd-4624",
+   "source": "itviec",
+   "postedAt": "2026-10-21",
+   "snippet": "",
+   "skills": [
+    "PHP",
+    "Magento",
+    "AI",
+    "TypeScript",
+    "Node.js",
+    "Drupal"
+   ],
+   "firstSeenAt": 1792577156501
   },
   {
    "id": "itviec:remote-fullstack-developer-typescript-node-js-nestjs-orgscale-recruitment-4352",
@@ -368,25 +403,6 @@
    "firstSeenAt": 1792483383856
   },
   {
-   "id": "itviec:java-fullstack-developer-react-elasticsearch-aws-hitachi-digital-services-4739",
-   "title": "Java Fullstack Developer (React/ Elasticsearch /AWS)",
-   "company": "Hitachi Digital Services",
-   "location": "Ho Chi Minh",
-   "url": "https://itviec.com/it-jobs/java-fullstack-developer-react-elasticsearch-aws-hitachi-digital-services-4739",
-   "source": "itviec",
-   "postedAt": "2026-10-16",
-   "snippet": "",
-   "skills": [
-    "Java",
-    "AWS CloudFormation",
-    "Angular",
-    "AI",
-    "Cloud",
-    "AWS"
-   ],
-   "firstSeenAt": 1792483383856
-  },
-  {
    "id": "itviec:software-developer-net-power-bi-microsoft-dynamics-mdc-precision-vietnam-1530",
    "title": "Software Developer (.NET, Power BI, Microsoft Dynamics)",
    "company": "MDC Precision Vietnam",
@@ -421,6 +437,25 @@
     ".NET",
     "JavaScript",
     "SQL"
+   ],
+   "firstSeenAt": 1792483383856
+  },
+  {
+   "id": "itviec:java-fullstack-developer-react-elasticsearch-aws-hitachi-digital-services-4739",
+   "title": "Java Fullstack Developer (React/ Elasticsearch /AWS)",
+   "company": "Hitachi Digital Services",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/java-fullstack-developer-react-elasticsearch-aws-hitachi-digital-services-4739",
+   "source": "itviec",
+   "postedAt": "2026-10-15",
+   "snippet": "",
+   "skills": [
+    "Java",
+    "AWS CloudFormation",
+    "Angular",
+    "AI",
+    "Cloud",
+    "AWS"
    ],
    "firstSeenAt": 1792483383856
   },
@@ -691,18 +726,24 @@
     "Automation QA",
     "Selenium",
     "Postman",
+    "JavaScript",
+    "Node.js",
+    "Web/ Mobile",
+    "DevOps",
+    "Software Developer",
+    "Business Analyst",
+    "Integration Test",
+    "HR",
+    "C\\u0026B",
+    "English",
+    "Product Manager",
+    "IT Security",
+    "Cybersecurity",
     "Product",
     "Sales B2B",
-    "English",
     "Agile \\u0026 Scrum",
     "API",
-    "Business Analyst",
-    "Banking \\u0026 Finance",
-    "Software Developer",
-    "COBOL",
-    "Bán hàng",
-    "Phát triển kinh doanh",
-    "Business/Sales"
+    "Banking \\u0026 Finance"
    ],
    "firstSeenAt": 1792483383856
   },
@@ -1119,16 +1160,14 @@
     "Node.js",
     "React",
     "Web Developer",
-    "Product",
-    "Sales B2B",
-    "English",
-    "Agile \\u0026 Scrum",
-    "API",
-    "Business Analyst",
-    "Banking \\u0026 Finance",
-    "Bán hàng",
-    "Phát triển kinh doanh",
-    "Business/Sales"
+    "PHP",
+    "Magento",
+    "Java",
+    "MySQL",
+    "Korean",
+    "Accounting",
+    "Business Planning",
+    "Planning"
    ],
    "firstSeenAt": 1792483383856
   },
