@@ -1,0 +1,39 @@
+name: ingest-jobs
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch: {}
+  push:
+    paths:
+      - "scripts/**"
+      - ".github/workflows/ingest.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ingest-jobs
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Chạy ingest
+        run: node scripts/ingest.mjs
+      - name: Commit dữ liệu nếu thay đổi
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/jobs.json
+          if git diff --cached --quiet; then
+            echo "Không có thay đổi."
+          else
+            git commit -m "ingest: cập nhật job pool [skip ci]"
+            git push
+          fi
