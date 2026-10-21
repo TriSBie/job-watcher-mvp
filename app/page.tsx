@@ -1,1 +1,534 @@
-InVzZSBjbGllbnQiOwoKaW1wb3J0IHsgdXNlQ2FsbGJhY2ssIHVzZUVmZmVjdCwgdXNlTWVtbywgdXNlUmVmLCB1c2VTdGF0ZSB9IGZyb20gInJlYWN0IjsKaW1wb3J0IE9uYm9hcmRpbmcgZnJvbSAiQC9jb21wb25lbnRzL09uYm9hcmRpbmciOwppbXBvcnQgUHJvZmlsZUZvcm0gZnJvbSAiQC9jb21wb25lbnRzL1Byb2ZpbGVGb3JtIjsKaW1wb3J0IEpvYkNhcmQsIHsgU09VUkNFX0xBQkVMIH0gZnJvbSAiQC9jb21wb25lbnRzL0pvYkNhcmQiOwppbXBvcnQgS2FuYmFuQm9hcmQgZnJvbSAiQC9jb21wb25lbnRzL0thbmJhbkJvYXJkIjsKaW1wb3J0IEpvYkRyYXdlciBmcm9tICJAL2NvbXBvbmVudHMvSm9iRHJhd2VyIjsKaW1wb3J0IHsKICBQSVBFTElORSwKICBzY29yZUpvYiwKICB1c2VBcHBTdGF0ZSwKICB0eXBlIFBpcGVsaW5lU3RhdHVzLAogIHR5cGUgUG9vbERhdGEsCiAgdHlwZSBQcm9maWxlLAogIHR5cGUgU2NvcmVkSm9iLAp9IGZyb20gIkAvbGliL3N0b3JlIjsKaW1wb3J0IHsgZXh0cmFjdFNraWxscyB9IGZyb20gIkAvbGliL3NraWxscyI7Cgp0eXBlIFNvcnRNb2RlID0gInJlY29tbWVuZGVkIiB8ICJwZXJjZW50IiB8ICJuZXdlc3QiOwp0eXBlIERhdGVGaWx0ZXIgPSAiMjRoIiB8ICI3ZCIgfCAiMzBkIiB8ICJhbGwiOwp0eXBlIFZpZXdNb2RlID0gImxpc3QiIHwgImthbmJhbiI7Cgpjb25zdCBQT09MX0NBQ0hFX0tFWSA9ICJqd212cDpwb29sIjsKY29uc3QgRU1QVFlfUE9PTDogUG9vbERhdGEgPSB7IGpvYnM6IFtdLCB1cGRhdGVkQXQ6IG51bGwsIHNvdXJjZVN0YXR1czogbnVsbCwgcnVuczogW10gfTsKCmZ1bmN0aW9uIHRpbWVBZ28oaXNvOiBzdHJpbmcgfCBudWxsKTogc3RyaW5nIHsKICBpZiAoIWlzbykgcmV0dXJuICJjaMawYSBjw7MgZOG7ryBsaeG7h3UiOwogIGNvbnN0IGRpZmYgPSBEYXRlLm5vdygpIC0gbmV3IERhdGUoaXNvKS5nZXRUaW1lKCk7CiAgY29uc3QgbWlucyA9IE1hdGguZmxvb3IoZGlmZiAvIDYwMDAwKTsKICBpZiAobWlucyA8IDEpIHJldHVybiAiduG7q2EgeG9uZyI7CiAgaWYgKG1pbnMgPCA2MCkgcmV0dXJuIGAke21pbnN9IHBow7p0IHRyxrDhu5tjYDsKICBjb25zdCBob3VycyA9IE1hdGguZmxvb3IobWlucyAvIDYwKTsKICBpZiAoaG91cnMgPCAyNCkgcmV0dXJuIGAke2hvdXJzfSBnaeG7nSB0csaw4bubY2A7CiAgcmV0dXJuIGAke01hdGguZmxvb3IoaG91cnMgLyAyNCl9IG5nw6B5IHRyxrDhu5tjYDsKfQoKZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gSG9tZVBhZ2UoKSB7CiAgY29uc3QgeyBzdGF0ZSwgaHlkcmF0ZWQsIGFkZFByb2ZpbGUsIHVwZGF0ZVByb2ZpbGUsIGRlbGV0ZVByb2ZpbGUsIHNldE1hdGNoIH0gPQogICAgdXNlQXBwU3RhdGUoKTsKICBjb25zdCBbcG9vbCwgc2V0UG9vbF0gPSB1c2VTdGF0ZTxQb29sRGF0YT4oRU1QVFlfUE9PTCk7CiAgY29uc3QgW3Bvb2xMb2FkaW5nLCBzZXRQb29sTG9hZGluZ10gPSB1c2VTdGF0ZShmYWxzZSk7CiAgY29uc3QgW3Bvb2xFcnJvciwgc2V0UG9vbEVycm9yXSA9IHVzZVN0YXRlPHN0cmluZyB8IG51bGw+KG51bGwpOwogIGNvbnN0IFtsYXN0RmV0Y2hBdCwgc2V0TGFzdEZldGNoQXRdID0gdXNlU3RhdGU8bnVtYmVyPigwKTsKCiAgY29uc3QgW2FjdGl2ZVByb2ZpbGVJZCwgc2V0QWN0aXZlUHJvZmlsZUlkXSA9IHVzZVN0YXRlPHN0cmluZyB8IG51bGw+KG51bGwpOwogIGNvbnN0IFtzaG93UHJvZmlsZUZvcm0sIHNldFNob3dQcm9maWxlRm9ybV0gPSB1c2VTdGF0ZShmYWxzZSk7CiAgY29uc3QgW2VkaXRpbmdQcm9maWxlLCBzZXRFZGl0aW5nUHJvZmlsZV0gPSB1c2VTdGF0ZTxQcm9maWxlIHwgbnVsbD4obnVsbCk7CgogIGNvbnN0IFtxdWVyeSwgc2V0UXVlcnldID0gdXNlU3RhdGUoIiIpOwogIGNvbnN0IFtzdGF0dXNUYWIsIHNldFN0YXR1c1RhYl0gPSB1c2VTdGF0ZTxQaXBlbGluZVN0YXR1cyB8ICJhbGwiPigiYWxsIik7CiAgY29uc3QgW3NvcnQsIHNldFNvcnRdID0gdXNlU3RhdGU8U29ydE1vZGU+KCJyZWNvbW1lbmRlZCIpOwogIGNvbnN0IFtkYXRlRmlsdGVyLCBzZXREYXRlRmlsdGVyXSA9IHVzZVN0YXRlPERhdGVGaWx0ZXI+KCJhbGwiKTsKICBjb25zdCBbdmlldywgc2V0Vmlld10gPSB1c2VTdGF0ZTxWaWV3TW9kZT4oImxpc3QiKTsKICBjb25zdCBbb3BlbkpvYklkLCBzZXRPcGVuSm9iSWRdID0gdXNlU3RhdGU8c3RyaW5nIHwgbnVsbD4obnVsbCk7CiAgY29uc3QgYXV0b0ZldGNoZWQgPSB1c2VSZWYoZmFsc2UpOwoKICBjb25zdCBsb2FkUG9vbCA9IHVzZUNhbGxiYWNrKGFzeW5jICgpID0+IHsKICAgIHNldFBvb2xMb2FkaW5nKHRydWUpOwogICAgdHJ5IHsKICAgICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2goIi9hcGkvam9icyIpOwogICAgICBjb25zdCBkYXRhID0gKGF3YWl0IHJlcy5qc29uKCkpIGFzIFBvb2xEYXRhICYgeyBlcnJvcj86IHN0cmluZyB9OwogICAgICBpZiAoIXJlcy5vaykgdGhyb3cgbmV3IEVycm9yKGRhdGEuZXJyb3IgPz8gYEhUVFAgJHtyZXMuc3RhdHVzfWApOwogICAgICBzZXRQb29sKGRhdGEpOwogICAgICBzZXRQb29sRXJyb3IobnVsbCk7CiAgICAgIHNldExhc3RGZXRjaEF0KERhdGUubm93KCkpOwogICAgICB0cnkgewogICAgICAgIHdpbmRvdy5sb2NhbFN0b3JhZ2Uuc2V0SXRlbShQT09MX0NBQ0hFX0tFWSwgSlNPTi5zdHJpbmdpZnkoZGF0YSkpOwogICAgICB9IGNhdGNoIHt9CiAgICB9IGNhdGNoIChlKSB7CiAgICAgIHNldFBvb2xFcnJvcigKICAgICAgICAiQ2jGsGEgdOG6o2kgxJHGsOG7o2MgZOG7ryBsaeG7h3Ugdmnhu4djIG3hu5tpIG5o4bqldCDigJQgxJFhbmcgaGnhu4NuIHRo4buLIGLhuqNuIGNhY2hlIGfhuqduIG5o4bqldCBu4bq/dSBjw7MuIgogICAgICApOwogICAgICBjb25zb2xlLmVycm9yKGUpOwogICAgfSBmaW5hbGx5IHsKICAgICAgc2V0UG9vbExvYWRpbmcoZmFsc2UpOwogICAgfQogIH0sIFtdKTsKCiAgLy8gTuG6oXAgY2FjaGUgcG9vbCDEkeG7gyBoaeG7g24gdGjhu4sgbmdheSwgc2F1IMSRw7MgdOG6o2kgYuG6o24gbeG7m2kgbuG6v3UgY2FjaGUgcXXDoSAxNSBwaMO6dC4KICB1c2VFZmZlY3QoKCkgPT4gewogICAgaWYgKGF1dG9GZXRjaGVkLmN1cnJlbnQpIHJldHVybjsKICAgIGF1dG9GZXRjaGVkLmN1cnJlbnQgPSB0cnVlOwogICAgbGV0IGNhY2hlZEF0ID0gMDsKICAgIHRyeSB7CiAgICAgIGNvbnN0IHJhdyA9IHdpbmRvdy5sb2NhbFN0b3JhZ2UuZ2V0SXRlbShQT09MX0NBQ0hFX0tFWSk7CiAgICAgIGlmIChyYXcpIHsKICAgICAgICBjb25zdCBjYWNoZWQgPSBKU09OLnBhcnNlKHJhdykgYXMgUG9vbERhdGE7CiAgICAgICAgc2V0UG9vbChjYWNoZWQpOwogICAgICAgIGNhY2hlZEF0ID0gY2FjaGVkLnVwZGF0ZWRBdCA/IG5ldyBEYXRlKGNhY2hlZC51cGRhdGVkQXQpLmdldFRpbWUoKSA6IDA7CiAgICAgIH0KICAgIH0gY2F0Y2gge30KICAgIGlmIChEYXRlLm5vdygpIC0gY2FjaGVkQXQgPiAxNSAqIDYwMDAwKSB7CiAgICAgIHZvaWQgbG9hZFBvb2woKTsKICAgIH0KICB9LCBbbG9hZFBvb2xdKTsKCiAgY29uc3QgYWN0aXZlUHJvZmlsZSA9CiAgICBzdGF0ZS5wcm9maWxlcy5maW5kKChwKSA9PiBwLmlkID09PSBhY3RpdmVQcm9maWxlSWQpID8/IHN0YXRlLnByb2ZpbGVzWzBdID8/IG51bGw7CgogIHVzZUVmZmVjdCgoKSA9PiB7CiAgICBpZiAoYWN0aXZlUHJvZmlsZSAmJiBhY3RpdmVQcm9maWxlSWQgIT09IGFjdGl2ZVByb2ZpbGUuaWQpIHsKICAgICAgc2V0QWN0aXZlUHJvZmlsZUlkKGFjdGl2ZVByb2ZpbGUuaWQpOwogICAgfQogIH0sIFthY3RpdmVQcm9maWxlLCBhY3RpdmVQcm9maWxlSWRdKTsKCiAgY29uc3QgcHJvZmlsZU1hdGNoZXMgPSB1c2VNZW1vKAogICAgKCkgPT4gKGFjdGl2ZVByb2ZpbGUgPyBzdGF0ZS5tYXRjaGVzW2FjdGl2ZVByb2ZpbGUuaWRdID8/IHt9IDoge30pLAogICAgW3N0YXRlLm1hdGNoZXMsIGFjdGl2ZVByb2ZpbGVdCiAgKTsKCiAgY29uc3Qgc2NvcmVkQWxsOiBTY29yZWRKb2JbXSA9IHVzZU1lbW8oKCkgPT4gewogICAgaWYgKCFhY3RpdmVQcm9maWxlKSByZXR1cm4gW107CiAgICByZXR1cm4gcG9vbC5qb2JzLm1hcCgoaikgPT4gc2NvcmVKb2IoaiwgYWN0aXZlUHJvZmlsZS5za2lsbHMpKTsKICB9LCBbcG9vbC5qb2JzLCBhY3RpdmVQcm9maWxlXSk7CgogIGNvbnN0IHN0YXR1c09mID0gdXNlQ2FsbGJhY2soCiAgICAoam9iSWQ6IHN0cmluZyk6IFBpcGVsaW5lU3RhdHVzID0+IHByb2ZpbGVNYXRjaGVzW2pvYklkXT8uc3RhdHVzID8/ICJuZXciLAogICAgW3Byb2ZpbGVNYXRjaGVzXQogICk7CgogIGNvbnN0IGZpbHRlcmVkID0gdXNlTWVtbygoKSA9PiB7CiAgICBsZXQgaXRlbXMgPSBzY29yZWRBbGwubWFwKChzY29yZWQpID0+ICh7CiAgICAgIHNjb3JlZCwKICAgICAgc3RhdHVzOiBzdGF0dXNPZihzY29yZWQuam9iLmlkKSwKICAgIH0pKTsKICAgIGlmIChzdGF0dXNUYWIgIT09ICJhbGwiKSBpdGVtcyA9IGl0ZW1zLmZpbHRlcigoaSkgPT4gaS5zdGF0dXMgPT09IHN0YXR1c1RhYik7CiAgICBpZiAocXVlcnkudHJpbSgpKSB7CiAgICAgIGNvbnN0IHEgPSBxdWVyeS50cmltKCkudG9Mb3dlckNhc2UoKTsKICAgICAgaXRlbXMgPSBpdGVtcy5maWx0ZXIoCiAgICAgICAgKGkpID0+CiAgICAgICAgICBpLnNjb3JlZC5qb2IudGl0bGUudG9Mb3dlckNhc2UoKS5pbmNsdWRlcyhxKSB8fAogICAgICAgICAgaS5zY29yZWQuam9iLmNvbXBhbnkudG9Mb3dlckNhc2UoKS5pbmNsdWRlcyhxKQogICAgICApOwogICAgfQogICAgaWYgKGRhdGVGaWx0ZXIgIT09ICJhbGwiKSB7CiAgICAgIGNvbnN0IGxpbWl0TXMgPSBkYXRlRmlsdGVyID09PSAiMjRoIiA/IDg2NGU1IDogZGF0ZUZpbHRlciA9PT0gIjdkIiA/IDcgKiA4NjRlNSA6IDMwICogODY0ZTU7CiAgICAgIGNvbnN0IGN1dG9mZiA9IERhdGUubm93KCkgLSBsaW1pdE1zOwogICAgICBpdGVtcyA9IGl0ZW1zLmZpbHRlcigoaSkgPT4gewogICAgICAgIGlmICghaS5zY29yZWQuam9iLnBvc3RlZEF0KSByZXR1cm4gdHJ1ZTsgLy8gdGhp4bq/dSBuZ8OgeSDEkcSDbmcgdGjDrCBsdcO0biBoaeG7g24gdGjhu4sKICAgICAgICByZXR1cm4gbmV3IERhdGUoYCR7aS5zY29yZWQuam9iLnBvc3RlZEF0fVQwMDowMDowMGApLmdldFRpbWUoKSA+PSBjdXRvZmY7CiAgICAgIH0pOwogICAgfQogICAgY29uc3QgYnlQb3N0ZWQgPSAoYTogU2NvcmVkSm9iLCBiOiBTY29yZWRKb2IpID0+CiAgICAgIChiLmpvYi5wb3N0ZWRBdCA/PyAiIikgPCAoYS5qb2IucG9zdGVkQXQgPz8gIiIpID8gLTEgOiAoYi5qb2IucG9zdGVkQXQgPz8gIiIpID4gKGEuam9iLnBvc3RlZEF0ID8/ICIiKSA/IDEgOiAwOwogICAgaXRlbXMuc29ydCgoYSwgYikgPT4gewogICAgICBpZiAoc29ydCA9PT0gInBlcmNlbnQiKSByZXR1cm4gYi5zY29yZWQucGVyY2VudCAtIGEuc2NvcmVkLnBlcmNlbnQgfHwgYnlQb3N0ZWQoYS5zY29yZWQsIGIuc2NvcmVkKTsKICAgICAgaWYgKHNvcnQgPT09ICJuZXdlc3QiKSByZXR1cm4gYnlQb3N0ZWQoYS5zY29yZWQsIGIuc2NvcmVkKTsKICAgICAgLy8gxJDhu4EgeHXhuqV0OiBraOG7m3AgbeG6oW5oIHRyxrDhu5tjLCBzYXUgxJHDsyAlIHbDoCDEkeG7mSBt4bubaQogICAgICBjb25zdCByYW5rID0gKHM6IFNjb3JlZEpvYikgPT4gKHMubGV2ZWwgPT09ICJzdHJvbmciID8gMCA6IHMubGV2ZWwgPT09ICJwYXJ0aWFsIiA/IDEgOiAyKTsKICAgICAgcmV0dXJuIHJhbmsoYS5zY29yZWQpIC0gcmFuayhiLnNjb3JlZCkgfHwgYi5zY29yZWQucGVyY2VudCAtIGEuc2NvcmVkLnBlcmNlbnQgfHwgYnlQb3N0ZWQoYS5zY29yZWQsIGIuc2NvcmVkKTsKICAgIH0pOwogICAgcmV0dXJuIGl0ZW1zOwogIH0sIFtzY29yZWRBbGwsIHN0YXR1c09mLCBzdGF0dXNUYWIsIHF1ZXJ5LCBkYXRlRmlsdGVyLCBzb3J0XSk7CgogIGNvbnN0IHN0YXRzID0gdXNlTWVtbygoKSA9PiB7CiAgICBjb25zdCB0b3RhbCA9IHNjb3JlZEFsbC5sZW5ndGg7CiAgICBjb25zdCBzdHJvbmcgPSBzY29yZWRBbGwuZmlsdGVyKChzKSA9PiBzLmxldmVsID09PSAic3Ryb25nIikubGVuZ3RoOwogICAgY29uc3Qgc2F2ZWQgPSBPYmplY3QudmFsdWVzKHByb2ZpbGVNYXRjaGVzKS5maWx0ZXIoKG0pID0+IG0uc3RhdHVzID09PSAic2F2ZWQiKS5sZW5ndGg7CiAgICBjb25zdCBhcHBsaWVkID0gT2JqZWN0LnZhbHVlcyhwcm9maWxlTWF0Y2hlcykuZmlsdGVyKChtKSA9PiBtLnN0YXR1cyA9PT0gImFwcGxpZWQiKS5sZW5ndGg7CiAgICByZXR1cm4geyB0b3RhbCwgc3Ryb25nLCBzYXZlZCwgYXBwbGllZCB9OwogIH0sIFtzY29yZWRBbGwsIHByb2ZpbGVNYXRjaGVzXSk7CgogIGNvbnN0IGhvdFNraWxscyA9IHVzZU1lbW8oKCkgPT4gewogICAgY29uc3QgY291bnRzID0gbmV3IE1hcDxzdHJpbmcsIG51bWJlcj4oKTsKICAgIGZvciAoY29uc3QgaiBvZiBwb29sLmpvYnMpIHsKICAgICAgZm9yIChjb25zdCBzIG9mIGouc2tpbGxzKSBjb3VudHMuc2V0KHMsIChjb3VudHMuZ2V0KHMpID8/IDApICsgMSk7CiAgICAgIGZvciAoY29uc3QgcyBvZiBleHRyYWN0U2tpbGxzKGoudGl0bGUpKSBjb3VudHMuc2V0KHMsIChjb3VudHMuZ2V0KHMpID8/IDApICsgMSk7CiAgICB9CiAgICByZXR1cm4gWy4uLmNvdW50cy5lbnRyaWVzKCldLnNvcnQoKGEsIGIpID0+IGJbMV0gLSBhWzFdKS5zbGljZSgwLCAxMCk7CiAgfSwgW3Bvb2wuam9ic10pOwoKICBjb25zdCBvcGVuU2NvcmVkID0gb3BlbkpvYklkCiAgICA/IHNjb3JlZEFsbC5maW5kKChzKSA9PiBzLmpvYi5pZCA9PT0gb3BlbkpvYklkKSA/PyBudWxsCiAgICA6IG51bGw7CgogIGlmICghaHlkcmF0ZWQpIHsKICAgIHJldHVybiAoCiAgICAgIDxtYWluIGNsYXNzTmFtZT0iZmxleCBtaW4taC1zY3JlZW4gaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIHRleHQtc2xhdGUtNDAwIj4KICAgICAgICDEkGFuZyB04bqjaeKApgogICAgICA8L21haW4+CiAgICApOwogIH0KCiAgaWYgKHN0YXRlLnByb2ZpbGVzLmxlbmd0aCA9PT0gMCkgewogICAgcmV0dXJuICgKICAgICAgPG1haW4gY2xhc3NOYW1lPSJtaW4taC1zY3JlZW4iPgogICAgICAgIDxPbmJvYXJkaW5nCiAgICAgICAgICBvbkNvbXBsZXRlPXsocCkgPT4gewogICAgICAgICAgICBjb25zdCBwcm9maWxlID0gYWRkUHJvZmlsZShwKTsKICAgICAgICAgICAgc2V0QWN0aXZlUHJvZmlsZUlkKHByb2ZpbGUuaWQpOwogICAgICAgICAgICB2b2lkIGxvYWRQb29sKCk7CiAgICAgICAgICB9fQogICAgICAgIC8+CiAgICAgIDwvbWFpbj4KICAgICk7CiAgfQoKICBpZiAoIWFjdGl2ZVByb2ZpbGUpIHJldHVybiBudWxsOwoKICBjb25zdCBsYXN0UnVuID0gcG9vbC5ydW5zW3Bvb2wucnVucy5sZW5ndGggLSAxXTsKCiAgcmV0dXJuICgKICAgIDxtYWluIGNsYXNzTmFtZT0ibXgtYXV0byBtaW4taC1zY3JlZW4gdy1mdWxsIG1heC13LTZ4bCBweC00IHB5LTYiPgogICAgICB7LyogSGVhZGVyICovfQogICAgICA8aGVhZGVyIGNsYXNzTmFtZT0ibWItNSBmbGV4IGZsZXgtd3JhcCBpdGVtcy1jZW50ZXIgZ2FwLTMiPgogICAgICAgIDxkaXY+CiAgICAgICAgICA8aDEgY2xhc3NOYW1lPSJ0ZXh0LXhsIGZvbnQtYm9sZCBzbTp0ZXh0LTJ4bCI+8J+OryBKb2IgV2F0Y2hlcjwvaDE+CiAgICAgICAgICA8cCBjbGFzc05hbWU9InRleHQteHMgdGV4dC1zbGF0ZS00MDAiPgogICAgICAgICAgICBD4bqtcCBuaOG6rXQge3RpbWVBZ28ocG9vbC51cGRhdGVkQXQpfQogICAgICAgICAgICB7cG9vbEVycm9yID8gYCDCtyAke3Bvb2xFcnJvcn1gIDogIiJ9CiAgICAgICAgICA8L3A+CiAgICAgICAgPC9kaXY+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9Im1sLWF1dG8gZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTIiPgogICAgICAgICAgPGJ1dHRvbiBjbGFzc05hbWU9ImJ0bi1naG9zdCIgb25DbGljaz17KCkgPT4gdm9pZCBsb2FkUG9vbCgpfSBkaXNhYmxlZD17cG9vbExvYWRpbmd9PgogICAgICAgICAgICB7cG9vbExvYWRpbmcgPyAixJBhbmcgdOG6o2nigKYiIDogIuKGuyBU4bqjaSBs4bqhaSBk4buvIGxp4buHdSJ9CiAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICA8L2Rpdj4KICAgICAgPC9oZWFkZXI+CgogICAgICB7LyogUHJvZmlsZSB0YWJzICovfQogICAgICA8ZGl2IGNsYXNzTmFtZT0ibWItNCBmbGV4IGZsZXgtd3JhcCBpdGVtcy1jZW50ZXIgZ2FwLTIiPgogICAgICAgIHtzdGF0ZS5wcm9maWxlcy5tYXAoKHApID0+ICgKICAgICAgICAgIDxidXR0b24KICAgICAgICAgICAga2V5PXtwLmlkfQogICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiBzZXRBY3RpdmVQcm9maWxlSWQocC5pZCl9CiAgICAgICAgICAgIGNsYXNzTmFtZT17YHJvdW5kZWQtZnVsbCBweC0zLjUgcHktMS41IHRleHQtc20gZm9udC1tZWRpdW0gdHJhbnNpdGlvbiAkewogICAgICAgICAgICAgIHAuaWQgPT09IGFjdGl2ZVByb2ZpbGUuaWQKICAgICAgICAgICAgICAgID8gImJnLWluZGlnby02MDAgdGV4dC13aGl0ZSIKICAgICAgICAgICAgICAgIDogImJnLXdoaXRlIHRleHQtc2xhdGUtNjAwIGJvcmRlciBib3JkZXItc2xhdGUtMjAwIGhvdmVyOmJvcmRlci1pbmRpZ28tMzAwIgogICAgICAgICAgICB9YH0KICAgICAgICAgID4KICAgICAgICAgICAge3AubmFtZX0KICAgICAgICAgICAge3AuaWQgPT09IHN0YXRlLnByb2ZpbGVzWzBdLmlkID8gIiAobeG6t2MgxJHhu4tuaCkiIDogIiJ9CiAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICApKX0KICAgICAgICA8YnV0dG9uCiAgICAgICAgICBjbGFzc05hbWU9InJvdW5kZWQtZnVsbCBib3JkZXIgYm9yZGVyLWRhc2hlZCBib3JkZXItaW5kaWdvLTMwMCBweC0zLjUgcHktMS41IHRleHQtc20gZm9udC1tZWRpdW0gdGV4dC1pbmRpZ28tNjAwIGhvdmVyOmJnLWluZGlnby01MCIKICAgICAgICAgIG9uQ2xpY2s9eygpID0+IHsKICAgICAgICAgICAgc2V0RWRpdGluZ1Byb2ZpbGUobnVsbCk7CiAgICAgICAgICAgIHNldFNob3dQcm9maWxlRm9ybSh0cnVlKTsKICAgICAgICAgIH19CiAgICAgICAgPgogICAgICAgICAgKyBUaMOqbSBo4buTIHPGoQogICAgICAgIDwvYnV0dG9uPgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJtbC1hdXRvIGZsZXggZ2FwLTEiPgogICAgICAgICAgPGJ1dHRvbgogICAgICAgICAgICBjbGFzc05hbWU9ImJ0bi1naG9zdCAhcHgtMi41ICFweS0xIHRleHQteHMiCiAgICAgICAgICAgIG9uQ2xpY2s9eygpID0+IHsKICAgICAgICAgICAgICBzZXRFZGl0aW5nUHJvZmlsZShhY3RpdmVQcm9maWxlKTsKICAgICAgICAgICAgICBzZXRTaG93UHJvZmlsZUZvcm0odHJ1ZSk7CiAgICAgICAgICAgIH19CiAgICAgICAgICA+CiAgICAgICAgICAgIOKcj++4jyBT4butYSBo4buTIHPGoQogICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICB7c3RhdGUucHJvZmlsZXMubGVuZ3RoID4gMSAmJiAoCiAgICAgICAgICAgIDxidXR0b24KICAgICAgICAgICAgICBjbGFzc05hbWU9ImJ0bi1naG9zdCAhcHgtMi41ICFweS0xIHRleHQteHMgaG92ZXI6IWJvcmRlci1yb3NlLTMwMCBob3ZlcjohdGV4dC1yb3NlLTYwMCIKICAgICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiB7CiAgICAgICAgICAgICAgICBpZiAoY29uZmlybShgWG/DoSBo4buTIHPGoSAiJHthY3RpdmVQcm9maWxlLm5hbWV9Ij8gVHLhuqFuZyB0aMOhaSB2w6AgZ2hpIGNow7ogY+G7p2EgaOG7kyBzxqEgbsOgeSBz4bq9IG3huqV0LmApKSB7CiAgICAgICAgICAgICAgICAgIGRlbGV0ZVByb2ZpbGUoYWN0aXZlUHJvZmlsZS5pZCk7CiAgICAgICAgICAgICAgICAgIHNldEFjdGl2ZVByb2ZpbGVJZChudWxsKTsKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICB9fQogICAgICAgICAgICA+CiAgICAgICAgICAgICAg8J+XkSBYb8OhCiAgICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICAgKX0KICAgICAgICA8L2Rpdj4KICAgICAgPC9kaXY+CgogICAgICB7c2hvd1Byb2ZpbGVGb3JtICYmICgKICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iY2FyZCBtYi01IHAtNSI+CiAgICAgICAgICA8aDIgY2xhc3NOYW1lPSJtYi00IGZvbnQtc2VtaWJvbGQiPgogICAgICAgICAgICB7ZWRpdGluZ1Byb2ZpbGUgPyBgU+G7rWEgaOG7kyBzxqEg4oCUICR7ZWRpdGluZ1Byb2ZpbGUubmFtZX1gIDogIlRow6ptIGjhu5Mgc8ahIG3hu5tpIn0KICAgICAgICAgIDwvaDI+CiAgICAgICAgICA8UHJvZmlsZUZvcm0KICAgICAgICAgICAgaW5pdGlhbD17ZWRpdGluZ1Byb2ZpbGUgPz8gdW5kZWZpbmVkfQogICAgICAgICAgICBvbkNhbmNlbD17KCkgPT4gc2V0U2hvd1Byb2ZpbGVGb3JtKGZhbHNlKX0KICAgICAgICAgICAgb25TYXZlPXsoZGF0YSkgPT4gewogICAgICAgICAgICAgIGlmIChlZGl0aW5nUHJvZmlsZSkgewogICAgICAgICAgICAgICAgdXBkYXRlUHJvZmlsZShlZGl0aW5nUHJvZmlsZS5pZCwgZGF0YSk7CiAgICAgICAgICAgICAgfSBlbHNlIHsKICAgICAgICAgICAgICAgIGNvbnN0IHAgPSBhZGRQcm9maWxlKGRhdGEpOwogICAgICAgICAgICAgICAgc2V0QWN0aXZlUHJvZmlsZUlkKHAuaWQpOwogICAgICAgICAgICAgIH0KICAgICAgICAgICAgICBzZXRTaG93UHJvZmlsZUZvcm0oZmFsc2UpOwogICAgICAgICAgICB9fQogICAgICAgICAgICBvbkRlbGV0ZT17CiAgICAgICAgICAgICAgZWRpdGluZ1Byb2ZpbGUKICAgICAgICAgICAgICAgID8gKCkgPT4gewogICAgICAgICAgICAgICAgICAgIGNvbnN0IHdhc0FjdGl2ZSA9IGVkaXRpbmdQcm9maWxlLmlkID09PSBhY3RpdmVQcm9maWxlLmlkOwogICAgICAgICAgICAgICAgICAgIGRlbGV0ZVByb2ZpbGUoZWRpdGluZ1Byb2ZpbGUuaWQpOwogICAgICAgICAgICAgICAgICAgIHNldEVkaXRpbmdQcm9maWxlKG51bGwpOwogICAgICAgICAgICAgICAgICAgIHNldFNob3dQcm9maWxlRm9ybShmYWxzZSk7CiAgICAgICAgICAgICAgICAgICAgLy8gWG/DoSBo4buTIHPGoSDEkWFuZyB4ZW0g4oaSIHLGoWkgduG7gSBo4buTIHPGoSBjw7JuIGzhuqFpIMSR4bqndSB0acOqbjsKICAgICAgICAgICAgICAgICAgICAvLyB4b8OhIGjhu5Mgc8ahIGN14buRaSBjw7luZyDihpIgc3RhdGUgcuG7l25nIOKGkiB04buxIHbhu4Egb25ib2FyZGluZy4KICAgICAgICAgICAgICAgICAgICBpZiAod2FzQWN0aXZlKSBzZXRBY3RpdmVQcm9maWxlSWQobnVsbCk7CiAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIDogdW5kZWZpbmVkCiAgICAgICAgICAgIH0KICAgICAgICAgICAgb25DbGVhckN2PXsKICAgICAgICAgICAgICBlZGl0aW5nUHJvZmlsZQogICAgICAgICAgICAgICAgPyAoKSA9PiB7CiAgICAgICAgICAgICAgICAgICAgdXBkYXRlUHJvZmlsZShlZGl0aW5nUHJvZmlsZS5pZCwgeyBza2lsbHM6IFtdLCBrZXl3b3JkczogW10gfSk7CiAgICAgICAgICAgICAgICAgICAgc2V0RWRpdGluZ1Byb2ZpbGUobnVsbCk7CiAgICAgICAgICAgICAgICAgICAgc2V0U2hvd1Byb2ZpbGVGb3JtKGZhbHNlKTsKICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgOiB1bmRlZmluZWQKICAgICAgICAgICAgfQogICAgICAgICAgLz4KICAgICAgICA8L2Rpdj4KICAgICAgKX0KCiAgICAgIHsvKiBTdGF0cyAqL30KICAgICAgPGRpdiBjbGFzc05hbWU9Im1iLTUgZ3JpZCBncmlkLWNvbHMtMiBnYXAtMyBzbTpncmlkLWNvbHMtNCI+CiAgICAgICAge1sKICAgICAgICAgIHsgbGFiZWw6ICJU4buVbmcgc+G7kSBqb2IiLCB2YWx1ZTogc3RhdHMudG90YWwgfSwKICAgICAgICAgIHsgbGFiZWw6ICJLaOG7m3AgbeG6oW5oICjiiaU0IHNraWxscykiLCB2YWx1ZTogc3RhdHMuc3Ryb25nIH0sCiAgICAgICAgICB7IGxhYmVsOiAixJDDoyBsxrB1IiwgdmFsdWU6IHN0YXRzLnNhdmVkIH0sCiAgICAgICAgICB7IGxhYmVsOiAixJDDoyBhcHBseSIsIHZhbHVlOiBzdGF0cy5hcHBsaWVkIH0sCiAgICAgICAgXS5tYXAoKHQpID0+ICgKICAgICAgICAgIDxkaXYga2V5PXt0LmxhYmVsfSBjbGFzc05hbWU9ImNhcmQgcC00Ij4KICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9InRleHQtMnhsIGZvbnQtYm9sZCI+e3QudmFsdWV9PC9kaXY+CiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJtdC0wLjUgdGV4dC14cyB0ZXh0LXNsYXRlLTQwMCI+e3QubGFiZWx9PC9kaXY+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICApKX0KICAgICAgPC9kaXY+CgogICAgICA8ZGl2IGNsYXNzTmFtZT0ibWItNSBncmlkIGdhcC0zIGxnOmdyaWQtY29scy0zIj4KICAgICAgICB7LyogS+G7uSBuxINuZyBob3QgKi99CiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImNhcmQgcC00Ij4KICAgICAgICAgIDxoMyBjbGFzc05hbWU9Im1iLTIgdGV4dC1zbSBmb250LXNlbWlib2xkIj7wn5SlIEvhu7kgbsSDbmcgxJFhbmcgaG90IHRyw6puIHRo4buLIHRyxrDhu51uZzwvaDM+CiAgICAgICAgICB7aG90U2tpbGxzLmxlbmd0aCA/ICgKICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggZmxleC13cmFwIGdhcC0xLjUiPgogICAgICAgICAgICAgIHtob3RTa2lsbHMubWFwKChbcywgbl0pID0+ICgKICAgICAgICAgICAgICAgIDxzcGFuIGtleT17c30gY2xhc3NOYW1lPSJjaGlwIGJnLW9yYW5nZS01MCB0ZXh0LW9yYW5nZS03MDAiPgogICAgICAgICAgICAgICAgICB7c30gwrcge259CiAgICAgICAgICAgICAgICA8L3NwYW4+CiAgICAgICAgICAgICAgKSl9CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgKSA6ICgKICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LXNtIHRleHQtc2xhdGUtNDAwIj5DaMawYSBjw7MgZOG7ryBsaeG7h3UuPC9wPgogICAgICAgICAgKX0KICAgICAgICA8L2Rpdj4KCiAgICAgICAgey8qIFPhu6ljIGto4buPZSBuZ3Xhu5NuICovfQogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJjYXJkIHAtNCI+CiAgICAgICAgICA8aDMgY2xhc3NOYW1lPSJtYi0yIHRleHQtc20gZm9udC1zZW1pYm9sZCI+8J+ToSBOZ3Xhu5NuIGThu68gbGnhu4d1PC9oMz4KICAgICAgICAgIHtwb29sLnNvdXJjZVN0YXR1cyA/ICgKICAgICAgICAgICAgPHVsIGNsYXNzTmFtZT0ic3BhY2UteS0xIHRleHQtc20iPgogICAgICAgICAgICAgIHsoT2JqZWN0LmtleXMoU09VUkNFX0xBQkVMKSBhcyAoa2V5b2YgdHlwZW9mIFNPVVJDRV9MQUJFTClbXSkubWFwKChzcmMpID0+ICgKICAgICAgICAgICAgICAgIDxsaSBrZXk9e3NyY30gY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMiI+CiAgICAgICAgICAgICAgICAgIDxzcGFuCiAgICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPXtgaC0yIHctMiByb3VuZGVkLWZ1bGwgJHsKICAgICAgICAgICAgICAgICAgICAgIHBvb2wuc291cmNlU3RhdHVzPy5bc3JjXSA9PT0gIm9rIiA/ICJiZy1lbWVyYWxkLTUwMCIgOiAiYmctcm9zZS01MDAiCiAgICAgICAgICAgICAgICAgICAgfWB9CiAgICAgICAgICAgICAgICAgIC8+CiAgICAgICAgICAgICAgICAgIHtTT1VSQ0VfTEFCRUxbc3JjXX06eyIgIn0KICAgICAgICAgICAgICAgICAge3Bvb2wuc291cmNlU3RhdHVzPy5bc3JjXSA9PT0gIm9rIiA/ICJPSyIgOiAixJBhbmcgbOG7l2kg4oCUIGTDuW5nIGThu68gbGnhu4d1IGPFqSJ9CiAgICAgICAgICAgICAgICAgIHtsYXN0UnVuID8gKAogICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0idGV4dC1zbGF0ZS00MDAiPih7bGFzdFJ1bi5wZXJTb3VyY2Vbc3JjXX0gdGluL2zhuqduIHF1w6l0KTwvc3Bhbj4KICAgICAgICAgICAgICAgICAgKSA6IG51bGx9CiAgICAgICAgICAgICAgICA8L2xpPgogICAgICAgICAgICAgICkpfQogICAgICAgICAgICA8L3VsPgogICAgICAgICAgKSA6ICgKICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LXNtIHRleHQtc2xhdGUtNDAwIj5DaMawYSBjw7MgbOG6p24gcXXDqXQgbsOgby48L3A+CiAgICAgICAgICApfQogICAgICAgICAgPHAgY2xhc3NOYW1lPSJtdC0yIHRleHQteHMgdGV4dC1zbGF0ZS00MDAiPgogICAgICAgICAgICBE4buvIGxp4buHdSDEkcaw4bujYyBo4buHIHRo4buRbmcgdOG7sSBxdcOpdCBraG/huqNuZyBt4buXaSAzMCBwaMO6dCwgYuG6oW4ga2jDtG5nIGPhuqduIHThu7EgcXXDqXQuCiAgICAgICAgICA8L3A+CiAgICAgICAgPC9kaXY+CgogICAgICAgIHsvKiBCaeG7g3UgxJHhu5MgbWluaSBjw6FjIGzhuqduIGluZ2VzdCAqL30KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iY2FyZCBwLTQiPgogICAgICAgICAgPGgzIGNsYXNzTmFtZT0ibWItMiB0ZXh0LXNtIGZvbnQtc2VtaWJvbGQiPvCfk4ogQ8OhYyBs4bqnbiBj4bqtcCBuaOG6rXQgZ+G6p24gxJHDonk8L2gzPgogICAgICAgICAge3Bvb2wucnVucy5sZW5ndGggPyAoCiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGgtMjAgaXRlbXMtZW5kIGdhcC0xIj4KICAgICAgICAgICAgICB7cG9vbC5ydW5zLm1hcCgociwgaSkgPT4gewogICAgICAgICAgICAgICAgY29uc3QgbWF4ID0gTWF0aC5tYXgoLi4ucG9vbC5ydW5zLm1hcCgoeCkgPT4geC5mZXRjaGVkKSwgMSk7CiAgICAgICAgICAgICAgICByZXR1cm4gKAogICAgICAgICAgICAgICAgICA8ZGl2CiAgICAgICAgICAgICAgICAgICAga2V5PXtpfQogICAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0iZmxleC0xIHJvdW5kZWQtdCBiZy1pbmRpZ28tNDAwLzgwIgogICAgICAgICAgICAgICAgICAgIHN0eWxlPXt7IGhlaWdodDogYCR7TWF0aC5tYXgoOCwgKHIuZmV0Y2hlZCAvIG1heCkgKiAxMDApfSVgIH19CiAgICAgICAgICAgICAgICAgICAgdGl0bGU9e2Ake25ldyBEYXRlKHIuYXQpLnRvTG9jYWxlU3RyaW5nKCJ2aS1WTiIpfSDigJQgcXXDqXQgJHtyLmZldGNoZWR9IHRpbiwgKyR7ci5hZGRlZH0gam9iIG3hu5tpYH0KICAgICAgICAgICAgICAgICAgLz4KICAgICAgICAgICAgICAgICk7CiAgICAgICAgICAgICAgfSl9CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgKSA6ICgKICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LXNtIHRleHQtc2xhdGUtNDAwIj5DaMawYSBjw7MgZOG7ryBsaeG7h3UuPC9wPgogICAgICAgICAgKX0KICAgICAgICAgIHtsYXN0UnVuICYmICgKICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJtdC0yIHRleHQteHMgdGV4dC1zbGF0ZS00MDAiPgogICAgICAgICAgICAgIEzhuqduIGfhuqduIG5o4bqldDogcXXDqXQge2xhc3RSdW4uZmV0Y2hlZH0gdGluLCB0aMOqbSB7bGFzdFJ1bi5hZGRlZH0gam9iIG3hu5tpLCB04buVbmd7IiAifQogICAgICAgICAgICAgIHtsYXN0UnVuLnRvdGFsfSBqb2IuCiAgICAgICAgICAgIDwvcD4KICAgICAgICAgICl9CiAgICAgICAgPC9kaXY+CiAgICAgIDwvZGl2PgoKICAgICAgey8qIFRvb2xiYXIgKi99CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJjYXJkIHN0aWNreSB0b3AtMyB6LTMwIG1iLTQgcC0zIj4KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBmbGV4LXdyYXAgaXRlbXMtY2VudGVyIGdhcC0yIj4KICAgICAgICAgIDxpbnB1dAogICAgICAgICAgICBjbGFzc05hbWU9ImlucHV0ICF3LTUyIgogICAgICAgICAgICBwbGFjZWhvbGRlcj0i8J+UjSBUw6xtIHRoZW8gdGl0bGUsIGPDtG5nIHR54oCmIgogICAgICAgICAgICB2YWx1ZT17cXVlcnl9CiAgICAgICAgICAgIG9uQ2hhbmdlPXsoZSkgPT4gc2V0UXVlcnkoZS50YXJnZXQudmFsdWUpfQogICAgICAgICAgLz4KICAgICAgICAgIDxzZWxlY3QKICAgICAgICAgICAgY2xhc3NOYW1lPSJpbnB1dCAhdy1hdXRvIgogICAgICAgICAgICB2YWx1ZT17c29ydH0KICAgICAgICAgICAgb25DaGFuZ2U9eyhlKSA9PiBzZXRTb3J0KGUudGFyZ2V0LnZhbHVlIGFzIFNvcnRNb2RlKX0KICAgICAgICAgICAgYXJpYS1sYWJlbD0iU+G6r3AgeOG6v3AiCiAgICAgICAgICA+CiAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9InJlY29tbWVuZGVkIj5T4bqvcCB44bq/cDogxJDhu4EgeHXhuqV0PC9vcHRpb24+CiAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9InBlcmNlbnQiPlPhuq9wIHjhur9wOiBLaOG7m3AgY2FvIG5o4bqldDwvb3B0aW9uPgogICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSJuZXdlc3QiPlPhuq9wIHjhur9wOiBN4bubaSBuaOG6pXQ8L29wdGlvbj4KICAgICAgICAgIDwvc2VsZWN0PgogICAgICAgICAgPHNlbGVjdAogICAgICAgICAgICBjbGFzc05hbWU9ImlucHV0ICF3LWF1dG8iCiAgICAgICAgICAgIHZhbHVlPXtkYXRlRmlsdGVyfQogICAgICAgICAgICBvbkNoYW5nZT17KGUpID0+IHNldERhdGVGaWx0ZXIoZS50YXJnZXQudmFsdWUgYXMgRGF0ZUZpbHRlcil9CiAgICAgICAgICAgIGFyaWEtbGFiZWw9Ikzhu41jIHRoZW8gbmfDoHkgxJHEg25nIgogICAgICAgICAgPgogICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIyNGgiPk5nw6B5IMSRxINuZzogMjQgZ2nhu50gcXVhPC9vcHRpb24+CiAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjdkIj5OZ8OgeSDEkcSDbmc6IDcgbmfDoHkgcXVhPC9vcHRpb24+CiAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjMwZCI+TmfDoHkgxJHEg25nOiAzMCBuZ8OgeSBxdWE8L29wdGlvbj4KICAgICAgICAgICAgPG9wdGlvbiB2YWx1ZT0iYWxsIj5OZ8OgeSDEkcSDbmc6IFThuqV0IGPhuqM8L29wdGlvbj4KICAgICAgICAgIDwvc2VsZWN0PgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9Im1sLWF1dG8gZmxleCByb3VuZGVkLXhsIGJvcmRlciBib3JkZXItc2xhdGUtMjAwIGJnLXdoaXRlIHAtMC41Ij4KICAgICAgICAgICAgeygKICAgICAgICAgICAgICBbCiAgICAgICAgICAgICAgICBbImxpc3QiLCAi4piwIERhbmggc8OhY2giXSwKICAgICAgICAgICAgICAgIFsia2FuYmFuIiwgIuKWpiBLYW5iYW4iXSwKICAgICAgICAgICAgICBdIGFzIFtWaWV3TW9kZSwgc3RyaW5nXVtdCiAgICAgICAgICAgICkubWFwKChbdiwgbGFiZWxdKSA9PiAoCiAgICAgICAgICAgICAgPGJ1dHRvbgogICAgICAgICAgICAgICAga2V5PXt2fQogICAgICAgICAgICAgICAgb25DbGljaz17KCkgPT4gc2V0Vmlldyh2KX0KICAgICAgICAgICAgICAgIGNsYXNzTmFtZT17YHJvdW5kZWQtbGcgcHgtMyBweS0xLjUgdGV4dC1zbSBmb250LW1lZGl1bSB0cmFuc2l0aW9uICR7CiAgICAgICAgICAgICAgICAgIHZpZXcgPT09IHYgPyAiYmctaW5kaWdvLTYwMCB0ZXh0LXdoaXRlIiA6ICJ0ZXh0LXNsYXRlLTUwMCBob3Zlcjp0ZXh0LWluZGlnby02MDAiCiAgICAgICAgICAgICAgICB9YH0KICAgICAgICAgICAgICA+CiAgICAgICAgICAgICAgICB7bGFiZWx9CiAgICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgICkpfQogICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9kaXY+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9Im10LTIuNSBmbGV4IGdhcC0xLjUgb3ZlcmZsb3cteC1hdXRvIHBiLTAuNSI+CiAgICAgICAgICA8YnV0dG9uCiAgICAgICAgICAgIG9uQ2xpY2s9eygpID0+IHNldFN0YXR1c1RhYigiYWxsIil9CiAgICAgICAgICAgIGNsYXNzTmFtZT17YGNoaXAgc2hyaW5rLTAgYm9yZGVyICR7CiAgICAgICAgICAgICAgc3RhdHVzVGFiID09PSAiYWxsIgogICAgICAgICAgICAgICAgPyAiYm9yZGVyLWluZGlnby02MDAgYmctaW5kaWdvLTYwMCB0ZXh0LXdoaXRlIgogICAgICAgICAgICAgICAgOiAiYm9yZGVyLXNsYXRlLTIwMCBiZy13aGl0ZSB0ZXh0LXNsYXRlLTYwMCIKICAgICAgICAgICAgfWB9CiAgICAgICAgICA+CiAgICAgICAgICAgIFThuqV0IGPhuqMgKHtzY29yZWRBbGwubGVuZ3RofSkKICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICAge1BJUEVMSU5FLm1hcCgocCkgPT4gewogICAgICAgICAgICBjb25zdCBuID0gc2NvcmVkQWxsLmZpbHRlcigocykgPT4gc3RhdHVzT2Yocy5qb2IuaWQpID09PSBwLmlkKS5sZW5ndGg7CiAgICAgICAgICAgIHJldHVybiAoCiAgICAgICAgICAgICAgPGJ1dHRvbgogICAgICAgICAgICAgICAga2V5PXtwLmlkfQogICAgICAgICAgICAgICAgb25DbGljaz17KCkgPT4gc2V0U3RhdHVzVGFiKHAuaWQpfQogICAgICAgICAgICAgICAgY2xhc3NOYW1lPXtgY2hpcCBzaHJpbmstMCBib3JkZXIgJHsKICAgICAgICAgICAgICAgICAgc3RhdHVzVGFiID09PSBwLmlkCiAgICAgICAgICAgICAgICAgICAgPyAiYm9yZGVyLWluZGlnby02MDAgYmctaW5kaWdvLTYwMCB0ZXh0LXdoaXRlIgogICAgICAgICAgICAgICAgICAgIDogImJvcmRlci1zbGF0ZS0yMDAgYmctd2hpdGUgdGV4dC1zbGF0ZS02MDAiCiAgICAgICAgICAgICAgICB9YH0KICAgICAgICAgICAgICA+CiAgICAgICAgICAgICAgICB7cC5sYWJlbH0gKHtufSkKICAgICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgICAgKTsKICAgICAgICAgIH0pfQogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KCiAgICAgIHsvKiBO4buZaSBkdW5nIGNow61uaCAqL30KICAgICAge3Bvb2wuam9icy5sZW5ndGggPT09IDAgPyAoCiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImNhcmQgcC04IHRleHQtY2VudGVyIHRleHQtc2xhdGUtNDAwIj4KICAgICAgICAgIHtwb29sTG9hZGluZwogICAgICAgICAgICA/ICLEkGFuZyB04bqjaSBk4buvIGxp4buHdSB2aeG7h2PigKYiCiAgICAgICAgICAgIDogIkNoxrBhIGPDsyBk4buvIGxp4buHdSB2aeG7h2MuIEjhu4cgdGjhu5FuZyBxdcOpdCB04buxIMSR4buZbmcgbeG7l2kgfjMwIHBow7p0IOKAlCBow6N5IHF1YXkgbOG6oWkgw610IHBow7p0IG7hu69hIGhv4bq3YyBi4bqlbSBU4bqjaSBs4bqhaSBk4buvIGxp4buHdS4ifQogICAgICAgIDwvZGl2PgogICAgICApIDogZmlsdGVyZWQubGVuZ3RoID09PSAwID8gKAogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJjYXJkIHAtOCB0ZXh0LWNlbnRlciB0ZXh0LXNsYXRlLTQwMCI+CiAgICAgICAgICBLaMO0bmcgY8OzIGpvYiBuw6BvIGto4bubcCBi4buZIGzhu41jIGhp4buHbiB04bqhaS4KICAgICAgICA8L2Rpdj4KICAgICAgKSA6IHZpZXcgPT09ICJsaXN0IiA/ICgKICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZ3JpZCBnYXAtMyBtZDpncmlkLWNvbHMtMiI+CiAgICAgICAgICB7ZmlsdGVyZWQubWFwKCh7IHNjb3JlZCwgc3RhdHVzIH0pID0+ICgKICAgICAgICAgICAgPEpvYkNhcmQKICAgICAgICAgICAgICBrZXk9e3Njb3JlZC5qb2IuaWR9CiAgICAgICAgICAgICAgc2NvcmVkPXtzY29yZWR9CiAgICAgICAgICAgICAgc3RhdHVzPXtzdGF0dXN9CiAgICAgICAgICAgICAgb25PcGVuPXsoKSA9PiBzZXRPcGVuSm9iSWQoc2NvcmVkLmpvYi5pZCl9CiAgICAgICAgICAgICAgb25TdGF0dXNDaGFuZ2U9eyhzKSA9PiBzZXRNYXRjaChhY3RpdmVQcm9maWxlLmlkLCBzY29yZWQuam9iLmlkLCB7IHN0YXR1czogcyB9KX0KICAgICAgICAgICAgLz4KICAgICAgICAgICkpfQogICAgICAgIDwvZGl2PgogICAgICApIDogKAogICAgICAgIDxLYW5iYW5Cb2FyZAogICAgICAgICAgaXRlbXM9e2ZpbHRlcmVkfQogICAgICAgICAgcHJvZmlsZT17YWN0aXZlUHJvZmlsZX0KICAgICAgICAgIG9uT3Blbj17KGlkKSA9PiBzZXRPcGVuSm9iSWQoaWQpfQogICAgICAgICAgb25TdGF0dXNDaGFuZ2U9eyhpZCwgcykgPT4gc2V0TWF0Y2goYWN0aXZlUHJvZmlsZS5pZCwgaWQsIHsgc3RhdHVzOiBzIH0pfQogICAgICAgIC8+CiAgICAgICl9CgogICAgICA8Zm9vdGVyIGNsYXNzTmFtZT0icHktOCB0ZXh0LWNlbnRlciB0ZXh0LXhzIHRleHQtc2xhdGUtNDAwIj4KICAgICAgICBKb2IgV2F0Y2hlciBNVlAg4oCUIGThu68gbGnhu4d1IHZp4buHYyB04burIExpbmtlZEluLCBJVHZpZWMsIFRvcERldiAoY+G6rXAgbmjhuq10IHThu7EgxJHhu5luZykuCiAgICAgICAgSOG7kyBzxqEgJiB0cuG6oW5nIHRow6FpIOG7qW5nIHR1eeG7g24gY2jhu4kgbMawdSB0csOqbiB0csOsbmggZHV54buHdCBj4bunYSBi4bqhbi4KICAgICAgICB7bGFzdEZldGNoQXQgPyBgIMK3IMSQw6MgdOG6o2kgbMO6YyAke25ldyBEYXRlKGxhc3RGZXRjaEF0KS50b0xvY2FsZVRpbWVTdHJpbmcoInZpLVZOIil9YCA6ICIifQogICAgICA8L2Zvb3Rlcj4KCiAgICAgIHtvcGVuU2NvcmVkICYmICgKICAgICAgICA8Sm9iRHJhd2VyCiAgICAgICAgICBzY29yZWQ9e29wZW5TY29yZWR9CiAgICAgICAgICBwcm9maWxlPXthY3RpdmVQcm9maWxlfQogICAgICAgICAgc3RhdHVzPXtzdGF0dXNPZihvcGVuU2NvcmVkLmpvYi5pZCl9CiAgICAgICAgICBub3RlPXtwcm9maWxlTWF0Y2hlc1tvcGVuU2NvcmVkLmpvYi5pZF0/Lm5vdGUgPz8gIiJ9CiAgICAgICAgICBvbkNsb3NlPXsoKSA9PiBzZXRPcGVuSm9iSWQobnVsbCl9CiAgICAgICAgICBvblN0YXR1c0NoYW5nZT17KHMpID0+IHNldE1hdGNoKGFjdGl2ZVByb2ZpbGUuaWQsIG9wZW5TY29yZWQuam9iLmlkLCB7IHN0YXR1czogcyB9KX0KICAgICAgICAgIG9uTm90ZUNoYW5nZT17KG5vdGUpID0+IHNldE1hdGNoKGFjdGl2ZVByb2ZpbGUuaWQsIG9wZW5TY29yZWQuam9iLmlkLCB7IG5vdGUgfSl9CiAgICAgICAgLz4KICAgICAgKX0KICAgIDwvbWFpbj4KICApOwp9Cg==
+"use client";
+
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import Onboarding from "@/components/Onboarding";
+import ProfileForm from "@/components/ProfileForm";
+import JobCard, { SOURCE_LABEL } from "@/components/JobCard";
+import KanbanBoard from "@/components/KanbanBoard";
+import JobDrawer from "@/components/JobDrawer";
+import {
+  PIPELINE,
+  scoreJob,
+  useAppState,
+  type PipelineStatus,
+  type PoolData,
+  type Profile,
+  type ScoredJob,
+} from "@/lib/store";
+import { extractSkills } from "@/lib/skills";
+
+type SortMode = "recommended" | "percent" | "newest";
+type DateFilter = "24h" | "7d" | "30d" | "all";
+type ViewMode = "list" | "kanban";
+
+const POOL_CACHE_KEY = "jwmvp:pool";
+const EMPTY_POOL: PoolData = { jobs: [], updatedAt: null, sourceStatus: null, runs: [] };
+
+function timeAgo(iso: string | null): string {
+  if (!iso) return "chưa có dữ liệu";
+  const diff = Date.now() - new Date(iso).getTime();
+  const mins = Math.floor(diff / 60000);
+  if (mins < 1) return "vừa xong";
+  if (mins < 60) return `${mins} phút trước`;
+  const hours = Math.floor(mins / 60);
+  if (hours < 24) return `${hours} giờ trước`;
+  return `${Math.floor(hours / 24)} ngày trước`;
+}
+
+export default function HomePage() {
+  const { state, hydrated, addProfile, updateProfile, deleteProfile, setMatch } =
+    useAppState();
+  const [pool, setPool] = useState<PoolData>(EMPTY_POOL);
+  const [poolLoading, setPoolLoading] = useState(false);
+  const [poolError, setPoolError] = useState<string | null>(null);
+  const [lastFetchAt, setLastFetchAt] = useState<number>(0);
+
+  const [activeProfileId, setActiveProfileId] = useState<string | null>(null);
+  const [showProfileForm, setShowProfileForm] = useState(false);
+  const [editingProfile, setEditingProfile] = useState<Profile | null>(null);
+
+  const [query, setQuery] = useState("");
+  const [statusTab, setStatusTab] = useState<PipelineStatus | "all">("all");
+  const [sort, setSort] = useState<SortMode>("recommended");
+  const [dateFilter, setDateFilter] = useState<DateFilter>("all");
+  const [view, setView] = useState<ViewMode>("list");
+  const [openJobId, setOpenJobId] = useState<string | null>(null);
+  const autoFetched = useRef(false);
+
+  const loadPool = useCallback(async () => {
+    setPoolLoading(true);
+    try {
+      const res = await fetch("/api/jobs");
+      const data = (await res.json()) as PoolData & { error?: string };
+      if (!res.ok) throw new Error(data.error ?? `HTTP ${res.status}`);
+      setPool(data);
+      setPoolError(null);
+      setLastFetchAt(Date.now());
+      try {
+        window.localStorage.setItem(POOL_CACHE_KEY, JSON.stringify(data));
+      } catch {}
+    } catch (e) {
+      setPoolError(
+        "Chưa tải được dữ liệu việc mới nhất — đang hiển thị bản cache gần nhất nếu có."
+      );
+      console.error(e);
+    } finally {
+      setPoolLoading(false);
+    }
+  }, []);
+
+  // Nạp cache pool để hiển thị ngay, sau đó tải bản mới nếu cache quá 15 phút.
+  useEffect(() => {
+    if (autoFetched.current) return;
+    autoFetched.current = true;
+    let cachedAt = 0;
+    try {
+      const raw = window.localStorage.getItem(POOL_CACHE_KEY);
+      if (raw) {
+        const cached = JSON.parse(raw) as PoolData;
+        setPool(cached);
+        cachedAt = cached.updatedAt ? new Date(cached.updatedAt).getTime() : 0;
+      }
+    } catch {}
+    if (Date.now() - cachedAt > 15 * 60000) {
+      void loadPool();
+    }
+  }, [loadPool]);
+
+  const activeProfile =
+    state.profiles.find((p) => p.id === activeProfileId) ?? state.profiles[0] ?? null;
+
+  useEffect(() => {
+    if (activeProfile && activeProfileId !== activeProfile.id) {
+      setActiveProfileId(activeProfile.id);
+    }
+  }, [activeProfile, activeProfileId]);
+
+  const profileMatches = useMemo(
+    () => (activeProfile ? state.matches[activeProfile.id] ?? {} : {}),
+    [state.matches, activeProfile]
+  );
+
+  const scoredAll: ScoredJob[] = useMemo(() => {
+    if (!activeProfile) return [];
+    return pool.jobs.map((j) => scoreJob(j, activeProfile.skills));
+  }, [pool.jobs, activeProfile]);
+
+  const statusOf = useCallback(
+    (jobId: string): PipelineStatus => profileMatches[jobId]?.status ?? "new",
+    [profileMatches]
+  );
+
+  const filtered = useMemo(() => {
+    let items = scoredAll.map((scored) => ({
+      scored,
+      status: statusOf(scored.job.id),
+    }));
+    if (statusTab !== "all") items = items.filter((i) => i.status === statusTab);
+    if (query.trim()) {
+      const q = query.trim().toLowerCase();
+      items = items.filter(
+        (i) =>
+          i.scored.job.title.toLowerCase().includes(q) ||
+          i.scored.job.company.toLowerCase().includes(q)
+      );
+    }
+    if (dateFilter !== "all") {
+      const limitMs = dateFilter === "24h" ? 864e5 : dateFilter === "7d" ? 7 * 864e5 : 30 * 864e5;
+      const cutoff = Date.now() - limitMs;
+      items = items.filter((i) => {
+        if (!i.scored.job.postedAt) return true; // thiếu ngày đăng thì luôn hiển thị
+        return new Date(`${i.scored.job.postedAt}T00:00:00`).getTime() >= cutoff;
+      });
+    }
+    const byPosted = (a: ScoredJob, b: ScoredJob) =>
+      (b.job.postedAt ?? "") < (a.job.postedAt ?? "") ? -1 : (b.job.postedAt ?? "") > (a.job.postedAt ?? "") ? 1 : 0;
+    items.sort((a, b) => {
+      if (sort === "percent") return b.scored.percent - a.scored.percent || byPosted(a.scored, b.scored);
+      if (sort === "newest") return byPosted(a.scored, b.scored);
+      // Đề xuất: khớp mạnh trước, sau đó % và độ mới
+      const rank = (s: ScoredJob) => (s.level === "strong" ? 0 : s.level === "partial" ? 1 : 2);
+      return rank(a.scored) - rank(b.scored) || b.scored.percent - a.scored.percent || byPosted(a.scored, b.scored);
+    });
+    return items;
+  }, [scoredAll, statusOf, statusTab, query, dateFilter, sort]);
+
+  const stats = useMemo(() => {
+    const total = scoredAll.length;
+    const strong = scoredAll.filter((s) => s.level === "strong").length;
+    const saved = Object.values(profileMatches).filter((m) => m.status === "saved").length;
+    const applied = Object.values(profileMatches).filter((m) => m.status === "applied").length;
+    return { total, strong, saved, applied };
+  }, [scoredAll, profileMatches]);
+
+  const hotSkills = useMemo(() => {
+    const counts = new Map<string, number>();
+    for (const j of pool.jobs) {
+      for (const s of j.skills) counts.set(s, (counts.get(s) ?? 0) + 1);
+      for (const s of extractSkills(j.title)) counts.set(s, (counts.get(s) ?? 0) + 1);
+    }
+    return [...counts.entries()].sort((a, b) => b[1] - a[1]).slice(0, 10);
+  }, [pool.jobs]);
+
+  const openScored = openJobId
+    ? scoredAll.find((s) => s.job.id === openJobId) ?? null
+    : null;
+
+  if (!hydrated) {
+    return (
+      <main className="flex min-h-screen items-center justify-center text-slate-400">
+        Đang tải…
+      </main>
+    );
+  }
+
+  if (state.profiles.length === 0) {
+    return (
+      <main className="min-h-screen">
+        <Onboarding
+          onComplete={(p) => {
+            const profile = addProfile(p);
+            setActiveProfileId(profile.id);
+            void loadPool();
+          }}
+        />
+      </main>
+    );
+  }
+
+  if (!activeProfile) return null;
+
+  const lastRun = pool.runs[pool.runs.length - 1];
+
+  return (
+    <main className="mx-auto min-h-screen w-full max-w-6xl px-4 py-6">
+      {/* Header */}
+      <header className="mb-5 flex flex-wrap items-center gap-3">
+        <div>
+          <h1 className="text-xl font-bold sm:text-2xl">🎯 Job Watcher</h1>
+          <p className="text-xs text-slate-400">
+            Cập nhật {timeAgo(pool.updatedAt)}
+            {poolError ? ` · ${poolError}` : ""}
+          </p>
+        </div>
+        <div className="ml-auto flex items-center gap-2">
+          <button className="btn-ghost" onClick={() => void loadPool()} disabled={poolLoading}>
+            {poolLoading ? "Đang tải…" : "↻ Tải lại dữ liệu"}
+          </button>
+        </div>
+      </header>
+
+      {/* Profile tabs */}
+      <div className="mb-4 flex flex-wrap items-center gap-2">
+        {state.profiles.map((p) => (
+          <button
+            key={p.id}
+            onClick={() => setActiveProfileId(p.id)}
+            className={`rounded-full px-3.5 py-1.5 text-sm font-medium transition ${
+              p.id === activeProfile.id
+                ? "bg-indigo-600 text-white"
+                : "bg-white text-slate-600 border border-slate-200 hover:border-indigo-300"
+            }`}
+          >
+            {p.name}
+            {p.id === state.profiles[0].id ? " (mặc định)" : ""}
+          </button>
+        ))}
+        <button
+          className="rounded-full border border-dashed border-indigo-300 px-3.5 py-1.5 text-sm font-medium text-indigo-600 hover:bg-indigo-50"
+          onClick={() => {
+            setEditingProfile(null);
+            setShowProfileForm(true);
+          }}
+        >
+          + Thêm hồ sơ
+        </button>
+        <div className="ml-auto flex gap-1">
+          <button
+            className="btn-ghost !px-2.5 !py-1 text-xs"
+            onClick={() => {
+              setEditingProfile(activeProfile);
+              setShowProfileForm(true);
+            }}
+          >
+            ✏️ Sửa hồ sơ
+          </button>
+          {state.profiles.length > 1 && (
+            <button
+              className="btn-ghost !px-2.5 !py-1 text-xs hover:!border-rose-300 hover:!text-rose-600"
+              onClick={() => {
+                if (confirm(`Xoá hồ sơ "${activeProfile.name}"? Trạng thái và ghi chú của hồ sơ này sẽ mất.`)) {
+                  deleteProfile(activeProfile.id);
+                  setActiveProfileId(null);
+                }
+              }}
+            >
+              🗑 Xoá
+            </button>
+          )}
+        </div>
+      </div>
+
+      {showProfileForm && (
+        <div className="card mb-5 p-5">
+          <h2 className="mb-4 font-semibold">
+            {editingProfile ? `Sửa hồ sơ — ${editingProfile.name}` : "Thêm hồ sơ mới"}
+          </h2>
+          <ProfileForm
+            initial={editingProfile ?? undefined}
+            onCancel={() => setShowProfileForm(false)}
+            onSave={(data) => {
+              if (editingProfile) {
+                updateProfile(editingProfile.id, data);
+              } else {
+                const p = addProfile(data);
+                setActiveProfileId(p.id);
+              }
+              setShowProfileForm(false);
+            }}
+            onDelete={
+              editingProfile
+                ? () => {
+                    const wasActive = editingProfile.id === activeProfile.id;
+                    deleteProfile(editingProfile.id);
+                    setEditingProfile(null);
+                    setShowProfileForm(false);
+                    // Xoá hồ sơ đang xem → rơi về hồ sơ còn lại đầu tiên;
+                    // xoá hồ sơ cuối cùng → state rỗng → tự về onboarding.
+                    if (wasActive) setActiveProfileId(null);
+                  }
+                : undefined
+            }
+            onClearCv={
+              editingProfile
+                ? () => {
+                    updateProfile(editingProfile.id, { skills: [], keywords: [] });
+                    setEditingProfile(null);
+                    setShowProfileForm(false);
+                  }
+                : undefined
+            }
+          />
+        </div>
+      )}
+
+      {/* Stats */}
+      <div className="mb-5 grid grid-cols-2 gap-3 sm:grid-cols-4">
+        {[
+          { label: "Tổng số job", value: stats.total },
+          { label: "Khớp mạnh (≥4 skills)", value: stats.strong },
+          { label: "Đã lưu", value: stats.saved },
+          { label: "Đã apply", value: stats.applied },
+        ].map((t) => (
+          <div key={t.label} className="card p-4">
+            <div className="text-2xl font-bold">{t.value}</div>
+            <div className="mt-0.5 text-xs text-slate-400">{t.label}</div>
+          </div>
+        ))}
+      </div>
+
+      <div className="mb-5 grid gap-3 lg:grid-cols-3">
+        {/* Kỹ năng hot */}
+        <div className="card p-4">
+          <h3 className="mb-2 text-sm font-semibold">🔥 Kỹ năng đang hot trên thị trường</h3>
+          {hotSkills.length ? (
+            <div className="flex flex-wrap gap-1.5">
+              {hotSkills.map(([s, n]) => (
+                <span key={s} className="chip bg-orange-50 text-orange-700">
+                  {s} · {n}
+                </span>
+              ))}
+            </div>
+          ) : (
+            <p className="text-sm text-slate-400">Chưa có dữ liệu.</p>
+          )}
+        </div>
+
+        {/* Sức khỏe nguồn */}
+        <div className="card p-4">
+          <h3 className="mb-2 text-sm font-semibold">📡 Nguồn dữ liệu</h3>
+          {pool.sourceStatus ? (
+            <ul className="space-y-1 text-sm">
+              {(Object.keys(SOURCE_LABEL) as (keyof typeof SOURCE_LABEL)[]).map((src) => (
+                <li key={src} className="flex items-center gap-2">
+                  <span
+                    className={`h-2 w-2 rounded-full ${
+                      pool.sourceStatus?.[src] === "ok" ? "bg-emerald-500" : "bg-rose-500"
+                    }`}
+                  />
+                  {SOURCE_LABEL[src]}:{" "}
+                  {pool.sourceStatus?.[src] === "ok" ? "OK" : "Đang lỗi — dùng dữ liệu cũ"}
+                  {lastRun ? (
+                    <span className="text-slate-400">({lastRun.perSource[src]} tin/lần quét)</span>
+                  ) : null}
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p className="text-sm text-slate-400">Chưa có lần quét nào.</p>
+          )}
+          <p className="mt-2 text-xs text-slate-400">
+            Dữ liệu được hệ thống tự quét khoảng mỗi 30 phút, bạn không cần tự quét.
+          </p>
+        </div>
+
+        {/* Biểu đồ mini các lần ingest */}
+        <div className="card p-4">
+          <h3 className="mb-2 text-sm font-semibold">📊 Các lần cập nhật gần đây</h3>
+          {pool.runs.length ? (
+            <div className="flex h-20 items-end gap-1">
+              {pool.runs.map((r, i) => {
+                const max = Math.max(...pool.runs.map((x) => x.fetched), 1);
+                return (
+                  <div
+                    key={i}
+                    className="flex-1 rounded-t bg-indigo-400/80"
+                    style={{ height: `${Math.max(8, (r.fetched / max) * 100)}%` }}
+                    title={`${new Date(r.at).toLocaleString("vi-VN")} — quét ${r.fetched} tin, +${r.added} job mới`}
+                  />
+                );
+              })}
+            </div>
+          ) : (
+            <p className="text-sm text-slate-400">Chưa có dữ liệu.</p>
+          )}
+          {lastRun && (
+            <p className="mt-2 text-xs text-slate-400">
+              Lần gần nhất: quét {lastRun.fetched} tin, thêm {lastRun.added} job mới, tổng{" "}
+              {lastRun.total} job.
+            </p>
+          )}
+        </div>
+      </div>
+
+      {/* Toolbar */}
+      <div className="card sticky top-3 z-30 mb-4 p-3">
+        <div className="flex flex-wrap items-center gap-2">
+          <input
+            className="input !w-52"
+            placeholder="🔍 Tìm theo title, công ty…"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+          />
+          <select
+            className="input !w-auto"
+            value={sort}
+            onChange={(e) => setSort(e.target.value as SortMode)}
+            aria-label="Sắp xếp"
+          >
+            <option value="recommended">Sắp xếp: Đề xuất</option>
+            <option value="percent">Sắp xếp: Khớp cao nhất</option>
+            <option value="newest">Sắp xếp: Mới nhất</option>
+          </select>
+          <select
+            className="input !w-auto"
+            value={dateFilter}
+            onChange={(e) => setDateFilter(e.target.value as DateFilter)}
+            aria-label="Lọc theo ngày đăng"
+          >
+            <option value="24h">Ngày đăng: 24 giờ qua</option>
+            <option value="7d">Ngày đăng: 7 ngày qua</option>
+            <option value="30d">Ngày đăng: 30 ngày qua</option>
+            <option value="all">Ngày đăng: Tất cả</option>
+          </select>
+          <div className="ml-auto flex rounded-xl border border-slate-200 bg-white p-0.5">
+            {(
+              [
+                ["list", "☰ Danh sách"],
+                ["kanban", "▦ Kanban"],
+              ] as [ViewMode, string][]
+            ).map(([v, label]) => (
+              <button
+                key={v}
+                onClick={() => setView(v)}
+                className={`rounded-lg px-3 py-1.5 text-sm font-medium transition ${
+                  view === v ? "bg-indigo-600 text-white" : "text-slate-500 hover:text-indigo-600"
+                }`}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+        </div>
+        <div className="mt-2.5 flex gap-1.5 overflow-x-auto pb-0.5">
+          <button
+            onClick={() => setStatusTab("all")}
+            className={`chip shrink-0 border ${
+              statusTab === "all"
+                ? "border-indigo-600 bg-indigo-600 text-white"
+                : "border-slate-200 bg-white text-slate-600"
+            }`}
+          >
+            Tất cả ({scoredAll.length})
+          </button>
+          {PIPELINE.map((p) => {
+            const n = scoredAll.filter((s) => statusOf(s.job.id) === p.id).length;
+            return (
+              <button
+                key={p.id}
+                onClick={() => setStatusTab(p.id)}
+                className={`chip shrink-0 border ${
+                  statusTab === p.id
+                    ? "border-indigo-600 bg-indigo-600 text-white"
+                    : "border-slate-200 bg-white text-slate-600"
+                }`}
+              >
+                {p.label} ({n})
+              </button>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Nội dung chính */}
+      {pool.jobs.length === 0 ? (
+        <div className="card p-8 text-center text-slate-400">
+          {poolLoading
+            ? "Đang tải dữ liệu việc…"
+            : "Chưa có dữ liệu việc. Hệ thống quét tự động mỗi ~30 phút — hãy quay lại ít phút nữa hoặc bấm Tải lại dữ liệu."}
+        </div>
+      ) : filtered.length === 0 ? (
+        <div className="card p-8 text-center text-slate-400">
+          Không có job nào khớp bộ lọc hiện tại.
+        </div>
+      ) : view === "list" ? (
+        <div className="grid gap-3 md:grid-cols-2">
+          {filtered.map(({ scored, status }) => (
+            <JobCard
+              key={scored.job.id}
+              scored={scored}
+              status={status}
+              onOpen={() => setOpenJobId(scored.job.id)}
+              onStatusChange={(s) => setMatch(activeProfile.id, scored.job.id, { status: s })}
+            />
+          ))}
+        </div>
+      ) : (
+        <KanbanBoard
+          items={filtered}
+          profile={activeProfile}
+          onOpen={(id) => setOpenJobId(id)}
+          onStatusChange={(id, s) => setMatch(activeProfile.id, id, { status: s })}
+        />
+      )}
+
+      <footer className="py-8 text-center text-xs text-slate-400">
+        Job Watcher MVP — dữ liệu việc từ LinkedIn, ITviec, TopDev (cập nhật tự động).
+        Hồ sơ & trạng thái ứng tuyển chỉ lưu trên trình duyệt của bạn.
+        {lastFetchAt ? ` · Đã tải lúc ${new Date(lastFetchAt).toLocaleTimeString("vi-VN")}` : ""}
+      </footer>
+
+      {openScored && (
+        <JobDrawer
+          scored={openScored}
+          profile={activeProfile}
+          status={statusOf(openScored.job.id)}
+          note={profileMatches[openScored.job.id]?.note ?? ""}
+          onClose={() => setOpenJobId(null)}
+          onStatusChange={(s) => setMatch(activeProfile.id, openScored.job.id, { status: s })}
+          onNoteChange={(note) => setMatch(activeProfile.id, openScored.job.id, { note })}
+        />
+      )}
+    </main>
+  );
+}
