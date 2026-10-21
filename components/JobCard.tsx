@@ -1,1 +1,127 @@
-InVzZSBjbGllbnQiOwoKaW1wb3J0IHR5cGUgeyBTY29yZWRKb2IsIFNvdXJjZUlkIH0gZnJvbSAiQC9saWIvc3RvcmUiOwppbXBvcnQgeyBQSVBFTElORSwgdHlwZSBQaXBlbGluZVN0YXR1cyB9IGZyb20gIkAvbGliL3N0b3JlIjsKCmV4cG9ydCBjb25zdCBTT1VSQ0VfTEFCRUw6IFJlY29yZDxTb3VyY2VJZCwgc3RyaW5nPiA9IHsKICBsaW5rZWRpbjogIkxpbmtlZEluIiwKICBpdHZpZWM6ICJJVHZpZWMiLAogIHRvcGRldjogIlRvcERldiIsCn07CgpleHBvcnQgY29uc3QgU09VUkNFX0JBREdFOiBSZWNvcmQ8U291cmNlSWQsIHN0cmluZz4gPSB7CiAgbGlua2VkaW46ICJiZy1za3ktMTAwIHRleHQtc2t5LTcwMCIsCiAgaXR2aWVjOiAiYmctcm9zZS0xMDAgdGV4dC1yb3NlLTcwMCIsCiAgdG9wZGV2OiAiYmctdmlvbGV0LTEwMCB0ZXh0LXZpb2xldC03MDAiLAp9OwoKZXhwb3J0IGZ1bmN0aW9uIE1hdGNoUmluZyh7IHBlcmNlbnQsIHNtYWxsIH06IHsgcGVyY2VudDogbnVtYmVyOyBzbWFsbD86IGJvb2xlYW4gfSkgewogIGNvbnN0IHIgPSAxNTsKICBjb25zdCBjID0gMiAqIE1hdGguUEkgKiByOwogIGNvbnN0IGNvbG9yID0gcGVyY2VudCA+PSA0MCA/ICIjMDU5NjY5IiA6IHBlcmNlbnQgPj0gMjAgPyAiI2Q5NzcwNiIgOiAiIzk0YTNiOCI7CiAgY29uc3QgYm94ID0gc21hbGwgPyAiaC04IHctOCIgOiAiaC0xMSB3LTExIjsKICByZXR1cm4gKAogICAgPGRpdiBjbGFzc05hbWU9e2ByZWxhdGl2ZSAke2JveH0gc2hyaW5rLTBgfSB0aXRsZT17YEto4bubcCAke3BlcmNlbnR9JSBr4bu5IG7Eg25nYH0+CiAgICAgIDxzdmcgdmlld0JveD0iMCAwIDM2IDM2IiBjbGFzc05hbWU9e2Ake2JveH0gLXJvdGF0ZS05MGB9PgogICAgICAgIDxjaXJjbGUgY3g9IjE4IiBjeT0iMTgiIHI9e3J9IGZpbGw9Im5vbmUiIHN0cm9rZT0iI2UyZThmMCIgc3Ryb2tlV2lkdGg9IjMuNSIgLz4KICAgICAgICA8Y2lyY2xlCiAgICAgICAgICBjeD0iMTgiCiAgICAgICAgICBjeT0iMTgiCiAgICAgICAgICByPXtyfQogICAgICAgICAgZmlsbD0ibm9uZSIKICAgICAgICAgIHN0cm9rZT17Y29sb3J9CiAgICAgICAgICBzdHJva2VXaWR0aD0iMy41IgogICAgICAgICAgc3Ryb2tlTGluZWNhcD0icm91bmQiCiAgICAgICAgICBzdHJva2VEYXNoYXJyYXk9e2AkeyhwZXJjZW50IC8gMTAwKSAqIGN9ICR7Y31gfQogICAgICAgIC8+CiAgICAgIDwvc3ZnPgogICAgICA8c3BhbgogICAgICAgIGNsYXNzTmFtZT17YGFic29sdXRlIGluc2V0LTAgZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgZm9udC1ib2xkIHRleHQtc2xhdGUtNzAwICR7CiAgICAgICAgICBzbWFsbCA/ICJ0ZXh0LVs4cHhdIiA6ICJ0ZXh0LVsxMHB4XSIKICAgICAgICB9YH0KICAgICAgPgogICAgICAgIHtwZXJjZW50fSUKICAgICAgPC9zcGFuPgogICAgPC9kaXY+CiAgKTsKfQoKZXhwb3J0IGZ1bmN0aW9uIGZvcm1hdFBvc3RlZChwb3N0ZWRBdDogc3RyaW5nIHwgbnVsbCk6IHN0cmluZyB7CiAgaWYgKCFwb3N0ZWRBdCkgcmV0dXJuICJLaMO0bmcgcsO1IG5nw6B5IMSRxINuZyI7CiAgY29uc3QgZCA9IG5ldyBEYXRlKGAke3Bvc3RlZEF0fVQwMDowMDowMGApOwogIGlmIChOdW1iZXIuaXNOYU4oZC5nZXRUaW1lKCkpKSByZXR1cm4gcG9zdGVkQXQ7CiAgcmV0dXJuIGQudG9Mb2NhbGVEYXRlU3RyaW5nKCJ2aS1WTiIsIHsgZGF5OiAiMi1kaWdpdCIsIG1vbnRoOiAiMi1kaWdpdCIsIHllYXI6ICJudW1lcmljIiB9KTsKfQoKZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gSm9iQ2FyZCh7CiAgc2NvcmVkLAogIHN0YXR1cywKICBvbk9wZW4sCiAgb25TdGF0dXNDaGFuZ2UsCn06IHsKICBzY29yZWQ6IFNjb3JlZEpvYjsKICBzdGF0dXM6IFBpcGVsaW5lU3RhdHVzOwogIG9uT3BlbjogKCkgPT4gdm9pZDsKICBvblN0YXR1c0NoYW5nZTogKHM6IFBpcGVsaW5lU3RhdHVzKSA9PiB2b2lkOwp9KSB7CiAgY29uc3QgeyBqb2IsIG1hdGNoZWRTa2lsbHMsIHBlcmNlbnQgfSA9IHNjb3JlZDsKICByZXR1cm4gKAogICAgPGRpdiBjbGFzc05hbWU9ImNhcmQgZ3JvdXAgZmxleCBnYXAtMyBwLTQgdHJhbnNpdGlvbiBob3Zlcjpib3JkZXItaW5kaWdvLTMwMCBob3ZlcjpzaGFkb3ctbWQiPgogICAgICA8TWF0Y2hSaW5nIHBlcmNlbnQ9e3BlcmNlbnR9IC8+CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJtaW4tdy0wIGZsZXgtMSI+CiAgICAgICAgPGJ1dHRvbiBvbkNsaWNrPXtvbk9wZW59IGNsYXNzTmFtZT0iYmxvY2sgdy1mdWxsIHRleHQtbGVmdCI+CiAgICAgICAgICA8aDMgY2xhc3NOYW1lPSJ0cnVuY2F0ZSBmb250LXNlbWlib2xkIGxlYWRpbmctc251ZyB0ZXh0LXNsYXRlLTgwMCBncm91cC1ob3Zlcjp0ZXh0LWluZGlnby03MDAiPgogICAgICAgICAgICB7am9iLnRpdGxlfQogICAgICAgICAgPC9oMz4KICAgICAgICAgIDxwIGNsYXNzTmFtZT0ibXQtMC41IHRydW5jYXRlIHRleHQtc20gdGV4dC1zbGF0ZS01MDAiPgogICAgICAgICAgICB7am9iLmNvbXBhbnkgfHwgIuKAlCJ9IMK3IHtqb2IubG9jYXRpb259CiAgICAgICAgICA8L3A+CiAgICAgICAgPC9idXR0b24+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9Im10LTIgZmxleCBmbGV4LXdyYXAgaXRlbXMtY2VudGVyIGdhcC0xLjUiPgogICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPXtgY2hpcCAke1NPVVJDRV9CQURHRVtqb2Iuc291cmNlXX1gfT4KICAgICAgICAgICAge1NPVVJDRV9MQUJFTFtqb2Iuc291cmNlXX0KICAgICAgICAgIDwvc3Bhbj4KICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0iY2hpcCBiZy1zbGF0ZS0xMDAgdGV4dC1zbGF0ZS01MDAiPgogICAgICAgICAgICDwn5eTIHtmb3JtYXRQb3N0ZWQoam9iLnBvc3RlZEF0KX0KICAgICAgICAgIDwvc3Bhbj4KICAgICAgICAgIHtzdGF0dXMgIT09ICJuZXciICYmICgKICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJjaGlwIGJnLWluZGlnby0xMDAgdGV4dC1pbmRpZ28tNzAwIj4KICAgICAgICAgICAgICB7UElQRUxJTkUuZmluZCgocCkgPT4gcC5pZCA9PT0gc3RhdHVzKT8ubGFiZWx9CiAgICAgICAgICAgIDwvc3Bhbj4KICAgICAgICAgICl9CiAgICAgICAgPC9kaXY+CiAgICAgICAge21hdGNoZWRTa2lsbHMubGVuZ3RoID4gMCAmJiAoCiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ibXQtMiBmbGV4IGZsZXgtd3JhcCBnYXAtMSI+CiAgICAgICAgICAgIHttYXRjaGVkU2tpbGxzLnNsaWNlKDAsIDYpLm1hcCgocykgPT4gKAogICAgICAgICAgICAgIDxzcGFuIGtleT17c30gY2xhc3NOYW1lPSJjaGlwIGJnLWVtZXJhbGQtNTAgdGV4dC1lbWVyYWxkLTcwMCI+CiAgICAgICAgICAgICAgICDinJMge3N9CiAgICAgICAgICAgICAgPC9zcGFuPgogICAgICAgICAgICApKX0KICAgICAgICAgICAge21hdGNoZWRTa2lsbHMubGVuZ3RoID4gNiAmJiAoCiAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJjaGlwIGJnLXNsYXRlLTEwMCB0ZXh0LXNsYXRlLTUwMCI+CiAgICAgICAgICAgICAgICAre21hdGNoZWRTa2lsbHMubGVuZ3RoIC0gNn0KICAgICAgICAgICAgICA8L3NwYW4+CiAgICAgICAgICAgICl9CiAgICAgICAgICA8L2Rpdj4KICAgICAgICApfQogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJtdC0zIGZsZXggaXRlbXMtY2VudGVyIGdhcC0yIj4KICAgICAgICAgIDxidXR0b24gY2xhc3NOYW1lPSJidG4tZ2hvc3QgIXB4LTIuNSAhcHktMSB0ZXh0LXhzIiBvbkNsaWNrPXtvbk9wZW59PgogICAgICAgICAgICBDaGkgdGnhur90CiAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgIDxzZWxlY3QKICAgICAgICAgICAgY2xhc3NOYW1lPSJpbnB1dCAhdy1hdXRvICFweS0xIHRleHQteHMgc206aGlkZGVuIgogICAgICAgICAgICB2YWx1ZT17c3RhdHVzfQogICAgICAgICAgICBvbkNoYW5nZT17KGUpID0+IG9uU3RhdHVzQ2hhbmdlKGUudGFyZ2V0LnZhbHVlIGFzIFBpcGVsaW5lU3RhdHVzKX0KICAgICAgICAgICAgYXJpYS1sYWJlbD0iQ2h1eeG7g24gdHLhuqFuZyB0aMOhaSIKICAgICAgICAgID4KICAgICAgICAgICAge1BJUEVMSU5FLm1hcCgocCkgPT4gKAogICAgICAgICAgICAgIDxvcHRpb24ga2V5PXtwLmlkfSB2YWx1ZT17cC5pZH0+CiAgICAgICAgICAgICAgICBDaHV54buDbiB04bubaToge3AubGFiZWx9CiAgICAgICAgICAgICAgPC9vcHRpb24+CiAgICAgICAgICAgICkpfQogICAgICAgICAgPC9zZWxlY3Q+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvZGl2PgogICAgPC9kaXY+CiAgKTsKfQo=
+"use client";
+
+import type { ScoredJob, SourceId } from "@/lib/store";
+import { PIPELINE, type PipelineStatus } from "@/lib/store";
+
+export const SOURCE_LABEL: Record<SourceId, string> = {
+  linkedin: "LinkedIn",
+  itviec: "ITviec",
+  topdev: "TopDev",
+};
+
+export const SOURCE_BADGE: Record<SourceId, string> = {
+  linkedin: "bg-sky-100 text-sky-700",
+  itviec: "bg-rose-100 text-rose-700",
+  topdev: "bg-violet-100 text-violet-700",
+};
+
+export function MatchRing({ percent, small }: { percent: number; small?: boolean }) {
+  const r = 15;
+  const c = 2 * Math.PI * r;
+  const color = percent >= 40 ? "#059669" : percent >= 20 ? "#d97706" : "#94a3b8";
+  const box = small ? "h-8 w-8" : "h-11 w-11";
+  return (
+    <div className={`relative ${box} shrink-0`} title={`Khớp ${percent}% kỹ năng`}>
+      <svg viewBox="0 0 36 36" className={`${box} -rotate-90`}>
+        <circle cx="18" cy="18" r={r} fill="none" stroke="#e2e8f0" strokeWidth="3.5" />
+        <circle
+          cx="18"
+          cy="18"
+          r={r}
+          fill="none"
+          stroke={color}
+          strokeWidth="3.5"
+          strokeLinecap="round"
+          strokeDasharray={`${(percent / 100) * c} ${c}`}
+        />
+      </svg>
+      <span
+        className={`absolute inset-0 flex items-center justify-center font-bold text-slate-700 ${
+          small ? "text-[8px]" : "text-[10px]"
+        }`}
+      >
+        {percent}%
+      </span>
+    </div>
+  );
+}
+
+export function formatPosted(postedAt: string | null): string {
+  if (!postedAt) return "Không rõ ngày đăng";
+  const d = new Date(`${postedAt}T00:00:00`);
+  if (Number.isNaN(d.getTime())) return postedAt;
+  return d.toLocaleDateString("vi-VN", { day: "2-digit", month: "2-digit", year: "numeric" });
+}
+
+export default function JobCard({
+  scored,
+  status,
+  onOpen,
+  onStatusChange,
+}: {
+  scored: ScoredJob;
+  status: PipelineStatus;
+  onOpen: () => void;
+  onStatusChange: (s: PipelineStatus) => void;
+}) {
+  const { job, matchedSkills, percent } = scored;
+  return (
+    <div className="card group flex gap-3 p-4 transition hover:border-indigo-300 hover:shadow-md">
+      <MatchRing percent={percent} />
+      <div className="min-w-0 flex-1">
+        <button onClick={onOpen} className="block w-full text-left">
+          <h3 className="truncate font-semibold leading-snug text-slate-800 group-hover:text-indigo-700">
+            {job.title}
+          </h3>
+          <p className="mt-0.5 truncate text-sm text-slate-500">
+            {job.company || "—"} · {job.location}
+          </p>
+        </button>
+        <div className="mt-2 flex flex-wrap items-center gap-1.5">
+          <span className={`chip ${SOURCE_BADGE[job.source]}`}>
+            {SOURCE_LABEL[job.source]}
+          </span>
+          <span className="chip bg-slate-100 text-slate-500">
+            🗓 {formatPosted(job.postedAt)}
+          </span>
+          {status !== "new" && (
+            <span className="chip bg-indigo-100 text-indigo-700">
+              {PIPELINE.find((p) => p.id === status)?.label}
+            </span>
+          )}
+        </div>
+        {matchedSkills.length > 0 && (
+          <div className="mt-2 flex flex-wrap gap-1">
+            {matchedSkills.slice(0, 6).map((s) => (
+              <span key={s} className="chip bg-emerald-50 text-emerald-700">
+                ✓ {s}
+              </span>
+            ))}
+            {matchedSkills.length > 6 && (
+              <span className="chip bg-slate-100 text-slate-500">
+                +{matchedSkills.length - 6}
+              </span>
+            )}
+          </div>
+        )}
+        <div className="mt-3 flex items-center gap-2">
+          <button className="btn-ghost !px-2.5 !py-1 text-xs" onClick={onOpen}>
+            Chi tiết
+          </button>
+          <select
+            className="input !w-auto !py-1 text-xs sm:hidden"
+            value={status}
+            onChange={(e) => onStatusChange(e.target.value as PipelineStatus)}
+            aria-label="Chuyển trạng thái"
+          >
+            {PIPELINE.map((p) => (
+              <option key={p.id} value={p.id}>
+                Chuyển tới: {p.label}
+              </option>
+            ))}
+          </select>
+        </div>
+      </div>
+    </div>
+  );
+}
