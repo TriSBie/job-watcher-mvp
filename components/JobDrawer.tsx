@@ -1,1 +1,204 @@
-InVzZSBjbGllbnQiOwoKaW1wb3J0IHsgdXNlRWZmZWN0LCB1c2VNZW1vLCB1c2VTdGF0ZSB9IGZyb20gInJlYWN0IjsKaW1wb3J0IHsgZXh0cmFjdFNraWxscyB9IGZyb20gIkAvbGliL3NraWxscyI7CmltcG9ydCB0eXBlIHsgUHJvZmlsZSwgU2NvcmVkSm9iIH0gZnJvbSAiQC9saWIvc3RvcmUiOwppbXBvcnQgeyBQSVBFTElORSwgdHlwZSBQaXBlbGluZVN0YXR1cyB9IGZyb20gIkAvbGliL3N0b3JlIjsKaW1wb3J0IHsgTWF0Y2hSaW5nLCBTT1VSQ0VfQkFER0UsIFNPVVJDRV9MQUJFTCwgZm9ybWF0UG9zdGVkIH0gZnJvbSAiLi9Kb2JDYXJkIjsKCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIEpvYkRyYXdlcih7CiAgc2NvcmVkLAogIHByb2ZpbGUsCiAgc3RhdHVzLAogIG5vdGUsCiAgb25DbG9zZSwKICBvblN0YXR1c0NoYW5nZSwKICBvbk5vdGVDaGFuZ2UsCn06IHsKICBzY29yZWQ6IFNjb3JlZEpvYjsKICBwcm9maWxlOiBQcm9maWxlOwogIHN0YXR1czogUGlwZWxpbmVTdGF0dXM7CiAgbm90ZTogc3RyaW5nOwogIG9uQ2xvc2U6ICgpID0+IHZvaWQ7CiAgb25TdGF0dXNDaGFuZ2U6IChzOiBQaXBlbGluZVN0YXR1cykgPT4gdm9pZDsKICBvbk5vdGVDaGFuZ2U6IChub3RlOiBzdHJpbmcpID0+IHZvaWQ7Cn0pIHsKICBjb25zdCB7IGpvYiwgbWF0Y2hlZFNraWxscywgcGVyY2VudCB9ID0gc2NvcmVkOwogIGNvbnN0IFtkZXNjcmlwdGlvbiwgc2V0RGVzY3JpcHRpb25dID0gdXNlU3RhdGU8c3RyaW5nIHwgbnVsbD4obnVsbCk7CiAgY29uc3QgW2RldGFpbEVycm9yLCBzZXREZXRhaWxFcnJvcl0gPSB1c2VTdGF0ZTxzdHJpbmcgfCBudWxsPihudWxsKTsKICBjb25zdCBbbG9hZGluZywgc2V0TG9hZGluZ10gPSB1c2VTdGF0ZSh0cnVlKTsKCiAgdXNlRWZmZWN0KCgpID0+IHsKICAgIGxldCBjYW5jZWxsZWQgPSBmYWxzZTsKICAgIHNldExvYWRpbmcodHJ1ZSk7CiAgICBzZXREZXNjcmlwdGlvbihudWxsKTsKICAgIHNldERldGFpbEVycm9yKG51bGwpOwogICAgZmV0Y2goYC9hcGkvZGV0YWlsP3VybD0ke2VuY29kZVVSSUNvbXBvbmVudChqb2IudXJsKX1gKQogICAgICAudGhlbigocikgPT4gci5qc29uKCkpCiAgICAgIC50aGVuKChkYXRhKSA9PiB7CiAgICAgICAgaWYgKGNhbmNlbGxlZCkgcmV0dXJuOwogICAgICAgIGlmIChkYXRhLmRlc2NyaXB0aW9uKSBzZXREZXNjcmlwdGlvbihkYXRhLmRlc2NyaXB0aW9uIGFzIHN0cmluZyk7CiAgICAgICAgZWxzZSBzZXREZXRhaWxFcnJvcihkYXRhLmVycm9yID8/ICJLaMO0bmcgdOG6o2kgxJHGsOG7o2MgbcO0IHThuqMuIik7CiAgICAgIH0pCiAgICAgIC5jYXRjaCgoKSA9PiB7CiAgICAgICAgaWYgKCFjYW5jZWxsZWQpIHNldERldGFpbEVycm9yKCJLaMO0bmcgdOG6o2kgxJHGsOG7o2MgbcO0IHThuqMgY2hpIHRp4bq/dC4iKTsKICAgICAgfSkKICAgICAgLmZpbmFsbHkoKCkgPT4gewogICAgICAgIGlmICghY2FuY2VsbGVkKSBzZXRMb2FkaW5nKGZhbHNlKTsKICAgICAgfSk7CiAgICByZXR1cm4gKCkgPT4gewogICAgICBjYW5jZWxsZWQgPSB0cnVlOwogICAgfTsKICB9LCBbam9iLnVybF0pOwoKICAvLyBL4bu5IG7Eg25nIHRyb25nIEpEICh0aHXhu5ljIGNhdGFsb2cpIG3DoCBwcm9maWxlIGNoxrBhIGPDsyDihpIgY2hpcHMgdsOgbmcgImPDsm4gdGhp4bq/dSIuCiAgY29uc3QgbWlzc2luZ1NraWxscyA9IHVzZU1lbW8oKCkgPT4gewogICAgaWYgKCFkZXNjcmlwdGlvbikgcmV0dXJuIFtdOwogICAgY29uc3QgaW5KZCA9IGV4dHJhY3RTa2lsbHMoYCR7am9iLnRpdGxlfSAke2Rlc2NyaXB0aW9ufWApOwogICAgcmV0dXJuIGluSmQuZmlsdGVyKAogICAgICAocykgPT4gIXByb2ZpbGUuc2tpbGxzLnNvbWUoKHBzKSA9PiBwcy50b0xvd2VyQ2FzZSgpID09PSBzLnRvTG93ZXJDYXNlKCkpCiAgICApOwogIH0sIFtkZXNjcmlwdGlvbiwgam9iLnRpdGxlLCBwcm9maWxlLnNraWxsc10pOwoKICB1c2VFZmZlY3QoKCkgPT4gewogICAgY29uc3Qgb25LZXkgPSAoZTogS2V5Ym9hcmRFdmVudCkgPT4gewogICAgICBpZiAoZS5rZXkgPT09ICJFc2NhcGUiKSBvbkNsb3NlKCk7CiAgICB9OwogICAgd2luZG93LmFkZEV2ZW50TGlzdGVuZXIoImtleWRvd24iLCBvbktleSk7CiAgICByZXR1cm4gKCkgPT4gd2luZG93LnJlbW92ZUV2ZW50TGlzdGVuZXIoImtleWRvd24iLCBvbktleSk7CiAgfSwgW29uQ2xvc2VdKTsKCiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPSJmaXhlZCBpbnNldC0wIHotNTAgZmxleCBqdXN0aWZ5LWVuZCI+CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJhYnNvbHV0ZSBpbnNldC0wIGJnLXNsYXRlLTkwMC80MCIgb25DbGljaz17b25DbG9zZX0gLz4KICAgICAgPGRpdiBjbGFzc05hbWU9InJlbGF0aXZlIGZsZXggaC1mdWxsIHctZnVsbCBtYXgtdy14bCBmbGV4LWNvbCBvdmVyZmxvdy15LWF1dG8gYmctd2hpdGUgc2hhZG93LTJ4bCI+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9InN0aWNreSB0b3AtMCB6LTEwIGJvcmRlci1iIGJvcmRlci1zbGF0ZS0xMDAgYmctd2hpdGUvOTUgcC01IGJhY2tkcm9wLWJsdXIiPgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtc3RhcnQgZ2FwLTMiPgogICAgICAgICAgICA8TWF0Y2hSaW5nIHBlcmNlbnQ9e3BlcmNlbnR9IC8+CiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJtaW4tdy0wIGZsZXgtMSI+CiAgICAgICAgICAgICAgPGgyIGNsYXNzTmFtZT0idGV4dC1sZyBmb250LWJvbGQgbGVhZGluZy1zbnVnIj57am9iLnRpdGxlfTwvaDI+CiAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJtdC0wLjUgdGV4dC1zbSB0ZXh0LXNsYXRlLTUwMCI+CiAgICAgICAgICAgICAgICB7am9iLmNvbXBhbnkgfHwgIuKAlCJ9IMK3IHtqb2IubG9jYXRpb259CiAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJtdC0yIGZsZXggZmxleC13cmFwIGdhcC0xLjUiPgogICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPXtgY2hpcCAke1NPVVJDRV9CQURHRVtqb2Iuc291cmNlXX1gfT4KICAgICAgICAgICAgICAgICAge1NPVVJDRV9MQUJFTFtqb2Iuc291cmNlXX0KICAgICAgICAgICAgICAgIDwvc3Bhbj4KICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0iY2hpcCBiZy1zbGF0ZS0xMDAgdGV4dC1zbGF0ZS01MDAiPgogICAgICAgICAgICAgICAgICDwn5eTIMSQxINuZyB7Zm9ybWF0UG9zdGVkKGpvYi5wb3N0ZWRBdCl9CiAgICAgICAgICAgICAgICA8L3NwYW4+CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8YnV0dG9uCiAgICAgICAgICAgICAgb25DbGljaz17b25DbG9zZX0KICAgICAgICAgICAgICBhcmlhLWxhYmVsPSLEkMOzbmciCiAgICAgICAgICAgICAgY2xhc3NOYW1lPSJyb3VuZGVkLWxnIHAtMS41IHRleHQtc2xhdGUtNDAwIGhvdmVyOmJnLXNsYXRlLTEwMCBob3Zlcjp0ZXh0LXNsYXRlLTYwMCIKICAgICAgICAgICAgPgogICAgICAgICAgICAgIOKclQogICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9Im10LTQgZmxleCBmbGV4LXdyYXAgaXRlbXMtY2VudGVyIGdhcC0yIj4KICAgICAgICAgICAgPGxhYmVsIGNsYXNzTmFtZT0idGV4dC1zbSB0ZXh0LXNsYXRlLTUwMCI+VHLhuqFuZyB0aMOhaTo8L2xhYmVsPgogICAgICAgICAgICA8c2VsZWN0CiAgICAgICAgICAgICAgY2xhc3NOYW1lPSJpbnB1dCAhdy1hdXRvICFweS0xLjUgdGV4dC1zbSIKICAgICAgICAgICAgICB2YWx1ZT17c3RhdHVzfQogICAgICAgICAgICAgIG9uQ2hhbmdlPXsoZSkgPT4gb25TdGF0dXNDaGFuZ2UoZS50YXJnZXQudmFsdWUgYXMgUGlwZWxpbmVTdGF0dXMpfQogICAgICAgICAgICA+CiAgICAgICAgICAgICAge1BJUEVMSU5FLm1hcCgocCkgPT4gKAogICAgICAgICAgICAgICAgPG9wdGlvbiBrZXk9e3AuaWR9IHZhbHVlPXtwLmlkfT4KICAgICAgICAgICAgICAgICAge3AubGFiZWx9CiAgICAgICAgICAgICAgICA8L29wdGlvbj4KICAgICAgICAgICAgICApKX0KICAgICAgICAgICAgPC9zZWxlY3Q+CiAgICAgICAgICAgIDxhCiAgICAgICAgICAgICAgaHJlZj17am9iLnVybH0KICAgICAgICAgICAgICB0YXJnZXQ9Il9ibGFuayIKICAgICAgICAgICAgICByZWw9Im5vb3BlbmVyIG5vcmVmZXJyZXIiCiAgICAgICAgICAgICAgY2xhc3NOYW1lPSJidG4tcHJpbWFyeSBtbC1hdXRvICFweS0xLjUiCiAgICAgICAgICAgID4KICAgICAgICAgICAgICBYZW0gdGluIGfhu5FjIOKGlwogICAgICAgICAgICA8L2E+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICA8L2Rpdj4KCiAgICAgICAgPGRpdiBjbGFzc05hbWU9InNwYWNlLXktNiBwLTUiPgogICAgICAgICAgPHNlY3Rpb24+CiAgICAgICAgICAgIDxoMyBjbGFzc05hbWU9Im1iLTIgdGV4dC1zbSBmb250LXNlbWlib2xkIHRleHQtc2xhdGUtNzAwIj4KICAgICAgICAgICAgICBL4bu5IG7Eg25nIGto4bubcCAoe21hdGNoZWRTa2lsbHMubGVuZ3RofSkKICAgICAgICAgICAgPC9oMz4KICAgICAgICAgICAge21hdGNoZWRTa2lsbHMubGVuZ3RoID8gKAogICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGZsZXgtd3JhcCBnYXAtMS41Ij4KICAgICAgICAgICAgICAgIHttYXRjaGVkU2tpbGxzLm1hcCgocykgPT4gKAogICAgICAgICAgICAgICAgICA8c3BhbiBrZXk9e3N9IGNsYXNzTmFtZT0iY2hpcCBiZy1lbWVyYWxkLTEwMCB0ZXh0LWVtZXJhbGQtODAwIj4KICAgICAgICAgICAgICAgICAgICDinJMge3N9CiAgICAgICAgICAgICAgICAgIDwvc3Bhbj4KICAgICAgICAgICAgICAgICkpfQogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICApIDogKAogICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC1zbSB0ZXh0LXNsYXRlLTQwMCI+Q2jGsGEgY8OzIGvhu7kgbsSDbmcgbsOgbyBraOG7m3AuPC9wPgogICAgICAgICAgICApfQogICAgICAgICAgPC9zZWN0aW9uPgoKICAgICAgICAgIHttaXNzaW5nU2tpbGxzLmxlbmd0aCA+IDAgJiYgKAogICAgICAgICAgICA8c2VjdGlvbj4KICAgICAgICAgICAgICA8aDMgY2xhc3NOYW1lPSJtYi0yIHRleHQtc20gZm9udC1zZW1pYm9sZCB0ZXh0LXNsYXRlLTcwMCI+CiAgICAgICAgICAgICAgICBKRCB5w6p1IGPhuqd1IHRow6ptICh7bWlzc2luZ1NraWxscy5sZW5ndGh9KSDigJQgY8ahIGjhu5lpIGLhu5Ugc3VuZyBDVgogICAgICAgICAgICAgIDwvaDM+CiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggZmxleC13cmFwIGdhcC0xLjUiPgogICAgICAgICAgICAgICAge21pc3NpbmdTa2lsbHMubWFwKChzKSA9PiAoCiAgICAgICAgICAgICAgICAgIDxzcGFuIGtleT17c30gY2xhc3NOYW1lPSJjaGlwIGJnLWFtYmVyLTEwMCB0ZXh0LWFtYmVyLTgwMCI+CiAgICAgICAgICAgICAgICAgICAgKyB7c30KICAgICAgICAgICAgICAgICAgPC9zcGFuPgogICAgICAgICAgICAgICAgKSl9CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDwvc2VjdGlvbj4KICAgICAgICAgICl9CgogICAgICAgICAgPHNlY3Rpb24+CiAgICAgICAgICAgIDxoMyBjbGFzc05hbWU9Im1iLTIgdGV4dC1zbSBmb250LXNlbWlib2xkIHRleHQtc2xhdGUtNzAwIj5Nw7QgdOG6oyBjw7RuZyB2aeG7h2M8L2gzPgogICAgICAgICAgICB7bG9hZGluZyAmJiA8cCBjbGFzc05hbWU9InRleHQtc20gdGV4dC1zbGF0ZS00MDAiPsSQYW5nIHThuqNpIG3DtCB04bqj4oCmPC9wPn0KICAgICAgICAgICAge2RldGFpbEVycm9yICYmICFkZXNjcmlwdGlvbiAmJiAoCiAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LXNtIHRleHQtc2xhdGUtNDAwIj4KICAgICAgICAgICAgICAgIHtkZXRhaWxFcnJvcn17IiAifQogICAgICAgICAgICAgICAgPGEKICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPSJ0ZXh0LWluZGlnby02MDAgdW5kZXJsaW5lIgogICAgICAgICAgICAgICAgICBocmVmPXtqb2IudXJsfQogICAgICAgICAgICAgICAgICB0YXJnZXQ9Il9ibGFuayIKICAgICAgICAgICAgICAgICAgcmVsPSJub29wZW5lciBub3JlZmVycmVyIgogICAgICAgICAgICAgICAgPgogICAgICAgICAgICAgICAgICBYZW0gdHLhu7FjIHRp4bq/cCB04bqhaSBuZ3Xhu5NuIOKGlwogICAgICAgICAgICAgICAgPC9hPgogICAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgKX0KICAgICAgICAgICAge2Rlc2NyaXB0aW9uICYmICgKICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0id2hpdGVzcGFjZS1wcmUtd3JhcCB0ZXh0LXNtIGxlYWRpbmctcmVsYXhlZCB0ZXh0LXNsYXRlLTYwMCI+CiAgICAgICAgICAgICAgICB7ZGVzY3JpcHRpb259CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICl9CiAgICAgICAgICA8L3NlY3Rpb24+CgogICAgICAgICAgPHNlY3Rpb24+CiAgICAgICAgICAgIDxoMyBjbGFzc05hbWU9Im1iLTIgdGV4dC1zbSBmb250LXNlbWlib2xkIHRleHQtc2xhdGUtNzAwIj4KICAgICAgICAgICAgICBHaGkgY2jDuiBj4bunYSB7cHJvZmlsZS5uYW1lfQogICAgICAgICAgICA8L2gzPgogICAgICAgICAgICA8dGV4dGFyZWEKICAgICAgICAgICAgICBjbGFzc05hbWU9ImlucHV0IG1pbi1oLTI0IgogICAgICAgICAgICAgIHBsYWNlaG9sZGVyPSJHaGkgY2jDuiByacOqbmcgY2hvIGpvYiBuw6B5IChjaOG7iSBsxrB1IHRyw6puIHRyw6xuaCBkdXnhu4d0IGPhu6dhIGLhuqFuKeKApiIKICAgICAgICAgICAgICB2YWx1ZT17bm90ZX0KICAgICAgICAgICAgICBvbkNoYW5nZT17KGUpID0+IG9uTm90ZUNoYW5nZShlLnRhcmdldC52YWx1ZSl9CiAgICAgICAgICAgIC8+CiAgICAgICAgICA8L3NlY3Rpb24+CgogICAgICAgICAgPGEKICAgICAgICAgICAgaHJlZj17am9iLnVybH0KICAgICAgICAgICAgdGFyZ2V0PSJfYmxhbmsiCiAgICAgICAgICAgIHJlbD0ibm9vcGVuZXIgbm9yZWZlcnJlciIKICAgICAgICAgICAgY2xhc3NOYW1lPSJidG4tZ2hvc3Qgdy1mdWxsICFweS0yLjUiCiAgICAgICAgICA+CiAgICAgICAgICAgIOKGlyBYZW0gdHJhbmcgY2hpIHRp4bq/dCBn4buRYyB04bqhaSB7U09VUkNFX0xBQkVMW2pvYi5zb3VyY2VdfQogICAgICAgICAgPC9hPgogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KICAgIDwvZGl2PgogICk7Cn0K
+"use client";
+
+import { useEffect, useMemo, useState } from "react";
+import { extractSkills } from "@/lib/skills";
+import type { Profile, ScoredJob } from "@/lib/store";
+import { PIPELINE, type PipelineStatus } from "@/lib/store";
+import { MatchRing, SOURCE_BADGE, SOURCE_LABEL, formatPosted } from "./JobCard";
+
+export default function JobDrawer({
+  scored,
+  profile,
+  status,
+  note,
+  onClose,
+  onStatusChange,
+  onNoteChange,
+}: {
+  scored: ScoredJob;
+  profile: Profile;
+  status: PipelineStatus;
+  note: string;
+  onClose: () => void;
+  onStatusChange: (s: PipelineStatus) => void;
+  onNoteChange: (note: string) => void;
+}) {
+  const { job, matchedSkills, percent } = scored;
+  const [description, setDescription] = useState<string | null>(null);
+  const [detailError, setDetailError] = useState<string | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    let cancelled = false;
+    setLoading(true);
+    setDescription(null);
+    setDetailError(null);
+    fetch(`/api/detail?url=${encodeURIComponent(job.url)}`)
+      .then((r) => r.json())
+      .then((data) => {
+        if (cancelled) return;
+        if (data.description) setDescription(data.description as string);
+        else setDetailError(data.error ?? "Không tải được mô tả.");
+      })
+      .catch(() => {
+        if (!cancelled) setDetailError("Không tải được mô tả chi tiết.");
+      })
+      .finally(() => {
+        if (!cancelled) setLoading(false);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [job.url]);
+
+  // Kỹ năng trong JD (thuộc catalog) mà profile chưa có → chips vàng "còn thiếu".
+  const missingSkills = useMemo(() => {
+    if (!description) return [];
+    const inJd = extractSkills(`${job.title} ${description}`);
+    return inJd.filter(
+      (s) => !profile.skills.some((ps) => ps.toLowerCase() === s.toLowerCase())
+    );
+  }, [description, job.title, profile.skills]);
+
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [onClose]);
+
+  return (
+    <div className="fixed inset-0 z-50 flex justify-end">
+      <div className="absolute inset-0 bg-slate-900/40" onClick={onClose} />
+      <div className="relative flex h-full w-full max-w-xl flex-col overflow-y-auto bg-white shadow-2xl">
+        <div className="sticky top-0 z-10 border-b border-slate-100 bg-white/95 p-5 backdrop-blur">
+          <div className="flex items-start gap-3">
+            <MatchRing percent={percent} />
+            <div className="min-w-0 flex-1">
+              <h2 className="text-lg font-bold leading-snug">{job.title}</h2>
+              <p className="mt-0.5 text-sm text-slate-500">
+                {job.company || "—"} · {job.location}
+              </p>
+              <div className="mt-2 flex flex-wrap gap-1.5">
+                <span className={`chip ${SOURCE_BADGE[job.source]}`}>
+                  {SOURCE_LABEL[job.source]}
+                </span>
+                <span className="chip bg-slate-100 text-slate-500">
+                  🗓 Đăng {formatPosted(job.postedAt)}
+                </span>
+              </div>
+            </div>
+            <button
+              onClick={onClose}
+              aria-label="Đóng"
+              className="rounded-lg p-1.5 text-slate-400 hover:bg-slate-100 hover:text-slate-600"
+            >
+              ✕
+            </button>
+          </div>
+          <div className="mt-4 flex flex-wrap items-center gap-2">
+            <label className="text-sm text-slate-500">Trạng thái:</label>
+            <select
+              className="input !w-auto !py-1.5 text-sm"
+              value={status}
+              onChange={(e) => onStatusChange(e.target.value as PipelineStatus)}
+            >
+              {PIPELINE.map((p) => (
+                <option key={p.id} value={p.id}>
+                  {p.label}
+                </option>
+              ))}
+            </select>
+            <a
+              href={job.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary ml-auto !py-1.5"
+            >
+              Xem tin gốc ↗
+            </a>
+          </div>
+        </div>
+
+        <div className="space-y-6 p-5">
+          <section>
+            <h3 className="mb-2 text-sm font-semibold text-slate-700">
+              Kỹ năng khớp ({matchedSkills.length})
+            </h3>
+            {matchedSkills.length ? (
+              <div className="flex flex-wrap gap-1.5">
+                {matchedSkills.map((s) => (
+                  <span key={s} className="chip bg-emerald-100 text-emerald-800">
+                    ✓ {s}
+                  </span>
+                ))}
+              </div>
+            ) : (
+              <p className="text-sm text-slate-400">Chưa có kỹ năng nào khớp.</p>
+            )}
+          </section>
+
+          {missingSkills.length > 0 && (
+            <section>
+              <h3 className="mb-2 text-sm font-semibold text-slate-700">
+                JD yêu cầu thêm ({missingSkills.length}) — cơ hội bổ sung CV
+              </h3>
+              <div className="flex flex-wrap gap-1.5">
+                {missingSkills.map((s) => (
+                  <span key={s} className="chip bg-amber-100 text-amber-800">
+                    + {s}
+                  </span>
+                ))}
+              </div>
+            </section>
+          )}
+
+          <section>
+            <h3 className="mb-2 text-sm font-semibold text-slate-700">Mô tả công việc</h3>
+            {loading && <p className="text-sm text-slate-400">Đang tải mô tả…</p>}
+            {detailError && !description && (
+              <p className="text-sm text-slate-400">
+                {detailError}{" "}
+                <a
+                  className="text-indigo-600 underline"
+                  href={job.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Xem trực tiếp tại nguồn ↗
+                </a>
+              </p>
+            )}
+            {description && (
+              <div className="whitespace-pre-wrap text-sm leading-relaxed text-slate-600">
+                {description}
+              </div>
+            )}
+          </section>
+
+          <section>
+            <h3 className="mb-2 text-sm font-semibold text-slate-700">
+              Ghi chú của {profile.name}
+            </h3>
+            <textarea
+              className="input min-h-24"
+              placeholder="Ghi chú riêng cho job này (chỉ lưu trên trình duyệt của bạn)…"
+              value={note}
+              onChange={(e) => onNoteChange(e.target.value)}
+            />
+          </section>
+
+          <a
+            href={job.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-ghost w-full !py-2.5"
+          >
+            ↗ Xem trang chi tiết gốc tại {SOURCE_LABEL[job.source]}
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
