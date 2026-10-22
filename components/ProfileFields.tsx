@@ -37,10 +37,10 @@ export function SkillPicker({
             onClick={() => toggle(s)}
             className={`chip border transition ${
               active
-                ? "border-indigo-600 bg-indigo-600 text-white"
+                ? "border-accent bg-accent text-white"
                 : isSuggested
-                  ? "border-amber-300 bg-amber-50 text-amber-800 hover:border-amber-400"
-                  : "border-slate-200 bg-white text-slate-600 hover:border-indigo-300"
+                  ? "border-amber-400/40 bg-amber-400/10 text-amber-200 hover:border-amber-400/70"
+                  : "border-line bg-surface-raised text-ink-secondary hover:border-white/[0.18] hover:text-ink"
             }`}
           >
             {s}
@@ -65,13 +65,13 @@ export function KeywordInput({
         {keywords.map((k) => (
           <span
             key={k}
-            className="chip border border-indigo-200 bg-indigo-50 text-indigo-700"
+            className="chip border border-accent/30 bg-accent/10 text-accent-hover"
           >
             {k}
             <button
               type="button"
               aria-label={`Xoá từ khoá ${k}`}
-              className="ml-1 text-indigo-400 hover:text-indigo-700"
+              className="ml-1 text-accent-hover/60 transition hover:text-accent-hover"
               onClick={() => onChange(keywords.filter((x) => x !== k))}
             >
               ×
@@ -91,7 +91,7 @@ export function KeywordInput({
           }
         }}
       />
-      <p className="mt-1 text-xs text-slate-400">
+      <p className="mt-1 text-xs text-ink-muted">
         Từ khoá dùng để gợi ý mức độ liên quan; job pool được hệ thống quét sẵn từ
         LinkedIn, ITviec, TopDev.
       </p>
