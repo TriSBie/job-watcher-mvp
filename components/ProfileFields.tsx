@@ -10,6 +10,15 @@ export const LOCATIONS = [
   "Remote",
 ];
 
+export const KEYWORD_SUGGESTIONS = [
+  "backend developer",
+  "fullstack developer",
+  "java developer",
+  "node.js developer",
+  "software engineer",
+  "frontend developer",
+];
+
 export function SkillPicker({
   selected,
   onChange,
@@ -44,7 +53,7 @@ export function SkillPicker({
             }`}
           >
             {s}
-            {isSuggested && !active ? " ✦" : ""}
+            {isSuggested ? " ✦" : ""}
           </button>
         );
       })}
