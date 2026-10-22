@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
-import { skillInText } from "./skills";
+import { extractSkills, normalizeKey } from "./skills";
 
 export type SourceId = "linkedin" | "itviec" | "topdev";
 export type SourceStatus = Record<SourceId, "ok" | "error">;
@@ -151,22 +151,69 @@ export function useAppState() {
   return { state, hydrated, addProfile, updateProfile, deleteProfile, setMatch };
 }
 
+/** Tập kỹ năng một job yêu cầu: trường skills của pool + trích thêm từ title.
+ *  Dùng THỐNG NHẤT ở trang chủ, dashboard và chấm điểm để số liệu không lệch nhau. */
+export function jobSkillSet(job: PoolJob): string[] {
+  return [...new Set([...job.skills, ...extractSkills(job.title)])];
+}
+
+/** Ngày hiệu dụng của job: ngày đăng; thiếu thì dùng ngày hệ thống thấy lần đầu. */
+export function jobDateMs(job: PoolJob): number {
+  if (job.postedAt) {
+    const t = new Date(`${job.postedAt}T00:00:00`).getTime();
+    if (!Number.isNaN(t)) return t;
+  }
+  return job.firstSeenAt;
+}
+
+/** Đếm số job theo từng kỹ năng (mỗi job đếm 1 lần cho mỗi kỹ năng nó yêu cầu). */
+export function countJobSkills(jobs: PoolJob[]): Map<string, number> {
+  const counts = new Map<string, number>();
+  for (const j of jobs) {
+    for (const s of jobSkillSet(j)) counts.set(s, (counts.get(s) ?? 0) + 1);
+  }
+  return counts;
+}
+
 export interface ScoredJob {
   job: PoolJob;
   matchedSkills: string[];
-  score: number;
-  percent: number; // 0..100
+  score: number; // số kỹ năng của hồ sơ khớp với yêu cầu của job
+  reqCount: number; // tổng số kỹ năng job yêu cầu
+  coverage: number; // 0..1 — tỉ lệ yêu cầu của job mà hồ sơ đáp ứng được
+  percent: number; // 0..100 — điểm tổng hợp (coverage + mức liên quan của title)
   level: "strong" | "partial" | "weak";
 }
 
-/** Chấm điểm 1 job trong pool theo skills của profile (chạy ở client). */
-export function scoreJob(job: PoolJob, profileSkills: string[]): ScoredJob {
-  const text = `${job.title} ${job.snippet} ${job.skills.join(" ")}`;
-  const matchedSkills = profileSkills.filter((s) => skillInText(s, text));
+/** Chấm điểm 1 job theo hồ sơ (chạy ở client).
+ *  Công thức: percent = 80% × coverage + 20% × độ liên quan của title với từ khoá hồ sơ,
+ *  trong đó coverage = số skill khớp / số skill JOB yêu cầu (không phải / số skill của hồ sơ —
+ *  nên CV càng đầy đủ điểm càng cao hoặc bằng, không bao giờ tụt). */
+export function scoreJob(
+  job: PoolJob,
+  profile: Pick<Profile, "skills" | "keywords">
+): ScoredJob {
+  const req = jobSkillSet(job);
+  const reqKeys = new Set(req.map((s) => normalizeKey(s)));
+  const matchedSkills = profile.skills.filter((s) => reqKeys.has(normalizeKey(s)));
   const score = matchedSkills.length;
-  const percent = profileSkills.length
-    ? Math.round((score / profileSkills.length) * 100)
-    : 0;
-  const level: ScoredJob["level"] = score >= 4 ? "strong" : score >= 2 ? "partial" : "weak";
-  return { job, matchedSkills, score, percent, level };
+  const coverage = req.length ? score / req.length : 0;
+
+  const titleN = normalizeKey(job.title);
+  const kwHit = profile.keywords.some((k) => {
+    const kn = normalizeKey(k);
+    return kn.length > 0 && titleN.includes(kn);
+  });
+  let titleRel = 0;
+  if (kwHit) titleRel = 1;
+  else if (matchedSkills.some((s) => titleN.includes(normalizeKey(s)))) titleRel = 0.6;
+  else if (/(developer|engineer|programmer|software|backend|fullstack|full stack|back end)/.test(titleN))
+    titleRel = 0.3;
+
+  const percent = req.length
+    ? Math.round(100 * (0.8 * coverage + 0.2 * titleRel))
+    : Math.round(40 * titleRel);
+  const level: ScoredJob["level"] =
+    percent >= 60 && score >= 3 ? "strong" : percent >= 35 || score >= 2 ? "partial" : "weak";
+  return { job, matchedSkills, score, reqCount: req.length, coverage, percent, level };
 }
