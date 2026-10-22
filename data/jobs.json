@@ -1,43 +1,11 @@
 {
- "updatedAt": "2026-10-22T01:33:19.537Z",
+ "updatedAt": "2026-10-22T02:46:58.980Z",
  "sourceStatus": {
   "linkedin": "ok",
   "itviec": "ok",
   "topdev": "ok"
  },
  "runs": [
-  {
-   "at": "2026-10-21T14:20:17.111Z",
-   "fetched": 201,
-   "added": 9,
-   "total": 61,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 81
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-10-21T14:35:44.977Z",
-   "fetched": 192,
-   "added": 5,
-   "total": 61,
-   "perSource": {
-    "linkedin": 0,
-    "itviec": 100,
-    "topdev": 92
-   },
-   "sourceStatus": {
-    "linkedin": "error",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
   {
    "at": "2026-10-21T15:05:48.100Z",
    "fetched": 212,
@@ -197,9 +165,53 @@
     "itviec": "ok",
     "topdev": "ok"
    }
+  },
+  {
+   "at": "2026-10-22T02:15:14.967Z",
+   "fetched": 214,
+   "added": 10,
+   "total": 61,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 94
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-10-22T02:46:58.980Z",
+   "fetched": 216,
+   "added": 11,
+   "total": 62,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 96
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
   }
  ],
  "jobs": [
+  {
+   "id": "linkedin:4481180595",
+   "title": "Junior Back End Developer",
+   "company": "LF Global Tech Pte Ltd",
+   "location": "Ho Chi Minh City, Vietnam",
+   "url": "https://vn.linkedin.com/jobs/view/junior-back-end-developer-at-lf-global-tech-pte-ltd-4481180595",
+   "source": "linkedin",
+   "postedAt": "2026-10-22",
+   "snippet": "",
+   "skills": [],
+   "firstSeenAt": 1792637218980
+  },
   {
    "id": "itviec:technical-scrum-master-itviec-recruitment-consulting-3104",
    "title": "Technical Scrum Master",
@@ -296,25 +308,6 @@
    "firstSeenAt": 1792577156501
   },
   {
-   "id": "itviec:remote-fullstack-developer-typescript-node-js-nestjs-orgscale-recruitment-4352",
-   "title": "Remote-Fullstack Developer(TypeScript, Node.js, NestJS)",
-   "company": "OrgScale Recruitment",
-   "location": "remote",
-   "url": "https://itviec.com/it-jobs/remote-fullstack-developer-typescript-node-js-nestjs-orgscale-recruitment-4352",
-   "source": "itviec",
-   "postedAt": "2026-10-21",
-   "snippet": "",
-   "skills": [
-    "TypeScript",
-    "MySQL",
-    "PostgreSQL",
-    "React",
-    "NestJS",
-    "Node.js"
-   ],
-   "firstSeenAt": 1792483383856
-  },
-  {
    "id": "itviec:front-end-developer-php-javascript-html-css-incepit-4351",
    "title": "Front-End Developer (PHP, Javascript, HTML, CSS)",
    "company": "IncepIT",
@@ -330,6 +323,25 @@
     "MySQL",
     "AWS",
     "PHP"
+   ],
+   "firstSeenAt": 1792483383856
+  },
+  {
+   "id": "itviec:remote-fullstack-developer-typescript-node-js-nestjs-orgscale-recruitment-4352",
+   "title": "Remote-Fullstack Developer(TypeScript, Node.js, NestJS)",
+   "company": "OrgScale Recruitment",
+   "location": "remote",
+   "url": "https://itviec.com/it-jobs/remote-fullstack-developer-typescript-node-js-nestjs-orgscale-recruitment-4352",
+   "source": "itviec",
+   "postedAt": "2026-10-20",
+   "snippet": "",
+   "skills": [
+    "TypeScript",
+    "MySQL",
+    "PostgreSQL",
+    "React",
+    "NestJS",
+    "Node.js"
    ],
    "firstSeenAt": 1792483383856
   },
@@ -496,25 +508,6 @@
    "firstSeenAt": 1792483383856
   },
   {
-   "id": "itviec:java-backend-developer-java-17-spring-boot-english-bbv-vietnam-1949",
-   "title": "Java Backend Developer (Java 17+, Spring Boot, English)",
-   "company": "bbv Vietnam",
-   "location": "Ho Chi Minh",
-   "url": "https://itviec.com/it-jobs/java-backend-developer-java-17-spring-boot-english-bbv-vietnam-1949",
-   "source": "itviec",
-   "postedAt": "2026-10-17",
-   "snippet": "",
-   "skills": [
-    "Java",
-    "Spring Boot",
-    "Kafka",
-    "SQL",
-    "Agile",
-    "English"
-   ],
-   "firstSeenAt": 1792483383856
-  },
-  {
    "id": "itviec:software-developer-net-power-bi-microsoft-dynamics-mdc-precision-vietnam-1530",
    "title": "Software Developer (.NET, Power BI, Microsoft Dynamics)",
    "company": "MDC Precision Vietnam",
@@ -549,6 +542,25 @@
     ".NET",
     "JavaScript",
     "SQL"
+   ],
+   "firstSeenAt": 1792483383856
+  },
+  {
+   "id": "itviec:java-backend-developer-java-17-spring-boot-english-bbv-vietnam-1949",
+   "title": "Java Backend Developer (Java 17+, Spring Boot, English)",
+   "company": "bbv Vietnam",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/java-backend-developer-java-17-spring-boot-english-bbv-vietnam-1949",
+   "source": "itviec",
+   "postedAt": "2026-10-16",
+   "snippet": "",
+   "skills": [
+    "Java",
+    "Spring Boot",
+    "Kafka",
+    "SQL",
+    "Agile",
+    "English"
    ],
    "firstSeenAt": 1792483383856
   },
@@ -724,15 +736,17 @@
     "React",
     "Restful Api",
     "TypeScript",
-    "PHP",
-    "UX/UI Design",
-    "Java",
-    "JavaScript",
-    "Vue.js",
-    "Angular",
-    "Bán hàng",
-    "Phát triển kinh doanh",
-    "Sales B2B"
+    "Korean",
+    "Ngân hàng doanh nghiệp",
+    "Application Support",
+    "Hỗ trợ kỹ thuật",
+    "Quản lý và Xử lý phiếu hỗ trợ",
+    "Lập trình (Java/Python/C#...)",
+    "Tư duy logic / giải quyết vấn đề",
+    "Tiếng Anh đọc hiểu tài liệu",
+    "Power BI / Tableau",
+    "Xử lý sự cố phần cứng/phần mềm",
+    "Ruby on Rails"
    ],
    "firstSeenAt": 1792483383856
   },
@@ -862,21 +876,12 @@
     "Automation QA",
     "Selenium",
     "Postman",
-    "JavaScript",
-    "Node.js",
-    "Web/ Mobile",
-    "DevOps",
-    "Software Developer",
-    "Business Analyst",
-    "Integration Test",
-    "HR",
-    "C\\u0026B",
-    "English",
-    "Product",
-    "Sales B2B",
-    "Agile \\u0026 Scrum",
-    "API",
-    "Banking \\u0026 Finance"
+    "Accounting",
+    "Financial Accounting",
+    "Internal Accounting",
+    "Korean",
+    "Business Planning",
+    "Planning"
    ],
    "firstSeenAt": 1792483383856
   },
@@ -1306,11 +1311,9 @@
     "React",
     "Web Developer",
     "PHP",
-    "UX/UI Design",
+    "Magento",
     "Java",
-    "JavaScript",
-    "Vue.js",
-    "Angular",
+    "MySQL",
     "Korean",
     "Accounting",
     "Business Planning",
