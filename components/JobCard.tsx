@@ -18,10 +18,10 @@ export const SOURCE_BADGE: Record<SourceId, string> = {
 export function MatchRing({ percent, small }: { percent: number; small?: boolean }) {
   const r = 15;
   const c = 2 * Math.PI * r;
-  const color = percent >= 40 ? "#34d399" : percent >= 20 ? "#fbbf24" : "#62666b";
+  const color = percent >= 60 ? "#34d399" : percent >= 35 ? "#fbbf24" : "#62666b";
   const box = small ? "h-8 w-8" : "h-11 w-11";
   return (
-    <div className={`relative ${box} shrink-0`} title={`Khớp ${percent}% kỹ năng`}>
+    <div className={`relative ${box} shrink-0`} title={`Đáp ứng ${percent}% yêu cầu của job`}>
       <svg viewBox="0 0 36 36" className={`${box} -rotate-90`}>
         <circle
           cx="18"
