@@ -5,9 +5,11 @@ export const dynamic = "force-dynamic";
 
 // Job pool dùng chung được GitHub Actions ingest vào data/jobs.json trong repo,
 // route này đọc qua CDN/raw của GitHub rồi trả kèm cache header cho client.
+// Ưu tiên raw.githubusercontent vì jsDelivr @main từng kẹt bản cũ ở một số PoP
+// dù đã purge (thấy ngày 22/10/2026); raw luôn tươi theo commit mới nhất.
 const SOURCES = [
-  "https://cdn.jsdelivr.net/gh/TriSBie/job-watcher-mvp@main/data/jobs.json",
   "https://raw.githubusercontent.com/TriSBie/job-watcher-mvp/main/data/jobs.json",
+  "https://cdn.jsdelivr.net/gh/TriSBie/job-watcher-mvp@main/data/jobs.json",
 ];
 
 export async function GET() {
