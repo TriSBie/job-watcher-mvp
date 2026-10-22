@@ -4,7 +4,15 @@ import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { fetchLinkedIn, fetchITviec, fetchTopDev } from "./sources.mjs";
+import {
+  fetchLinkedIn,
+  fetchLinkedInDetail,
+  fetchITviec,
+  fetchTopDev,
+  extractSkillsFromText,
+  filterTechTags,
+  decodeUnicodeEscapes,
+} from "./sources.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_FILE = path.join(__dirname, "..", "data", "jobs.json");
@@ -75,9 +83,16 @@ async function main() {
         continue;
       }
       if (pool.has(job.id)) {
-        // cập nhật nhẹ: giữ firstSeenAt cũ, làm mới postedAt/skills nếu có
+        // cập nhật nhẹ: giữ firstSeenAt cũ, làm mới postedAt/skills nếu có.
+        // QUAN TRỌNG: không để skills/snippet rỗng của bản fetch mới ghi đè dữ
+        // liệu đã trích được từ JD ở các lần trước (LinkedIn hay dính 429).
         const old = pool.get(job.id);
-        pool.set(job.id, { ...old, ...job, firstSeenAt: old.firstSeenAt });
+        const merged = { ...old, ...job, firstSeenAt: old.firstSeenAt };
+        if (!(job.skills && job.skills.length) && old.skills && old.skills.length) {
+          merged.skills = old.skills;
+        }
+        if (!job.snippet && old.snippet) merged.snippet = old.snippet;
+        pool.set(job.id, merged);
         continue;
       }
       const ck = crossKey(job);
@@ -92,6 +107,30 @@ async function main() {
   try {
     const jobs = await fetchLinkedIn("backend developer", LOCATION);
     perSource.linkedin = jobs.length;
+    // Trang search LinkedIn không trả skills — lấy JD của job mới (và job cũ
+    // còn trống skills) để trích kỹ năng. Guest API rất dễ dính 429 nên mỗi lần
+    // ingest chỉ lấy tối đa 12 JD, giãn cách rộng, và dừng ngay khi gặp 429 —
+    // phần còn thiếu sẽ được bù dần ở các lần ingest sau.
+    let detailBudget = 12;
+    for (const job of jobs) {
+      if (detailBudget <= 0) break;
+      const old = pool.get(job.id);
+      const needsSkills = !old || !(old.skills && old.skills.length);
+      if (!needsSkills || job.skills.length) continue;
+      detailBudget--;
+      try {
+        const extId = job.id.replace("linkedin:", "");
+        const jd = await fetchLinkedInDetail(extId);
+        if (jd) {
+          job.skills = extractSkillsFromText(jd);
+          job.snippet = jd.slice(0, 280);
+        }
+      } catch (e) {
+        console.error(`LinkedIn detail ${job.id} lỗi:`, e.message);
+        if (String(e.message).includes("429")) break;
+      }
+      await new Promise((r) => setTimeout(r, 900));
+    }
     ingestJobs(jobs, "linkedin");
   } catch (e) {
     sourceStatus.linkedin = "error";
@@ -132,6 +171,16 @@ async function main() {
     if (okCount === 0) sourceStatus.topdev = "error";
   } catch {
     sourceStatus.topdev = "error";
+  }
+
+  // Vệ sinh dữ liệu cũ: job TopDev nạp từ các lần trước (chưa qua whitelist)
+  // vẫn còn tag rác — lọc lại ngay tại pool trước khi ghi ra.
+  for (const j of pool.values()) {
+    j.title = decodeUnicodeEscapes(j.title ?? "");
+    if (j.company) j.company = decodeUnicodeEscapes(j.company);
+    if (j.source === "topdev" && Array.isArray(j.skills)) {
+      j.skills = filterTechTags(j.skills);
+    }
   }
 
   // Dọn job quá 30 ngày (theo postedAt, thiếu thì theo firstSeenAt)
