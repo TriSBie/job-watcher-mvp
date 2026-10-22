@@ -51,7 +51,7 @@ export default function JobDrawer({
     };
   }, [job.url]);
 
-  // Kỹ năng trong JD (thuộc catalog) mà profile chưa có → chips vàng "còn thiếu".
+  // Kỹ năng trong JD (thuộc catalog) mà profile chưa có → chips "còn thiếu".
   const missingSkills = useMemo(() => {
     if (!description) return [];
     const inJd = extractSkills(`${job.title} ${description}`);
@@ -70,35 +70,37 @@ export default function JobDrawer({
 
   return (
     <div className="fixed inset-0 z-50 flex justify-end">
-      <div className="absolute inset-0 bg-slate-900/40" onClick={onClose} />
-      <div className="relative flex h-full w-full max-w-xl flex-col overflow-y-auto bg-white shadow-2xl">
-        <div className="sticky top-0 z-10 border-b border-slate-100 bg-white/95 p-5 backdrop-blur">
+      <div className="absolute inset-0 bg-black/60" onClick={onClose} />
+      <div className="relative flex h-full w-full max-w-xl flex-col overflow-y-auto border-l border-line bg-surface shadow-2xl">
+        <div className="sticky top-0 z-10 border-b border-line bg-surface/95 p-5 backdrop-blur">
           <div className="flex items-start gap-3">
             <MatchRing percent={percent} />
             <div className="min-w-0 flex-1">
-              <h2 className="text-lg font-bold leading-snug">{job.title}</h2>
-              <p className="mt-0.5 text-sm text-slate-500">
+              <h2 className="text-lg font-semibold leading-snug tracking-[-0.02em] text-ink">
+                {job.title}
+              </h2>
+              <p className="mt-0.5 text-sm text-ink-secondary">
                 {job.company || "—"} · {job.location}
               </p>
               <div className="mt-2 flex flex-wrap gap-1.5">
                 <span className={`chip ${SOURCE_BADGE[job.source]}`}>
                   {SOURCE_LABEL[job.source]}
                 </span>
-                <span className="chip bg-slate-100 text-slate-500">
-                  🗓 Đăng {formatPosted(job.postedAt)}
+                <span className="chip bg-white/[0.04] tabular-nums text-ink-muted">
+                  Đăng {formatPosted(job.postedAt)}
                 </span>
               </div>
             </div>
             <button
               onClick={onClose}
               aria-label="Đóng"
-              className="rounded-lg p-1.5 text-slate-400 hover:bg-slate-100 hover:text-slate-600"
+              className="rounded-lg p-1.5 text-ink-muted transition hover:bg-white/[0.06] hover:text-ink"
             >
               ✕
             </button>
           </div>
           <div className="mt-4 flex flex-wrap items-center gap-2">
-            <label className="text-sm text-slate-500">Trạng thái:</label>
+            <label className="text-sm text-ink-secondary">Trạng thái:</label>
             <select
               className="input !w-auto !py-1.5 text-sm"
               value={status}
@@ -123,30 +125,30 @@ export default function JobDrawer({
 
         <div className="space-y-6 p-5">
           <section>
-            <h3 className="mb-2 text-sm font-semibold text-slate-700">
+            <h3 className="mb-2 text-sm font-medium text-ink">
               Kỹ năng khớp ({matchedSkills.length})
             </h3>
             {matchedSkills.length ? (
               <div className="flex flex-wrap gap-1.5">
                 {matchedSkills.map((s) => (
-                  <span key={s} className="chip bg-emerald-100 text-emerald-800">
+                  <span key={s} className="chip bg-emerald-400/10 text-emerald-300">
                     ✓ {s}
                   </span>
                 ))}
               </div>
             ) : (
-              <p className="text-sm text-slate-400">Chưa có kỹ năng nào khớp.</p>
+              <p className="text-sm text-ink-muted">Chưa có kỹ năng nào khớp.</p>
             )}
           </section>
 
           {missingSkills.length > 0 && (
             <section>
-              <h3 className="mb-2 text-sm font-semibold text-slate-700">
+              <h3 className="mb-2 text-sm font-medium text-ink">
                 JD yêu cầu thêm ({missingSkills.length}) — cơ hội bổ sung CV
               </h3>
               <div className="flex flex-wrap gap-1.5">
                 {missingSkills.map((s) => (
-                  <span key={s} className="chip bg-amber-100 text-amber-800">
+                  <span key={s} className="chip bg-amber-400/10 text-amber-300">
                     + {s}
                   </span>
                 ))}
@@ -155,13 +157,13 @@ export default function JobDrawer({
           )}
 
           <section>
-            <h3 className="mb-2 text-sm font-semibold text-slate-700">Mô tả công việc</h3>
-            {loading && <p className="text-sm text-slate-400">Đang tải mô tả…</p>}
+            <h3 className="mb-2 text-sm font-medium text-ink">Mô tả công việc</h3>
+            {loading && <p className="text-sm text-ink-muted">Đang tải mô tả…</p>}
             {detailError && !description && (
-              <p className="text-sm text-slate-400">
+              <p className="text-sm text-ink-muted">
                 {detailError}{" "}
                 <a
-                  className="text-indigo-600 underline"
+                  className="text-accent-hover underline"
                   href={job.url}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -171,14 +173,14 @@ export default function JobDrawer({
               </p>
             )}
             {description && (
-              <div className="whitespace-pre-wrap text-sm leading-relaxed text-slate-600">
+              <div className="whitespace-pre-wrap text-sm leading-relaxed text-ink-secondary">
                 {description}
               </div>
             )}
           </section>
 
           <section>
-            <h3 className="mb-2 text-sm font-semibold text-slate-700">
+            <h3 className="mb-2 text-sm font-medium text-ink">
               Ghi chú của {profile.name}
             </h3>
             <textarea
