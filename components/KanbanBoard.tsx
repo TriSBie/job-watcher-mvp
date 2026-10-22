@@ -33,8 +33,8 @@ export default function KanbanBoard({
             key={col.id}
             className={`flex w-60 shrink-0 snap-start flex-col overflow-hidden rounded-2xl border transition sm:w-64 ${
               dragOver === col.id
-                ? "border-indigo-400 bg-indigo-50"
-                : "border-slate-200 bg-slate-100/60"
+                ? "border-accent bg-accent/[0.07]"
+                : "border-line bg-surface"
             }`}
             onDragOver={(e) => {
               e.preventDefault();
@@ -48,9 +48,11 @@ export default function KanbanBoard({
               setDragOver(null);
             }}
           >
-            <div className="flex shrink-0 items-center justify-between border-b border-slate-200/70 bg-inherit px-3 py-2">
-              <h3 className="text-sm font-semibold text-slate-700">{col.label}</h3>
-              <span className="chip bg-white text-slate-500">{colItems.length}</span>
+            <div className="flex shrink-0 items-center justify-between border-b border-line px-3 py-2">
+              <h3 className="text-[13px] font-medium text-ink">{col.label}</h3>
+              <span className="chip bg-white/[0.05] tabular-nums text-ink-secondary">
+                {colItems.length}
+              </span>
             </div>
             <div className="min-h-0 flex-1 space-y-2 overflow-y-auto p-2">
               {colItems.map(({ scored }) => (
@@ -62,7 +64,7 @@ export default function KanbanBoard({
                     setDragJob(null);
                     setDragOver(null);
                   }}
-                  className="card cursor-grab p-2.5 active:cursor-grabbing"
+                  className="card cursor-grab p-2.5 transition hover:border-white/[0.14] hover:bg-surface-raised active:cursor-grabbing"
                 >
                   <button
                     className="flex w-full items-start gap-2 text-left"
@@ -70,10 +72,10 @@ export default function KanbanBoard({
                   >
                     <MatchRing percent={scored.percent} small />
                     <span className="min-w-0">
-                      <span className="block text-[13px] font-semibold leading-snug text-slate-800 line-clamp-2">
+                      <span className="block text-[13px] font-medium leading-snug text-ink line-clamp-2">
                         {scored.job.title}
                       </span>
-                      <span className="mt-0.5 block truncate text-xs text-slate-500">
+                      <span className="mt-0.5 block truncate text-xs text-ink-secondary">
                         {scored.job.company || "—"}
                       </span>
                     </span>
@@ -82,19 +84,19 @@ export default function KanbanBoard({
                     <span className={`chip ${SOURCE_BADGE[scored.job.source]}`}>
                       {SOURCE_LABEL[scored.job.source]}
                     </span>
-                    <span className="chip bg-slate-100 text-slate-500">
+                    <span className="chip bg-white/[0.04] tabular-nums text-ink-muted">
                       {formatPosted(scored.job.postedAt)}
                     </span>
                   </div>
                   {scored.matchedSkills.length > 0 && (
                     <div className="mt-1.5 flex flex-wrap gap-1">
                       {scored.matchedSkills.slice(0, 3).map((s) => (
-                        <span key={s} className="chip bg-emerald-50 text-emerald-700">
+                        <span key={s} className="chip bg-emerald-400/10 text-emerald-300">
                           ✓ {s}
                         </span>
                       ))}
                       {scored.matchedSkills.length > 3 && (
-                        <span className="chip bg-slate-100 text-slate-500">
+                        <span className="chip bg-white/[0.04] text-ink-muted">
                           +{scored.matchedSkills.length - 3}
                         </span>
                       )}
@@ -117,7 +119,7 @@ export default function KanbanBoard({
                 </div>
               ))}
               {colItems.length === 0 && (
-                <p className="px-2 py-3 text-center text-xs text-slate-400">
+                <p className="px-2 py-3 text-center text-xs text-ink-muted">
                   Kéo job vào đây
                 </p>
               )}
