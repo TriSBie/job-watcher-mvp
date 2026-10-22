@@ -6,6 +6,9 @@ import AppHeader from "@/components/AppHeader";
 import JobDrawer from "@/components/JobDrawer";
 import { MatchRing, SOURCE_LABEL, formatPosted } from "@/components/JobCard";
 import {
+  countJobSkills,
+  jobDateMs,
+  jobSkillSet,
   scoreJob,
   useAppState,
   type PipelineStatus,
@@ -14,7 +17,7 @@ import {
   type ScoredJob,
   type SourceId,
 } from "@/lib/store";
-import { extractSkills } from "@/lib/skills";
+import { primaryRegion } from "@/lib/location";
 
 const POOL_CACHE_KEY = "jwmvp:pool";
 const EMPTY_POOL: PoolData = { jobs: [], updatedAt: null, sourceStatus: null, runs: [] };
@@ -31,15 +34,8 @@ function timeAgo(iso: string | null): string {
   return `${Math.floor(hours / 24)} ngày trước`;
 }
 
-function postedMs(job: PoolJob): number | null {
-  if (!job.postedAt) return null;
-  const t = new Date(`${job.postedAt}T00:00:00`).getTime();
-  return Number.isNaN(t) ? null : t;
-}
-
 function postedLabel(job: PoolJob): string {
-  const ms = postedMs(job);
-  if (ms === null) return "Không rõ ngày đăng";
+  const ms = jobDateMs(job);
   const startOfToday = new Date();
   startOfToday.setHours(0, 0, 0, 0);
   const days = Math.floor((startOfToday.getTime() - ms) / DAY);
@@ -47,26 +43,6 @@ function postedLabel(job: PoolJob): string {
   if (days === 1) return "Hôm qua";
   if (days <= 30) return `${days} ngày trước`;
   return formatPosted(job.postedAt);
-}
-
-/** Kỹ năng của 1 job: trường skills của pool + trích thêm từ title (nhất quán với trang chủ). */
-function jobSkills(job: PoolJob): string[] {
-  return [...new Set([...job.skills, ...extractSkills(job.title)])];
-}
-
-function classifyLocation(location: string): "Hồ Chí Minh" | "Hà Nội" | "Remote" | "Khác" {
-  const l = location.toLowerCase();
-  if (l.includes("remote")) return "Remote";
-  if (
-    l.includes("hồ chí minh") ||
-    l.includes("ho chi minh") ||
-    l.includes("hcmc") ||
-    l.includes("hcm")
-  )
-    return "Hồ Chí Minh";
-  if (l.includes("hà nội") || l.includes("ha noi") || l.includes("hanoi"))
-    return "Hà Nội";
-  return "Khác";
 }
 
 function Panel({
@@ -215,7 +191,7 @@ export default function DashboardPage() {
 
   const scoredAll: ScoredJob[] = useMemo(() => {
     if (!activeProfile) return [];
-    return pool.jobs.map((j) => scoreJob(j, activeProfile.skills));
+    return pool.jobs.map((j) => scoreJob(j, activeProfile));
   }, [pool.jobs, activeProfile]);
 
   const now = Date.now();
@@ -227,25 +203,17 @@ export default function DashboardPage() {
     const companies = new Set<string>();
     for (const j of pool.jobs) {
       if (j.company) companies.add(j.company);
-      const ms = postedMs(j);
-      if (ms !== null) {
-        if (ms >= now - DAY) new24h++;
-        if (ms >= now - 7 * DAY) new7d++;
-      }
+      const ms = jobDateMs(j);
+      if (ms >= now - DAY) new24h++;
+      if (ms >= now - 7 * DAY) new7d++;
     }
     const strong = scoredAll.filter((s) => s.level === "strong").length;
     return { total, new24h, new7d, strong, companies: companies.size };
   }, [pool.jobs, scoredAll, now]);
 
   const skillStats = useMemo(() => {
-    const counts = new Map<string, number>();
-    for (const j of pool.jobs) {
-      for (const s of jobSkills(j)) counts.set(s, (counts.get(s) ?? 0) + 1);
-    }
-    const dated14 = pool.jobs.filter((j) => {
-      const ms = postedMs(j);
-      return ms !== null && ms >= now - 14 * DAY;
-    });
+    const counts = countJobSkills(pool.jobs);
+    const dated14 = pool.jobs.filter((j) => jobDateMs(j) >= now - 14 * DAY);
     const hasDelta = dated14.length >= 5;
     const top = [...counts.entries()]
       .sort((a, b) => b[1] - a[1])
@@ -256,8 +224,8 @@ export default function DashboardPage() {
           let recent = 0;
           let prev = 0;
           for (const j of pool.jobs) {
-            const ms = postedMs(j);
-            if (ms === null || !jobSkills(j).includes(skill)) continue;
+            if (!jobSkillSet(j).includes(skill)) continue;
+            const ms = jobDateMs(j);
             if (ms >= now - 7 * DAY) recent++;
             else if (ms >= now - 14 * DAY) prev++;
           }
@@ -286,35 +254,35 @@ export default function DashboardPage() {
     }
     const idx = new Map(days.map((d, i) => [d.key, i]));
     for (const j of pool.jobs) {
-      if (!j.postedAt) continue;
-      const i = idx.get(j.postedAt);
+      const d = new Date(jobDateMs(j));
+      const key = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(
+        d.getDate()
+      ).padStart(2, "0")}`;
+      const i = idx.get(key);
       if (i !== undefined) days[i].count++;
     }
     return { days, max: Math.max(1, ...days.map((d) => d.count)) };
   }, [pool.jobs]);
 
   const hotJobs = useMemo(() => {
-    const counts = new Map<string, number>();
-    for (const j of pool.jobs) {
-      for (const s of jobSkills(j)) counts.set(s, (counts.get(s) ?? 0) + 1);
-    }
+    const counts = countJobSkills(pool.jobs);
     const demandOf = (j: PoolJob) =>
-      jobSkills(j).reduce((a, s) => a + (counts.get(s) ?? 0), 0);
+      jobSkillSet(j).reduce((a, s) => a + (counts.get(s) ?? 0), 0);
     const maxDemand = Math.max(1, ...pool.jobs.map(demandOf));
     const scoredById = new Map(scoredAll.map((s) => [s.job.id, s]));
     return pool.jobs
       .map((job) => {
-        const ms = postedMs(job);
-        const freshness =
-          ms === null ? 0.25 : Math.min(1, Math.max(0, 1 - (now - ms) / (30 * DAY)));
+        const ms = jobDateMs(job);
+        const freshness = Math.min(1, Math.max(0, 1 - (now - ms) / (30 * DAY)));
         const scored = scoredById.get(job.id);
-        const matchPart = activeProfile && scored ? scored.percent * 0.3 : 15;
+        // Trọng số: mức khớp hồ sơ 50 — độ mới 35 — nhu cầu kỹ năng 15.
+        const matchPart = activeProfile && scored ? scored.percent * 0.5 : 25;
         const hot = Math.round(
-          freshness * 55 + matchPart + (demandOf(job) / maxDemand) * 15
+          freshness * 35 + matchPart + (demandOf(job) / maxDemand) * 15
         );
         return { job, scored, hot };
       })
-      .sort((a, b) => b.hot - a.hot)
+      .sort((a, b) => b.hot - a.hot || (b.scored?.percent ?? 0) - (a.scored?.percent ?? 0))
       .slice(0, 8);
   }, [pool.jobs, scoredAll, activeProfile, now]);
 
@@ -353,12 +321,13 @@ export default function DashboardPage() {
     const defs = [
       { label: "Hồ Chí Minh", color: "#5e6ad2" },
       { label: "Hà Nội", color: "#38bdf8" },
+      { label: "Đà Nẵng", color: "#f59e0b" },
       { label: "Remote", color: "#34d399" },
       { label: "Khác", color: "#62666b" },
     ] as const;
     return defs.map((d) => ({
       ...d,
-      value: pool.jobs.filter((j) => classifyLocation(j.location) === d.label).length,
+      value: pool.jobs.filter((j) => primaryRegion(j.location) === d.label).length,
     }));
   }, [pool.jobs]);
 
@@ -515,7 +484,8 @@ export default function DashboardPage() {
                 ))}
               </div>
               <p className="mt-3 text-xs text-ink-muted">
-                Cột sáng nhất là hôm nay. Job thiếu ngày đăng không được tính vào biểu đồ này.
+                Cột sáng nhất là hôm nay. Job thiếu ngày đăng được tính theo ngày hệ
+                thống ghi nhận lần đầu.
               </p>
             </Panel>
 
@@ -667,9 +637,9 @@ export default function DashboardPage() {
                   </div>
                   <ul className="mt-4 space-y-2 text-sm">
                     {[
-                      { label: "Khớp mạnh (≥4 kỹ năng)", value: matchDist.strong, color: "#34d399" },
-                      { label: "Khớp một phần (2–3 kỹ năng)", value: matchDist.partial, color: "#fbbf24" },
-                      { label: "Khớp yếu (0–1 kỹ năng)", value: matchDist.weak, color: "#62666b" },
+                      { label: "Khớp mạnh (≥60% yêu cầu)", value: matchDist.strong, color: "#34d399" },
+                      { label: "Khớp một phần (35–59%)", value: matchDist.partial, color: "#fbbf24" },
+                      { label: "Khớp yếu (<35%)", value: matchDist.weak, color: "#62666b" },
                     ].map((r) => (
                       <li key={r.label} className="flex items-center gap-2">
                         <span
