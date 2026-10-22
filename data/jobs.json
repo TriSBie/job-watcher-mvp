@@ -1,123 +1,11 @@
 {
- "updatedAt": "2026-10-22T02:46:58.980Z",
+ "updatedAt": "2026-10-22T04:39:43.875Z",
  "sourceStatus": {
   "linkedin": "ok",
   "itviec": "ok",
   "topdev": "ok"
  },
  "runs": [
-  {
-   "at": "2026-10-21T15:05:48.100Z",
-   "fetched": 212,
-   "added": 9,
-   "total": 61,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 92
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-10-21T15:35:44.626Z",
-   "fetched": 212,
-   "added": 9,
-   "total": 61,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 92
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-10-21T16:05:47.996Z",
-   "fetched": 192,
-   "added": 5,
-   "total": 61,
-   "perSource": {
-    "linkedin": 0,
-    "itviec": 100,
-    "topdev": 92
-   },
-   "sourceStatus": {
-    "linkedin": "error",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-10-21T16:35:48.033Z",
-   "fetched": 192,
-   "added": 5,
-   "total": 61,
-   "perSource": {
-    "linkedin": 0,
-    "itviec": 100,
-    "topdev": 92
-   },
-   "sourceStatus": {
-    "linkedin": "error",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-10-21T17:05:46.690Z",
-   "fetched": 192,
-   "added": 4,
-   "total": 61,
-   "perSource": {
-    "linkedin": 0,
-    "itviec": 100,
-    "topdev": 92
-   },
-   "sourceStatus": {
-    "linkedin": "error",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-10-21T17:35:49.489Z",
-   "fetched": 188,
-   "added": 4,
-   "total": 61,
-   "perSource": {
-    "linkedin": 0,
-    "itviec": 100,
-    "topdev": 88
-   },
-   "sourceStatus": {
-    "linkedin": "error",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-10-21T18:05:44.696Z",
-   "fetched": 209,
-   "added": 9,
-   "total": 62,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 89
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
   {
    "at": "2026-10-21T20:39:28.462Z",
    "fetched": 209,
@@ -197,6 +85,118 @@
     "itviec": "ok",
     "topdev": "ok"
    }
+  },
+  {
+   "at": "2026-10-22T03:05:50.185Z",
+   "fetched": 216,
+   "added": 10,
+   "total": 62,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 96
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-10-22T03:35:45.190Z",
+   "fetched": 215,
+   "added": 10,
+   "total": 62,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 95
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-10-22T04:22:44.539Z",
+   "fetched": 214,
+   "added": 10,
+   "total": 62,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 94
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-10-22T04:35:45.082Z",
+   "fetched": 194,
+   "added": 5,
+   "total": 62,
+   "perSource": {
+    "linkedin": 0,
+    "itviec": 100,
+    "topdev": 94
+   },
+   "sourceStatus": {
+    "linkedin": "error",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-10-22T04:37:10.110Z",
+   "fetched": 214,
+   "added": 10,
+   "total": 62,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 94
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-10-22T04:39:13.431Z",
+   "fetched": 214,
+   "added": 10,
+   "total": 62,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 94
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-10-22T04:39:43.875Z",
+   "fetched": 214,
+   "added": 10,
+   "total": 62,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 94
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
   }
  ],
  "jobs": [
@@ -208,8 +208,17 @@
    "url": "https://vn.linkedin.com/jobs/view/junior-back-end-developer-at-lf-global-tech-pte-ltd-4481180595",
    "source": "linkedin",
    "postedAt": "2026-10-22",
-   "snippet": "",
-   "skills": [],
+   "snippet": "Job Description: - Taking responsibility for building, developing and maintaining database systems, API system for projects - Taking responsibility for checking and fixing bugs - Learning, evaluating and applying new technologies to build new projects, as well as optimize incompl",
+   "skills": [
+    "PostgreSQL",
+    "MySQL",
+    "Microservices",
+    "REST APIs",
+    ".NET",
+    "SQL",
+    "NoSQL",
+    "Azure"
+   ],
    "firstSeenAt": 1792637218980
   },
   {
@@ -414,7 +423,6 @@
    "snippet": "",
    "skills": [
     "PHP",
-    "UX/UI Design",
     "Java",
     "JavaScript",
     "Node.js",
@@ -423,15 +431,7 @@
     "Angular",
     "Linux",
     "MySQL",
-    "REST APIs",
-    "Back-End",
-    "Database",
-    "Supply Chain Management",
-    "Bán hàng",
-    "Accounting",
-    "Phát triển kinh doanh",
-    "E-commerce",
-    "Strategic Marketing"
+    "REST APIs"
    ],
    "firstSeenAt": 1792483383856
   },
@@ -476,7 +476,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/mid-sr-java-developer-english-required-up-to-3200-rakuten-fintech-vietnam-co-ltd-4807",
    "source": "itviec",
-   "postedAt": "2026-10-18",
+   "postedAt": "2026-10-17",
    "snippet": "",
    "skills": [
     "Java",
@@ -533,7 +533,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/middle-unity-developer-c-net-webgl-mitek-vietnam-0956",
    "source": "itviec",
-   "postedAt": "2026-10-17",
+   "postedAt": "2026-10-16",
    "snippet": "",
    "skills": [
     "Unity",
@@ -594,11 +594,11 @@
    "snippet": "",
    "skills": [
     "Node.js",
+    "HTML",
     "React",
     "Next.js",
     "TypeScript",
-    "SQL",
-    "HTML"
+    "SQL"
    ],
    "firstSeenAt": 1792483383856
   },
@@ -650,26 +650,11 @@
    "postedAt": "2026-10-15",
    "snippet": "",
    "skills": [
-    "Tester",
-    "Software Developer",
-    "Software Engineer",
     "Linux",
     "C/C++",
     "Embedded",
     "RTOS",
-    "Kernel",
-    "Java",
-    "JavaScript",
-    "JQuery",
-    "Spring",
-    "Vue.js",
-    "Python",
-    "JSON",
-    "REST APIs",
-    "Data Structure \\u0026 Algorithm",
-    "Software Architect",
-    "AI",
-    "COBOL"
+    "Kernel"
    ],
    "firstSeenAt": 1792483383856
   },
@@ -699,13 +684,7 @@
     "Agile",
     "Java",
     ".NET",
-    "HTML",
-    "LESS",
-    "SASS",
-    "Electricity / Electronics / Refrigeration / Industrial Electricity",
-    "Bán hàng",
-    "Phát triển kinh doanh",
-    "Sales B2B"
+    "HTML"
    ],
    "firstSeenAt": 1792605944696
   },
@@ -717,8 +696,18 @@
    "url": "https://vn.linkedin.com/jobs/view/backend-engineer-at-worldquant-4470291769",
    "source": "linkedin",
    "postedAt": "2026-10-13",
-   "snippet": "",
-   "skills": [],
+   "snippet": "WorldQuant develops and deploys systematic financial strategies across a broad range of asset classes and global markets. We seek to produce high-quality predictive signals (alphas) through our proprietary research platform to employ financial strategies focused on market ineffic",
+   "skills": [
+    "PostgreSQL",
+    "MySQL",
+    "Redis",
+    "Kafka",
+    "Python",
+    "CI/CD",
+    "Git",
+    "Linux",
+    "SQL"
+   ],
    "firstSeenAt": 1792483383856
   },
   {
@@ -734,19 +723,10 @@
     "Node.js",
     "NoSQL",
     "React",
-    "Restful Api",
     "TypeScript",
-    "Korean",
-    "Ngân hàng doanh nghiệp",
-    "Application Support",
-    "Hỗ trợ kỹ thuật",
-    "Quản lý và Xử lý phiếu hỗ trợ",
-    "Lập trình (Java/Python/C#...)",
-    "Tư duy logic / giải quyết vấn đề",
-    "Tiếng Anh đọc hiểu tài liệu",
-    "Power BI / Tableau",
-    "Xử lý sự cố phần cứng/phần mềm",
-    "Ruby on Rails"
+    "PHP",
+    "Java",
+    "MySQL"
    ],
    "firstSeenAt": 1792483383856
   },
@@ -758,8 +738,13 @@
    "url": "https://vn.linkedin.com/jobs/view/java-developer-middle-at-amaris-consulting-part-of-mantu-4433342968",
    "source": "linkedin",
    "postedAt": "2026-10-12",
-   "snippet": "",
-   "skills": [],
+   "snippet": "Job Description ABOUT THE JOB Develop and maintain scalable microservices-based applications using Java and Spring Boot. Design, implement and maintain secure APIs for third-party integration. Work on security features including Spring Security, JWT authentication, and HTTPS conf",
+   "skills": [
+    "Java",
+    "Spring Boot",
+    "Microservices",
+    "SQL"
+   ],
    "firstSeenAt": 1792570814703
   },
   {
@@ -807,7 +792,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/software-engineer-ai-coding-agent-net-java-ol-vietnam-1338",
    "source": "itviec",
-   "postedAt": "2026-10-09",
+   "postedAt": "2026-10-08",
    "snippet": "",
    "skills": [
     ".NET",
@@ -827,8 +812,16 @@
    "url": "https://vn.linkedin.com/jobs/view/backend-engineer-%E2%80%93-ruby-on-rails-at-hello-clever-4475784526",
    "source": "linkedin",
    "postedAt": "2026-10-08",
-   "snippet": "",
-   "skills": [],
+   "snippet": "About Us Hello Clever is building the next generation of payments and loyalty infrastructure by turning every transaction into growth for merchants. We’re an AI-powered fintech operating across 26+ markets, helping businesses move money in real time and convert payments into meas",
+   "skills": [
+    "PostgreSQL",
+    "MySQL",
+    "Redis",
+    "Kafka",
+    "Ruby",
+    "Rails",
+    "SQL"
+   ],
    "firstSeenAt": 1792483383856
   },
   {
@@ -853,12 +846,7 @@
    "postedAt": "2026-10-08",
    "snippet": "",
    "skills": [
-    "Software Developer",
-    "COBOL",
-    "Java",
-    "Oracle / PostgreSQL / SQL Server",
-    "PostgreSQL",
-    "Spring Boot"
+    "COBOL"
    ],
    "firstSeenAt": 1792483383856
   },
@@ -873,15 +861,7 @@
    "snippet": "",
    "skills": [
     "Java",
-    "Automation QA",
-    "Selenium",
-    "Postman",
-    "Accounting",
-    "Financial Accounting",
-    "Internal Accounting",
-    "Korean",
-    "Business Planning",
-    "Planning"
+    "Selenium"
    ],
    "firstSeenAt": 1792483383856
   },
@@ -904,7 +884,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/fullstack-developer-java-golang-python-rontech-2046",
    "source": "itviec",
-   "postedAt": "2026-10-06",
+   "postedAt": "2026-10-05",
    "snippet": "",
    "skills": [
     "Java",
@@ -925,19 +905,8 @@
    "skills": [
     "Android",
     "iOS",
-    "J2EE",
     "JavaScript",
     "SQL",
-    "Java Spring",
-    "Software Engineer",
-    "Project Manager",
-    "B2B",
-    "Presales",
-    "Korean",
-    "Accounting",
-    "Business Planning",
-    "Planning",
-    "Software Developer",
     "COBOL"
    ],
    "firstSeenAt": 1792483383856
@@ -954,17 +923,10 @@
    "skills": [
     "Android",
     "iOS",
-    "J2EE",
     "JavaScript",
     "SQL",
-    "Java Spring",
-    "Software Engineer",
     "MySQL",
-    "Spring Boot",
-    "Java 8",
-    "Java",
-    "Python",
-    "Go"
+    "Spring Boot"
    ],
    "firstSeenAt": 1792483383856
   },
@@ -1045,7 +1007,7 @@
    "skills": [
     "Java",
     "Node.js",
-    "elasticsearch",
+    "Elasticsearch",
     "Go",
     "Docker",
     "Angular",
@@ -1053,15 +1015,7 @@
     "Kafka",
     "Python",
     "PostgreSQL",
-    "FastAPI",
-    "React",
-    "Web Developer",
-    ".NET",
-    "React Native",
-    "Flutter",
-    "Angular 8+",
-    "SQL",
-    "Spring Boot"
+    "FastAPI"
    ],
    "firstSeenAt": 1792483383856
   },
@@ -1138,18 +1092,8 @@
     ".NET",
     "React Native",
     "Flutter",
-    "Angular 8+",
     "SQL",
-    "Spring Boot",
-    "Oracle / PostgreSQL / SQL Server",
-    "PostgreSQL",
-    "PHP",
-    "Android",
-    "iOS",
-    "C/C++",
-    "System",
-    "AI",
-    "OOP"
+    "Spring Boot"
    ],
    "firstSeenAt": 1792483383856
   },
@@ -1210,32 +1154,13 @@
    "firstSeenAt": 1792483383856
   },
   {
-   "id": "itviec:all-levels-fullstack-dev-cloud-ci-cd-vietlink-3351",
-   "title": "All levels Fullstack Dev ( Cloud, CI/CD)",
-   "company": "Vietlink",
-   "location": "Ho Chi Minh",
-   "url": "https://itviec.com/it-jobs/all-levels-fullstack-dev-cloud-ci-cd-vietlink-3351",
-   "source": "itviec",
-   "postedAt": "2026-09-25",
-   "snippet": "",
-   "skills": [
-    "AWS",
-    ".NET",
-    "Java",
-    "Python",
-    "TypeScript",
-    "JavaScript"
-   ],
-   "firstSeenAt": 1792483383856
-  },
-  {
    "id": "itviec:java-developer-spring-oop-up-to-2000-techcom-securities-1036",
    "title": "Java Developer (Spring, OOP) Up to $2000",
    "company": "Techcom Securities",
    "location": "Ha Noi",
    "url": "https://itviec.com/it-jobs/java-developer-spring-oop-up-to-2000-techcom-securities-1036",
    "source": "itviec",
-   "postedAt": "2026-09-25",
+   "postedAt": "2026-09-24",
    "snippet": "",
    "skills": [
     "Java",
@@ -1244,6 +1169,25 @@
     "Spring",
     "SQL",
     "Agile"
+   ],
+   "firstSeenAt": 1792483383856
+  },
+  {
+   "id": "itviec:all-levels-fullstack-dev-cloud-ci-cd-vietlink-3351",
+   "title": "All levels Fullstack Dev ( Cloud, CI/CD)",
+   "company": "Vietlink",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/all-levels-fullstack-dev-cloud-ci-cd-vietlink-3351",
+   "source": "itviec",
+   "postedAt": "2026-09-24",
+   "snippet": "",
+   "skills": [
+    "AWS",
+    ".NET",
+    "Java",
+    "Python",
+    "TypeScript",
+    "JavaScript"
    ],
    "firstSeenAt": 1792483383856
   },
@@ -1309,15 +1253,9 @@
    "skills": [
     "Node.js",
     "React",
-    "Web Developer",
     "PHP",
-    "Magento",
     "Java",
-    "MySQL",
-    "Korean",
-    "Accounting",
-    "Business Planning",
-    "Planning"
+    "MySQL"
    ],
    "firstSeenAt": 1792483383856
   },
@@ -1335,7 +1273,7 @@
   },
   {
    "id": "topdev:2134502",
-   "title": "AI Software Engineer (Python/Go/C/C++ Backend \\u0026 AI Agents) - Khối Công nghệ thông tin (2026TD450888)",
+   "title": "AI Software Engineer (Python/Go/C/C++ Backend & AI Agents) - Khối Công nghệ thông tin (2026TD450888)",
    "company": "MBBANK",
    "location": "Vietnam",
    "url": "https://topdev.vn/detail-jobs/-2134502",
