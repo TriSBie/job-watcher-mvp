@@ -2,20 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --ink: #17203a;
-  --brand: #4f46e5;
-}
-
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background: #f4f5fb;
-  color: var(--ink);
-  font-family: ui-sans-system, system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
+  background: #08090a;
+  color: #f7f8f8;
+}
+
+/* Glow gradient rất nhẹ ở đầu trang (cảm hứng Linear / dashboard mẫu) */
+.page-glow {
+  background:
+    radial-gradient(640px 300px at 18% -60px, rgba(94, 106, 210, 0.16), transparent 70%),
+    radial-gradient(520px 260px at 82% -40px, rgba(130, 141, 248, 0.08), transparent 70%);
 }
 
 .chip {
@@ -23,21 +23,48 @@ body {
 }
 
 .btn-primary {
-  @apply inline-flex items-center justify-center gap-2 rounded-xl bg-indigo-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-indigo-500 disabled:cursor-not-allowed disabled:opacity-50;
+  @apply inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-4 py-2 text-sm font-medium text-white transition hover:bg-accent-hover disabled:cursor-not-allowed disabled:opacity-50;
 }
 
 .btn-ghost {
-  @apply inline-flex items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-700 transition hover:border-indigo-300 hover:text-indigo-700 disabled:cursor-not-allowed disabled:opacity-50;
+  @apply inline-flex items-center justify-center gap-2 rounded-lg border border-line bg-surface-raised px-3 py-2 text-sm font-medium text-ink-secondary transition hover:border-white/[0.16] hover:text-ink disabled:cursor-not-allowed disabled:opacity-50;
 }
 
 .input {
-  @apply w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm outline-none transition focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100;
+  @apply w-full rounded-lg border border-line bg-surface-raised px-3 py-2 text-sm text-ink outline-none transition placeholder:text-ink-muted focus:border-accent focus:ring-2 focus:ring-[rgba(94,106,210,0.25)];
+}
+
+select.input option {
+  background: #17181a;
+  color: #f7f8f8;
 }
 
 .card {
-  @apply rounded-2xl border border-slate-200/80 bg-white shadow-[0_1px_3px_rgba(23,32,58,0.05)];
+  @apply rounded-2xl border border-line bg-surface shadow-[0_1px_2px_rgba(0,0,0,0.45)];
+}
+
+/* Micro-label kiểu Linear cho tiêu đề panel */
+.panel-title {
+  @apply text-[11px] font-medium uppercase tracking-[0.08em] text-ink-muted;
 }
 
 select.input {
   @apply pr-8;
+}
+
+/* Scrollbar mảnh, tông tối */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.14) transparent;
+}
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
 }
