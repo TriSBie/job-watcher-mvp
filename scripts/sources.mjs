@@ -67,11 +67,135 @@ const SKILL_CANON = new Map(
     expressjs: "Express",
     "rest api": "REST APIs",
     restful: "REST APIs",
+    elasticsearch: "Elasticsearch",
+    mongodb: "MongoDB",
+    mysql: "MySQL",
+    redis: "Redis",
+    kafka: "Kafka",
+    docker: "Docker",
+    python: "Python",
+    java: "Java",
+    php: "PHP",
+    ruby: "Ruby",
+    rails: "Rails",
+    django: "Django",
+    flask: "Flask",
+    laravel: "Laravel",
+    graphql: "GraphQL",
+    grpc: "gRPC",
+    terraform: "Terraform",
+    jenkins: "Jenkins",
+    firebase: "Firebase",
+    supabase: "Supabase",
+    rabbitmq: "RabbitMQ",
+    nginx: "Nginx",
+    html: "HTML",
+    css: "CSS",
+    tailwind: "Tailwind",
+    flutter: "Flutter",
+    swift: "Swift",
+    kotlin: "Kotlin",
+    android: "Android",
+    ios: "iOS",
+    sql: "SQL",
+    nosql: "NoSQL",
+    jest: "Jest",
+    cypress: "Cypress",
+    selenium: "Selenium",
+    figma: "Figma",
+    azure: "Azure",
+    gcp: "GCP",
+    aws: "AWS",
+    prisma: "Prisma",
+    typeorm: "TypeORM",
+    bullmq: "BullMQ",
+    svelte: "Svelte",
+    express: "Express",
+    fastapi: "FastAPI",
+    git: "Git",
+    linux: "Linux",
   })
 );
 
 export function canonSkill(s) {
   return SKILL_CANON.get(s.trim().toLowerCase()) ?? s.trim();
+}
+
+// --- Catalog kỹ năng (bản sao của lib/skills.ts — giữ đồng bộ khi sửa catalog) ---
+// Dùng để: lọc tag rác của TopDev theo whitelist và trích skill từ JD LinkedIn.
+const SKILL_CATALOG_JS = [
+  "Java", "Spring Boot", "TypeScript", "JavaScript", "Node.js", "NestJS",
+  "Express", "Next.js", "React", "PostgreSQL", "MySQL", "Redis", "Kafka",
+  "BullMQ", "Prisma", "TypeORM", "Docker", "AWS", "Microservices",
+  "REST APIs", "Python", "Django", "Flask", "FastAPI", "Go", "PHP",
+  "Laravel", "C#", ".NET", "Ruby", "Rails", "Angular", "Vue.js", "Nuxt.js",
+  "Svelte", "MongoDB", "SQLite", "GraphQL", "gRPC", "Kubernetes", "CI/CD",
+  "Git", "Linux", "Firebase", "Supabase", "Elasticsearch", "RabbitMQ",
+  "Nginx", "HTML", "CSS", "Tailwind", "Flutter", "React Native", "Swift",
+  "Kotlin", "Android", "iOS", "TensorFlow", "PyTorch", "SQL", "NoSQL",
+  "Terraform", "Jenkins", "GitHub Actions", "Jest", "Cypress", "Selenium",
+  "Figma", "Azure", "GCP",
+];
+const SKILL_ALIASES_JS = {
+  "Node.js": ["nodejs", "node js"],
+  "REST APIs": ["rest api", "restful", "rest apis"],
+  "Spring Boot": ["springboot"],
+  "Next.js": ["nextjs"],
+  "Vue.js": ["vuejs", "vue"],
+  "Nuxt.js": ["nuxtjs", "nuxt"],
+  "React Native": ["react-native"],
+  "CI/CD": ["cicd", "ci cd"],
+  ".NET": ["dotnet", ".net core", "asp.net"],
+  "C#": ["csharp", "c sharp"],
+  "GitHub Actions": ["github action"],
+};
+
+function escapeRegExpJs(s) {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+export function skillInTextJs(skill, text) {
+  const hay = ` ${text.toLowerCase()} `;
+  const candidates = [skill.toLowerCase(), ...(SKILL_ALIASES_JS[skill] ?? [])];
+  return candidates.some((c) =>
+    new RegExp(`(^|[^a-z0-9+#.])${escapeRegExpJs(c)}([^a-z0-9+#]|$)`, "i").test(hay)
+  );
+}
+
+/** Trích các kỹ năng trong catalog xuất hiện trong text (JD, mô tả...). */
+export function extractSkillsFromText(text) {
+  return SKILL_CATALOG_JS.filter((s) => skillInTextJs(s, text));
+}
+
+/** Giải mã các chuỗi escape unicode còn sót dạng \uXXXX (hay gặp ở payload TopDev). */
+export function decodeUnicodeEscapes(s) {
+  return s.replace(/\\u([0-9a-fA-F]{4})/g, (_, h) =>
+    String.fromCharCode(parseInt(h, 16))
+  );
+}
+
+// Kỹ thuật hợp lệ nhưng không nằm trong catalog — vẫn giữ khi lọc tag TopDev.
+const TECH_EXTRA = new Set(
+  [
+    "c++", "c", "c/c++", "oop", "data structures", "data structure & algorithm",
+    "algorithms", "embedded", "rtos", "kernel", "cobol", "sap", "unity",
+    "ai", "machine learning", "deep learning", "agile", "scrum", "jira",
+    "postgis", "gis", "automation test", "manual test", "testing", "spring",
+    "hibernate", "maven", "gradle", "oracle", "sql server", "mariadb",
+    "cassandra", "hadoop", "spark", "airflow", "dbt", "snowflake",
+  ].map((s) => s.toLowerCase())
+);
+const CATALOG_KEYS = new Set(SKILL_CATALOG_JS.map((s) => s.toLowerCase()));
+
+/** Lọc tag TopDev: sàn này trả cả tag toàn công ty (Sales, Kế toán...) — chỉ giữ tag kỹ thuật. */
+export function filterTechTags(tags) {
+  const out = [];
+  for (const raw of tags) {
+    const tag = canonSkill(decodeUnicodeEscapes(raw));
+    const key = tag.toLowerCase();
+    if (CATALOG_KEYS.has(key) || TECH_EXTRA.has(key)) out.push(tag);
+  }
+  return [...new Set(out)];
 }
 
 // ---------------- LinkedIn (guest API, không login) ----------------
@@ -107,6 +231,19 @@ export async function fetchLinkedIn(keywords, location) {
     if (cards.length < 10) break;
   }
   return dedupeById(jobs);
+}
+
+/** Lấy JD đầy đủ của 1 job LinkedIn qua guest API (dùng để trích skill —
+ *  trang search không trả skills). Trả text thuần, tối đa ~6000 ký tự. */
+export async function fetchLinkedInDetail(extId) {
+  const html = await fetchText(
+    `https://www.linkedin.com/jobs-guest/jobs/api/jobPosting/${extId}`
+  );
+  const m = html.match(
+    /<div[^>]*class="[^"]*show-more-less-html__markup[^"]*"[^>]*>([\s\S]*?)<\/div>\s*<\/div>/i
+  );
+  const raw = m ? m[1] : html;
+  return stripTags(raw).slice(0, 6000);
 }
 
 // ---------------- ITviec (parse trang search SSR) ----------------
@@ -198,7 +335,12 @@ export async function fetchTopDev(keyword) {
   while ((m = re.exec(flat)) !== null) {
     const id = m[1];
     const title = m[2];
-    const seg = flat.slice(m.index, m.index + 12000);
+    // Giới hạn đoạn quét trong object của chính job này — nếu kéo dài sang object
+    // của job kế tiếp sẽ bị rò tag/kỹ năng của job khác vào.
+    const rest = flat.slice(m.index + 10);
+    const nextJob = rest.search(/\{"id":\d{5,},"title":"/);
+    const segEnd = nextJob >= 0 ? m.index + 10 + nextJob : m.index + 12000;
+    const seg = flat.slice(m.index, Math.min(segEnd, m.index + 12000));
     const companyM = seg.match(/"company":\{"id":\d+,"display_name":"([^"]+)"/);
     const slugM = seg.match(/"job_url":"[^"]*","slug":"([^"]+)"/);
     const publishedM = seg.match(/"published":\{"date":"([0-9-]+)"/);
@@ -209,14 +351,14 @@ export async function fetchTopDev(keyword) {
     const locM = seg.match(/"address_short_region_list":"([^"]+)"/);
     jobs.push({
       id: `topdev:${id}`,
-      title,
-      company: companyM ? companyM[1] : "",
-      location: locM ? locM[1] : "Vietnam",
+      title: decodeUnicodeEscapes(title),
+      company: companyM ? decodeUnicodeEscapes(companyM[1]) : "",
+      location: locM ? decodeUnicodeEscapes(locM[1]) : "Vietnam",
       url: `https://topdev.vn/detail-jobs/${slugM ? slugM[1] : ""}-${id}`,
       source: "topdev",
       postedAt: publishedM ? parseDMY(publishedM[1]) : null,
       snippet: "",
-      skills: [...skills],
+      skills: filterTechTags([...skills]),
     });
     re.lastIndex = m.index + 100;
   }
