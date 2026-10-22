@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-21T12:35:46.938Z",
+ "updatedAt": "2026-10-22T01:33:19.537Z",
  "sourceStatus": {
   "linkedin": "ok",
   "itviec": "ok",
@@ -7,94 +7,14 @@
  },
  "runs": [
   {
-   "at": "2026-10-20T08:03:03.856Z",
-   "fetched": 197,
-   "added": 62,
-   "total": 53,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 77
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-10-21T08:20:14.703Z",
-   "fetched": 214,
-   "added": 15,
-   "total": 58,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 94
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-10-21T09:05:51.769Z",
-   "fetched": 212,
-   "added": 11,
-   "total": 59,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 92
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-10-21T09:35:55.807Z",
-   "fetched": 212,
-   "added": 10,
-   "total": 59,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 92
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-10-21T10:05:56.501Z",
-   "fetched": 192,
-   "added": 6,
-   "total": 60,
-   "perSource": {
-    "linkedin": 0,
-    "itviec": 100,
-    "topdev": 92
-   },
-   "sourceStatus": {
-    "linkedin": "error",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-10-21T10:35:43.079Z",
-   "fetched": 212,
+   "at": "2026-10-21T14:20:17.111Z",
+   "fetched": 201,
    "added": 9,
-   "total": 60,
+   "total": 61,
    "perSource": {
     "linkedin": 20,
     "itviec": 100,
-    "topdev": 92
+    "topdev": 81
    },
    "sourceStatus": {
     "linkedin": "ok",
@@ -103,42 +23,10 @@
    }
   },
   {
-   "at": "2026-10-21T11:05:50.746Z",
-   "fetched": 212,
-   "added": 9,
-   "total": 60,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 92
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-10-21T11:52:53.604Z",
-   "fetched": 212,
-   "added": 9,
-   "total": 60,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 92
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-10-21T12:14:45.955Z",
+   "at": "2026-10-21T14:35:44.977Z",
    "fetched": 192,
    "added": 5,
-   "total": 60,
+   "total": 61,
    "perSource": {
     "linkedin": 0,
     "itviec": 100,
@@ -151,14 +39,158 @@
    }
   },
   {
-   "at": "2026-10-21T12:35:46.938Z",
+   "at": "2026-10-21T15:05:48.100Z",
    "fetched": 212,
-   "added": 10,
+   "added": 9,
    "total": 61,
    "perSource": {
     "linkedin": 20,
     "itviec": 100,
     "topdev": 92
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-10-21T15:35:44.626Z",
+   "fetched": 212,
+   "added": 9,
+   "total": 61,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 92
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-10-21T16:05:47.996Z",
+   "fetched": 192,
+   "added": 5,
+   "total": 61,
+   "perSource": {
+    "linkedin": 0,
+    "itviec": 100,
+    "topdev": 92
+   },
+   "sourceStatus": {
+    "linkedin": "error",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-10-21T16:35:48.033Z",
+   "fetched": 192,
+   "added": 5,
+   "total": 61,
+   "perSource": {
+    "linkedin": 0,
+    "itviec": 100,
+    "topdev": 92
+   },
+   "sourceStatus": {
+    "linkedin": "error",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-10-21T17:05:46.690Z",
+   "fetched": 192,
+   "added": 4,
+   "total": 61,
+   "perSource": {
+    "linkedin": 0,
+    "itviec": 100,
+    "topdev": 92
+   },
+   "sourceStatus": {
+    "linkedin": "error",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-10-21T17:35:49.489Z",
+   "fetched": 188,
+   "added": 4,
+   "total": 61,
+   "perSource": {
+    "linkedin": 0,
+    "itviec": 100,
+    "topdev": 88
+   },
+   "sourceStatus": {
+    "linkedin": "error",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-10-21T18:05:44.696Z",
+   "fetched": 209,
+   "added": 9,
+   "total": 62,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 89
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-10-21T20:39:28.462Z",
+   "fetched": 209,
+   "added": 9,
+   "total": 62,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 89
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-10-21T21:41:25.025Z",
+   "fetched": 209,
+   "added": 9,
+   "total": 62,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 89
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-10-22T01:33:19.537Z",
+   "fetched": 209,
+   "added": 9,
+   "total": 61,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 89
    },
    "sourceStatus": {
     "linkedin": "ok",
@@ -270,7 +302,7 @@
    "location": "remote",
    "url": "https://itviec.com/it-jobs/remote-fullstack-developer-typescript-node-js-nestjs-orgscale-recruitment-4352",
    "source": "itviec",
-   "postedAt": "2026-10-20",
+   "postedAt": "2026-10-21",
    "snippet": "",
    "skills": [
     "TypeScript",
@@ -289,7 +321,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/front-end-developer-php-javascript-html-css-incepit-4351",
    "source": "itviec",
-   "postedAt": "2026-10-20",
+   "postedAt": "2026-10-21",
    "snippet": "",
    "skills": [
     "JavaScript",
@@ -298,6 +330,40 @@
     "MySQL",
     "AWS",
     "PHP"
+   ],
+   "firstSeenAt": 1792483383856
+  },
+  {
+   "id": "itviec:fintech-frontend-dev-javascript-react-new-wealth-2706",
+   "title": "FinTech Frontend Dev (JavaScript, React)",
+   "company": "New Wealth",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/fintech-frontend-dev-javascript-react-new-wealth-2706",
+   "source": "itviec",
+   "postedAt": "2026-10-20",
+   "snippet": "",
+   "skills": [
+    "JavaScript",
+    "React",
+    "CSS"
+   ],
+   "firstSeenAt": 1792483383856
+  },
+  {
+   "id": "itviec:software-developer-net-c-c-hansen-technologies-0421",
+   "title": "Software Developer (.NET, C#, C++)",
+   "company": "Hansen Technologies",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/software-developer-net-c-c-hansen-technologies-0421",
+   "source": "itviec",
+   "postedAt": "2026-10-20",
+   "snippet": "",
+   "skills": [
+    ".NET",
+    "Angular",
+    "C#",
+    "C++",
+    "English"
    ],
    "firstSeenAt": 1792483383856
   },
@@ -323,40 +389,6 @@
    "postedAt": "2026-10-19",
    "snippet": "",
    "skills": [],
-   "firstSeenAt": 1792483383856
-  },
-  {
-   "id": "itviec:fintech-frontend-dev-javascript-react-new-wealth-2706",
-   "title": "FinTech Frontend Dev (JavaScript, React)",
-   "company": "New Wealth",
-   "location": "Ho Chi Minh",
-   "url": "https://itviec.com/it-jobs/fintech-frontend-dev-javascript-react-new-wealth-2706",
-   "source": "itviec",
-   "postedAt": "2026-10-19",
-   "snippet": "",
-   "skills": [
-    "JavaScript",
-    "React",
-    "CSS"
-   ],
-   "firstSeenAt": 1792483383856
-  },
-  {
-   "id": "itviec:software-developer-net-c-c-hansen-technologies-0421",
-   "title": "Software Developer (.NET, C#, C++)",
-   "company": "Hansen Technologies",
-   "location": "Ho Chi Minh",
-   "url": "https://itviec.com/it-jobs/software-developer-net-c-c-hansen-technologies-0421",
-   "source": "itviec",
-   "postedAt": "2026-10-19",
-   "snippet": "",
-   "skills": [
-    ".NET",
-    "Angular",
-    "C#",
-    "C++",
-    "English"
-   ],
    "firstSeenAt": 1792483383856
   },
   {
@@ -398,7 +430,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/sap-public-cloud-developer-btp-integration-suite-datvietvac-5150",
    "source": "itviec",
-   "postedAt": "2026-10-17",
+   "postedAt": "2026-10-18",
    "snippet": "",
    "skills": [
     "SAP",
@@ -413,7 +445,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/backend-developer-java-mysql-postgresql-dosoftpro-4517",
    "source": "itviec",
-   "postedAt": "2026-10-17",
+   "postedAt": "2026-10-18",
    "snippet": "",
    "skills": [
     "Java",
@@ -432,7 +464,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/mid-sr-java-developer-english-required-up-to-3200-rakuten-fintech-vietnam-co-ltd-4807",
    "source": "itviec",
-   "postedAt": "2026-10-17",
+   "postedAt": "2026-10-18",
    "snippet": "",
    "skills": [
     "Java",
@@ -470,7 +502,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/java-backend-developer-java-17-spring-boot-english-bbv-vietnam-1949",
    "source": "itviec",
-   "postedAt": "2026-10-16",
+   "postedAt": "2026-10-17",
    "snippet": "",
    "skills": [
     "Java",
@@ -489,7 +521,7 @@
    "location": "Dong Nai",
    "url": "https://itviec.com/it-jobs/software-developer-net-power-bi-microsoft-dynamics-mdc-precision-vietnam-1530",
    "source": "itviec",
-   "postedAt": "2026-10-16",
+   "postedAt": "2026-10-17",
    "snippet": "",
    "skills": [
     ".NET",
@@ -508,7 +540,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/middle-unity-developer-c-net-webgl-mitek-vietnam-0956",
    "source": "itviec",
-   "postedAt": "2026-10-16",
+   "postedAt": "2026-10-17",
    "snippet": "",
    "skills": [
     "Unity",
@@ -527,7 +559,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/java-fullstack-developer-react-elasticsearch-aws-hitachi-digital-services-4739",
    "source": "itviec",
-   "postedAt": "2026-10-15",
+   "postedAt": "2026-10-16",
    "snippet": "",
    "skills": [
     "Java",
@@ -546,7 +578,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/ho-chi-minh-full-stack-developer-reactjs-nodejs-one-tech-stop-vietnam-company-ltd-2723",
    "source": "itviec",
-   "postedAt": "2026-10-15",
+   "postedAt": "2026-10-16",
    "snippet": "",
    "skills": [
     "Node.js",
@@ -642,6 +674,30 @@
    "firstSeenAt": 1792570814703
   },
   {
+   "id": "topdev:2138392",
+   "title": "Field Service Engineer - Kỹ sư dịch vụ (On-site) ngành Điện tử/Cơ điện tử/Cơ khí/Viễn thông/Công nghệ tự động",
+   "company": "South Telecom",
+   "location": "Hồ Chí Minh, Hà Nội, Hồ Chí Minh",
+   "url": "https://topdev.vn/detail-jobs/field-service-engineer-ky-su-dich-vu-on-site-nganh-dien-tu-co-dien-tu-co-khi-vien-thong-cong-nghe-tu-dong-south-telecom-2138392",
+   "source": "topdev",
+   "postedAt": "2026-10-14",
+   "snippet": "",
+   "skills": [
+    "PHP",
+    "Agile",
+    "Java",
+    ".NET",
+    "HTML",
+    "LESS",
+    "SASS",
+    "Electricity / Electronics / Refrigeration / Industrial Electricity",
+    "Bán hàng",
+    "Phát triển kinh doanh",
+    "Sales B2B"
+   ],
+   "firstSeenAt": 1792605944696
+  },
+  {
    "id": "linkedin:4470291769",
    "title": "Backend Engineer",
    "company": "WorldQuant",
@@ -668,13 +724,15 @@
     "React",
     "Restful Api",
     "TypeScript",
+    "PHP",
+    "UX/UI Design",
+    "Java",
+    "JavaScript",
+    "Vue.js",
+    "Angular",
     "Bán hàng",
     "Phát triển kinh doanh",
-    "Business/Sales",
-    "PHP",
-    "Magento",
-    "Java",
-    "MySQL"
+    "Sales B2B"
    ],
    "firstSeenAt": 1792483383856
   },
@@ -697,7 +755,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/software-engineer-java-c-scala-beyondsoft-technology-vietnam-company-limited-4159",
    "source": "itviec",
-   "postedAt": "2026-10-09",
+   "postedAt": "2026-10-10",
    "snippet": "",
    "skills": [
     "C#",
@@ -716,7 +774,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/middle-senior-backend-developer-aws-api-ci-cd-cong-ty-tnhh-cong-nghe-angle-ai-4422",
    "source": "itviec",
-   "postedAt": "2026-10-08",
+   "postedAt": "2026-10-09",
    "snippet": "",
    "skills": [
     "Cloud",
@@ -725,6 +783,25 @@
     "DynamoDB",
     "API",
     "AWS"
+   ],
+   "firstSeenAt": 1792483383856
+  },
+  {
+   "id": "itviec:software-engineer-ai-coding-agent-net-java-ol-vietnam-1338",
+   "title": "Software Engineer (AI Coding Agent/.Net/Java)",
+   "company": "OL Vietnam",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/software-engineer-ai-coding-agent-net-java-ol-vietnam-1338",
+   "source": "itviec",
+   "postedAt": "2026-10-09",
+   "snippet": "",
+   "skills": [
+    ".NET",
+    "Java",
+    "PostgreSQL",
+    "AI",
+    "Software Architecture",
+    "English"
    ],
    "firstSeenAt": 1792483383856
   },
@@ -750,25 +827,6 @@
    "postedAt": "2026-10-08",
    "snippet": "",
    "skills": [],
-   "firstSeenAt": 1792483383856
-  },
-  {
-   "id": "itviec:software-engineer-ai-coding-agent-net-java-ol-vietnam-1338",
-   "title": "Software Engineer (AI Coding Agent/.Net/Java)",
-   "company": "OL Vietnam",
-   "location": "Ho Chi Minh",
-   "url": "https://itviec.com/it-jobs/software-engineer-ai-coding-agent-net-java-ol-vietnam-1338",
-   "source": "itviec",
-   "postedAt": "2026-10-08",
-   "snippet": "",
-   "skills": [
-    ".NET",
-    "Java",
-    "PostgreSQL",
-    "AI",
-    "Software Architecture",
-    "English"
-   ],
    "firstSeenAt": 1792483383856
   },
   {
@@ -804,9 +862,21 @@
     "Automation QA",
     "Selenium",
     "Postman",
-    "Accounting",
-    "Financial Accounting",
-    "Internal Accounting"
+    "JavaScript",
+    "Node.js",
+    "Web/ Mobile",
+    "DevOps",
+    "Software Developer",
+    "Business Analyst",
+    "Integration Test",
+    "HR",
+    "C\\u0026B",
+    "English",
+    "Product",
+    "Sales B2B",
+    "Agile \\u0026 Scrum",
+    "API",
+    "Banking \\u0026 Finance"
    ],
    "firstSeenAt": 1792483383856
   },
@@ -821,6 +891,22 @@
    "snippet": "",
    "skills": [],
    "firstSeenAt": 1792483383856
+  },
+  {
+   "id": "itviec:fullstack-developer-java-golang-python-rontech-2046",
+   "title": "Fullstack Developer (Java, Golang, Python)",
+   "company": "RONTECH",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/fullstack-developer-java-golang-python-rontech-2046",
+   "source": "itviec",
+   "postedAt": "2026-10-06",
+   "snippet": "",
+   "skills": [
+    "Java",
+    "Python",
+    "Go"
+   ],
+   "firstSeenAt": 1792570814703
   },
   {
    "id": "topdev:2136572",
@@ -878,22 +964,6 @@
    "firstSeenAt": 1792483383856
   },
   {
-   "id": "itviec:fullstack-developer-java-golang-python-rontech-2046",
-   "title": "Fullstack Developer (Java, Golang, Python)",
-   "company": "RONTECH",
-   "location": "Ho Chi Minh",
-   "url": "https://itviec.com/it-jobs/fullstack-developer-java-golang-python-rontech-2046",
-   "source": "itviec",
-   "postedAt": "2026-10-05",
-   "snippet": "",
-   "skills": [
-    "Java",
-    "Python",
-    "Go"
-   ],
-   "firstSeenAt": 1792570814703
-  },
-  {
    "id": "linkedin:4373563038",
    "title": "Backend Software Engineer",
    "company": "Motorola Solutions",
@@ -912,7 +982,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/full-stack-developer-net-simpson-strong-tie-vietnam-4937",
    "source": "itviec",
-   "postedAt": "2026-10-02",
+   "postedAt": "2026-10-03",
    "snippet": "",
    "skills": [
     "Fullstack",
@@ -930,7 +1000,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/backend-developer-rust-c-c-cong-ty-tnhh-nexlab-it-solutions-3643",
    "source": "itviec",
-   "postedAt": "2026-10-01",
+   "postedAt": "2026-10-02",
    "snippet": "",
    "skills": [
     "Rust",
@@ -946,7 +1016,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/software-engineer-fullstack-ai-native-skylab-5458",
    "source": "itviec",
-   "postedAt": "2026-10-01",
+   "postedAt": "2026-10-02",
    "snippet": "",
    "skills": [
     "Fullstack",
@@ -1009,7 +1079,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/ai-software-engineer-atomi-digital-5627",
    "source": "itviec",
-   "postedAt": "2026-09-30",
+   "postedAt": "2026-10-01",
    "snippet": "",
    "skills": [
     "AI",
@@ -1085,7 +1155,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/junior-backend-developer-php-nodejs-ruby-on-rails-motorist-pte-ltd-0828",
    "source": "itviec",
-   "postedAt": "2026-09-28",
+   "postedAt": "2026-09-29",
    "snippet": "",
    "skills": [
     "Ruby on Rails",
@@ -1104,7 +1174,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/net-fullstack-developer-c-asp-net-sql-nam-thanh-binh-0223",
    "source": "itviec",
-   "postedAt": "2026-09-28",
+   "postedAt": "2026-09-29",
    "snippet": "",
    "skills": [
     "C#",
@@ -1122,7 +1192,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/middle-backend-developer-nestjs-cong-ty-tnhh-skydev-4851",
    "source": "itviec",
-   "postedAt": "2026-09-24",
+   "postedAt": "2026-09-25",
    "snippet": "",
    "skills": [
     "NestJS",
@@ -1141,7 +1211,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/all-levels-fullstack-dev-cloud-ci-cd-vietlink-3351",
    "source": "itviec",
-   "postedAt": "2026-09-24",
+   "postedAt": "2026-09-25",
    "snippet": "",
    "skills": [
     "AWS",
@@ -1160,7 +1230,7 @@
    "location": "Ha Noi",
    "url": "https://itviec.com/it-jobs/java-developer-spring-oop-up-to-2000-techcom-securities-1036",
    "source": "itviec",
-   "postedAt": "2026-09-24",
+   "postedAt": "2026-09-25",
    "snippet": "",
    "skills": [
     "Java",
@@ -1179,7 +1249,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/backend-developer-shinhan-ds-4838",
    "source": "itviec",
-   "postedAt": "2026-09-23",
+   "postedAt": "2026-09-24",
    "snippet": "",
    "skills": [
     "C language",
@@ -1188,6 +1258,25 @@
     "JavaScript",
     "SQL",
     "HTML5"
+   ],
+   "firstSeenAt": 1792483383856
+  },
+  {
+   "id": "itviec:fullstack-engineer-reactjs-ruby-on-rails-arches-5108",
+   "title": "Fullstack Engineer (ReactJS, Ruby on Rails)",
+   "company": "Arches",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/fullstack-engineer-reactjs-ruby-on-rails-arches-5108",
+   "source": "itviec",
+   "postedAt": "2026-09-24",
+   "snippet": "",
+   "skills": [
+    "Fullstack",
+    "AI",
+    "MySQL",
+    "Ruby on Rails",
+    "TypeScript",
+    "React"
    ],
    "firstSeenAt": 1792483383856
   },
@@ -1204,25 +1293,6 @@
    "firstSeenAt": 1792483383856
   },
   {
-   "id": "itviec:fullstack-engineer-reactjs-ruby-on-rails-arches-5108",
-   "title": "Fullstack Engineer (ReactJS, Ruby on Rails)",
-   "company": "Arches",
-   "location": "Ho Chi Minh",
-   "url": "https://itviec.com/it-jobs/fullstack-engineer-reactjs-ruby-on-rails-arches-5108",
-   "source": "itviec",
-   "postedAt": "2026-09-23",
-   "snippet": "",
-   "skills": [
-    "Fullstack",
-    "AI",
-    "MySQL",
-    "Ruby on Rails",
-    "TypeScript",
-    "React"
-   ],
-   "firstSeenAt": 1792483383856
-  },
-  {
    "id": "topdev:2134741",
    "title": "Web Developer (Backend/Fullstack)",
    "company": "CÔNG TY CỔ PHẦN VIKOISOFT",
@@ -1236,41 +1306,15 @@
     "React",
     "Web Developer",
     "PHP",
-    "Magento",
-    "Java",
-    "MySQL",
-    "Accounting",
-    "Financial Accounting",
-    "Internal Accounting"
-   ],
-   "firstSeenAt": 1792483383856
-  },
-  {
-   "id": "topdev:2134288",
-   "title": "[Hà Nội] Fullstack Developer (C#, .NET, Vuejs)",
-   "company": "MISA SOFTWARE",
-   "location": "Hà Nội, Hà Nội, Hà Nội, Hồ Chí Minh, Hà Nội",
-   "url": "https://topdev.vn/detail-jobs/ha-noi-fullstack-developer-c-net-vuejs-misa-software-2134288",
-   "source": "topdev",
-   "postedAt": "2026-09-22",
-   "snippet": "",
-   "skills": [
-    ".NET",
-    "C++",
+    "UX/UI Design",
     "Java",
     "JavaScript",
-    "C#",
-    "Front-End",
-    "Back-End",
-    "Full-Stack",
-    "DevOps",
-    "React",
-    "Big Data",
-    ".NET Core",
-    "Flutter",
     "Vue.js",
-    "Node.js",
-    "Web Developer"
+    "Angular",
+    "Korean",
+    "Accounting",
+    "Business Planning",
+    "Planning"
    ],
    "firstSeenAt": 1792483383856
   },
