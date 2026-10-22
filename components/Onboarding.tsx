@@ -2,31 +2,9 @@
 
 import { useRef, useState } from "react";
 import { extractSkills, SKILL_CATALOG } from "@/lib/skills";
-import { KeywordInput, LOCATIONS, SkillPicker } from "./ProfileFields";
+import { extractPdfText } from "@/lib/pdf";
+import { KEYWORD_SUGGESTIONS, KeywordInput, LOCATIONS, SkillPicker } from "./ProfileFields";
 import type { Profile } from "@/lib/store";
-
-const KEYWORD_SUGGESTIONS = [
-  "backend developer",
-  "fullstack developer",
-  "java developer",
-  "node.js developer",
-  "software engineer",
-  "frontend developer",
-];
-
-async function extractPdfText(file: File): Promise<string> {
-  const pdfjs = await import("pdfjs-dist");
-  pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
-  const buf = await file.arrayBuffer();
-  const pdf = await pdfjs.getDocument({ data: buf }).promise;
-  let text = "";
-  for (let i = 1; i <= pdf.numPages; i++) {
-    const page = await pdf.getPage(i);
-    const content = await page.getTextContent();
-    text += content.items.map((it) => ("str" in it ? it.str : "")).join(" ") + "\n";
-  }
-  return text;
-}
 
 export default function Onboarding({
   onComplete,
