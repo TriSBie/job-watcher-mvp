@@ -10,20 +10,27 @@ export const SOURCE_LABEL: Record<SourceId, string> = {
 };
 
 export const SOURCE_BADGE: Record<SourceId, string> = {
-  linkedin: "bg-sky-100 text-sky-700",
-  itviec: "bg-rose-100 text-rose-700",
-  topdev: "bg-violet-100 text-violet-700",
+  linkedin: "bg-sky-400/10 text-sky-300",
+  itviec: "bg-rose-400/10 text-rose-300",
+  topdev: "bg-violet-400/10 text-violet-300",
 };
 
 export function MatchRing({ percent, small }: { percent: number; small?: boolean }) {
   const r = 15;
   const c = 2 * Math.PI * r;
-  const color = percent >= 40 ? "#059669" : percent >= 20 ? "#d97706" : "#94a3b8";
+  const color = percent >= 40 ? "#34d399" : percent >= 20 ? "#fbbf24" : "#62666b";
   const box = small ? "h-8 w-8" : "h-11 w-11";
   return (
     <div className={`relative ${box} shrink-0`} title={`Khớp ${percent}% kỹ năng`}>
       <svg viewBox="0 0 36 36" className={`${box} -rotate-90`}>
-        <circle cx="18" cy="18" r={r} fill="none" stroke="#e2e8f0" strokeWidth="3.5" />
+        <circle
+          cx="18"
+          cy="18"
+          r={r}
+          fill="none"
+          stroke="rgba(255,255,255,0.08)"
+          strokeWidth="3.5"
+        />
         <circle
           cx="18"
           cy="18"
@@ -36,7 +43,7 @@ export function MatchRing({ percent, small }: { percent: number; small?: boolean
         />
       </svg>
       <span
-        className={`absolute inset-0 flex items-center justify-center font-bold text-slate-700 ${
+        className={`absolute inset-0 flex items-center justify-center font-semibold tabular-nums text-ink ${
           small ? "text-[8px]" : "text-[10px]"
         }`}
       >
@@ -66,14 +73,14 @@ export default function JobCard({
 }) {
   const { job, matchedSkills, percent } = scored;
   return (
-    <div className="card group flex gap-3 p-4 transition hover:border-indigo-300 hover:shadow-md">
+    <div className="card group flex gap-3 p-4 transition duration-200 hover:border-white/[0.14] hover:bg-surface-raised">
       <MatchRing percent={percent} />
       <div className="min-w-0 flex-1">
         <button onClick={onOpen} className="block w-full text-left">
-          <h3 className="truncate font-semibold leading-snug text-slate-800 group-hover:text-indigo-700">
+          <h3 className="truncate font-medium leading-snug tracking-[-0.01em] text-ink transition group-hover:text-accent-hover">
             {job.title}
           </h3>
-          <p className="mt-0.5 truncate text-sm text-slate-500">
+          <p className="mt-0.5 truncate text-sm text-ink-secondary">
             {job.company || "—"} · {job.location}
           </p>
         </button>
@@ -81,11 +88,11 @@ export default function JobCard({
           <span className={`chip ${SOURCE_BADGE[job.source]}`}>
             {SOURCE_LABEL[job.source]}
           </span>
-          <span className="chip bg-slate-100 text-slate-500">
-            🗓 {formatPosted(job.postedAt)}
+          <span className="chip bg-white/[0.04] tabular-nums text-ink-muted">
+            {formatPosted(job.postedAt)}
           </span>
           {status !== "new" && (
-            <span className="chip bg-indigo-100 text-indigo-700">
+            <span className="chip bg-accent/15 text-accent-hover">
               {PIPELINE.find((p) => p.id === status)?.label}
             </span>
           )}
@@ -93,12 +100,12 @@ export default function JobCard({
         {matchedSkills.length > 0 && (
           <div className="mt-2 flex flex-wrap gap-1">
             {matchedSkills.slice(0, 6).map((s) => (
-              <span key={s} className="chip bg-emerald-50 text-emerald-700">
+              <span key={s} className="chip bg-emerald-400/10 text-emerald-300">
                 ✓ {s}
               </span>
             ))}
             {matchedSkills.length > 6 && (
-              <span className="chip bg-slate-100 text-slate-500">
+              <span className="chip bg-white/[0.04] text-ink-muted">
                 +{matchedSkills.length - 6}
               </span>
             )}
