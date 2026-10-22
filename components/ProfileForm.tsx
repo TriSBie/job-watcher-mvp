@@ -1,7 +1,9 @@
 "use client";
 
-import { useState } from "react";
-import { KeywordInput, LOCATIONS, SkillPicker } from "./ProfileFields";
+import { useRef, useState } from "react";
+import { KEYWORD_SUGGESTIONS, KeywordInput, LOCATIONS, SkillPicker } from "./ProfileFields";
+import { extractSkills } from "@/lib/skills";
+import { extractPdfText } from "@/lib/pdf";
 import type { Profile } from "@/lib/store";
 
 export default function ProfileForm({
@@ -23,6 +25,34 @@ export default function ProfileForm({
   const [location, setLocation] = useState(initial?.location ?? LOCATIONS[0]);
   const [skills, setSkills] = useState<string[]>(initial?.skills ?? []);
   const [keywords, setKeywords] = useState<string[]>(initial?.keywords ?? []);
+  const [suggested, setSuggested] = useState<Set<string>>(new Set());
+  const [cvName, setCvName] = useState<string | null>(null);
+  const [cvBusy, setCvBusy] = useState(false);
+  const [cvError, setCvError] = useState<string | null>(null);
+  const fileRef = useRef<HTMLInputElement>(null);
+
+  const handleCv = async (file: File) => {
+    setCvBusy(true);
+    setCvError(null);
+    try {
+      const text = await extractPdfText(file);
+      if (!text.trim()) throw new Error("empty");
+      const found = extractSkills(text);
+      setSuggested(new Set(found));
+      setSkills((prev) => [...new Set([...prev, ...found])]);
+      const kw = KEYWORD_SUGGESTIONS.filter((k) =>
+        text.toLowerCase().includes(k.split(" ")[0])
+      );
+      if (kw.length) setKeywords((prev) => [...new Set([...prev, ...kw.slice(0, 3)])]);
+      setCvName(file.name);
+    } catch {
+      setCvError(
+        "Không đọc được text từ PDF này (có thể là CV dạng ảnh). Bạn cứ nhập kỹ năng tay bên dưới nhé."
+      );
+    } finally {
+      setCvBusy(false);
+    }
+  };
 
   return (
     <div className="space-y-4">
@@ -50,11 +80,45 @@ export default function ProfileForm({
           ))}
         </select>
       </div>
+      <div className="rounded-xl border border-dashed border-accent/40 bg-accent/[0.06] p-4 text-center">
+        <p className="text-sm font-medium text-ink">
+          {initial ? "Nạp lại CV (PDF) để cập nhật kỹ năng" : "Tải CV (PDF) để gợi ý kỹ năng tự động"}
+        </p>
+        <p className="mt-1 text-xs text-ink-secondary">
+          CV chỉ được đọc ngay trên trình duyệt của bạn, không tải lên máy chủ.
+          Kỹ năng đọc từ CV sẽ được cộng thêm vào danh sách bên dưới (đánh dấu ✦).
+        </p>
+        <input
+          ref={fileRef}
+          type="file"
+          accept="application/pdf"
+          className="hidden"
+          onChange={(e) => {
+            const f = e.target.files?.[0];
+            if (f) void handleCv(f);
+            e.target.value = "";
+          }}
+        />
+        <button
+          type="button"
+          className="btn-ghost mt-3"
+          onClick={() => fileRef.current?.click()}
+          disabled={cvBusy}
+        >
+          {cvBusy ? "Đang đọc CV…" : cvName ? `📄 ${cvName} — chọn file khác` : "📄 Chọn file CV (PDF)"}
+        </button>
+        {suggested.size > 0 && (
+          <p className="mt-2 text-xs font-medium text-emerald-400">
+            Đã gợi ý {suggested.size} kỹ năng từ CV (đánh dấu ✦).
+          </p>
+        )}
+        {cvError && <p className="mt-2 text-xs text-rose-400">{cvError}</p>}
+      </div>
       <div>
         <label className="mb-2 block text-sm font-medium">
           Kỹ năng ({skills.length} đã chọn)
         </label>
-        <SkillPicker selected={skills} onChange={setSkills} />
+        <SkillPicker selected={skills} onChange={setSkills} suggested={suggested} />
       </div>
       <div>
         <label className="mb-2 block text-sm font-medium">Từ khoá vị trí mong muốn</label>
