@@ -74,6 +74,78 @@ function extractJsonLd(html: string): JsonLdJob | null {
   return null;
 }
 
+/** Cắt 1 khối <div> cân bằng từ vị trí bắt đầu (đếm độ sâu thẻ div lồng nhau). */
+function extractDiv(html: string, startIdx: number): string | null {
+  const re = /<\/?div\b[^>]*>/gi;
+  re.lastIndex = startIdx;
+  let depth = 0;
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(html))) {
+    if (m[0].startsWith("</")) {
+      depth--;
+      if (depth === 0) return html.slice(startIdx, re.lastIndex);
+    } else if (!m[0].endsWith("/>")) {
+      depth++;
+    }
+  }
+  return null;
+}
+
+const SECTION_HEADING_RE =
+  /(your role|your skills|benefits|trách nhiệm|yêu cầu|quyền lợi|phúc lợi)/i;
+
+/** TopDev: JSON-LD của chính TopDev bị rỗng phần "Your role" / "Your skills"
+ *  (chỉ còn tiêu đề mục + Benefits). Nội dung đầy đủ nằm ở HTML SSR: khối intro
+ *  (div.text-text-600) + từng mục có heading span và khối nội dung div.mt-2. */
+function extractTopDevDescription(html: string): string | null {
+  const noScripts = html
+    .replace(/<script[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style[\s\S]*?<\/style>/gi, " ");
+
+  const parts: string[] = [];
+
+  const introIdx = noScripts.indexOf("text-text-600");
+  if (introIdx >= 0) {
+    const divStart = noScripts.lastIndexOf("<div", introIdx);
+    const block = divStart >= 0 ? extractDiv(noScripts, divStart) : null;
+    if (block) {
+      const text = stripTags(block);
+      if (text.length > 30) parts.push(text);
+    }
+  }
+
+  const headingRe =
+    /<span[^>]*class="[^"]*font-semibold[^"]*"[^>]*>([\s\S]*?)<\/span>/gi;
+  const headings: { title: string; start: number; end: number }[] = [];
+  let hm: RegExpExecArray | null;
+  while ((hm = headingRe.exec(noScripts))) {
+    const title = decodeEntities(stripTags(hm[1]))
+      .replace(/^\d+\s*/, "")
+      .trim();
+    if (title && SECTION_HEADING_RE.test(title)) {
+      headings.push({ title, start: hm.index, end: hm.index + hm[0].length });
+    }
+  }
+
+  for (let i = 0; i < headings.length; i++) {
+    const h = headings[i];
+    const regionEnd = i + 1 < headings.length ? headings[i + 1].start : h.end + 20000;
+    const region = noScripts.slice(h.end, Math.min(regionEnd, noScripts.length));
+    const mtIdx = region.indexOf('<div class="mt-2"');
+    let text = "";
+    if (mtIdx >= 0) {
+      const block = extractDiv(region, mtIdx);
+      if (block) text = stripTags(block);
+    }
+    if (!text) text = stripTags(region).slice(0, 4000);
+    if (text.length > 20) parts.push(`${h.title}\n${text}`);
+  }
+
+  const out = parts.join("\n\n").trim();
+  // Cần ít nhất intro + 2 mục mới coi là trích xuất thành công.
+  return headings.length >= 2 && out.length >= 400 ? out : null;
+}
+
 function extractContainer(html: string): string | null {
   const patterns = [
     /<div[^>]*class=["'][^"']*show-more-less-html__markup[^"]*"[^>]*>([\s\S]*?)<\/div>\s*<\/div>/i,
@@ -116,9 +188,15 @@ export async function GET(req: NextRequest) {
     const html = await res.text();
 
     const ld = extractJsonLd(html);
-    let description = ld?.description ? stripTags(ld.description) : null;
-    if (!description || description.length < 120) {
-      description = extractContainer(html) ?? description;
+    let description: string | null = null;
+    if (parsed.hostname.includes("topdev")) {
+      description = extractTopDevDescription(html);
+    }
+    if (!description) {
+      description = ld?.description ? stripTags(ld.description) : null;
+      if (!description || description.length < 120) {
+        description = extractContainer(html) ?? description;
+      }
     }
     if (!description) {
       return NextResponse.json(
