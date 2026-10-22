@@ -68,13 +68,27 @@ export default function Onboarding({
   };
 
   return (
-    <div className="mx-auto w-full max-w-2xl px-4 py-10">
+    <div className="relative mx-auto w-full max-w-2xl px-4 py-10">
       <div className="mb-8 text-center">
-        <div className="mb-3 text-4xl">🎯</div>
-        <h1 className="text-2xl font-bold sm:text-3xl">
+        <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-accent text-white shadow-[0_0_32px_rgba(94,106,210,0.4)]">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+          >
+            <circle cx="12" cy="12" r="9" />
+            <circle cx="12" cy="12" r="4.5" />
+            <circle cx="12" cy="12" r="0.5" fill="currentColor" />
+          </svg>
+        </div>
+        <h1 className="text-2xl font-semibold tracking-[-0.02em] text-ink sm:text-3xl">
           Job Watcher — săn việc theo CV của bạn
         </h1>
-        <p className="mx-auto mt-2 max-w-lg text-sm text-slate-500">
+        <p className="mx-auto mt-2 max-w-lg text-sm leading-relaxed text-ink-secondary">
           Hệ thống quét sẵn việc từ LinkedIn, ITviec và TopDev. Bạn chỉ cần tạo hồ
           sơ kỹ năng — Job Watcher sẽ chấm điểm từng job có khớp với CV của bạn
           hay không.
@@ -87,16 +101,16 @@ export default function Onboarding({
             <span
               className={`flex h-6 w-6 items-center justify-center rounded-full ${
                 step >= i + 1
-                  ? "bg-indigo-600 text-white"
-                  : "bg-slate-200 text-slate-500"
+                  ? "bg-accent text-white"
+                  : "bg-white/[0.06] text-ink-muted"
               }`}
             >
               {i + 1}
             </span>
-            <span className={step >= i + 1 ? "text-indigo-700" : "text-slate-400"}>
+            <span className={step >= i + 1 ? "text-ink" : "text-ink-muted"}>
               {label}
             </span>
-            {i < 2 && <span className="mx-1 h-px w-8 bg-slate-300" />}
+            {i < 2 && <span className="mx-1 h-px w-8 bg-white/10" />}
           </div>
         ))}
       </div>
@@ -105,7 +119,7 @@ export default function Onboarding({
         {step === 1 && (
           <div className="space-y-4">
             <div>
-              <label className="mb-1 block text-sm font-medium">Tên của bạn</label>
+              <label className="mb-1 block text-sm font-medium text-ink">Tên của bạn</label>
               <input
                 className="input"
                 value={name}
@@ -115,7 +129,7 @@ export default function Onboarding({
               />
             </div>
             <div>
-              <label className="mb-1 block text-sm font-medium">Khu vực tìm việc</label>
+              <label className="mb-1 block text-sm font-medium text-ink">Khu vực tìm việc</label>
               <select
                 className="input"
                 value={location}
@@ -140,11 +154,11 @@ export default function Onboarding({
 
         {step === 2 && (
           <div className="space-y-5">
-            <div className="rounded-xl border border-dashed border-indigo-300 bg-indigo-50/60 p-4 text-center">
-              <p className="text-sm font-medium text-indigo-900">
+            <div className="rounded-xl border border-dashed border-accent/40 bg-accent/[0.06] p-4 text-center">
+              <p className="text-sm font-medium text-ink">
                 Tải CV (PDF) để gợi ý kỹ năng tự động
               </p>
-              <p className="mt-1 text-xs text-indigo-500">
+              <p className="mt-1 text-xs text-ink-secondary">
                 CV chỉ được đọc ngay trên trình duyệt của bạn, không tải lên máy chủ.
               </p>
               <input
@@ -165,22 +179,22 @@ export default function Onboarding({
                 {cvBusy ? "Đang đọc CV…" : cvName ? `📄 ${cvName} — chọn file khác` : "📄 Chọn file CV (PDF)"}
               </button>
               {suggested.size > 0 && (
-                <p className="mt-2 text-xs font-medium text-emerald-600">
+                <p className="mt-2 text-xs font-medium text-emerald-400">
                   Đã gợi ý {suggested.size} kỹ năng từ CV (đánh dấu ✦) — bạn tick duyệt lại bên dưới.
                 </p>
               )}
-              {cvError && <p className="mt-2 text-xs text-rose-500">{cvError}</p>}
+              {cvError && <p className="mt-2 text-xs text-rose-400">{cvError}</p>}
             </div>
 
             <div>
-              <label className="mb-2 block text-sm font-medium">
+              <label className="mb-2 block text-sm font-medium text-ink">
                 Kỹ năng của bạn ({skills.length}/{SKILL_CATALOG.length})
               </label>
               <SkillPicker selected={skills} onChange={setSkills} suggested={suggested} />
             </div>
 
             <div>
-              <label className="mb-2 block text-sm font-medium">Từ khoá vị trí mong muốn</label>
+              <label className="mb-2 block text-sm font-medium text-ink">Từ khoá vị trí mong muốn</label>
               <KeywordInput keywords={keywords} onChange={setKeywords} />
             </div>
 
@@ -197,7 +211,7 @@ export default function Onboarding({
               </button>
             </div>
             {skills.length === 0 && (
-              <p className="text-center text-xs text-slate-400">
+              <p className="text-center text-xs text-ink-muted">
                 Chọn ít nhất 1 kỹ năng để hệ thống chấm điểm khớp.
               </p>
             )}
@@ -206,29 +220,29 @@ export default function Onboarding({
 
         {step === 3 && (
           <div className="space-y-4">
-            <h2 className="text-lg font-semibold">Kiểm tra lại hồ sơ</h2>
+            <h2 className="text-lg font-semibold tracking-[-0.02em] text-ink">Kiểm tra lại hồ sơ</h2>
             <dl className="space-y-2 text-sm">
               <div className="flex gap-2">
-                <dt className="w-24 shrink-0 text-slate-400">Tên</dt>
-                <dd className="font-medium">{name}</dd>
+                <dt className="w-24 shrink-0 text-ink-muted">Tên</dt>
+                <dd className="font-medium text-ink">{name}</dd>
               </div>
               <div className="flex gap-2">
-                <dt className="w-24 shrink-0 text-slate-400">Khu vực</dt>
-                <dd>{location}</dd>
+                <dt className="w-24 shrink-0 text-ink-muted">Khu vực</dt>
+                <dd className="text-ink-secondary">{location}</dd>
               </div>
               <div className="flex gap-2">
-                <dt className="w-24 shrink-0 text-slate-400">Kỹ năng</dt>
+                <dt className="w-24 shrink-0 text-ink-muted">Kỹ năng</dt>
                 <dd className="flex flex-wrap gap-1">
                   {skills.map((s) => (
-                    <span key={s} className="chip bg-indigo-50 text-indigo-700">
+                    <span key={s} className="chip bg-accent/10 text-accent-hover">
                       {s}
                     </span>
                   ))}
                 </dd>
               </div>
               <div className="flex gap-2">
-                <dt className="w-24 shrink-0 text-slate-400">Từ khoá</dt>
-                <dd>{keywords.length ? keywords.join(", ") : "—"}</dd>
+                <dt className="w-24 shrink-0 text-ink-muted">Từ khoá</dt>
+                <dd className="text-ink-secondary">{keywords.length ? keywords.join(", ") : "—"}</dd>
               </div>
             </dl>
             <div className="flex gap-2 pt-2">
@@ -248,7 +262,7 @@ export default function Onboarding({
         )}
       </div>
 
-      <p className="mt-4 text-center text-xs text-slate-400">
+      <p className="mt-4 text-center text-xs text-ink-muted">
         Hồ sơ của bạn chỉ lưu trên trình duyệt này. Dữ liệu việc là dữ liệu chung,
         được cập nhật tự động khoảng mỗi 30 phút.
       </p>
