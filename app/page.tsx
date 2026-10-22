@@ -9,6 +9,8 @@ import KanbanBoard from "@/components/KanbanBoard";
 import JobDrawer from "@/components/JobDrawer";
 import {
   PIPELINE,
+  countJobSkills,
+  jobDateMs,
   scoreJob,
   useAppState,
   type PipelineStatus,
@@ -16,11 +18,18 @@ import {
   type Profile,
   type ScoredJob,
 } from "@/lib/store";
-import { extractSkills } from "@/lib/skills";
+import {
+  jobMatchesRegion,
+  profileRegion,
+  type Region,
+} from "@/lib/location";
 
 type SortMode = "recommended" | "percent" | "newest";
 type DateFilter = "24h" | "7d" | "30d" | "all";
 type ViewMode = "list" | "kanban";
+type LocFilter = "profile" | "all" | Region;
+
+const REGION_OPTIONS: Region[] = ["Hồ Chí Minh", "Hà Nội", "Đà Nẵng", "Remote", "Khác"];
 
 const POOL_CACHE_KEY = "jwmvp:pool";
 const PENDING_JOB_KEY = "jwmvp:pendingJob";
@@ -53,6 +62,7 @@ export default function HomePage() {
   const [statusTab, setStatusTab] = useState<PipelineStatus | "all">("all");
   const [sort, setSort] = useState<SortMode>("recommended");
   const [dateFilter, setDateFilter] = useState<DateFilter>("all");
+  const [locFilter, setLocFilter] = useState<LocFilter>("profile");
   const [view, setView] = useState<ViewMode>("list");
   const [openJobId, setOpenJobId] = useState<string | null>(null);
   const autoFetched = useRef(false);
@@ -127,7 +137,7 @@ export default function HomePage() {
 
   const scoredAll: ScoredJob[] = useMemo(() => {
     if (!activeProfile) return [];
-    return pool.jobs.map((j) => scoreJob(j, activeProfile.skills));
+    return pool.jobs.map((j) => scoreJob(j, activeProfile));
   }, [pool.jobs, activeProfile]);
 
   // Khi pool + hồ sơ đã sẵn sàng, mở drawer cho job được deep-link (nếu có).
@@ -172,16 +182,23 @@ export default function HomePage() {
           i.scored.job.company.toLowerCase().includes(q)
       );
     }
+    if (locFilter !== "all") {
+      const region =
+        locFilter === "profile"
+          ? activeProfile
+            ? profileRegion(activeProfile.location)
+            : null
+          : locFilter;
+      if (region) {
+        items = items.filter((i) => jobMatchesRegion(i.scored.job.location, region));
+      }
+    }
     if (dateFilter !== "all") {
       const limitMs = dateFilter === "24h" ? 864e5 : dateFilter === "7d" ? 7 * 864e5 : 30 * 864e5;
       const cutoff = Date.now() - limitMs;
-      items = items.filter((i) => {
-        if (!i.scored.job.postedAt) return true; // thiếu ngày đăng thì luôn hiển thị
-        return new Date(`${i.scored.job.postedAt}T00:00:00`).getTime() >= cutoff;
-      });
+      items = items.filter((i) => jobDateMs(i.scored.job) >= cutoff);
     }
-    const byPosted = (a: ScoredJob, b: ScoredJob) =>
-      (b.job.postedAt ?? "") < (a.job.postedAt ?? "") ? -1 : (b.job.postedAt ?? "") > (a.job.postedAt ?? "") ? 1 : 0;
+    const byPosted = (a: ScoredJob, b: ScoredJob) => jobDateMs(b.job) - jobDateMs(a.job);
     items.sort((a, b) => {
       if (sort === "percent") return b.scored.percent - a.scored.percent || byPosted(a.scored, b.scored);
       if (sort === "newest") return byPosted(a.scored, b.scored);
@@ -190,7 +207,7 @@ export default function HomePage() {
       return rank(a.scored) - rank(b.scored) || b.scored.percent - a.scored.percent || byPosted(a.scored, b.scored);
     });
     return items;
-  }, [scoredAll, statusOf, statusTab, query, dateFilter, sort]);
+  }, [scoredAll, statusOf, statusTab, query, dateFilter, sort, locFilter, activeProfile]);
 
   const stats = useMemo(() => {
     const total = scoredAll.length;
@@ -201,12 +218,9 @@ export default function HomePage() {
   }, [scoredAll, profileMatches]);
 
   const hotSkills = useMemo(() => {
-    const counts = new Map<string, number>();
-    for (const j of pool.jobs) {
-      for (const s of j.skills) counts.set(s, (counts.get(s) ?? 0) + 1);
-      for (const s of extractSkills(j.title)) counts.set(s, (counts.get(s) ?? 0) + 1);
-    }
-    return [...counts.entries()].sort((a, b) => b[1] - a[1]).slice(0, 10);
+    return [...countJobSkills(pool.jobs).entries()]
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 10);
   }, [pool.jobs]);
 
   const openScored = openJobId
@@ -352,7 +366,7 @@ export default function HomePage() {
         <div className="mb-5 grid grid-cols-2 gap-3 sm:grid-cols-4">
           {[
             { label: "Tổng số job", value: stats.total },
-            { label: "Khớp mạnh (≥4 skills)", value: stats.strong },
+            { label: "Khớp mạnh", value: stats.strong },
             { label: "Đã lưu", value: stats.saved },
             { label: "Đã apply", value: stats.applied },
           ].map((t) => (
@@ -468,6 +482,25 @@ export default function HomePage() {
               <option value="7d">Ngày đăng: 7 ngày qua</option>
               <option value="30d">Ngày đăng: 30 ngày qua</option>
               <option value="all">Ngày đăng: Tất cả</option>
+            </select>
+            <select
+              className="input !w-auto"
+              value={locFilter}
+              onChange={(e) => setLocFilter(e.target.value as LocFilter)}
+              aria-label="Lọc theo khu vực"
+            >
+              <option value="profile">
+                Khu vực: Theo hồ sơ
+                {activeProfile && profileRegion(activeProfile.location)
+                  ? ` (${profileRegion(activeProfile.location)})`
+                  : ""}
+              </option>
+              <option value="all">Khu vực: Tất cả</option>
+              {REGION_OPTIONS.map((r) => (
+                <option key={r} value={r}>
+                  Khu vực: {r}
+                </option>
+              ))}
             </select>
             <div className="ml-auto flex rounded-lg border border-line bg-surface p-0.5">
               {(
