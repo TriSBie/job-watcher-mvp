@@ -76,11 +76,11 @@ export default function ProfileForm({
       </div>
 
       {initial && (onDelete || onClearCv) && (
-        <div className="border-t border-slate-100 pt-4">
-          <h3 className="text-sm font-semibold text-slate-700">
+        <div className="border-t border-line pt-4">
+          <h3 className="text-sm font-medium text-ink">
             Xoá dữ liệu CV / hồ sơ
           </h3>
-          <p className="mt-1 text-xs leading-relaxed text-slate-400">
+          <p className="mt-1 text-xs leading-relaxed text-ink-muted">
             Nếu không còn nhu cầu dùng thông tin CV đã nạp cho hồ sơ này, bạn có
             thể gỡ bỏ bên dưới. Dữ liệu chỉ lưu trên trình duyệt của bạn.
           </p>
@@ -88,7 +88,7 @@ export default function ProfileForm({
             {onClearCv && (
               <button
                 type="button"
-                className="btn-ghost !border-amber-300 !text-amber-700 hover:!border-amber-400"
+                className="btn-ghost !border-amber-400/30 !text-amber-300 hover:!border-amber-400/60"
                 onClick={() => {
                   if (
                     confirm(
@@ -105,7 +105,7 @@ export default function ProfileForm({
             {onDelete && (
               <button
                 type="button"
-                className="btn-ghost !border-rose-300 !text-rose-600 hover:!border-rose-400"
+                className="btn-ghost !border-rose-400/30 !text-rose-300 hover:!border-rose-400/60"
                 onClick={() => {
                   if (
                     confirm(
