@@ -1,27 +1,11 @@
 {
- "updatedAt": "2026-10-23T01:35:42.162Z",
+ "updatedAt": "2026-10-23T02:05:43.172Z",
  "sourceStatus": {
   "linkedin": "ok",
   "itviec": "ok",
   "topdev": "ok"
  },
  "runs": [
-  {
-   "at": "2026-10-22T20:06:21.255Z",
-   "fetched": 204,
-   "added": 9,
-   "total": 67,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 84
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
   {
    "at": "2026-10-22T20:36:20.442Z",
    "fetched": 204,
@@ -197,6 +181,22 @@
     "itviec": "ok",
     "topdev": "ok"
    }
+  },
+  {
+   "at": "2026-10-23T02:05:43.172Z",
+   "fetched": 211,
+   "added": 13,
+   "total": 68,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 91
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
   }
  ],
  "jobs": [
@@ -218,6 +218,36 @@
     "Oracle"
    ],
    "firstSeenAt": 1792719342162
+  },
+  {
+   "id": "itviec:team-leader-japanese-n2-cube-system-viet-nam-1603",
+   "title": "Team Leader (Japanese N2+)",
+   "company": "Cube System Việt Nam",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/team-leader-japanese-n2-cube-system-viet-nam-1603",
+   "source": "itviec",
+   "postedAt": "2026-10-23",
+   "snippet": "",
+   "skills": [
+    "Leadership",
+    "Bridge Engineer",
+    "Java",
+    "Project Management",
+    "Japanese"
+   ],
+   "firstSeenAt": 1792721143172
+  },
+  {
+   "id": "topdev:2140230",
+   "title": "Nhân Viên Ứng Cứu Thông Tin và Triển Khai Dịch Vụ Viễn Thông",
+   "company": "CÔNG TY CỔ PHẦN TẬP ĐOÀN APEC GROUP",
+   "location": "Hà Nội",
+   "url": "https://topdev.vn/detail-jobs/nhan-vien-ung-cuu-thong-tin-va-trien-khai-dich-vu-vien-thong-cong-ty-co-phan-tap-doan-apec-group-2140230",
+   "source": "topdev",
+   "postedAt": "2026-10-23",
+   "snippet": "",
+   "skills": [],
+   "firstSeenAt": 1792721143172
   },
   {
    "id": "linkedin:4481180595",
@@ -284,9 +314,9 @@
    "skills": [
     "Java",
     "Cloud",
+    "CI/CD",
     "Spring Boot",
-    "Microservices",
-    "CI/CD"
+    "Microservices"
    ],
    "firstSeenAt": 1792659333407
   },
@@ -532,7 +562,7 @@
    "location": "remote",
    "url": "https://itviec.com/it-jobs/remote-fullstack-developer-typescript-node-js-nestjs-orgscale-recruitment-4352",
    "source": "itviec",
-   "postedAt": "2026-10-21",
+   "postedAt": "2026-10-20",
    "snippet": "",
    "skills": [
     "TypeScript",
@@ -708,7 +738,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/java-backend-developer-java-17-spring-boot-english-bbv-vietnam-1949",
    "source": "itviec",
-   "postedAt": "2026-10-17",
+   "postedAt": "2026-10-16",
    "snippet": "",
    "skills": [
     "Java",
