@@ -1,59 +1,11 @@
 {
- "updatedAt": "2026-10-24T03:05:42.344Z",
+ "updatedAt": "2026-10-24T04:35:44.577Z",
  "sourceStatus": {
-  "linkedin": "ok",
+  "linkedin": "error",
   "itviec": "ok",
   "topdev": "ok"
  },
  "runs": [
-  {
-   "at": "2026-10-23T21:35:48.133Z",
-   "fetched": 210,
-   "added": 11,
-   "total": 69,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 90
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-10-23T22:06:01.457Z",
-   "fetched": 190,
-   "added": 6,
-   "total": 69,
-   "perSource": {
-    "linkedin": 0,
-    "itviec": 100,
-    "topdev": 90
-   },
-   "sourceStatus": {
-    "linkedin": "error",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-10-23T22:35:58.572Z",
-   "fetched": 190,
-   "added": 6,
-   "total": 69,
-   "perSource": {
-    "linkedin": 0,
-    "itviec": 100,
-    "topdev": 90
-   },
-   "sourceStatus": {
-    "linkedin": "error",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
   {
    "at": "2026-10-23T23:05:44.456Z",
    "fetched": 190,
@@ -194,6 +146,54 @@
    },
    "sourceStatus": {
     "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-10-24T03:35:42.022Z",
+   "fetched": 210,
+   "added": 12,
+   "total": 68,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 90
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-10-24T04:05:43.592Z",
+   "fetched": 210,
+   "added": 12,
+   "total": 68,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 90
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-10-24T04:35:44.577Z",
+   "fetched": 190,
+   "added": 7,
+   "total": 67,
+   "perSource": {
+    "linkedin": 0,
+    "itviec": 100,
+    "topdev": 90
+   },
+   "sourceStatus": {
+    "linkedin": "error",
     "itviec": "ok",
     "topdev": "ok"
    }
@@ -764,7 +764,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/middle-unity-developer-c-net-webgl-mitek-vietnam-0956",
    "source": "itviec",
-   "postedAt": "2026-10-17",
+   "postedAt": "2026-10-16",
    "snippet": "",
    "skills": [
     "Unity",
@@ -985,7 +985,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/software-engineer-ai-coding-agent-net-java-ol-vietnam-1338",
    "source": "itviec",
-   "postedAt": "2026-10-09",
+   "postedAt": "2026-10-08",
    "snippet": "",
    "skills": [
     ".NET",
@@ -1359,25 +1359,6 @@
     "Azure",
     "AWS",
     "NoSQL"
-   ],
-   "firstSeenAt": 1792483383856
-  },
-  {
-   "id": "itviec:java-developer-spring-oop-up-to-2000-techcom-securities-1036",
-   "title": "Java Developer (Spring, OOP) Up to $2000",
-   "company": "Techcom Securities",
-   "location": "Ha Noi",
-   "url": "https://itviec.com/it-jobs/java-developer-spring-oop-up-to-2000-techcom-securities-1036",
-   "source": "itviec",
-   "postedAt": "2026-09-25",
-   "snippet": "",
-   "skills": [
-    "Java",
-    "MVC",
-    "OOP",
-    "Spring",
-    "SQL",
-    "Agile"
    ],
    "firstSeenAt": 1792483383856
   },
