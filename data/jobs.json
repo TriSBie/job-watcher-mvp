@@ -1,91 +1,11 @@
 {
- "updatedAt": "2026-10-26T03:00:58.754Z",
+ "updatedAt": "2026-10-26T05:05:45.846Z",
  "sourceStatus": {
-  "linkedin": "error",
+  "linkedin": "ok",
   "itviec": "ok",
   "topdev": "ok"
  },
  "runs": [
-  {
-   "at": "2026-10-25T18:35:39.963Z",
-   "fetched": 209,
-   "added": 14,
-   "total": 66,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 89
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-10-25T19:05:40.953Z",
-   "fetched": 209,
-   "added": 14,
-   "total": 66,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 89
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-10-25T19:35:39.150Z",
-   "fetched": 209,
-   "added": 14,
-   "total": 66,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 89
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-10-25T20:05:47.203Z",
-   "fetched": 209,
-   "added": 14,
-   "total": 66,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 89
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-10-25T20:35:52.363Z",
-   "fetched": 209,
-   "added": 14,
-   "total": 66,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 89
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
   {
    "at": "2026-10-25T21:05:48.781Z",
    "fetched": 209,
@@ -197,6 +117,86 @@
     "itviec": "ok",
     "topdev": "ok"
    }
+  },
+  {
+   "at": "2026-10-26T03:05:42.584Z",
+   "fetched": 190,
+   "added": 9,
+   "total": 68,
+   "perSource": {
+    "linkedin": 0,
+    "itviec": 100,
+    "topdev": 90
+   },
+   "sourceStatus": {
+    "linkedin": "error",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-10-26T03:35:50.240Z",
+   "fetched": 210,
+   "added": 14,
+   "total": 68,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 90
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-10-26T04:05:41.998Z",
+   "fetched": 210,
+   "added": 14,
+   "total": 68,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 90
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-10-26T04:35:41.777Z",
+   "fetched": 210,
+   "added": 14,
+   "total": 68,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 90
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-10-26T05:05:45.846Z",
+   "fetched": 209,
+   "added": 15,
+   "total": 69,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 89
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
   }
  ],
  "jobs": [
@@ -231,6 +231,39 @@
     "JavaScript"
    ],
    "firstSeenAt": 1792983658754
+  },
+  {
+   "id": "itviec:fintech-frontend-dev-javascript-react-new-wealth-2706",
+   "title": "FinTech Frontend Dev (JavaScript, React)",
+   "company": "New Wealth",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/fintech-frontend-dev-javascript-react-new-wealth-2706",
+   "source": "itviec",
+   "postedAt": "2026-10-26",
+   "snippet": "",
+   "skills": [
+    "JavaScript",
+    "React",
+    "CSS"
+   ],
+   "firstSeenAt": 1792483383856
+  },
+  {
+   "id": "itviec:unity-game-developer-c-nexon-dev-vina-4134",
+   "title": "Unity Game Developer (C#)",
+   "company": "NEXON DEV VINA",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/unity-game-developer-c-nexon-dev-vina-4134",
+   "source": "itviec",
+   "postedAt": "2026-10-26",
+   "snippet": "",
+   "skills": [
+    "Unity",
+    "C#",
+    "C++",
+    "English"
+   ],
+   "firstSeenAt": 1792991145846
   },
   {
    "id": "linkedin:4373563038",
@@ -611,7 +644,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/mobile-game-developer-fullstack-5exp-java-c-c-php-568e-0952",
    "source": "itviec",
-   "postedAt": "2026-10-22",
+   "postedAt": "2026-10-21",
    "snippet": "",
    "skills": [
     "C++",
@@ -630,7 +663,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/game-server-developer-c-mysql-cong-ty-tnhh-cong-nghe-tamron-viet-nam-4832",
    "source": "itviec",
-   "postedAt": "2026-10-22",
+   "postedAt": "2026-10-21",
    "snippet": "",
    "skills": [
     "C++",
@@ -715,22 +748,6 @@
     "React",
     "NestJS",
     "Node.js"
-   ],
-   "firstSeenAt": 1792483383856
-  },
-  {
-   "id": "itviec:fintech-frontend-dev-javascript-react-new-wealth-2706",
-   "title": "FinTech Frontend Dev (JavaScript, React)",
-   "company": "New Wealth",
-   "location": "Ho Chi Minh",
-   "url": "https://itviec.com/it-jobs/fintech-frontend-dev-javascript-react-new-wealth-2706",
-   "source": "itviec",
-   "postedAt": "2026-10-20",
-   "snippet": "",
-   "skills": [
-    "JavaScript",
-    "React",
-    "CSS"
    ],
    "firstSeenAt": 1792483383856
   },
@@ -825,7 +842,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/middle-unity-developer-c-net-webgl-mitek-vietnam-0956",
    "source": "itviec",
-   "postedAt": "2026-10-17",
+   "postedAt": "2026-10-16",
    "snippet": "",
    "skills": [
     "Unity",
@@ -1046,7 +1063,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/software-engineer-ai-coding-agent-net-java-ol-vietnam-1338",
    "source": "itviec",
-   "postedAt": "2026-10-09",
+   "postedAt": "2026-10-08",
    "snippet": "",
    "skills": [
     ".NET",
@@ -1364,7 +1381,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/net-fullstack-developer-c-asp-net-sql-nam-thanh-binh-0223",
    "source": "itviec",
-   "postedAt": "2026-09-29",
+   "postedAt": "2026-09-28",
    "snippet": "",
    "skills": [
     "C#",
