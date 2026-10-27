@@ -1,27 +1,11 @@
 {
- "updatedAt": "2026-10-27T01:35:48.346Z",
+ "updatedAt": "2026-10-27T02:05:46.013Z",
  "sourceStatus": {
-  "linkedin": "ok",
+  "linkedin": "error",
   "itviec": "ok",
   "topdev": "ok"
  },
  "runs": [
-  {
-   "at": "2026-10-26T07:35:41.004Z",
-   "fetched": 209,
-   "added": 16,
-   "total": 70,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 89
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
   {
    "at": "2026-10-26T08:05:45.406Z",
    "fetched": 209,
@@ -197,6 +181,22 @@
     "itviec": "ok",
     "topdev": "ok"
    }
+  },
+  {
+   "at": "2026-10-27T02:05:46.013Z",
+   "fetched": 188,
+   "added": 10,
+   "total": 75,
+   "perSource": {
+    "linkedin": 0,
+    "itviec": 100,
+    "topdev": 88
+   },
+   "sourceStatus": {
+    "linkedin": "error",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
   }
  ],
  "jobs": [
@@ -211,12 +211,48 @@
    "snippet": "",
    "skills": [
     "Zephyr",
-    "Hardware Design",
-    "AUTOSAR",
     "Linux",
-    "Embedded"
+    "Embedded",
+    "Hardware Design",
+    "AUTOSAR"
    ],
    "firstSeenAt": 1793064948346
+  },
+  {
+   "id": "topdev:2141074",
+   "title": "Technical Support Engineer (HVAC/Fresh Graduate)",
+   "company": "Công ty Cổ phần Daikin Air Conditioning (Vietnam)",
+   "location": "Hưng Yên",
+   "url": "https://topdev.vn/detail-jobs/technical-support-engineer-hvac-fresh-graduate-cong-ty-co-phan-daikin-air-conditioning-vietnam-2141074",
+   "source": "topdev",
+   "postedAt": "2026-10-27",
+   "snippet": "",
+   "skills": [],
+   "firstSeenAt": 1793066746013
+  },
+  {
+   "id": "topdev:2141077",
+   "title": "Product Marketing Engineering (Hvac/automation/market Research Background)",
+   "company": "Công ty Cổ phần Daikin Air Conditioning (Vietnam)",
+   "location": "Hưng Yên",
+   "url": "https://topdev.vn/detail-jobs/product-marketing-engineering-hvac-automation-market-research-background-cong-ty-co-phan-daikin-air-conditioning-vietnam-2141077",
+   "source": "topdev",
+   "postedAt": "2026-10-27",
+   "snippet": "",
+   "skills": [],
+   "firstSeenAt": 1793066746013
+  },
+  {
+   "id": "topdev:2141082",
+   "title": "Service Sales Engineer (Chiller, AHU, FCU)",
+   "company": "Công ty Cổ phần Daikin Air Conditioning (Vietnam)",
+   "location": "Hưng Yên",
+   "url": "https://topdev.vn/detail-jobs/service-sales-engineer-chiller-ahu-fcu-cong-ty-co-phan-daikin-air-conditioning-vietnam-2141082",
+   "source": "topdev",
+   "postedAt": "2026-10-27",
+   "snippet": "",
+   "skills": [],
+   "firstSeenAt": 1793066746013
   },
   {
    "id": "topdev:2140702",
@@ -396,7 +432,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/team-leader-japanese-n2-cube-system-viet-nam-1603",
    "source": "itviec",
-   "postedAt": "2026-10-24",
+   "postedAt": "2026-10-23",
    "snippet": "",
    "skills": [
     "Leadership",
@@ -420,9 +456,9 @@
     "Go",
     "Elasticsearch",
     "Cassandra",
+    "Java",
     "Kafka",
-    "Oracle",
-    "Java"
+    "Oracle"
    ],
    "firstSeenAt": 1792719342162
   },
@@ -796,7 +832,7 @@
    "location": "remote",
    "url": "https://itviec.com/it-jobs/remote-fullstack-developer-typescript-node-js-nestjs-orgscale-recruitment-4352",
    "source": "itviec",
-   "postedAt": "2026-10-21",
+   "postedAt": "2026-10-20",
    "snippet": "",
    "skills": [
     "TypeScript",
@@ -907,7 +943,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/java-backend-developer-java-17-spring-boot-english-bbv-vietnam-1949",
    "source": "itviec",
-   "postedAt": "2026-10-17",
+   "postedAt": "2026-10-16",
    "snippet": "",
    "skills": [
     "Java",
