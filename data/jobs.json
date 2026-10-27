@@ -1,43 +1,11 @@
 {
- "updatedAt": "2026-10-27T02:35:43.285Z",
+ "updatedAt": "2026-10-27T03:35:41.265Z",
  "sourceStatus": {
   "linkedin": "ok",
   "itviec": "ok",
   "topdev": "ok"
  },
  "runs": [
-  {
-   "at": "2026-10-26T08:35:43.989Z",
-   "fetched": 209,
-   "added": 14,
-   "total": 70,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 89
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-10-26T09:05:40.437Z",
-   "fetched": 209,
-   "added": 14,
-   "total": 70,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 89
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
   {
    "at": "2026-10-26T10:23:38.162Z",
    "fetched": 209,
@@ -197,6 +165,38 @@
     "itviec": "ok",
     "topdev": "ok"
    }
+  },
+  {
+   "at": "2026-10-27T03:05:41.497Z",
+   "fetched": 207,
+   "added": 12,
+   "total": 77,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 87
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-10-27T03:35:41.265Z",
+   "fetched": 208,
+   "added": 13,
+   "total": 78,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 88
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
   }
  ],
  "jobs": [
@@ -286,6 +286,22 @@
     ".NET"
    ],
    "firstSeenAt": 1793068543285
+  },
+  {
+   "id": "topdev:2141186",
+   "title": "Sales Engineer_Material Characterization",
+   "company": "DKSH Việt Nam",
+   "location": "Hồ Chí Minh, Hà Nội, Hải Phòng, Đà Nẵng, Bình Dương, Bình Dương",
+   "url": "https://topdev.vn/detail-jobs/sales-engineer-material-characterization-dksh-viet-nam-2141186",
+   "source": "topdev",
+   "postedAt": "2026-10-27",
+   "snippet": "",
+   "skills": [
+    "C#",
+    "SQL",
+    ".NET"
+   ],
+   "firstSeenAt": 1793072141265
   },
   {
    "id": "topdev:2140702",
@@ -427,7 +443,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/mid-sr-java-developer-english-required-up-to-3200-rakuten-fintech-vietnam-co-ltd-4807",
    "source": "itviec",
-   "postedAt": "2026-10-25",
+   "postedAt": "2026-10-24",
    "snippet": "",
    "skills": [
     "Java",
@@ -1295,7 +1311,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/fullstack-developer-java-golang-python-rontech-2046",
    "source": "itviec",
-   "postedAt": "2026-10-06",
+   "postedAt": "2026-10-05",
    "snippet": "",
    "skills": [
     "Java",
