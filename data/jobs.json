@@ -1,27 +1,11 @@
 {
- "updatedAt": "2026-10-27T03:35:41.265Z",
+ "updatedAt": "2026-10-27T04:05:44.384Z",
  "sourceStatus": {
-  "linkedin": "ok",
+  "linkedin": "error",
   "itviec": "ok",
   "topdev": "ok"
  },
  "runs": [
-  {
-   "at": "2026-10-26T10:23:38.162Z",
-   "fetched": 209,
-   "added": 14,
-   "total": 71,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 89
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
   {
    "at": "2026-10-26T11:15:50.185Z",
    "fetched": 209,
@@ -197,6 +181,22 @@
     "itviec": "ok",
     "topdev": "ok"
    }
+  },
+  {
+   "at": "2026-10-27T04:05:44.384Z",
+   "fetched": 188,
+   "added": 8,
+   "total": 79,
+   "perSource": {
+    "linkedin": 0,
+    "itviec": 100,
+    "topdev": 88
+   },
+   "sourceStatus": {
+    "linkedin": "error",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
   }
  ],
  "jobs": [
@@ -302,6 +302,22 @@
     ".NET"
    ],
    "firstSeenAt": 1793072141265
+  },
+  {
+   "id": "topdev:2141079",
+   "title": "Fullstack AI Engineer",
+   "company": "CÔNG TY CỔ PHẦN CÔNG NGHỆ BOOKINGCARE",
+   "location": "Hà Nội",
+   "url": "https://topdev.vn/detail-jobs/fullstack-ai-engineer-cong-ty-co-phan-cong-nghe-bookingcare-2141079",
+   "source": "topdev",
+   "postedAt": "2026-10-27",
+   "snippet": "",
+   "skills": [
+    "React",
+    "TypeScript",
+    "NestJS"
+   ],
+   "firstSeenAt": 1793073944384
   },
   {
    "id": "topdev:2140702",
