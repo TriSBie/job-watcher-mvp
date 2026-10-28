@@ -1,59 +1,11 @@
 {
- "updatedAt": "2026-10-28T05:05:46.339Z",
+ "updatedAt": "2026-10-28T06:35:42.494Z",
  "sourceStatus": {
   "linkedin": "ok",
   "itviec": "ok",
   "topdev": "ok"
  },
  "runs": [
-  {
-   "at": "2026-10-27T23:35:49.645Z",
-   "fetched": 204,
-   "added": 11,
-   "total": 80,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 84
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-10-28T00:06:03.934Z",
-   "fetched": 204,
-   "added": 11,
-   "total": 80,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 84
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-10-28T00:35:42.871Z",
-   "fetched": 204,
-   "added": 11,
-   "total": 80,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 84
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
   {
    "at": "2026-10-28T01:05:46.065Z",
    "fetched": 204,
@@ -197,6 +149,54 @@
     "itviec": "ok",
     "topdev": "ok"
    }
+  },
+  {
+   "at": "2026-10-28T05:35:59.506Z",
+   "fetched": 206,
+   "added": 12,
+   "total": 81,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 86
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-10-28T06:05:42.150Z",
+   "fetched": 207,
+   "added": 12,
+   "total": 81,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 87
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-10-28T06:35:42.494Z",
+   "fetched": 207,
+   "added": 13,
+   "total": 82,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 87
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
   }
  ],
  "jobs": [
@@ -252,6 +252,24 @@
     "Java"
    ],
    "firstSeenAt": 1793156758986
+  },
+  {
+   "id": "itviec:software-development-engineer-in-test-sdet-andpad-vietnam-co-ltd-4158",
+   "title": "Software Development Engineer in Test (SDET)",
+   "company": "ANDPAD VietNam Co., Ltd",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/software-development-engineer-in-test-sdet-andpad-vietnam-co-ltd-4158",
+   "source": "itviec",
+   "postedAt": "2026-10-28",
+   "snippet": "",
+   "skills": [
+    "QA QC",
+    "Automation Test",
+    "Tester",
+    "Agile",
+    "English"
+   ],
+   "firstSeenAt": 1793169342494
   },
   {
    "id": "itviec:automotive-embedded-software-engineer-asap-hitachi-digital-services-1115",
@@ -621,9 +639,9 @@
     "Go",
     "Elasticsearch",
     "Cassandra",
+    "Java",
     "Kafka",
-    "Oracle",
-    "Java"
+    "Oracle"
    ],
    "firstSeenAt": 1792719342162
   },
@@ -1443,7 +1461,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/full-stack-developer-net-simpson-strong-tie-vietnam-4937",
    "source": "itviec",
-   "postedAt": "2026-10-03",
+   "postedAt": "2026-10-02",
    "snippet": "",
    "skills": [
     "Fullstack",
