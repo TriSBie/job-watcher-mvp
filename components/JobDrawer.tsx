@@ -1,10 +1,19 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import { motion } from "motion/react";
 import { extractSkills } from "@/lib/skills";
 import type { Profile, ScoredJob } from "@/lib/store";
 import { PIPELINE, type PipelineStatus } from "@/lib/store";
-import { MatchRing, SOURCE_BADGE, SOURCE_LABEL, formatPosted } from "./JobCard";
+import {
+  MatchRing,
+  SOURCE_BADGE,
+  SOURCE_LABEL,
+  Skeleton,
+  formatPosted,
+  useMinVisible,
+  useStatusFlash,
+} from "./JobCard";
 
 export default function JobDrawer({
   scored,
@@ -27,6 +36,10 @@ export default function JobDrawer({
   const [description, setDescription] = useState<string | null>(null);
   const [detailError, setDetailError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
+  // T01: skeleton mô tả giữ tối thiểu 500ms để khỏi chớp.
+  const descLoadingVisible = useMinVisible(loading);
+  // T03: flash xác nhận khi đổi trạng thái trong drawer.
+  const statusFlash = useStatusFlash(status);
 
   useEffect(() => {
     let cancelled = false;
@@ -68,10 +81,37 @@ export default function JobDrawer({
     return () => window.removeEventListener("keydown", onKey);
   }, [onClose]);
 
+  // T02: đóng drawer thì trả focus về nút đã mở nó, không mất focus vô cớ.
+  // Cleanup chạy khi drawer unmount, tức là sau khi animation thoát kết thúc
+  // (AnimatePresence giữ component sống trong lúc animation thoát chạy).
+  useEffect(() => {
+    const opener = document.activeElement;
+    return () => {
+      if (opener instanceof HTMLElement && document.contains(opener)) {
+        opener.focus({ preventScroll: true });
+      }
+    };
+  }, []);
+
   return (
-    <div className="fixed inset-0 z-50 flex justify-end">
+    // T02: root fade 250ms (token base) + panel trượt từ phải 300ms (token slow).
+    // Dưới reduced-motion, MotionConfig reducedMotion="user" ở page/dashboard
+    // biến trượt thành fade/tức thì.
+    <motion.div
+      className="fixed inset-0 z-50 flex justify-end"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.25, ease: [0.4, 0, 0.2, 1] }}
+    >
       <div className="absolute inset-0 bg-black/60" onClick={onClose} />
-      <div className="relative flex h-full w-full max-w-xl flex-col overflow-y-auto border-l border-line bg-surface shadow-2xl">
+      <motion.div
+        className="relative flex h-full w-full max-w-xl flex-col overflow-y-auto border-l border-line bg-surface shadow-2xl"
+        initial={{ x: "100%" }}
+        animate={{ x: 0 }}
+        exit={{ x: "100%" }}
+        transition={{ duration: 0.3, ease: [0.4, 0, 0.2, 1] }}
+      >
         <div className="sticky top-0 z-10 border-b border-line bg-surface/95 p-5 backdrop-blur">
           <div className="flex items-start gap-3">
             <MatchRing percent={percent} />
@@ -99,7 +139,11 @@ export default function JobDrawer({
               ✕
             </button>
           </div>
-          <div className="mt-4 flex flex-wrap items-center gap-2">
+          <div
+            className={`mt-4 flex flex-wrap items-center gap-2 ${
+              statusFlash ? "animate-status-flash rounded-lg motion-reduce:animate-none" : ""
+            }`}
+          >
             <label className="text-sm text-ink-secondary">Trạng thái:</label>
             <select
               className="input !w-auto !py-1.5 text-sm"
@@ -158,8 +202,21 @@ export default function JobDrawer({
 
           <section>
             <h3 className="mb-2 text-sm font-medium text-ink">Mô tả công việc</h3>
-            {loading && <p className="text-sm text-ink-muted">Đang tải mô tả…</p>}
-            {detailError && !description && (
+            {/* T01: skeleton lines khớp bố cục đoạn mô tả, có aria-busy. Mô tả
+                và lỗi chỉ hiện sau khi skeleton đủ 500ms để khỏi chớp. */}
+            {descLoadingVisible && (
+              <div aria-busy="true" aria-label="Đang tải mô tả">
+                <span className="sr-only">Đang tải mô tả…</span>
+                <div className="space-y-2" aria-hidden="true">
+                  <Skeleton className="h-3 w-full" />
+                  <Skeleton className="h-3 w-11/12" />
+                  <Skeleton className="h-3 w-full" />
+                  <Skeleton className="h-3 w-4/5" />
+                  <Skeleton className="h-3 w-3/5" />
+                </div>
+              </div>
+            )}
+            {detailError && !description && !descLoadingVisible && (
               <p className="text-sm text-ink-muted">
                 {detailError}{" "}
                 <a
@@ -172,7 +229,7 @@ export default function JobDrawer({
                 </a>
               </p>
             )}
-            {description && (
+            {description && !descLoadingVisible && (
               <div className="whitespace-pre-wrap text-sm leading-relaxed text-ink-secondary">
                 {description}
               </div>
@@ -200,7 +257,7 @@ export default function JobDrawer({
             ↗ Xem trang chi tiết gốc tại {SOURCE_LABEL[job.source]}
           </a>
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }

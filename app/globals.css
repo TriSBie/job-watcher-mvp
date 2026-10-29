@@ -6,6 +6,46 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Motion tokens (Đợt 0, T00) — xem chú thích đầy đủ trong tailwind.config.ts.
+ * Mọi animation mới từ T01 trở đi phải suy biến thành fade-hoặc-tức thì ở đây:
+ * khối này tắt cuộn mượt + mọi transition/animation CSS tự chạy khi người dùng
+ * bật prefers-reduced-motion. Animation JS của Motion được xử lý riêng bằng
+ * MotionConfig reducedMotion="user" ở page.tsx và dashboard/page.tsx. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Skeleton shimmer (T01): nền xám khớp bố cục thật + vệt sáng chạy ngang 1.5s.
+ * Dưới reduced-motion, khối trên đã tắt animation nên chỉ còn nền tĩnh. */
+.skeleton {
+  background: linear-gradient(
+    100deg,
+    rgba(255, 255, 255, 0.06) 40%,
+    rgba(255, 255, 255, 0.12) 50%,
+    rgba(255, 255, 255, 0.06) 60%
+  );
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.5s linear infinite;
+}
+@keyframes skeleton-shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
 body {
   background: #08090a;
   color: #f7f8f8;
@@ -23,15 +63,15 @@ body {
 }
 
 .btn-primary {
-  @apply inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-4 py-2 text-sm font-medium text-white transition hover:bg-accent-hover disabled:cursor-not-allowed disabled:opacity-50;
+  @apply inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-4 py-2 text-sm font-medium text-white transition duration-fast ease-motion hover:bg-accent-hover active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50;
 }
 
 .btn-ghost {
-  @apply inline-flex items-center justify-center gap-2 rounded-lg border border-line bg-surface-raised px-3 py-2 text-sm font-medium text-ink-secondary transition hover:border-white/[0.16] hover:text-ink disabled:cursor-not-allowed disabled:opacity-50;
+  @apply inline-flex items-center justify-center gap-2 rounded-lg border border-line bg-surface-raised px-3 py-2 text-sm font-medium text-ink-secondary transition duration-fast ease-motion hover:border-white/[0.16] hover:text-ink active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50;
 }
 
 .input {
-  @apply w-full rounded-lg border border-line bg-surface-raised px-3 py-2 text-sm text-ink outline-none transition placeholder:text-ink-muted focus:border-accent focus:ring-2 focus:ring-[rgba(94,106,210,0.25)];
+  @apply w-full rounded-lg border border-line bg-surface-raised px-3 py-2 text-sm text-ink outline-none transition duration-fast ease-motion placeholder:text-ink-muted focus:border-accent focus:ring-2 focus:ring-[rgba(94,106,210,0.25)];
 }
 
 select.input option {

@@ -72,7 +72,10 @@ export default function AppHeader({
         {onReload && (
           <div className="ml-auto">
             <button className="btn-ghost" onClick={onReload} disabled={reloading}>
-              {reloading ? "Đang tải…" : "↻ Tải lại dữ liệu"}
+              {/* T03: icon quay trong lúc tải (animate-spin tự tắt dưới
+                  reduced-motion nhờ khối toàn cục trong globals.css). */}
+              <span className={`inline-block ${reloading ? "animate-spin" : ""}`}>↻</span>
+              {reloading ? "Đang tải…" : "Tải lại dữ liệu"}
             </button>
           </div>
         )}

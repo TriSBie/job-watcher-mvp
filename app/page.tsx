@@ -1,11 +1,17 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { AnimatePresence, MotionConfig } from "motion/react";
 import Onboarding from "@/components/Onboarding";
 import ProfileForm from "@/components/ProfileForm";
 import AppHeader from "@/components/AppHeader";
-import JobCard, { SOURCE_LABEL } from "@/components/JobCard";
-import KanbanBoard from "@/components/KanbanBoard";
+import JobCard, {
+  JobCardSkeleton,
+  SOURCE_LABEL,
+  Skeleton,
+  useMinVisible,
+} from "@/components/JobCard";
+import KanbanBoard, { KanbanSkeleton } from "@/components/KanbanBoard";
 import JobDrawer from "@/components/JobDrawer";
 import {
   PIPELINE,
@@ -50,7 +56,12 @@ export default function HomePage() {
   const { state, hydrated, addProfile, updateProfile, deleteProfile, setMatch } =
     useAppState();
   const [pool, setPool] = useState<PoolData>(EMPTY_POOL);
-  const [poolLoading, setPoolLoading] = useState(false);
+  // T01: bắt đầu ở trạng thái tải để lần render đầu sau hydrate không lóe
+  // text "Chưa có dữ liệu" trước khi cache/fetch kịp chạy; effect dưới sẽ
+  // tắt nó ngay khi cache còn tươi.
+  const [poolLoading, setPoolLoading] = useState(true);
+  // T01: trạng thái tải pool giữ tối thiểu 500ms để khỏi chớp.
+  const poolLoadingVisible = useMinVisible(poolLoading);
   const [poolError, setPoolError] = useState<string | null>(null);
   const [lastFetchAt, setLastFetchAt] = useState<number>(0);
 
@@ -105,6 +116,9 @@ export default function HomePage() {
     } catch {}
     if (Date.now() - cachedAt > 15 * 60000) {
       void loadPool();
+    } else {
+      // Cache còn tươi, không fetch → tắt trạng thái tải ban đầu.
+      setPoolLoading(false);
     }
   }, [loadPool]);
 
@@ -228,10 +242,25 @@ export default function HomePage() {
     : null;
 
   if (!hydrated) {
+    // T01: skeleton thay chữ "Đang tải…" — khung header + lưới thẻ khớp bố cục thật.
     return (
-      <main className="relative flex min-h-screen items-center justify-center text-ink-muted">
+      <main className="relative mx-auto min-h-screen w-full max-w-6xl px-4 py-6">
         <div className="page-glow pointer-events-none absolute inset-x-0 top-0 h-[420px]" />
-        <span className="relative">Đang tải…</span>
+        <div className="relative" aria-busy="true" aria-label="Đang tải">
+          <span className="sr-only">Đang tải…</span>
+          <div className="mb-5 flex items-center gap-3" aria-hidden="true">
+            <Skeleton className="h-9 w-9 !rounded-[10px]" />
+            <div className="space-y-2">
+              <Skeleton className="h-4 w-32" />
+              <Skeleton className="h-3 w-48" />
+            </div>
+          </div>
+          <div className="grid gap-3 md:grid-cols-2" aria-hidden="true">
+            {Array.from({ length: 4 }).map((_, i) => (
+              <JobCardSkeleton key={i} />
+            ))}
+          </div>
+        </div>
       </main>
     );
   }
@@ -258,6 +287,9 @@ export default function HomePage() {
   const lastRun = pool.runs[pool.runs.length - 1];
 
   return (
+    // T00: MotionConfig reducedMotion="user" biến mọi animation Motion
+    // (drawer, kanban FLIP) thành fade/tức thì khi prefers-reduced-motion.
+    <MotionConfig reducedMotion="user">
     <main className="relative mx-auto min-h-screen w-full max-w-6xl px-4 py-6">
       <div className="page-glow pointer-events-none absolute inset-x-0 top-0 -mx-4 h-[420px]" />
 
@@ -555,11 +587,30 @@ export default function HomePage() {
 
         {/* Nội dung chính */}
         {pool.jobs.length === 0 ? (
-          <div className="card p-8 text-center text-ink-muted">
-            {poolLoading
-              ? "Đang tải dữ liệu việc…"
-              : "Chưa có dữ liệu việc. Hệ thống quét tự động mỗi ~30 phút — hãy quay lại ít phút nữa hoặc bấm Tải lại dữ liệu."}
-          </div>
+          poolLoadingVisible ? (
+            // T01: skeleton khớp view đang chọn, giữ tối thiểu 500ms.
+            view === "kanban" ? (
+              <div aria-busy="true" aria-label="Đang tải dữ liệu việc">
+                <span className="sr-only">Đang tải dữ liệu việc…</span>
+                <KanbanSkeleton />
+              </div>
+            ) : (
+              <div
+                className="grid gap-3 md:grid-cols-2"
+                aria-busy="true"
+                aria-label="Đang tải dữ liệu việc"
+              >
+                <span className="sr-only">Đang tải dữ liệu việc…</span>
+                {Array.from({ length: 6 }).map((_, i) => (
+                  <JobCardSkeleton key={i} />
+                ))}
+              </div>
+            )
+          ) : (
+            <div className="card p-8 text-center text-ink-muted">
+              Chưa có dữ liệu việc. Hệ thống quét tự động mỗi ~30 phút — hãy quay lại ít phút nữa hoặc bấm Tải lại dữ liệu.
+            </div>
+          )
         ) : filtered.length === 0 ? (
           <div className="card p-8 text-center text-ink-muted">
             Không có job nào khớp bộ lọc hiện tại.
@@ -592,17 +643,22 @@ export default function HomePage() {
         </footer>
       </div>
 
-      {openScored && (
-        <JobDrawer
-          scored={openScored}
-          profile={activeProfile}
-          status={statusOf(openScored.job.id)}
-          note={profileMatches[openScored.job.id]?.note ?? ""}
-          onClose={() => setOpenJobId(null)}
-          onStatusChange={(s) => setMatch(activeProfile.id, openScored.job.id, { status: s })}
-          onNoteChange={(note) => setMatch(activeProfile.id, openScored.job.id, { note })}
-        />
-      )}
+      {/* T02: AnimatePresence giữ drawer sống trong lúc animation thoát chạy,
+          nên cả 3 cách đóng (nút, click overlay, Escape) đều trượt ra. */}
+      <AnimatePresence>
+        {openScored && (
+          <JobDrawer
+            scored={openScored}
+            profile={activeProfile}
+            status={statusOf(openScored.job.id)}
+            note={profileMatches[openScored.job.id]?.note ?? ""}
+            onClose={() => setOpenJobId(null)}
+            onStatusChange={(s) => setMatch(activeProfile.id, openScored.job.id, { status: s })}
+            onNoteChange={(note) => setMatch(activeProfile.id, openScored.job.id, { note })}
+          />
+        )}
+      </AnimatePresence>
     </main>
+    </MotionConfig>
   );
 }

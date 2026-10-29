@@ -1,10 +1,20 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { AnimatePresence, MotionConfig } from "motion/react";
 import Link from "next/link";
 import AppHeader from "@/components/AppHeader";
 import JobDrawer from "@/components/JobDrawer";
-import { MatchRing, SOURCE_LABEL, formatPosted } from "@/components/JobCard";
+import {
+  CountUp,
+  MatchRing,
+  SOURCE_LABEL,
+  Skeleton,
+  formatPosted,
+  useInViewOnce,
+  useMinVisible,
+  useMounted,
+} from "@/components/JobCard";
 import {
   countJobSkills,
   jobDateMs,
@@ -78,8 +88,13 @@ function Donut({ segments, size = 132 }: { segments: DonutSegment[]; size?: numb
   const r = 40;
   const c = 2 * Math.PI * r;
   let acc = 0;
+  // T04: các đoạn chạy từ 0 lên giá trị thật khi lần đầu vào viewport.
+  // Dùng transition trên stroke-dasharray/stroke-dashoffset — class transition
+  // mặc định của Tailwind không bao phủ hai thuộc tính này.
+  const { ref, inView } = useInViewOnce<HTMLDivElement>();
+  const p = inView ? 1 : 0;
   return (
-    <div className="relative shrink-0" style={{ width: size, height: size }}>
+    <div ref={ref} className="relative shrink-0" style={{ width: size, height: size }}>
       <svg viewBox="0 0 100 100" className="h-full w-full -rotate-90">
         <circle cx="50" cy="50" r={r} fill="none" stroke="rgba(255,255,255,0.06)" strokeWidth="11" />
         {total > 0 &&
@@ -87,8 +102,8 @@ function Donut({ segments, size = 132 }: { segments: DonutSegment[]; size?: numb
             .filter((s) => s.value > 0)
             .map((s) => {
               const frac = s.value / total;
-              const dash = `${Math.max(0, frac * c - 1.5)} ${c}`;
-              const offset = -acc * c;
+              const dash = `${Math.max(0, frac * c * p - 1.5)} ${c}`;
+              const offset = -acc * c * p;
               acc += frac;
               return (
                 <circle
@@ -101,6 +116,7 @@ function Donut({ segments, size = 132 }: { segments: DonutSegment[]; size?: numb
                   strokeWidth="11"
                   strokeDasharray={dash}
                   strokeDashoffset={offset}
+                  className="transition-[stroke-dasharray,stroke-dashoffset] duration-data ease-motion motion-reduce:transition-none"
                 />
               );
             })}
@@ -138,7 +154,13 @@ function Legend({ segments }: { segments: DonutSegment[] }) {
 export default function DashboardPage() {
   const { state, hydrated, setMatch } = useAppState();
   const [pool, setPool] = useState<PoolData>(EMPTY_POOL);
-  const [poolLoading, setPoolLoading] = useState(false);
+  // T01: bắt đầu ở trạng thái tải để lần render đầu sau hydrate không lóe
+  // text "Chưa có dữ liệu" trước khi cache/fetch kịp chạy.
+  const [poolLoading, setPoolLoading] = useState(true);
+  // T01: trạng thái tải pool giữ tối thiểu 500ms để khỏi chớp.
+  const poolLoadingVisible = useMinVisible(poolLoading);
+  // T04: bar chạy từ 0 lên giá trị thật sau lần mount đầu.
+  const mounted = useMounted();
   const [activeProfileId, setActiveProfileId] = useState<string | null>(null);
   const [openJobId, setOpenJobId] = useState<string | null>(null);
   const autoFetched = useRef(false);
@@ -173,6 +195,7 @@ export default function DashboardPage() {
       }
     } catch {}
     if (Date.now() - cachedAt > 15 * 60000) void loadPool();
+    else setPoolLoading(false); // Cache còn tươi, không fetch → tắt trạng thái tải.
   }, [loadPool]);
 
   const activeProfile =
@@ -345,26 +368,47 @@ export default function DashboardPage() {
     profileMatches[jobId]?.status ?? "new";
 
   if (!hydrated) {
+    // T01: skeleton thay chữ "Đang tải…".
     return (
-      <main className="relative flex min-h-screen items-center justify-center text-ink-muted">
+      <main className="relative mx-auto min-h-screen w-full max-w-6xl px-4 py-6">
         <div className="page-glow pointer-events-none absolute inset-x-0 top-0 h-[420px]" />
-        <span className="relative">Đang tải…</span>
+        <div className="relative" aria-busy="true" aria-label="Đang tải">
+          <span className="sr-only">Đang tải…</span>
+          <div className="mb-5 flex items-center gap-3" aria-hidden="true">
+            <Skeleton className="h-9 w-9 !rounded-[10px]" />
+            <div className="space-y-2">
+              <Skeleton className="h-4 w-32" />
+              <Skeleton className="h-3 w-48" />
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5" aria-hidden="true">
+            {Array.from({ length: 5 }).map((_, i) => (
+              <div key={i} className="card space-y-2 p-4">
+                <Skeleton className="h-7 w-16" />
+                <Skeleton className="h-3 w-24" />
+              </div>
+            ))}
+          </div>
+        </div>
       </main>
     );
   }
 
-  const kpiCards = [
-    { label: "Tổng số job", value: String(kpis.total) },
-    { label: "Job mới 24h", value: String(kpis.new24h) },
-    { label: "Job mới 7 ngày", value: String(kpis.new7d) },
+  const kpiCards: { label: string; value: number | null }[] = [
+    { label: "Tổng số job", value: kpis.total },
+    { label: "Job mới 24h", value: kpis.new24h },
+    { label: "Job mới 7 ngày", value: kpis.new7d },
     {
       label: "Khớp mạnh" + (activeProfile ? ` · ${activeProfile.name}` : ""),
-      value: activeProfile ? String(kpis.strong) : "—",
+      value: activeProfile ? kpis.strong : null,
     },
-    { label: "Công ty đang tuyển", value: String(kpis.companies) },
+    { label: "Công ty đang tuyển", value: kpis.companies },
   ];
 
   return (
+    // T00: MotionConfig reducedMotion="user" biến mọi animation Motion
+    // (drawer) thành fade/tức thì khi prefers-reduced-motion.
+    <MotionConfig reducedMotion="user">
     <main className="relative mx-auto min-h-screen w-full max-w-6xl px-4 py-6">
       <div className="page-glow pointer-events-none absolute inset-x-0 top-0 -mx-4 h-[420px]" />
 
@@ -396,11 +440,36 @@ export default function DashboardPage() {
         )}
 
         {pool.jobs.length === 0 ? (
-          <div className="card p-8 text-center text-ink-muted">
-            {poolLoading
-              ? "Đang tải dữ liệu việc…"
-              : "Chưa có dữ liệu việc để phân tích. Hệ thống quét tự động mỗi ~30 phút — hãy quay lại ít phút nữa hoặc bấm Tải lại dữ liệu."}
-          </div>
+          poolLoadingVisible ? (
+            // T01: skeleton dashboard, giữ tối thiểu 500ms.
+            <div aria-busy="true" aria-label="Đang tải dữ liệu việc">
+              <span className="sr-only">Đang tải dữ liệu việc…</span>
+              <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5" aria-hidden="true">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <div key={i} className="card space-y-2 p-4">
+                    <Skeleton className="h-7 w-16" />
+                    <Skeleton className="h-3 w-24" />
+                  </div>
+                ))}
+              </div>
+              <div className="mt-4 grid grid-cols-1 gap-4 lg:grid-cols-12" aria-hidden="true">
+                <div className="card space-y-3 p-4 lg:col-span-7">
+                  <Skeleton className="h-3 w-32" />
+                  <Skeleton className="h-3 w-full" />
+                  <Skeleton className="h-3 w-5/6" />
+                  <Skeleton className="h-3 w-2/3" />
+                </div>
+                <div className="card space-y-3 p-4 lg:col-span-5">
+                  <Skeleton className="h-3 w-32" />
+                  <Skeleton className="h-20 w-full" />
+                </div>
+              </div>
+            </div>
+          ) : (
+            <div className="card p-8 text-center text-ink-muted">
+              Chưa có dữ liệu việc để phân tích. Hệ thống quét tự động mỗi ~30 phút — hãy quay lại ít phút nữa hoặc bấm Tải lại dữ liệu.
+            </div>
+          )
         ) : (
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-12">
             {/* Hàng KPI */}
@@ -408,7 +477,8 @@ export default function DashboardPage() {
               {kpiCards.map((k) => (
                 <div key={k.label} className="card p-4">
                   <div className="text-[26px] font-semibold leading-none tabular-nums tracking-[-0.02em] text-ink">
-                    {k.value}
+                    {/* T04: count-up 700ms, chạy 1 lần mỗi lần xuất hiện/thay đổi. */}
+                    {k.value === null ? "—" : <CountUp value={k.value} />}
                   </div>
                   <div className="panel-title mt-2">{k.label}</div>
                 </div>
@@ -432,8 +502,8 @@ export default function DashboardPage() {
                       </span>
                       <div className="h-2 min-w-0 flex-1 overflow-hidden rounded-full bg-white/[0.06]">
                         <div
-                          className="h-full rounded-full bg-accent"
-                          style={{ width: `${(count / skillStats.max) * 100}%` }}
+                          className="h-full rounded-full bg-accent transition-[width] duration-data ease-motion motion-reduce:transition-none"
+                          style={{ width: mounted ? `${(count / skillStats.max) * 100}%` : "0%" }}
                         />
                       </div>
                       <span className="w-20 shrink-0 text-right text-xs tabular-nums text-ink-secondary">
@@ -472,10 +542,10 @@ export default function DashboardPage() {
                       {d.count > 0 ? d.count : ""}
                     </span>
                     <div
-                      className={`w-full rounded-t transition ${
+                      className={`w-full rounded-t transition-[height] duration-data ease-motion motion-reduce:transition-none ${
                         d.isToday ? "bg-accent" : "bg-accent/45 hover:bg-accent/70"
                       }`}
-                      style={{ height: `${Math.max(4, (d.count / rhythm.max) * 78)}%` }}
+                      style={{ height: mounted ? `${Math.max(4, (d.count / rhythm.max) * 78)}%` : "0%" }}
                     />
                     <span className="text-[9px] tabular-nums text-ink-muted">
                       {d.label.slice(0, 5)}
@@ -555,9 +625,11 @@ export default function DashboardPage() {
                       </div>
                       <div className="mt-1.5 h-1.5 overflow-hidden rounded-full bg-white/[0.06]">
                         <div
-                          className="h-full rounded-full bg-accent/80"
+                          className="h-full rounded-full bg-accent/80 transition-[width] duration-data ease-motion motion-reduce:transition-none"
                           style={{
-                            width: `${(c.count / Math.max(1, topCompanies[0].count)) * 100}%`,
+                            width: mounted
+                              ? `${(c.count / Math.max(1, topCompanies[0].count)) * 100}%`
+                              : "0%",
                           }}
                         />
                       </div>
@@ -585,9 +657,12 @@ export default function DashboardPage() {
                       .map((s) => (
                         <div
                           key={s.label}
+                          className="transition-[width] duration-data ease-motion motion-reduce:transition-none"
                           style={{
                             background: s.color,
-                            width: `${(s.value / Math.max(1, pool.jobs.length)) * 100}%`,
+                            width: mounted
+                              ? `${(s.value / Math.max(1, pool.jobs.length)) * 100}%`
+                              : "0%",
                           }}
                           title={`${s.label}: ${s.value}`}
                         />
@@ -620,18 +695,18 @@ export default function DashboardPage() {
                 <div>
                   <div className="flex h-4 w-full overflow-hidden rounded-full bg-white/[0.06]">
                     <div
-                      className="bg-emerald-400"
-                      style={{ width: `${(matchDist.strong / matchDist.total) * 100}%` }}
+                      className="bg-emerald-400 transition-[width] duration-data ease-motion motion-reduce:transition-none"
+                      style={{ width: mounted ? `${(matchDist.strong / matchDist.total) * 100}%` : "0%" }}
                       title={`Khớp mạnh: ${matchDist.strong}`}
                     />
                     <div
-                      className="bg-amber-400"
-                      style={{ width: `${(matchDist.partial / matchDist.total) * 100}%` }}
+                      className="bg-amber-400 transition-[width] duration-data ease-motion motion-reduce:transition-none"
+                      style={{ width: mounted ? `${(matchDist.partial / matchDist.total) * 100}%` : "0%" }}
                       title={`Khớp một phần: ${matchDist.partial}`}
                     />
                     <div
-                      className="bg-[#62666b]"
-                      style={{ width: `${(matchDist.weak / matchDist.total) * 100}%` }}
+                      className="bg-[#62666b] transition-[width] duration-data ease-motion motion-reduce:transition-none"
+                      style={{ width: mounted ? `${(matchDist.weak / matchDist.total) * 100}%` : "0%" }}
                       title={`Khớp yếu: ${matchDist.weak}`}
                     />
                   </div>
@@ -669,17 +744,21 @@ export default function DashboardPage() {
         </footer>
       </div>
 
-      {openScored && activeProfile && (
-        <JobDrawer
-          scored={openScored}
-          profile={activeProfile}
-          status={statusOf(openScored.job.id)}
-          note={profileMatches[openScored.job.id]?.note ?? ""}
-          onClose={() => setOpenJobId(null)}
-          onStatusChange={(s) => setMatch(activeProfile.id, openScored.job.id, { status: s })}
-          onNoteChange={(note) => setMatch(activeProfile.id, openScored.job.id, { note })}
-        />
-      )}
+      {/* T02: AnimatePresence giữ drawer sống trong lúc animation thoát chạy. */}
+      <AnimatePresence>
+        {openScored && activeProfile && (
+          <JobDrawer
+            scored={openScored}
+            profile={activeProfile}
+            status={statusOf(openScored.job.id)}
+            note={profileMatches[openScored.job.id]?.note ?? ""}
+            onClose={() => setOpenJobId(null)}
+            onStatusChange={(s) => setMatch(activeProfile.id, openScored.job.id, { status: s })}
+            onNoteChange={(note) => setMatch(activeProfile.id, openScored.job.id, { note })}
+          />
+        )}
+      </AnimatePresence>
     </main>
+    </MotionConfig>
   );
 }
