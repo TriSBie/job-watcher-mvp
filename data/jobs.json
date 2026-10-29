@@ -1,27 +1,11 @@
 {
- "updatedAt": "2026-10-29T08:35:43.233Z",
+ "updatedAt": "2026-10-29T09:05:52.297Z",
  "sourceStatus": {
   "linkedin": "ok",
   "itviec": "ok",
   "topdev": "ok"
  },
  "runs": [
-  {
-   "at": "2026-10-29T03:05:46.712Z",
-   "fetched": 214,
-   "added": 11,
-   "total": 80,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 94
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
   {
    "at": "2026-10-29T03:35:52.179Z",
    "fetched": 212,
@@ -197,6 +181,22 @@
     "itviec": "ok",
     "topdev": "ok"
    }
+  },
+  {
+   "at": "2026-10-29T09:05:52.297Z",
+   "fetched": 212,
+   "added": 12,
+   "total": 82,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 92
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
   }
  ],
  "jobs": [
@@ -236,6 +236,25 @@
     "Embedded"
    ],
    "firstSeenAt": 1793262943233
+  },
+  {
+   "id": "itviec:software-development-engineer-in-test-sdet-datalogic-viet-nam-4633",
+   "title": "Software Development Engineer in Test (SDET)",
+   "company": "Datalogic Việt Nam",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/software-development-engineer-in-test-sdet-datalogic-viet-nam-4633",
+   "source": "itviec",
+   "postedAt": "2026-10-29",
+   "snippet": "",
+   "skills": [
+    "Automation Test",
+    "CI/CD",
+    "API",
+    "Linux",
+    "TypeScript",
+    "Python"
+   ],
+   "firstSeenAt": 1793264752297
   },
   {
    "id": "itviec:team-leader-japanese-n2-cube-system-viet-nam-1603",
@@ -376,9 +395,9 @@
    "skills": [
     "Zephyr",
     "Hardware Design",
+    "AUTOSAR",
     "Linux",
-    "Embedded",
-    "AUTOSAR"
+    "Embedded"
    ],
    "firstSeenAt": 1793064948346
   },
@@ -802,7 +821,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/ho-chi-minh-full-stack-developer-reactjs-nodejs-one-tech-stop-vietnam-company-ltd-2723",
    "source": "itviec",
-   "postedAt": "2026-10-23",
+   "postedAt": "2026-10-22",
    "snippet": "",
    "skills": [
     "Node.js",
@@ -961,7 +980,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/full-stack-developer-ai-first-drupal-php-node-js-javac-technology-software-company-ltd-4624",
    "source": "itviec",
-   "postedAt": "2026-10-22",
+   "postedAt": "2026-10-21",
    "snippet": "",
    "skills": [
     "PHP",
@@ -1373,11 +1392,11 @@
    "snippet": "",
    "skills": [
     ".NET",
+    "Java",
     "PostgreSQL",
     "AI",
     "Software Architecture",
-    "English",
-    "Java"
+    "English"
    ],
    "firstSeenAt": 1792483383856
   },
