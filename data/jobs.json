@@ -1,27 +1,11 @@
 {
- "updatedAt": "2026-10-28T23:15:53.623Z",
+ "updatedAt": "2026-10-29T01:44:06.554Z",
  "sourceStatus": {
-  "linkedin": "error",
+  "linkedin": "ok",
   "itviec": "ok",
   "topdev": "ok"
  },
  "runs": [
-  {
-   "at": "2026-10-28T10:54:08.278Z",
-   "fetched": 206,
-   "added": 14,
-   "total": 82,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 86
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
   {
    "at": "2026-10-28T11:40:18.035Z",
    "fetched": 206,
@@ -197,6 +181,22 @@
     "itviec": "ok",
     "topdev": "ok"
    }
+  },
+  {
+   "at": "2026-10-29T01:44:06.554Z",
+   "fetched": 190,
+   "added": 10,
+   "total": 80,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 70
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
   }
  ],
  "jobs": [
@@ -307,6 +307,25 @@
     "SQL"
    ],
    "firstSeenAt": 1793184848278
+  },
+  {
+   "id": "itviec:front-end-developer-php-javascript-html-css-incepit-4351",
+   "title": "Front-End Developer (PHP, Javascript, HTML, CSS)",
+   "company": "IncepIT",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/front-end-developer-php-javascript-html-css-incepit-4351",
+   "source": "itviec",
+   "postedAt": "2026-10-28",
+   "snippet": "",
+   "skills": [
+    "JavaScript",
+    "HTML",
+    "Linux",
+    "MySQL",
+    "AWS",
+    "PHP"
+   ],
+   "firstSeenAt": 1792483383856
   },
   {
    "id": "itviec:automotive-embedded-software-engineer-asap-hitachi-digital-services-1115",
@@ -428,25 +447,6 @@
    "firstSeenAt": 1793073944384
   },
   {
-   "id": "itviec:front-end-developer-php-javascript-html-css-incepit-4351",
-   "title": "Front-End Developer (PHP, Javascript, HTML, CSS)",
-   "company": "IncepIT",
-   "location": "Ho Chi Minh",
-   "url": "https://itviec.com/it-jobs/front-end-developer-php-javascript-html-css-incepit-4351",
-   "source": "itviec",
-   "postedAt": "2026-10-27",
-   "snippet": "",
-   "skills": [
-    "JavaScript",
-    "HTML",
-    "Linux",
-    "MySQL",
-    "AWS",
-    "PHP"
-   ],
-   "firstSeenAt": 1792483383856
-  },
-  {
    "id": "linkedin:4484011053",
    "title": "Backend Engineer, Integration",
    "company": "Hello Clever",
@@ -483,7 +483,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/fintech-frontend-dev-javascript-react-new-wealth-2706",
    "source": "itviec",
-   "postedAt": "2026-10-26",
+   "postedAt": "2026-10-27",
    "snippet": "",
    "skills": [
     "JavaScript",
@@ -499,7 +499,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/unity-game-developer-c-nexon-dev-vina-4134",
    "source": "itviec",
-   "postedAt": "2026-10-26",
+   "postedAt": "2026-10-27",
    "snippet": "",
    "skills": [
     "Unity",
@@ -632,7 +632,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/mid-sr-java-developer-english-required-up-to-3200-rakuten-fintech-vietnam-co-ltd-4807",
    "source": "itviec",
-   "postedAt": "2026-10-24",
+   "postedAt": "2026-10-25",
    "snippet": "",
    "skills": [
     "Java",
@@ -651,7 +651,7 @@
    "location": "Dong Nai",
    "url": "https://itviec.com/it-jobs/software-developer-net-power-bi-microsoft-dynamics-mdc-precision-vietnam-1530",
    "source": "itviec",
-   "postedAt": "2026-10-23",
+   "postedAt": "2026-10-24",
    "snippet": "",
    "skills": [
     ".NET",
@@ -746,7 +746,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/java-fullstack-developer-react-elasticsearch-aws-hitachi-digital-services-4739",
    "source": "itviec",
-   "postedAt": "2026-10-22",
+   "postedAt": "2026-10-23",
    "snippet": "",
    "skills": [
     "Java",
@@ -765,7 +765,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/ho-chi-minh-full-stack-developer-reactjs-nodejs-one-tech-stop-vietnam-company-ltd-2723",
    "source": "itviec",
-   "postedAt": "2026-10-22",
+   "postedAt": "2026-10-23",
    "snippet": "",
    "skills": [
     "Node.js",
@@ -784,7 +784,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/mid-sr-java-engineer-springboot-microservices-bonus-epam-vietnam-1226",
    "source": "itviec",
-   "postedAt": "2026-10-22",
+   "postedAt": "2026-10-23",
    "snippet": "",
    "skills": [
     "Java",
@@ -802,7 +802,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/python-developer-accenture-2706",
    "source": "itviec",
-   "postedAt": "2026-10-22",
+   "postedAt": "2026-10-23",
    "snippet": "",
    "skills": [
     "Python",
@@ -942,7 +942,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/full-stack-developer-ai-first-drupal-php-node-js-javac-technology-software-company-ltd-4624",
    "source": "itviec",
-   "postedAt": "2026-10-21",
+   "postedAt": "2026-10-22",
    "snippet": "",
    "skills": [
     "PHP",
@@ -961,7 +961,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/game-server-developer-c-mysql-cong-ty-tnhh-cong-nghe-tamron-viet-nam-4832",
    "source": "itviec",
-   "postedAt": "2026-10-21",
+   "postedAt": "2026-10-22",
    "snippet": "",
    "skills": [
     "C++",
@@ -1018,7 +1018,7 @@
    "location": "remote",
    "url": "https://itviec.com/it-jobs/remote-fullstack-developer-typescript-node-js-nestjs-orgscale-recruitment-4352",
    "source": "itviec",
-   "postedAt": "2026-10-20",
+   "postedAt": "2026-10-21",
    "snippet": "",
    "skills": [
     "TypeScript",
@@ -1037,7 +1037,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/software-developer-net-c-c-hansen-technologies-0421",
    "source": "itviec",
-   "postedAt": "2026-10-19",
+   "postedAt": "2026-10-20",
    "snippet": "",
    "skills": [
     ".NET",
@@ -1110,7 +1110,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/backend-developer-java-mysql-postgresql-dosoftpro-4517",
    "source": "itviec",
-   "postedAt": "2026-10-17",
+   "postedAt": "2026-10-18",
    "snippet": "",
    "skills": [
     "Java",
@@ -1119,6 +1119,25 @@
     "PostgreSQL",
     "OOP",
     "MySQL"
+   ],
+   "firstSeenAt": 1792483383856
+  },
+  {
+   "id": "itviec:java-backend-developer-java-17-spring-boot-english-bbv-vietnam-1949",
+   "title": "Java Backend Developer (Java 17+, Spring Boot, English)",
+   "company": "bbv Vietnam",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/java-backend-developer-java-17-spring-boot-english-bbv-vietnam-1949",
+   "source": "itviec",
+   "postedAt": "2026-10-17",
+   "snippet": "",
+   "skills": [
+    "Java",
+    "Spring Boot",
+    "Kafka",
+    "SQL",
+    "Agile",
+    "English"
    ],
    "firstSeenAt": 1792483383856
   },
@@ -1138,25 +1157,6 @@
     ".NET",
     "JavaScript",
     "SQL"
-   ],
-   "firstSeenAt": 1792483383856
-  },
-  {
-   "id": "itviec:java-backend-developer-java-17-spring-boot-english-bbv-vietnam-1949",
-   "title": "Java Backend Developer (Java 17+, Spring Boot, English)",
-   "company": "bbv Vietnam",
-   "location": "Ho Chi Minh",
-   "url": "https://itviec.com/it-jobs/java-backend-developer-java-17-spring-boot-english-bbv-vietnam-1949",
-   "source": "itviec",
-   "postedAt": "2026-10-16",
-   "snippet": "",
-   "skills": [
-    "Java",
-    "Spring Boot",
-    "Kafka",
-    "SQL",
-    "Agile",
-    "English"
    ],
    "firstSeenAt": 1792483383856
   },
@@ -1312,7 +1312,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/software-engineer-java-c-scala-beyondsoft-technology-vietnam-company-limited-4159",
    "source": "itviec",
-   "postedAt": "2026-10-09",
+   "postedAt": "2026-10-10",
    "snippet": "",
    "skills": [
     "C#",
@@ -1331,7 +1331,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/middle-senior-backend-developer-aws-api-ci-cd-cong-ty-tnhh-cong-nghe-angle-ai-4422",
    "source": "itviec",
-   "postedAt": "2026-10-08",
+   "postedAt": "2026-10-09",
    "snippet": "",
    "skills": [
     "Cloud",
@@ -1350,7 +1350,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/software-engineer-ai-coding-agent-net-java-ol-vietnam-1338",
    "source": "itviec",
-   "postedAt": "2026-10-08",
+   "postedAt": "2026-10-09",
    "snippet": "",
    "skills": [
     ".NET",
@@ -1430,7 +1430,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/fullstack-developer-java-golang-python-rontech-2046",
    "source": "itviec",
-   "postedAt": "2026-10-05",
+   "postedAt": "2026-10-06",
    "snippet": "",
    "skills": [
     "Java",
@@ -1483,7 +1483,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/full-stack-developer-net-simpson-strong-tie-vietnam-4937",
    "source": "itviec",
-   "postedAt": "2026-10-02",
+   "postedAt": "2026-10-03",
    "snippet": "",
    "skills": [
     "Fullstack",
@@ -1501,7 +1501,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/backend-developer-rust-c-c-cong-ty-tnhh-nexlab-it-solutions-3643",
    "source": "itviec",
-   "postedAt": "2026-10-01",
+   "postedAt": "2026-10-02",
    "snippet": "",
    "skills": [
     "Rust",
@@ -1585,42 +1585,6 @@
     "Microservices Architecture",
     "Go",
     "Python"
-   ],
-   "firstSeenAt": 1792483383856
-  },
-  {
-   "id": "itviec:full-stack-developer-java-go-angular-reactjs-leap-5909",
-   "title": "Full-stack Developer (Java / Go · Angular / ReactJS)",
-   "company": "LEAP",
-   "location": "Ho Chi Minh",
-   "url": "https://itviec.com/it-jobs/full-stack-developer-java-go-angular-reactjs-leap-5909",
-   "source": "itviec",
-   "postedAt": "2026-09-29",
-   "snippet": "",
-   "skills": [
-    "Java",
-    "React",
-    "Angular",
-    "Spring"
-   ],
-   "firstSeenAt": 1792483383856
-  },
-  {
-   "id": "topdev:2135787",
-   "title": "Java Backend Developer",
-   "company": "FPT IS",
-   "location": "Hồ Chí Minh, Hà Nội, Đà Nẵng, Hà Nội",
-   "url": "https://topdev.vn/detail-jobs/java-backend-developer-fpt-is-2135787",
-   "source": "topdev",
-   "postedAt": "2026-09-29",
-   "snippet": "",
-   "skills": [
-    "Java",
-    ".NET",
-    "React Native",
-    "Flutter",
-    "SQL",
-    "Spring Boot"
    ],
    "firstSeenAt": 1792483383856
   },
