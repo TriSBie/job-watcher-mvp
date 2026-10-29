@@ -1,32 +1,16 @@
 {
- "updatedAt": "2026-10-28T06:35:42.494Z",
+ "updatedAt": "2026-10-28T23:15:53.623Z",
  "sourceStatus": {
-  "linkedin": "ok",
+  "linkedin": "error",
   "itviec": "ok",
   "topdev": "ok"
  },
  "runs": [
   {
-   "at": "2026-10-28T01:05:46.065Z",
-   "fetched": 204,
-   "added": 11,
-   "total": 80,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 84
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-10-28T01:35:45.615Z",
+   "at": "2026-10-28T10:54:08.278Z",
    "fetched": 206,
-   "added": 11,
-   "total": 80,
+   "added": 14,
+   "total": 82,
    "perSource": {
     "linkedin": 20,
     "itviec": 100,
@@ -39,109 +23,13 @@
    }
   },
   {
-   "at": "2026-10-28T02:05:43.578Z",
+   "at": "2026-10-28T11:40:18.035Z",
    "fetched": 206,
-   "added": 11,
-   "total": 80,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 86
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-10-28T02:35:42.947Z",
-   "fetched": 207,
-   "added": 11,
-   "total": 80,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 87
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-10-28T03:05:58.986Z",
-   "fetched": 207,
    "added": 13,
    "total": 82,
    "perSource": {
     "linkedin": 20,
     "itviec": 100,
-    "topdev": 87
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-10-28T03:53:02.316Z",
-   "fetched": 207,
-   "added": 11,
-   "total": 82,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 87
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-10-28T04:05:43.410Z",
-   "fetched": 207,
-   "added": 11,
-   "total": 82,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 87
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-10-28T04:35:44.899Z",
-   "fetched": 207,
-   "added": 11,
-   "total": 82,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 87
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-10-28T05:05:46.339Z",
-   "fetched": 206,
-   "added": 11,
-   "total": 81,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
     "topdev": 86
    },
    "sourceStatus": {
@@ -151,49 +39,161 @@
    }
   },
   {
-   "at": "2026-10-28T05:35:59.506Z",
-   "fetched": 206,
-   "added": 12,
-   "total": 81,
+   "at": "2026-10-28T12:27:22.080Z",
+   "fetched": 186,
+   "added": 8,
+   "total": 82,
    "perSource": {
-    "linkedin": 20,
+    "linkedin": 0,
     "itviec": 100,
     "topdev": 86
    },
    "sourceStatus": {
-    "linkedin": "ok",
+    "linkedin": "error",
     "itviec": "ok",
     "topdev": "ok"
    }
   },
   {
-   "at": "2026-10-28T06:05:42.150Z",
-   "fetched": 207,
-   "added": 12,
-   "total": 81,
+   "at": "2026-10-28T13:00:53.542Z",
+   "fetched": 186,
+   "added": 8,
+   "total": 82,
    "perSource": {
-    "linkedin": 20,
+    "linkedin": 0,
     "itviec": 100,
-    "topdev": 87
+    "topdev": 86
    },
    "sourceStatus": {
-    "linkedin": "ok",
+    "linkedin": "error",
     "itviec": "ok",
     "topdev": "ok"
    }
   },
   {
-   "at": "2026-10-28T06:35:42.494Z",
-   "fetched": 207,
-   "added": 13,
+   "at": "2026-10-28T13:54:17.531Z",
+   "fetched": 186,
+   "added": 8,
+   "total": 82,
+   "perSource": {
+    "linkedin": 0,
+    "itviec": 100,
+    "topdev": 86
+   },
+   "sourceStatus": {
+    "linkedin": "error",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-10-28T14:56:59.765Z",
+   "fetched": 186,
+   "added": 8,
+   "total": 82,
+   "perSource": {
+    "linkedin": 0,
+    "itviec": 100,
+    "topdev": 86
+   },
+   "sourceStatus": {
+    "linkedin": "error",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-10-28T17:46:15.006Z",
+   "fetched": 190,
+   "added": 10,
    "total": 82,
    "perSource": {
     "linkedin": 20,
     "itviec": 100,
-    "topdev": 87
+    "topdev": 70
    },
    "sourceStatus": {
     "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-10-28T18:35:18.264Z",
+   "fetched": 170,
+   "added": 5,
+   "total": 82,
+   "perSource": {
+    "linkedin": 0,
+    "itviec": 100,
+    "topdev": 70
+   },
+   "sourceStatus": {
+    "linkedin": "error",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-10-28T19:24:31.095Z",
+   "fetched": 190,
+   "added": 10,
+   "total": 82,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 70
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-10-28T19:46:34.013Z",
+   "fetched": 190,
+   "added": 10,
+   "total": 82,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 70
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-10-28T20:38:40.171Z",
+   "fetched": 190,
+   "added": 10,
+   "total": 82,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 70
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-10-28T23:15:53.623Z",
+   "fetched": 170,
+   "added": 5,
+   "total": 82,
+   "perSource": {
+    "linkedin": 0,
+    "itviec": 100,
+    "topdev": 70
+   },
+   "sourceStatus": {
+    "linkedin": "error",
     "itviec": "ok",
     "topdev": "ok"
    }
@@ -270,6 +270,43 @@
     "English"
    ],
    "firstSeenAt": 1793169342494
+  },
+  {
+   "id": "itviec:sap-public-cloud-developer-btp-integration-suite-datvietvac-5150",
+   "title": "SAP Public Cloud Developer (BTP / Integration Suite)",
+   "company": "DatVietVAC Group Holdings",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/sap-public-cloud-developer-btp-integration-suite-datvietvac-5150",
+   "source": "itviec",
+   "postedAt": "2026-10-28",
+   "snippet": "",
+   "skills": [
+    "SAP",
+    "English"
+   ],
+   "firstSeenAt": 1792483383856
+  },
+  {
+   "id": "linkedin:4483859756",
+   "title": "Back End Developer",
+   "company": "Diksha Technologies",
+   "location": "Ho Chi Minh City Metropolitan Area",
+   "url": "https://vn.linkedin.com/jobs/view/back-end-developer-at-diksha-technologies-4483859756",
+   "source": "linkedin",
+   "postedAt": "2026-10-28",
+   "snippet": "Key Responsibilities : Develop backend services and REST/GraphQL APIs with Java Spring Boot and PostgreSQL. Integrate internal systems and external services; implement webhooks, authentication and data mapping. Implement transaction handling, validation, error handling, retries a",
+   "skills": [
+    "Java",
+    "Spring Boot",
+    "PostgreSQL",
+    "Docker",
+    "REST APIs",
+    "GraphQL",
+    "CI/CD",
+    "Git",
+    "SQL"
+   ],
+   "firstSeenAt": 1793184848278
   },
   {
    "id": "itviec:automotive-embedded-software-engineer-asap-hitachi-digital-services-1115",
@@ -599,11 +636,11 @@
    "snippet": "",
    "skills": [
     "Java",
+    "English",
     "Unit test",
     "Spring Boot",
     "Spring",
-    "SQL",
-    "English"
+    "SQL"
    ],
    "firstSeenAt": 1792483383856
   },
@@ -614,7 +651,7 @@
    "location": "Dong Nai",
    "url": "https://itviec.com/it-jobs/software-developer-net-power-bi-microsoft-dynamics-mdc-precision-vietnam-1530",
    "source": "itviec",
-   "postedAt": "2026-10-24",
+   "postedAt": "2026-10-23",
    "snippet": "",
    "skills": [
     ".NET",
@@ -703,28 +740,13 @@
    "firstSeenAt": 1792745322919
   },
   {
-   "id": "itviec:sap-public-cloud-developer-btp-integration-suite-datvietvac-5150",
-   "title": "SAP Public Cloud Developer (BTP / Integration Suite)",
-   "company": "DatVietVAC Group Holdings",
-   "location": "Ho Chi Minh",
-   "url": "https://itviec.com/it-jobs/sap-public-cloud-developer-btp-integration-suite-datvietvac-5150",
-   "source": "itviec",
-   "postedAt": "2026-10-23",
-   "snippet": "",
-   "skills": [
-    "SAP",
-    "English"
-   ],
-   "firstSeenAt": 1792483383856
-  },
-  {
    "id": "itviec:java-fullstack-developer-react-elasticsearch-aws-hitachi-digital-services-4739",
    "title": "Java Fullstack Developer (React/ Elasticsearch /AWS)",
    "company": "Hitachi Digital Services",
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/java-fullstack-developer-react-elasticsearch-aws-hitachi-digital-services-4739",
    "source": "itviec",
-   "postedAt": "2026-10-23",
+   "postedAt": "2026-10-22",
    "snippet": "",
    "skills": [
     "Java",
@@ -743,7 +765,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/ho-chi-minh-full-stack-developer-reactjs-nodejs-one-tech-stop-vietnam-company-ltd-2723",
    "source": "itviec",
-   "postedAt": "2026-10-23",
+   "postedAt": "2026-10-22",
    "snippet": "",
    "skills": [
     "Node.js",
@@ -762,7 +784,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/mid-sr-java-engineer-springboot-microservices-bonus-epam-vietnam-1226",
    "source": "itviec",
-   "postedAt": "2026-10-23",
+   "postedAt": "2026-10-22",
    "snippet": "",
    "skills": [
     "Java",
@@ -780,7 +802,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/python-developer-accenture-2706",
    "source": "itviec",
-   "postedAt": "2026-10-23",
+   "postedAt": "2026-10-22",
    "snippet": "",
    "skills": [
     "Python",
@@ -895,25 +917,6 @@
    "firstSeenAt": 1792570814703
   },
   {
-   "id": "itviec:full-stack-developer-ai-first-drupal-php-node-js-javac-technology-software-company-ltd-4624",
-   "title": "Full Stack Developer (AI-First) – Drupal/PHP & Node.js",
-   "company": "Javac Technology Software Company, Ltd",
-   "location": "Ho Chi Minh",
-   "url": "https://itviec.com/it-jobs/full-stack-developer-ai-first-drupal-php-node-js-javac-technology-software-company-ltd-4624",
-   "source": "itviec",
-   "postedAt": "2026-10-22",
-   "snippet": "",
-   "skills": [
-    "PHP",
-    "Magento",
-    "AI",
-    "TypeScript",
-    "Node.js",
-    "Drupal"
-   ],
-   "firstSeenAt": 1792577156501
-  },
-  {
    "id": "itviec:mobile-game-developer-fullstack-5exp-java-c-c-php-568e-0952",
    "title": "Mobile Game Developer Fullstack 5EXP java, c++, c#, PHP",
    "company": "568E",
@@ -931,6 +934,25 @@
     "JavaScript"
    ],
    "firstSeenAt": 1792483383856
+  },
+  {
+   "id": "itviec:full-stack-developer-ai-first-drupal-php-node-js-javac-technology-software-company-ltd-4624",
+   "title": "Full Stack Developer (AI-First) – Drupal/PHP & Node.js",
+   "company": "Javac Technology Software Company, Ltd",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/full-stack-developer-ai-first-drupal-php-node-js-javac-technology-software-company-ltd-4624",
+   "source": "itviec",
+   "postedAt": "2026-10-21",
+   "snippet": "",
+   "skills": [
+    "PHP",
+    "Magento",
+    "AI",
+    "TypeScript",
+    "Node.js",
+    "Drupal"
+   ],
+   "firstSeenAt": 1792577156501
   },
   {
    "id": "itviec:game-server-developer-c-mysql-cong-ty-tnhh-cong-nghe-tamron-viet-nam-4832",
@@ -1088,7 +1110,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/backend-developer-java-mysql-postgresql-dosoftpro-4517",
    "source": "itviec",
-   "postedAt": "2026-10-18",
+   "postedAt": "2026-10-17",
    "snippet": "",
    "skills": [
     "Java",
@@ -1290,7 +1312,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/software-engineer-java-c-scala-beyondsoft-technology-vietnam-company-limited-4159",
    "source": "itviec",
-   "postedAt": "2026-10-10",
+   "postedAt": "2026-10-09",
    "snippet": "",
    "skills": [
     "C#",
@@ -1309,7 +1331,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/middle-senior-backend-developer-aws-api-ci-cd-cong-ty-tnhh-cong-nghe-angle-ai-4422",
    "source": "itviec",
-   "postedAt": "2026-10-09",
+   "postedAt": "2026-10-08",
    "snippet": "",
    "skills": [
     "Cloud",
@@ -1479,7 +1501,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/backend-developer-rust-c-c-cong-ty-tnhh-nexlab-it-solutions-3643",
    "source": "itviec",
-   "postedAt": "2026-10-02",
+   "postedAt": "2026-10-01",
    "snippet": "",
    "skills": [
     "Rust",
@@ -1599,25 +1621,6 @@
     "Flutter",
     "SQL",
     "Spring Boot"
-   ],
-   "firstSeenAt": 1792483383856
-  },
-  {
-   "id": "itviec:junior-backend-developer-php-nodejs-ruby-on-rails-motorist-pte-ltd-0828",
-   "title": "Junior Backend Developer (PHP/ NodeJS/ Ruby on Rails)",
-   "company": "Motorist Pte Ltd",
-   "location": "Ho Chi Minh",
-   "url": "https://itviec.com/it-jobs/junior-backend-developer-php-nodejs-ruby-on-rails-motorist-pte-ltd-0828",
-   "source": "itviec",
-   "postedAt": "2026-09-29",
-   "snippet": "",
-   "skills": [
-    "Ruby on Rails",
-    "Linux",
-    "MySQL",
-    "AWS",
-    "PHP",
-    "Node.js"
    ],
    "firstSeenAt": 1792483383856
   },
