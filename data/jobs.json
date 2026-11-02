@@ -1,27 +1,11 @@
 {
- "updatedAt": "2026-11-02T04:35:56.777Z",
+ "updatedAt": "2026-11-02T05:05:54.503Z",
  "sourceStatus": {
-  "linkedin": "ok",
+  "linkedin": "error",
   "itviec": "ok",
   "topdev": "ok"
  },
  "runs": [
-  {
-   "at": "2026-11-01T23:06:18.572Z",
-   "fetched": 177,
-   "added": 5,
-   "total": 80,
-   "perSource": {
-    "linkedin": 0,
-    "itviec": 100,
-    "topdev": 77
-   },
-   "sourceStatus": {
-    "linkedin": "error",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
   {
    "at": "2026-11-01T23:35:53.870Z",
    "fetched": 197,
@@ -197,6 +181,22 @@
     "itviec": "ok",
     "topdev": "ok"
    }
+  },
+  {
+   "at": "2026-11-02T05:05:54.503Z",
+   "fetched": 190,
+   "added": 6,
+   "total": 82,
+   "perSource": {
+    "linkedin": 0,
+    "itviec": 100,
+    "topdev": 90
+   },
+   "sourceStatus": {
+    "linkedin": "error",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
   }
  ],
  "jobs": [
@@ -228,6 +228,41 @@
    "snippet": "",
    "skills": [],
    "firstSeenAt": 1793594156777
+  },
+  {
+   "id": "itviec:fintech-frontend-dev-javascript-react-new-wealth-2706",
+   "title": "FinTech Frontend Dev (JavaScript, React)",
+   "company": "New Wealth",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/fintech-frontend-dev-javascript-react-new-wealth-2706",
+   "source": "itviec",
+   "postedAt": "2026-11-02",
+   "snippet": "",
+   "skills": [
+    "JavaScript",
+    "React",
+    "CSS"
+   ],
+   "firstSeenAt": 1792483383856
+  },
+  {
+   "id": "itviec:mid-sr-back-end-developer-java-kotlin-rust-go-reliccell-5521",
+   "title": "Mid/Sr Back End Developer (Java/Kotlin, Rust, Go)",
+   "company": "Reliccell",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/mid-sr-back-end-developer-java-kotlin-rust-go-reliccell-5521",
+   "source": "itviec",
+   "postedAt": "2026-11-02",
+   "snippet": "",
+   "skills": [
+    "Java",
+    "Microservices",
+    "Go",
+    "Spring Boot",
+    "Rust",
+    "Kotlin"
+   ],
+   "firstSeenAt": 1793595954503
   },
   {
    "id": "itviec:mid-sr-java-developer-english-required-up-to-3200-rakuten-fintech-vietnam-co-ltd-4807",
@@ -667,22 +702,6 @@
    "firstSeenAt": 1792483383856
   },
   {
-   "id": "itviec:fintech-frontend-dev-javascript-react-new-wealth-2706",
-   "title": "FinTech Frontend Dev (JavaScript, React)",
-   "company": "New Wealth",
-   "location": "Ho Chi Minh",
-   "url": "https://itviec.com/it-jobs/fintech-frontend-dev-javascript-react-new-wealth-2706",
-   "source": "itviec",
-   "postedAt": "2026-10-27",
-   "snippet": "",
-   "skills": [
-    "JavaScript",
-    "React",
-    "CSS"
-   ],
-   "firstSeenAt": 1792483383856
-  },
-  {
    "id": "topdev:2140702",
    "title": "[Viettel Asset] - Kỹ Sư Thanh Quyết Toán Dự Án (Vai Chủ Đầu Tư)",
    "company": "Viettel Group",
@@ -1078,7 +1097,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/game-server-developer-c-mysql-cong-ty-tnhh-cong-nghe-tamron-viet-nam-4832",
    "source": "itviec",
-   "postedAt": "2026-10-22",
+   "postedAt": "2026-10-21",
    "snippet": "",
    "skills": [
     "C++",
