@@ -1,43 +1,11 @@
 {
- "updatedAt": "2026-11-03T02:55:11.023Z",
+ "updatedAt": "2026-11-03T03:35:44.950Z",
  "sourceStatus": {
   "linkedin": "ok",
   "itviec": "ok",
   "topdev": "ok"
  },
  "runs": [
-  {
-   "at": "2026-11-02T15:49:23.132Z",
-   "fetched": 184,
-   "added": 5,
-   "total": 84,
-   "perSource": {
-    "linkedin": 0,
-    "itviec": 100,
-    "topdev": 84
-   },
-   "sourceStatus": {
-    "linkedin": "error",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-11-02T16:38:43.032Z",
-   "fetched": 184,
-   "added": 5,
-   "total": 84,
-   "perSource": {
-    "linkedin": 0,
-    "itviec": 100,
-    "topdev": 84
-   },
-   "sourceStatus": {
-    "linkedin": "error",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
   {
    "at": "2026-11-02T17:28:46.922Z",
    "fetched": 156,
@@ -197,6 +165,38 @@
     "itviec": "ok",
     "topdev": "ok"
    }
+  },
+  {
+   "at": "2026-11-03T03:23:54.922Z",
+   "fetched": 204,
+   "added": 9,
+   "total": 84,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 84
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-11-03T03:35:44.950Z",
+   "fetched": 205,
+   "added": 10,
+   "total": 85,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 85
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
   }
  ],
  "jobs": [
@@ -235,6 +235,27 @@
     "Japanese"
    ],
    "firstSeenAt": 1792721143172
+  },
+  {
+   "id": "topdev:2143575",
+   "title": "Kỹ sư lập trình Backend (Java)",
+   "company": "CÔNG TY TNHH CUNG CẤP GIẢI PHÁP DỊCH VỤ GIÁ TRỊ GIA TĂNG (VIVAS)",
+   "location": "Hà Nội",
+   "url": "https://topdev.vn/detail-jobs/ky-su-lap-trinh-backend-java-cong-ty-tnhh-cung-cap-giai-phap-dich-vu-gia-tri-gia-tang-vivas-2143575",
+   "source": "topdev",
+   "postedAt": "2026-11-03",
+   "snippet": "",
+   "skills": [
+    "PHP",
+    "Android",
+    "iOS",
+    "Java",
+    "C/C++",
+    "AI",
+    "OOP",
+    "Spring Boot"
+   ],
+   "firstSeenAt": 1793676944950
   },
   {
    "id": "itviec:unity-game-developer-c-nexon-dev-vina-4134",
@@ -352,7 +373,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/mid-sr-java-developer-english-required-up-to-3200-rakuten-fintech-vietnam-co-ltd-4807",
    "source": "itviec",
-   "postedAt": "2026-11-01",
+   "postedAt": "2026-10-31",
    "snippet": "",
    "skills": [
     "Java",
