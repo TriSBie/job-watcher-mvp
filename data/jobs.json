@@ -1,91 +1,11 @@
 {
- "updatedAt": "2026-11-03T05:05:49.698Z",
+ "updatedAt": "2026-11-03T07:35:41.276Z",
  "sourceStatus": {
-  "linkedin": "error",
+  "linkedin": "ok",
   "itviec": "ok",
   "topdev": "ok"
  },
  "runs": [
-  {
-   "at": "2026-11-02T22:12:13.352Z",
-   "fetched": 197,
-   "added": 9,
-   "total": 84,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 77
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-11-02T23:05:38.631Z",
-   "fetched": 177,
-   "added": 2,
-   "total": 84,
-   "perSource": {
-    "linkedin": 0,
-    "itviec": 100,
-    "topdev": 77
-   },
-   "sourceStatus": {
-    "linkedin": "error",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-11-02T23:58:15.177Z",
-   "fetched": 197,
-   "added": 9,
-   "total": 84,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 77
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-11-03T00:42:23.061Z",
-   "fetched": 197,
-   "added": 9,
-   "total": 84,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 77
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-11-03T01:30:08.102Z",
-   "fetched": 197,
-   "added": 9,
-   "total": 84,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 77
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
   {
    "at": "2026-11-03T02:19:38.933Z",
    "fetched": 184,
@@ -197,6 +117,86 @@
     "itviec": "ok",
     "topdev": "ok"
    }
+  },
+  {
+   "at": "2026-11-03T05:35:45.889Z",
+   "fetched": 183,
+   "added": 2,
+   "total": 86,
+   "perSource": {
+    "linkedin": 0,
+    "itviec": 100,
+    "topdev": 83
+   },
+   "sourceStatus": {
+    "linkedin": "error",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-11-03T06:05:43.124Z",
+   "fetched": 203,
+   "added": 9,
+   "total": 86,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 83
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-11-03T06:35:49.635Z",
+   "fetched": 203,
+   "added": 9,
+   "total": 86,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 83
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-11-03T07:05:42.893Z",
+   "fetched": 204,
+   "added": 9,
+   "total": 86,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 84
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-11-03T07:35:41.276Z",
+   "fetched": 203,
+   "added": 11,
+   "total": 88,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 83
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
   }
  ],
  "jobs": [
@@ -273,6 +273,44 @@
    "firstSeenAt": 1793682349698
   },
   {
+   "id": "itviec:backend-engineer-python-sql-english-restaff-house-of-norway-3844",
+   "title": "Backend Engineer (Python, SQL, English)",
+   "company": "Restaff – House Of Norway",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/backend-engineer-python-sql-english-restaff-house-of-norway-3844",
+   "source": "itviec",
+   "postedAt": "2026-11-03",
+   "snippet": "",
+   "skills": [
+    "Python",
+    "Node.js",
+    "JavaScript",
+    "Go",
+    "SQL",
+    "English"
+   ],
+   "firstSeenAt": 1793691341276
+  },
+  {
+   "id": "itviec:bridge-software-engineer-n2-jlpt-itviec-recruitment-consulting-5139",
+   "title": "Bridge Software Engineer (N2 JLPT)",
+   "company": "ITviec Recruitment Consulting",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/bridge-software-engineer-n2-jlpt-itviec-recruitment-consulting-5139",
+   "source": "itviec",
+   "postedAt": "2026-11-03",
+   "snippet": "",
+   "skills": [
+    "Japanese IT Communication",
+    "Java",
+    "Bridge Engineer",
+    "Japanese",
+    "Project Management",
+    "Python"
+   ],
+   "firstSeenAt": 1793691341276
+  },
+  {
    "id": "itviec:unity-game-developer-c-nexon-dev-vina-4134",
    "title": "Unity Game Developer (C#)",
    "company": "NEXON DEV VINA",
@@ -324,8 +362,8 @@
    "snippet": "",
    "skills": [
     "JavaScript",
-    "CSS",
-    "React"
+    "React",
+    "CSS"
    ],
    "firstSeenAt": 1792483383856
   },
@@ -377,7 +415,11 @@
    "snippet": "",
    "skills": [
     "Node.js",
-    "React"
+    "React",
+    "Java",
+    ".NET",
+    "React Native",
+    "Flutter"
    ],
    "firstSeenAt": 1793612147921
   },
@@ -424,7 +466,7 @@
    "location": "Dong Nai",
    "url": "https://itviec.com/it-jobs/software-developer-net-power-bi-microsoft-dynamics-mdc-precision-vietnam-1530",
    "source": "itviec",
-   "postedAt": "2026-10-31",
+   "postedAt": "2026-10-30",
    "snippet": "",
    "skills": [
     ".NET",
@@ -545,7 +587,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/software-development-engineer-in-test-sdet-andpad-vietnam-co-ltd-4158",
    "source": "itviec",
-   "postedAt": "2026-10-29",
+   "postedAt": "2026-10-28",
    "snippet": "",
    "skills": [
     "QA QC",
@@ -639,7 +681,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/front-end-developer-php-javascript-html-css-incepit-4351",
    "source": "itviec",
-   "postedAt": "2026-10-28",
+   "postedAt": "2026-10-27",
    "snippet": "",
    "skills": [
     "JavaScript",
@@ -1019,7 +1061,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/python-developer-accenture-2706",
    "source": "itviec",
-   "postedAt": "2026-10-23",
+   "postedAt": "2026-10-22",
    "snippet": "",
    "skills": [
     "Python",
@@ -1239,11 +1281,11 @@
    "snippet": "",
    "skills": [
     "TypeScript",
-    "MySQL",
-    "PostgreSQL",
     "React",
     "NestJS",
-    "Node.js"
+    "Node.js",
+    "MySQL",
+    "PostgreSQL"
    ],
    "firstSeenAt": 1792483383856
   },
@@ -1327,7 +1369,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/backend-developer-java-mysql-postgresql-dosoftpro-4517",
    "source": "itviec",
-   "postedAt": "2026-10-18",
+   "postedAt": "2026-10-17",
    "snippet": "",
    "skills": [
     "Java",
