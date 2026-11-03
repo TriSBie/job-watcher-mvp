@@ -1,59 +1,11 @@
 {
- "updatedAt": "2026-11-03T03:35:44.950Z",
+ "updatedAt": "2026-11-03T05:05:49.698Z",
  "sourceStatus": {
-  "linkedin": "ok",
+  "linkedin": "error",
   "itviec": "ok",
   "topdev": "ok"
  },
  "runs": [
-  {
-   "at": "2026-11-02T17:28:46.922Z",
-   "fetched": 156,
-   "added": 9,
-   "total": 84,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 36
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-11-02T17:54:26.217Z",
-   "fetched": 177,
-   "added": 2,
-   "total": 84,
-   "perSource": {
-    "linkedin": 0,
-    "itviec": 100,
-    "topdev": 77
-   },
-   "sourceStatus": {
-    "linkedin": "error",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-11-02T20:30:03.950Z",
-   "fetched": 177,
-   "added": 2,
-   "total": 84,
-   "perSource": {
-    "linkedin": 0,
-    "itviec": 100,
-    "topdev": 77
-   },
-   "sourceStatus": {
-    "linkedin": "error",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
   {
    "at": "2026-11-02T22:12:13.352Z",
    "fetched": 197,
@@ -197,6 +149,54 @@
     "itviec": "ok",
     "topdev": "ok"
    }
+  },
+  {
+   "at": "2026-11-03T04:05:43.893Z",
+   "fetched": 203,
+   "added": 9,
+   "total": 85,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 83
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-11-03T04:35:44.055Z",
+   "fetched": 203,
+   "added": 9,
+   "total": 85,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 83
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-11-03T05:05:49.698Z",
+   "fetched": 184,
+   "added": 3,
+   "total": 86,
+   "perSource": {
+    "linkedin": 0,
+    "itviec": 100,
+    "topdev": 84
+   },
+   "sourceStatus": {
+    "linkedin": "error",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
   }
  ],
  "jobs": [
@@ -258,6 +258,21 @@
    "firstSeenAt": 1793676944950
   },
   {
+   "id": "topdev:2143438",
+   "title": "NHÂN VIÊN TRIỂN KHAI BẢO TRÌ PHẦN MỀM",
+   "company": "CHI NHÁNH CÔNG TY TNHH PHÁT TRIỂN VÀ CHUYỂN GIAO PHẦN MỀM",
+   "location": "Hồ Chí Minh, Hà Nội, Khánh Hòa, Cần Thơ, Đà Nẵng, Hà Nội",
+   "url": "https://topdev.vn/detail-jobs/nhan-vien-trien-khai-bao-tri-phan-mem-chi-nhanh-cong-ty-tnhh-phat-trien-va-chuyen-giao-phan-mem-2143438",
+   "source": "topdev",
+   "postedAt": "2026-11-03",
+   "snippet": "",
+   "skills": [
+    "SQL Server",
+    "React"
+   ],
+   "firstSeenAt": 1793682349698
+  },
+  {
    "id": "itviec:unity-game-developer-c-nexon-dev-vina-4134",
    "title": "Unity Game Developer (C#)",
    "company": "NEXON DEV VINA",
@@ -309,8 +324,8 @@
    "snippet": "",
    "skills": [
     "JavaScript",
-    "React",
-    "CSS"
+    "CSS",
+    "React"
    ],
    "firstSeenAt": 1792483383856
   },
@@ -1163,7 +1178,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/game-server-developer-c-mysql-cong-ty-tnhh-cong-nghe-tamron-viet-nam-4832",
    "source": "itviec",
-   "postedAt": "2026-10-22",
+   "postedAt": "2026-10-21",
    "snippet": "",
    "skills": [
     "C++",
