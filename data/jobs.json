@@ -1,27 +1,11 @@
 {
- "updatedAt": "2026-11-04T06:05:39.579Z",
+ "updatedAt": "2026-11-04T07:56:42.097Z",
  "sourceStatus": {
   "linkedin": "ok",
   "itviec": "ok",
   "topdev": "ok"
  },
  "runs": [
-  {
-   "at": "2026-11-03T23:35:50.150Z",
-   "fetched": 203,
-   "added": 9,
-   "total": 88,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 83
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
   {
    "at": "2026-11-04T00:05:55.032Z",
    "fetched": 203,
@@ -197,6 +181,22 @@
     "itviec": "ok",
     "topdev": "ok"
    }
+  },
+  {
+   "at": "2026-11-04T07:56:42.097Z",
+   "fetched": 204,
+   "added": 13,
+   "total": 92,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 84
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
   }
  ],
  "jobs": [
@@ -265,6 +265,60 @@
     "English"
    ],
    "firstSeenAt": 1793169342494
+  },
+  {
+   "id": "linkedin:4486352230",
+   "title": "Java Developer (Từ 3 năm KN)",
+   "company": "Tinhvan Software JSC.",
+   "location": "District 1",
+   "url": "https://vn.linkedin.com/jobs/view/java-developer-t%E1%BB%AB-3-n%C4%83m-kn-at-tinhvan-software-jsc-4486352230",
+   "source": "linkedin",
+   "postedAt": "2026-11-04",
+   "snippet": "Mô tả công việc: - Làm việc với cơ sở dữ liệu PostgreSQL, Oracle hoặc Azure SQL MI. - Triển khai và vận hành ứng dụng trên Azure Cloud. - Đảm bảo bảo mật, hiệu năng và khả năng mở rộng của hệ thống. - Phối hợp với team theo mô hình Agile/Scrum. - Làm việc onsite: KH quận 1, HCM Y",
+   "skills": [
+    "Java",
+    "Spring Boot",
+    "JavaScript",
+    "PostgreSQL",
+    "Kafka",
+    "CI/CD",
+    "Git",
+    "RabbitMQ",
+    "SQL",
+    "Azure"
+   ],
+   "firstSeenAt": 1793779002097
+  },
+  {
+   "id": "linkedin:4486334838",
+   "title": "Java Backend Developer",
+   "company": "HD SAISON Finance Co., Ltd",
+   "location": "Ho Chi Minh City, Vietnam",
+   "url": "https://vn.linkedin.com/jobs/view/java-backend-developer-at-hd-saison-finance-co-ltd-4486334838",
+   "source": "linkedin",
+   "postedAt": "2026-11-04",
+   "snippet": "",
+   "skills": [],
+   "firstSeenAt": 1793779002097
+  },
+  {
+   "id": "itviec:fullstack-developer-net-c-tma-solutions-4346",
+   "title": "Fullstack Developer (.NET, C#)",
+   "company": "TMA Solutions",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/fullstack-developer-net-c-tma-solutions-4346",
+   "source": "itviec",
+   "postedAt": "2026-11-04",
+   "snippet": "",
+   "skills": [
+    "C#",
+    "MongoDB",
+    "LINQ",
+    "SOLID Principles",
+    "OOP",
+    ".NET"
+   ],
+   "firstSeenAt": 1793779002097
   },
   {
    "id": "itviec:automotive-embedded-software-engineer-asap-hitachi-digital-services-1115",
@@ -503,11 +557,7 @@
    "snippet": "",
    "skills": [
     "Node.js",
-    "React",
-    "Java",
-    ".NET",
-    "React Native",
-    "Flutter"
+    "React"
    ],
    "firstSeenAt": 1793612147921
   },
@@ -570,7 +620,7 @@
    "location": "Dong Nai",
    "url": "https://itviec.com/it-jobs/software-developer-net-power-bi-microsoft-dynamics-mdc-precision-vietnam-1530",
    "source": "itviec",
-   "postedAt": "2026-10-31",
+   "postedAt": "2026-10-30",
    "snippet": "",
    "skills": [
     ".NET",
@@ -1147,7 +1197,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/python-developer-accenture-2706",
    "source": "itviec",
-   "postedAt": "2026-10-23",
+   "postedAt": "2026-10-22",
    "snippet": "",
    "skills": [
     "Python",
@@ -1455,7 +1505,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/backend-developer-java-mysql-postgresql-dosoftpro-4517",
    "source": "itviec",
-   "postedAt": "2026-10-18",
+   "postedAt": "2026-10-17",
    "snippet": "",
    "skills": [
     "Java",
