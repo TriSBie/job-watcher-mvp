@@ -1,75 +1,11 @@
 {
- "updatedAt": "2026-11-04T03:35:40.843Z",
+ "updatedAt": "2026-11-04T06:05:39.579Z",
  "sourceStatus": {
   "linkedin": "ok",
   "itviec": "ok",
   "topdev": "ok"
  },
  "runs": [
-  {
-   "at": "2026-11-03T21:35:51.766Z",
-   "fetched": 203,
-   "added": 9,
-   "total": 88,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 83
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-11-03T22:05:50.044Z",
-   "fetched": 203,
-   "added": 9,
-   "total": 88,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 83
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-11-03T22:35:44.819Z",
-   "fetched": 203,
-   "added": 9,
-   "total": 88,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 83
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-11-03T23:05:44.663Z",
-   "fetched": 203,
-   "added": 9,
-   "total": 88,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 83
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
   {
    "at": "2026-11-03T23:35:50.150Z",
    "fetched": 203,
@@ -197,6 +133,70 @@
     "itviec": "ok",
     "topdev": "ok"
    }
+  },
+  {
+   "at": "2026-11-04T04:05:58.366Z",
+   "fetched": 185,
+   "added": 4,
+   "total": 89,
+   "perSource": {
+    "linkedin": 0,
+    "itviec": 100,
+    "topdev": 85
+   },
+   "sourceStatus": {
+    "linkedin": "error",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-11-04T04:53:39.029Z",
+   "fetched": 203,
+   "added": 10,
+   "total": 89,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 83
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-11-04T05:41:21.859Z",
+   "fetched": 203,
+   "added": 10,
+   "total": 89,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 83
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-11-04T06:05:39.579Z",
+   "fetched": 203,
+   "added": 10,
+   "total": 89,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 83
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
   }
  ],
  "jobs": [
@@ -229,6 +229,42 @@
     "C#"
    ],
    "firstSeenAt": 1793763340843
+  },
+  {
+   "id": "itviec:adas-embedded-software-developer-joining-bonus-bosch-global-software-technologies-company-limited-4836",
+   "title": "ADAS Embedded Software Developer (Joining Bonus)",
+   "company": "Bosch Global Software Technologies Company Limited",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/adas-embedded-software-developer-joining-bonus-bosch-global-software-technologies-company-limited-4836",
+   "source": "itviec",
+   "postedAt": "2026-11-04",
+   "snippet": "",
+   "skills": [
+    "Embedded",
+    "English",
+    "Embedded Android",
+    "Embedded C",
+    "C++"
+   ],
+   "firstSeenAt": 1793765158366
+  },
+  {
+   "id": "itviec:software-development-engineer-in-test-sdet-andpad-vietnam-co-ltd-4158",
+   "title": "Software Development Engineer in Test (SDET)",
+   "company": "ANDPAD VietNam Co., Ltd",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/software-development-engineer-in-test-sdet-andpad-vietnam-co-ltd-4158",
+   "source": "itviec",
+   "postedAt": "2026-11-04",
+   "snippet": "",
+   "skills": [
+    "QA QC",
+    "Automation Test",
+    "Tester",
+    "Agile",
+    "English"
+   ],
+   "firstSeenAt": 1793169342494
   },
   {
    "id": "itviec:automotive-embedded-software-engineer-asap-hitachi-digital-services-1115",
@@ -341,21 +377,26 @@
    "firstSeenAt": 1793691341276
   },
   {
-   "id": "itviec:unity-game-developer-c-nexon-dev-vina-4134",
-   "title": "Unity Game Developer (C#)",
-   "company": "NEXON DEV VINA",
-   "location": "Ho Chi Minh",
-   "url": "https://itviec.com/it-jobs/unity-game-developer-c-nexon-dev-vina-4134",
-   "source": "itviec",
+   "id": "linkedin:4470291769",
+   "title": "Backend Engineer",
+   "company": "WorldQuant",
+   "location": "Ho Chi Minh City, Vietnam",
+   "url": "https://vn.linkedin.com/jobs/view/backend-engineer-at-worldquant-4470291769",
+   "source": "linkedin",
    "postedAt": "2026-11-03",
-   "snippet": "",
+   "snippet": "WorldQuant develops and deploys systematic financial strategies across a broad range of asset classes and global markets. We seek to produce high-quality predictive signals (alphas) through our proprietary research platform to employ financial strategies focused on market ineffic",
    "skills": [
-    "Unity",
-    "C#",
-    "C++",
-    "English"
+    "PostgreSQL",
+    "MySQL",
+    "Redis",
+    "Kafka",
+    "Python",
+    "CI/CD",
+    "Git",
+    "Linux",
+    "SQL"
    ],
-   "firstSeenAt": 1792991145846
+   "firstSeenAt": 1792483383856
   },
   {
    "id": "itviec:fintech-frontend-dev-javascript-react-new-wealth-2706",
@@ -364,7 +405,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/fintech-frontend-dev-javascript-react-new-wealth-2706",
    "source": "itviec",
-   "postedAt": "2026-11-03",
+   "postedAt": "2026-11-02",
    "snippet": "",
    "skills": [
     "JavaScript",
@@ -380,7 +421,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/mid-sr-back-end-developer-java-kotlin-rust-go-reliccell-5521",
    "source": "itviec",
-   "postedAt": "2026-11-03",
+   "postedAt": "2026-11-02",
    "snippet": "",
    "skills": [
     "Java",
@@ -399,7 +440,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/developer-relations-engineer-ai-coding-tools-orthex-innotech-vietnam-corporation-1057",
    "source": "itviec",
-   "postedAt": "2026-11-03",
+   "postedAt": "2026-11-02",
    "snippet": "",
    "skills": [
     "AI",
@@ -409,6 +450,23 @@
     "English"
    ],
    "firstSeenAt": 1793610343624
+  },
+  {
+   "id": "itviec:unity-game-developer-c-nexon-dev-vina-4134",
+   "title": "Unity Game Developer (C#)",
+   "company": "NEXON DEV VINA",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/unity-game-developer-c-nexon-dev-vina-4134",
+   "source": "itviec",
+   "postedAt": "2026-11-02",
+   "snippet": "",
+   "skills": [
+    "Unity",
+    "C#",
+    "C++",
+    "English"
+   ],
+   "firstSeenAt": 1792991145846
   },
   {
    "id": "linkedin:4485448356",
@@ -446,11 +504,10 @@
    "skills": [
     "Node.js",
     "React",
-    "PHP",
-    "Agile",
     "Java",
     ".NET",
-    "HTML"
+    "React Native",
+    "Flutter"
    ],
    "firstSeenAt": 1793612147921
   },
@@ -626,24 +683,6 @@
     "English"
    ],
    "firstSeenAt": 1792483383856
-  },
-  {
-   "id": "itviec:software-development-engineer-in-test-sdet-andpad-vietnam-co-ltd-4158",
-   "title": "Software Development Engineer in Test (SDET)",
-   "company": "ANDPAD VietNam Co., Ltd",
-   "location": "Ho Chi Minh",
-   "url": "https://itviec.com/it-jobs/software-development-engineer-in-test-sdet-andpad-vietnam-co-ltd-4158",
-   "source": "itviec",
-   "postedAt": "2026-10-29",
-   "snippet": "",
-   "skills": [
-    "QA QC",
-    "Automation Test",
-    "Tester",
-    "Agile",
-    "English"
-   ],
-   "firstSeenAt": 1793169342494
   },
   {
    "id": "itviec:erp-developer-odoo-python-api-postgresql-cong-ty-tnhh-meme-3d-1821",
@@ -1267,15 +1306,15 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/game-server-developer-c-mysql-cong-ty-tnhh-cong-nghe-tamron-viet-nam-4832",
    "source": "itviec",
-   "postedAt": "2026-10-22",
+   "postedAt": "2026-10-21",
    "snippet": "",
    "skills": [
     "C++",
-    "Windows Server",
-    "Games",
     "C language",
     "MySQL",
-    "SQL"
+    "SQL",
+    "Windows Server",
+    "Games"
    ],
    "firstSeenAt": 1792570814703
   },
@@ -1329,10 +1368,10 @@
    "skills": [
     "TypeScript",
     "MySQL",
-    "PostgreSQL",
     "React",
     "NestJS",
-    "Node.js"
+    "Node.js",
+    "PostgreSQL"
    ],
    "firstSeenAt": 1792483383856
   },
@@ -1551,28 +1590,6 @@
     "HTML"
    ],
    "firstSeenAt": 1792605944696
-  },
-  {
-   "id": "linkedin:4470291769",
-   "title": "Backend Engineer",
-   "company": "WorldQuant",
-   "location": "Ho Chi Minh City, Vietnam",
-   "url": "https://vn.linkedin.com/jobs/view/backend-engineer-at-worldquant-4470291769",
-   "source": "linkedin",
-   "postedAt": "2026-10-13",
-   "snippet": "WorldQuant develops and deploys systematic financial strategies across a broad range of asset classes and global markets. We seek to produce high-quality predictive signals (alphas) through our proprietary research platform to employ financial strategies focused on market ineffic",
-   "skills": [
-    "PostgreSQL",
-    "MySQL",
-    "Redis",
-    "Kafka",
-    "Python",
-    "CI/CD",
-    "Git",
-    "Linux",
-    "SQL"
-   ],
-   "firstSeenAt": 1792483383856
   },
   {
    "id": "topdev:2138283",
