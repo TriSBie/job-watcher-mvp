@@ -1,27 +1,11 @@
 {
- "updatedAt": "2026-11-04T03:05:44.037Z",
+ "updatedAt": "2026-11-04T03:35:40.843Z",
  "sourceStatus": {
   "linkedin": "ok",
   "itviec": "ok",
   "topdev": "ok"
  },
  "runs": [
-  {
-   "at": "2026-11-03T21:05:48.318Z",
-   "fetched": 203,
-   "added": 9,
-   "total": 88,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 83
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
   {
    "at": "2026-11-03T21:35:51.766Z",
    "fetched": 203,
@@ -197,9 +181,55 @@
     "itviec": "ok",
     "topdev": "ok"
    }
+  },
+  {
+   "at": "2026-11-04T03:35:40.843Z",
+   "fetched": 205,
+   "added": 13,
+   "total": 88,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 85
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
   }
  ],
  "jobs": [
+  {
+   "id": "topdev:2143942",
+   "title": "[Hà Nội] Giám Sát Cửa Hàng Linh Đàm (Sắp Khai Trương)",
+   "company": "Jollibee Vietnam",
+   "location": "Hồ Chí Minh, Hà Nội",
+   "url": "https://topdev.vn/detail-jobs/ha-noi-giam-sat-cua-hang-linh-dam-sap-khai-truong-jollibee-vietnam-2143942",
+   "source": "topdev",
+   "postedAt": "2026-11-04",
+   "snippet": "",
+   "skills": [
+    ".NET",
+    "C#"
+   ],
+   "firstSeenAt": 1793763340843
+  },
+  {
+   "id": "topdev:2143951",
+   "title": "[Tiền Giang] Nhân Viên Cửa Hàng Jollibee Cai Lậy",
+   "company": "Jollibee Vietnam",
+   "location": "Hồ Chí Minh, Hà Nội",
+   "url": "https://topdev.vn/detail-jobs/tien-giang-nhan-vien-cua-hang-jollibee-cai-lay-jollibee-vietnam-2143951",
+   "source": "topdev",
+   "postedAt": "2026-11-04",
+   "snippet": "",
+   "skills": [
+    ".NET",
+    "C#"
+   ],
+   "firstSeenAt": 1793763340843
+  },
   {
    "id": "itviec:automotive-embedded-software-engineer-asap-hitachi-digital-services-1115",
    "title": "Automotive Embedded Software Engineer (ASAP)",
@@ -415,9 +445,30 @@
    "snippet": "",
    "skills": [
     "Node.js",
-    "React"
+    "React",
+    "PHP",
+    "Agile",
+    "Java",
+    ".NET",
+    "HTML"
    ],
    "firstSeenAt": 1793612147921
+  },
+  {
+   "id": "itviec:fullstack-developer-java-golang-python-rontech-2456",
+   "title": "Fullstack Developer (Java, Golang, Python)",
+   "company": "RONTECH",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/fullstack-developer-java-golang-python-rontech-2456",
+   "source": "itviec",
+   "postedAt": "2026-11-02",
+   "snippet": "",
+   "skills": [
+    "Java",
+    "Go",
+    "Python"
+   ],
+   "firstSeenAt": 1793763340843
   },
   {
    "id": "itviec:mid-sr-java-developer-english-required-up-to-3200-rakuten-fintech-vietnam-co-ltd-4807",
