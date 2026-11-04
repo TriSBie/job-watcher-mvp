@@ -1,43 +1,11 @@
 {
- "updatedAt": "2026-11-04T02:05:46.651Z",
+ "updatedAt": "2026-11-04T03:05:44.037Z",
  "sourceStatus": {
-  "linkedin": "error",
+  "linkedin": "ok",
   "itviec": "ok",
   "topdev": "ok"
  },
  "runs": [
-  {
-   "at": "2026-11-03T20:05:47.925Z",
-   "fetched": 203,
-   "added": 9,
-   "total": 88,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 83
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-11-03T20:35:43.932Z",
-   "fetched": 203,
-   "added": 9,
-   "total": 88,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 83
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
   {
    "at": "2026-11-03T21:05:48.318Z",
    "fetched": 203,
@@ -194,6 +162,38 @@
    },
    "sourceStatus": {
     "linkedin": "error",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-11-04T02:35:43.350Z",
+   "fetched": 203,
+   "added": 10,
+   "total": 86,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 83
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-11-04T03:05:44.037Z",
+   "fetched": 203,
+   "added": 10,
+   "total": 85,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 83
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
     "itviec": "ok",
     "topdev": "ok"
    }
@@ -426,7 +426,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/mid-sr-java-developer-english-required-up-to-3200-rakuten-fintech-vietnam-co-ltd-4807",
    "source": "itviec",
-   "postedAt": "2026-11-01",
+   "postedAt": "2026-10-31",
    "snippet": "",
    "skills": [
     "Java",
@@ -1677,22 +1677,6 @@
     "Selenium"
    ],
    "firstSeenAt": 1792483383856
-  },
-  {
-   "id": "itviec:fullstack-developer-java-golang-python-rontech-2046",
-   "title": "Fullstack Developer (Java, Golang, Python)",
-   "company": "RONTECH",
-   "location": "Ho Chi Minh",
-   "url": "https://itviec.com/it-jobs/fullstack-developer-java-golang-python-rontech-2046",
-   "source": "itviec",
-   "postedAt": "2026-10-06",
-   "snippet": "",
-   "skills": [
-    "Java",
-    "Python",
-    "Go"
-   ],
-   "firstSeenAt": 1792570814703
   },
   {
    "id": "topdev:2134504",
