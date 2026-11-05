@@ -1,139 +1,11 @@
 {
- "updatedAt": "2026-11-05T10:05:40.049Z",
+ "updatedAt": "2026-11-05T15:12:14.317Z",
  "sourceStatus": {
-  "linkedin": "ok",
+  "linkedin": "error",
   "itviec": "ok",
   "topdev": "ok"
  },
  "runs": [
-  {
-   "at": "2026-11-05T01:48:49.271Z",
-   "fetched": 202,
-   "added": 9,
-   "total": 95,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 82
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-11-05T02:35:21.810Z",
-   "fetched": 205,
-   "added": 10,
-   "total": 96,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 85
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-11-05T03:21:56.223Z",
-   "fetched": 203,
-   "added": 9,
-   "total": 96,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 83
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-11-05T03:48:24.628Z",
-   "fetched": 184,
-   "added": 2,
-   "total": 96,
-   "perSource": {
-    "linkedin": 0,
-    "itviec": 100,
-    "topdev": 84
-   },
-   "sourceStatus": {
-    "linkedin": "error",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-11-05T04:35:23.684Z",
-   "fetched": 203,
-   "added": 9,
-   "total": 96,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 83
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-11-05T05:51:37.281Z",
-   "fetched": 176,
-   "added": 9,
-   "total": 96,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 56
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-11-05T07:08:56.624Z",
-   "fetched": 203,
-   "added": 9,
-   "total": 96,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 83
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-11-05T08:05:40.460Z",
-   "fetched": 204,
-   "added": 10,
-   "total": 97,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 84
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
   {
    "at": "2026-11-05T08:35:40.165Z",
    "fetched": 203,
@@ -194,6 +66,134 @@
    },
    "sourceStatus": {
     "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-11-05T10:35:40.514Z",
+   "fetched": 203,
+   "added": 9,
+   "total": 98,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 83
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-11-05T11:05:43.371Z",
+   "fetched": 203,
+   "added": 9,
+   "total": 98,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 83
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-11-05T11:35:42.336Z",
+   "fetched": 183,
+   "added": 2,
+   "total": 98,
+   "perSource": {
+    "linkedin": 0,
+    "itviec": 100,
+    "topdev": 83
+   },
+   "sourceStatus": {
+    "linkedin": "error",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-11-05T12:05:40.147Z",
+   "fetched": 203,
+   "added": 10,
+   "total": 99,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 83
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-11-05T13:02:39.738Z",
+   "fetched": 203,
+   "added": 9,
+   "total": 99,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 83
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-11-05T13:11:02.141Z",
+   "fetched": 203,
+   "added": 9,
+   "total": 99,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 83
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-11-05T13:59:57.789Z",
+   "fetched": 172,
+   "added": 2,
+   "total": 99,
+   "perSource": {
+    "linkedin": 0,
+    "itviec": 100,
+    "topdev": 72
+   },
+   "sourceStatus": {
+    "linkedin": "error",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-11-05T15:12:14.317Z",
+   "fetched": 183,
+   "added": 2,
+   "total": 99,
+   "perSource": {
+    "linkedin": 0,
+    "itviec": 100,
+    "topdev": 83
+   },
+   "sourceStatus": {
+    "linkedin": "error",
     "itviec": "ok",
     "topdev": "ok"
    }
@@ -282,6 +282,18 @@
     "CSS"
    ],
    "firstSeenAt": 1793873140049
+  },
+  {
+   "id": "linkedin:4486598753",
+   "title": "Software Engineer (Middle Level)",
+   "company": "VNGGames",
+   "location": "Ho Chi Minh City Metropolitan Area",
+   "url": "https://vn.linkedin.com/jobs/view/software-engineer-middle-level-at-vnggames-4486598753",
+   "source": "linkedin",
+   "postedAt": "2026-11-05",
+   "snippet": "",
+   "skills": [],
+   "firstSeenAt": 1793880340147
   },
   {
    "id": "topdev:2143942",
