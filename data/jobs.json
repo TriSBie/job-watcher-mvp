@@ -1,27 +1,11 @@
 {
- "updatedAt": "2026-11-05T07:08:56.624Z",
+ "updatedAt": "2026-11-05T08:05:40.460Z",
  "sourceStatus": {
   "linkedin": "ok",
   "itviec": "ok",
   "topdev": "ok"
  },
  "runs": [
-  {
-   "at": "2026-11-04T22:04:36.891Z",
-   "fetched": 202,
-   "added": 9,
-   "total": 95,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 82
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
   {
    "at": "2026-11-04T22:36:46.732Z",
    "fetched": 182,
@@ -197,6 +181,22 @@
     "itviec": "ok",
     "topdev": "ok"
    }
+  },
+  {
+   "at": "2026-11-05T08:05:40.460Z",
+   "fetched": 204,
+   "added": 10,
+   "total": 97,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 84
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
   }
  ],
  "jobs": [
@@ -214,6 +214,55 @@
     "Spring Boot"
    ],
    "firstSeenAt": 1793846121810
+  },
+  {
+   "id": "itviec:software-development-engineer-in-test-sdet-datalogic-viet-nam-4633",
+   "title": "Software Development Engineer in Test (SDET)",
+   "company": "Datalogic Việt Nam",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/software-development-engineer-in-test-sdet-datalogic-viet-nam-4633",
+   "source": "itviec",
+   "postedAt": "2026-11-05",
+   "snippet": "",
+   "skills": [
+    "Automation Test",
+    "CI/CD",
+    "API",
+    "Linux",
+    "TypeScript",
+    "Python"
+   ],
+   "firstSeenAt": 1793264752297
+  },
+  {
+   "id": "itviec:mid-sr-java-engineer-springboot-microservices-bonus-epam-vietnam-1226",
+   "title": "Mid/Sr Java Engineer (SpringBoot, Microservices)- BONUS",
+   "company": "EPAM Vietnam",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/mid-sr-java-engineer-springboot-microservices-bonus-epam-vietnam-1226",
+   "source": "itviec",
+   "postedAt": "2026-11-05",
+   "snippet": "",
+   "skills": [
+    "Java",
+    "Cloud",
+    "CI/CD",
+    "Spring Boot",
+    "Microservices"
+   ],
+   "firstSeenAt": 1792659333407
+  },
+  {
+   "id": "linkedin:4485581493",
+   "title": "Junior Software Engineer, Java",
+   "company": "MoMo (M_Service)",
+   "location": "Ho Chi Minh City, Vietnam",
+   "url": "https://vn.linkedin.com/jobs/view/junior-software-engineer-java-at-momo-m-service-4485581493",
+   "source": "linkedin",
+   "postedAt": "2026-11-05",
+   "snippet": "",
+   "skills": [],
+   "firstSeenAt": 1793865940460
   },
   {
    "id": "topdev:2143942",
@@ -378,8 +427,13 @@
    "url": "https://vn.linkedin.com/jobs/view/backend-developer-java-net-at-tinhvan-software-jsc-4486363524",
    "source": "linkedin",
    "postedAt": "2026-11-04",
-   "snippet": "",
-   "skills": [],
+   "snippet": "THÔNG BÁO TUYỂN DỤNG 1.Chuyên viên lập trình Backend Java Yêu cầu công việc: Có từ 3-6 năm kinh nghiệm lập trình với Back-end (Java) Onsite văn phòng khách hàng ở quận 1 Range 20-30M Gross (tùy level) 2.Chuyên viên lập trình Backend .NET Developer Yêu cầu công việc: Thành thạo lậ",
+   "skills": [
+    "Java",
+    "PostgreSQL",
+    ".NET",
+    "SQL"
+   ],
    "firstSeenAt": 1793797039633
   },
   {
@@ -408,7 +462,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/bridge-software-engineer-n2-jlpt-itviec-recruitment-consulting-5139",
    "source": "itviec",
-   "postedAt": "2026-11-04",
+   "postedAt": "2026-11-03",
    "snippet": "",
    "skills": [
     "Japanese IT Communication",
@@ -706,25 +760,6 @@
    "firstSeenAt": 1793325952743
   },
   {
-   "id": "itviec:software-development-engineer-in-test-sdet-datalogic-viet-nam-4633",
-   "title": "Software Development Engineer in Test (SDET)",
-   "company": "Datalogic Việt Nam",
-   "location": "Ho Chi Minh",
-   "url": "https://itviec.com/it-jobs/software-development-engineer-in-test-sdet-datalogic-viet-nam-4633",
-   "source": "itviec",
-   "postedAt": "2026-10-30",
-   "snippet": "",
-   "skills": [
-    "Automation Test",
-    "CI/CD",
-    "API",
-    "Linux",
-    "TypeScript",
-    "Python"
-   ],
-   "firstSeenAt": 1793264752297
-  },
-  {
    "id": "itviec:embedded-software-engineer-ban-vien-corporation-0636",
    "title": "Embedded Software Engineer",
    "company": "BAN VIEN CORPORATION",
@@ -742,24 +777,6 @@
     "Embedded"
    ],
    "firstSeenAt": 1793262943233
-  },
-  {
-   "id": "itviec:mid-sr-java-engineer-springboot-microservices-bonus-epam-vietnam-1226",
-   "title": "Mid/Sr Java Engineer (SpringBoot, Microservices)- BONUS",
-   "company": "EPAM Vietnam",
-   "location": "Ho Chi Minh",
-   "url": "https://itviec.com/it-jobs/mid-sr-java-engineer-springboot-microservices-bonus-epam-vietnam-1226",
-   "source": "itviec",
-   "postedAt": "2026-10-30",
-   "snippet": "",
-   "skills": [
-    "Java",
-    "Cloud",
-    "CI/CD",
-    "Spring Boot",
-    "Microservices"
-   ],
-   "firstSeenAt": 1792659333407
   },
   {
    "id": "topdev:2142422",
@@ -1251,7 +1268,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/python-developer-accenture-2706",
    "source": "itviec",
-   "postedAt": "2026-10-23",
+   "postedAt": "2026-10-22",
    "snippet": "",
    "skills": [
     "Python",
