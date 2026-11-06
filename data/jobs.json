@@ -1,123 +1,11 @@
 {
- "updatedAt": "2026-11-06T06:23:57.832Z",
+ "updatedAt": "2026-11-06T12:19:28.624Z",
  "sourceStatus": {
-  "linkedin": "ok",
+  "linkedin": "error",
   "itviec": "ok",
   "topdev": "ok"
  },
  "runs": [
-  {
-   "at": "2026-11-05T22:35:46.134Z",
-   "fetched": 203,
-   "added": 8,
-   "total": 99,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 83
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-11-05T23:05:45.711Z",
-   "fetched": 183,
-   "added": 1,
-   "total": 99,
-   "perSource": {
-    "linkedin": 0,
-    "itviec": 100,
-    "topdev": 83
-   },
-   "sourceStatus": {
-    "linkedin": "error",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-11-05T23:35:44.895Z",
-   "fetched": 203,
-   "added": 8,
-   "total": 99,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 83
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-11-06T00:06:00.160Z",
-   "fetched": 183,
-   "added": 1,
-   "total": 99,
-   "perSource": {
-    "linkedin": 0,
-    "itviec": 100,
-    "topdev": 83
-   },
-   "sourceStatus": {
-    "linkedin": "error",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-11-06T00:35:47.401Z",
-   "fetched": 203,
-   "added": 8,
-   "total": 99,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 83
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-11-06T01:05:53.095Z",
-   "fetched": 203,
-   "added": 8,
-   "total": 99,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 83
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-11-06T01:35:43.680Z",
-   "fetched": 203,
-   "added": 8,
-   "total": 99,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 83
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
   {
    "at": "2026-11-06T02:05:46.114Z",
    "fetched": 204,
@@ -197,6 +85,118 @@
     "itviec": "ok",
     "topdev": "ok"
    }
+  },
+  {
+   "at": "2026-11-06T07:58:34.395Z",
+   "fetched": 203,
+   "added": 8,
+   "total": 104,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 83
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-11-06T08:05:42.705Z",
+   "fetched": 203,
+   "added": 8,
+   "total": 104,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 83
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-11-06T08:35:55.511Z",
+   "fetched": 204,
+   "added": 8,
+   "total": 104,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 84
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-11-06T09:05:44.469Z",
+   "fetched": 203,
+   "added": 9,
+   "total": 105,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 83
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-11-06T09:58:05.356Z",
+   "fetched": 203,
+   "added": 8,
+   "total": 105,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 83
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-11-06T10:19:21.441Z",
+   "fetched": 183,
+   "added": 1,
+   "total": 105,
+   "perSource": {
+    "linkedin": 0,
+    "itviec": 100,
+    "topdev": 83
+   },
+   "sourceStatus": {
+    "linkedin": "error",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-11-06T12:19:28.624Z",
+   "fetched": 183,
+   "added": 1,
+   "total": 105,
+   "perSource": {
+    "linkedin": 0,
+    "itviec": 100,
+    "topdev": 83
+   },
+   "sourceStatus": {
+    "linkedin": "error",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
   }
  ],
  "jobs": [
@@ -269,6 +269,42 @@
     "Unity"
    ],
    "firstSeenAt": 1793946237832
+  },
+  {
+   "id": "itviec:embedded-software-engineer-hella-vietnam-1558",
+   "title": "Embedded Software Engineer",
+   "company": "Hella Vietnam",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/embedded-software-engineer-hella-vietnam-1558",
+   "source": "itviec",
+   "postedAt": "2026-11-06",
+   "snippet": "",
+   "skills": [
+    "Embedded C",
+    "English",
+    "AUTOSAR",
+    "Embedded"
+   ],
+   "firstSeenAt": 1793352945492
+  },
+  {
+   "id": "itviec:fullstack-dev-ai-products-python-tecalliance-vietnam-4728",
+   "title": "Fullstack Dev - AI products (Python)",
+   "company": "TecAlliance Vietnam",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/fullstack-dev-ai-products-python-tecalliance-vietnam-4728",
+   "source": "itviec",
+   "postedAt": "2026-11-06",
+   "snippet": "",
+   "skills": [
+    "Fullstack",
+    "English",
+    "SQL",
+    "AWS",
+    "AI",
+    "Python"
+   ],
+   "firstSeenAt": 1793955944469
   },
   {
    "id": "topdev:2144332",
@@ -347,9 +383,9 @@
     ".NET",
     "C#",
     "MVC",
+    "JavaScript",
     "SQL",
-    "CSS",
-    "JavaScript"
+    "CSS"
    ],
    "firstSeenAt": 1793873140049
   },
@@ -366,23 +402,20 @@
    "firstSeenAt": 1793880340147
   },
   {
-   "id": "itviec:fullstack-developer-net-c-tma-solutions-4346",
-   "title": "Fullstack Developer (.NET, C#)",
-   "company": "TMA Solutions",
+   "id": "itviec:backend-engineer-kotlin-java-spring-ncaptcha-clip-naver-vietnam-3917",
+   "title": "Backend Engineer (Kotlin/Java/Spring) - nCaptcha/Clip",
+   "company": "NAVER VIETNAM",
    "location": "Ho Chi Minh",
-   "url": "https://itviec.com/it-jobs/fullstack-developer-net-c-tma-solutions-4346",
+   "url": "https://itviec.com/it-jobs/backend-engineer-kotlin-java-spring-ncaptcha-clip-naver-vietnam-3917",
    "source": "itviec",
-   "postedAt": "2026-11-05",
+   "postedAt": "2026-11-04",
    "snippet": "",
    "skills": [
-    "C#",
-    "MongoDB",
-    "LINQ",
-    "SOLID Principles",
-    "OOP",
-    ".NET"
+    "Java",
+    "Kotlin",
+    "Spring"
    ],
-   "firstSeenAt": 1793779002097
+   "firstSeenAt": 1793784273383
   },
   {
    "id": "itviec:unity-game-developer-6-years-orientation-to-vr-naetib-game-studio-2326",
@@ -391,7 +424,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/unity-game-developer-6-years-orientation-to-vr-naetib-game-studio-2326",
    "source": "itviec",
-   "postedAt": "2026-11-05",
+   "postedAt": "2026-11-04",
    "snippet": "",
    "skills": [
     "Unity",
@@ -404,20 +437,23 @@
    "firstSeenAt": 1793781344194
   },
   {
-   "id": "itviec:backend-engineer-kotlin-java-spring-ncaptcha-clip-naver-vietnam-3917",
-   "title": "Backend Engineer (Kotlin/Java/Spring) - nCaptcha/Clip",
-   "company": "NAVER VIETNAM",
+   "id": "itviec:fullstack-developer-net-c-tma-solutions-4346",
+   "title": "Fullstack Developer (.NET, C#)",
+   "company": "TMA Solutions",
    "location": "Ho Chi Minh",
-   "url": "https://itviec.com/it-jobs/backend-engineer-kotlin-java-spring-ncaptcha-clip-naver-vietnam-3917",
+   "url": "https://itviec.com/it-jobs/fullstack-developer-net-c-tma-solutions-4346",
    "source": "itviec",
-   "postedAt": "2026-11-05",
+   "postedAt": "2026-11-04",
    "snippet": "",
    "skills": [
-    "Java",
-    "Kotlin",
-    "Spring"
+    "C#",
+    "MongoDB",
+    "LINQ",
+    "SOLID Principles",
+    "OOP",
+    ".NET"
    ],
-   "firstSeenAt": 1793784273383
+   "firstSeenAt": 1793779002097
   },
   {
    "id": "itviec:software-development-engineer-in-test-sdet-andpad-vietnam-co-ltd-4158",
@@ -563,7 +599,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/bridge-software-engineer-n2-jlpt-itviec-recruitment-consulting-5139",
    "source": "itviec",
-   "postedAt": "2026-11-04",
+   "postedAt": "2026-11-03",
    "snippet": "",
    "skills": [
     "Japanese IT Communication",
@@ -826,30 +862,13 @@
    "firstSeenAt": 1792483383856
   },
   {
-   "id": "itviec:embedded-software-engineer-hella-vietnam-1558",
-   "title": "Embedded Software Engineer",
-   "company": "Hella Vietnam",
-   "location": "Ho Chi Minh",
-   "url": "https://itviec.com/it-jobs/embedded-software-engineer-hella-vietnam-1558",
-   "source": "itviec",
-   "postedAt": "2026-10-31",
-   "snippet": "",
-   "skills": [
-    "Embedded C",
-    "English",
-    "AUTOSAR",
-    "Embedded"
-   ],
-   "firstSeenAt": 1793352945492
-  },
-  {
    "id": "itviec:software-developer-net-power-bi-microsoft-dynamics-mdc-precision-vietnam-1530",
    "title": "Software Developer (.NET, Power BI, Microsoft Dynamics)",
    "company": "MDC Precision Vietnam",
    "location": "Dong Nai",
    "url": "https://itviec.com/it-jobs/software-developer-net-power-bi-microsoft-dynamics-mdc-precision-vietnam-1530",
    "source": "itviec",
-   "postedAt": "2026-10-31",
+   "postedAt": "2026-10-30",
    "snippet": "",
    "skills": [
     ".NET",
@@ -884,7 +903,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/embedded-software-engineer-ban-vien-corporation-0636",
    "source": "itviec",
-   "postedAt": "2026-10-30",
+   "postedAt": "2026-10-29",
    "snippet": "",
    "skills": [
     "Embedded C",
@@ -1342,13 +1361,29 @@
    "firstSeenAt": 1792745322919
   },
   {
+   "id": "itviec:python-developer-accenture-2706",
+   "title": "Python Developer",
+   "company": "Accenture",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/python-developer-accenture-2706",
+   "source": "itviec",
+   "postedAt": "2026-10-23",
+   "snippet": "",
+   "skills": [
+    "Python",
+    "AWS",
+    "English"
+   ],
+   "firstSeenAt": 1792655426055
+  },
+  {
    "id": "itviec:java-fullstack-developer-react-elasticsearch-aws-hitachi-digital-services-4739",
    "title": "Java Fullstack Developer (React/ Elasticsearch /AWS)",
    "company": "Hitachi Digital Services",
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/java-fullstack-developer-react-elasticsearch-aws-hitachi-digital-services-4739",
    "source": "itviec",
-   "postedAt": "2026-10-23",
+   "postedAt": "2026-10-22",
    "snippet": "",
    "skills": [
     "Java",
@@ -1367,7 +1402,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/ho-chi-minh-full-stack-developer-reactjs-nodejs-one-tech-stop-vietnam-company-ltd-2723",
    "source": "itviec",
-   "postedAt": "2026-10-23",
+   "postedAt": "2026-10-22",
    "snippet": "",
    "skills": [
     "Node.js",
@@ -1378,22 +1413,6 @@
     "SQL"
    ],
    "firstSeenAt": 1792483383856
-  },
-  {
-   "id": "itviec:python-developer-accenture-2706",
-   "title": "Python Developer",
-   "company": "Accenture",
-   "location": "Ho Chi Minh",
-   "url": "https://itviec.com/it-jobs/python-developer-accenture-2706",
-   "source": "itviec",
-   "postedAt": "2026-10-23",
-   "snippet": "",
-   "skills": [
-    "Python",
-    "AWS",
-    "English"
-   ],
-   "firstSeenAt": 1792655426055
   },
   {
    "id": "linkedin:4481180595",
@@ -1545,7 +1564,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/full-stack-developer-ai-first-drupal-php-node-js-javac-technology-software-company-ltd-4624",
    "source": "itviec",
-   "postedAt": "2026-10-22",
+   "postedAt": "2026-10-21",
    "snippet": "",
    "skills": [
     "PHP",
@@ -1694,7 +1713,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/backend-developer-java-mysql-postgresql-dosoftpro-4517",
    "source": "itviec",
-   "postedAt": "2026-10-18",
+   "postedAt": "2026-10-17",
    "snippet": "",
    "skills": [
     "Java",
@@ -1893,7 +1912,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/middle-senior-backend-developer-aws-api-ci-cd-cong-ty-tnhh-cong-nghe-angle-ai-4422",
    "source": "itviec",
-   "postedAt": "2026-10-09",
+   "postedAt": "2026-10-08",
    "snippet": "",
    "skills": [
     "Cloud",
