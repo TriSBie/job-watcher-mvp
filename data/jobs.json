@@ -1,20 +1,20 @@
 {
- "updatedAt": "2026-11-06T12:19:28.624Z",
+ "updatedAt": "2026-11-11T09:00:24.195Z",
  "sourceStatus": {
-  "linkedin": "error",
+  "linkedin": "ok",
   "itviec": "ok",
   "topdev": "ok"
  },
  "runs": [
   {
-   "at": "2026-11-06T02:05:46.114Z",
-   "fetched": 204,
-   "added": 9,
-   "total": 100,
+   "at": "2026-11-06T23:35:55.418Z",
+   "fetched": 201,
+   "added": 7,
+   "total": 105,
    "perSource": {
     "linkedin": 20,
     "itviec": 100,
-    "topdev": 84
+    "topdev": 81
    },
    "sourceStatus": {
     "linkedin": "ok",
@@ -23,14 +23,30 @@
    }
   },
   {
-   "at": "2026-11-06T02:35:43.694Z",
-   "fetched": 204,
-   "added": 8,
+   "at": "2026-11-07T00:06:01.691Z",
+   "fetched": 181,
+   "added": 0,
+   "total": 100,
+   "perSource": {
+    "linkedin": 0,
+    "itviec": 100,
+    "topdev": 81
+   },
+   "sourceStatus": {
+    "linkedin": "error",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-11-07T01:08:36.477Z",
+   "fetched": 201,
+   "added": 9,
    "total": 100,
    "perSource": {
     "linkedin": 20,
     "itviec": 100,
-    "topdev": 84
+    "topdev": 81
    },
    "sourceStatus": {
     "linkedin": "ok",
@@ -39,14 +55,126 @@
    }
   },
   {
-   "at": "2026-11-06T03:28:50.202Z",
-   "fetched": 203,
+   "at": "2026-11-07T01:56:34.330Z",
+   "fetched": 201,
    "added": 9,
+   "total": 100,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 81
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-11-07T03:03:04.085Z",
+   "fetched": 201,
+   "added": 9,
+   "total": 100,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 81
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-11-07T03:53:11.915Z",
+   "fetched": 201,
+   "added": 9,
+   "total": 100,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 81
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-11-07T04:05:47.958Z",
+   "fetched": 201,
+   "added": 9,
+   "total": 100,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 81
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-11-07T05:00:46.904Z",
+   "fetched": 181,
+   "added": 2,
+   "total": 100,
+   "perSource": {
+    "linkedin": 0,
+    "itviec": 100,
+    "topdev": 81
+   },
+   "sourceStatus": {
+    "linkedin": "error",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-11-08T05:05:53.148Z",
+   "fetched": 201,
+   "added": 9,
+   "total": 98,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 81
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-11-09T05:35:43.815Z",
+   "fetched": 202,
+   "added": 10,
+   "total": 99,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 82
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-11-10T11:38:05.749Z",
+   "fetched": 202,
+   "added": 11,
    "total": 101,
    "perSource": {
     "linkedin": 20,
     "itviec": 100,
-    "topdev": 83
+    "topdev": 82
    },
    "sourceStatus": {
     "linkedin": "ok",
@@ -55,73 +183,9 @@
    }
   },
   {
-   "at": "2026-11-06T04:15:54.675Z",
-   "fetched": 203,
-   "added": 9,
-   "total": 102,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 83
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-11-06T06:23:57.832Z",
-   "fetched": 203,
-   "added": 10,
-   "total": 104,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 83
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-11-06T07:58:34.395Z",
-   "fetched": 203,
-   "added": 8,
-   "total": 104,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 83
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-11-06T08:05:42.705Z",
-   "fetched": 203,
-   "added": 8,
-   "total": 104,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 83
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-11-06T08:35:55.511Z",
+   "at": "2026-11-11T09:00:24.195Z",
    "fetched": 204,
-   "added": 8,
+   "added": 13,
    "total": 104,
    "perSource": {
     "linkedin": 20,
@@ -130,76 +194,231 @@
    },
    "sourceStatus": {
     "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-11-06T09:05:44.469Z",
-   "fetched": 203,
-   "added": 9,
-   "total": 105,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 83
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-11-06T09:58:05.356Z",
-   "fetched": 203,
-   "added": 8,
-   "total": 105,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 83
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-11-06T10:19:21.441Z",
-   "fetched": 183,
-   "added": 1,
-   "total": 105,
-   "perSource": {
-    "linkedin": 0,
-    "itviec": 100,
-    "topdev": 83
-   },
-   "sourceStatus": {
-    "linkedin": "error",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-11-06T12:19:28.624Z",
-   "fetched": 183,
-   "added": 1,
-   "total": 105,
-   "perSource": {
-    "linkedin": 0,
-    "itviec": 100,
-    "topdev": 83
-   },
-   "sourceStatus": {
-    "linkedin": "error",
     "itviec": "ok",
     "topdev": "ok"
    }
   }
  ],
  "jobs": [
+  {
+   "id": "itviec:software-development-engineer-in-test-sdet-andpad-vietnam-co-ltd-4158",
+   "title": "Software Development Engineer in Test (SDET)",
+   "company": "ANDPAD VietNam Co., Ltd",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/software-development-engineer-in-test-sdet-andpad-vietnam-co-ltd-4158",
+   "source": "itviec",
+   "postedAt": "2026-11-11",
+   "snippet": "",
+   "skills": [
+    "QA QC",
+    "Automation Test",
+    "Tester",
+    "Agile",
+    "English"
+   ],
+   "firstSeenAt": 1793169342494
+  },
+  {
+   "id": "itviec:fullstack-software-engineerall-levels-cloud-ci-cd-vietlink-5823",
+   "title": "Fullstack Software Engineer–All Levels (Cloud & CI/CD)",
+   "company": "Vietlink",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/fullstack-software-engineerall-levels-cloud-ci-cd-vietlink-5823",
+   "source": "itviec",
+   "postedAt": "2026-11-11",
+   "snippet": "",
+   "skills": [
+    "AWS",
+    "CI/CD",
+    "AI",
+    "Python",
+    "TypeScript",
+    "JavaScript"
+   ],
+   "firstSeenAt": 1794387624195
+  },
+  {
+   "id": "itviec:ios-developer-swift-hcmc-gotymex-4328",
+   "title": "iOS Developer (Swift, HCMC)",
+   "company": "GoTymeX",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/ios-developer-swift-hcmc-gotymex-4328",
+   "source": "itviec",
+   "postedAt": "2026-11-11",
+   "snippet": "",
+   "skills": [
+    "iOS",
+    "Unit test",
+    "English",
+    "Swift"
+   ],
+   "firstSeenAt": 1794387624195
+  },
+  {
+   "id": "itviec:database-developer-oracle-postgresql-cesa-vietnam-part-of-ceva-logistic-4657",
+   "title": "Database Developer (Oracle / PostgreSQL)",
+   "company": "CESA Vietnam (part of CEVA Logistic)",
+   "location": "Remote",
+   "url": "https://itviec.com/it-jobs/database-developer-oracle-postgresql-cesa-vietnam-part-of-ceva-logistic-4657",
+   "source": "itviec",
+   "postedAt": "2026-11-11",
+   "snippet": "",
+   "skills": [
+    "SQL",
+    "Agile",
+    "CI/CD",
+    "English",
+    "PostgreSQL",
+    "Oracle"
+   ],
+   "firstSeenAt": 1794387624195
+  },
+  {
+   "id": "itviec:bridge-software-engineer-n2-jlpt-itviec-recruitment-consulting-5139",
+   "title": "Bridge Software Engineer (N2 JLPT)",
+   "company": "ITviec Recruitment Consulting",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/bridge-software-engineer-n2-jlpt-itviec-recruitment-consulting-5139",
+   "source": "itviec",
+   "postedAt": "2026-11-10",
+   "snippet": "",
+   "skills": [
+    "Japanese IT Communication",
+    "Java",
+    "Bridge Engineer",
+    "Japanese",
+    "Project Management",
+    "Python"
+   ],
+   "firstSeenAt": 1793691341276
+  },
+  {
+   "id": "itviec:automotive-embedded-software-engineer-asap-hitachi-digital-services-1115",
+   "title": "Automotive Embedded Software Engineer (ASAP)",
+   "company": "Hitachi Digital Services",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/automotive-embedded-software-engineer-asap-hitachi-digital-services-1115",
+   "source": "itviec",
+   "postedAt": "2026-11-10",
+   "snippet": "",
+   "skills": [
+    "Zephyr",
+    "Hardware Design",
+    "AUTOSAR",
+    "Linux",
+    "Embedded"
+   ],
+   "firstSeenAt": 1793064948346
+  },
+  {
+   "id": "itviec:backend-developer-c-asp-net-sql-microservices-loc-troi-2540",
+   "title": "Backend Developer (C#, ASP.NET, SQL, Microservices)",
+   "company": "Lộc Trời",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/backend-developer-c-asp-net-sql-microservices-loc-troi-2540",
+   "source": "itviec",
+   "postedAt": "2026-11-10",
+   "snippet": "",
+   "skills": [
+    "C#",
+    "Docker",
+    "API",
+    "Microservices",
+    "SQL",
+    ".NET"
+   ],
+   "firstSeenAt": 1794310685749
+  },
+  {
+   "id": "itviec:new-product-development-engineer-fullstack-english-porters-asia-vietnam-co-ltd-5903",
+   "title": "New Product Development Engineer(Fullstack & English)",
+   "company": "Porters Asia Vietnam Co., Ltd.",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/new-product-development-engineer-fullstack-english-porters-asia-vietnam-co-ltd-5903",
+   "source": "itviec",
+   "postedAt": "2026-11-10",
+   "snippet": "",
+   "skills": [
+    "Fullstack",
+    "React",
+    "Java",
+    "TypeScript",
+    "English"
+   ],
+   "firstSeenAt": 1794310685749
+  },
+  {
+   "id": "itviec:unity-game-developer-c-nexon-dev-vina-4134",
+   "title": "Unity Game Developer (C#)",
+   "company": "NEXON DEV VINA",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/unity-game-developer-c-nexon-dev-vina-4134",
+   "source": "itviec",
+   "postedAt": "2026-11-09",
+   "snippet": "",
+   "skills": [
+    "Unity",
+    "C#",
+    "C++",
+    "English"
+   ],
+   "firstSeenAt": 1792991145846
+  },
+  {
+   "id": "itviec:java-software-engineer-data-management-bbv-vietnam-0438",
+   "title": "Java Software Engineer - Data Management",
+   "company": "bbv Vietnam",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/java-software-engineer-data-management-bbv-vietnam-0438",
+   "source": "itviec",
+   "postedAt": "2026-11-09",
+   "snippet": "",
+   "skills": [
+    "Java",
+    "English",
+    "Spring Boot",
+    "Kafka",
+    "Database",
+    "Data modeling"
+   ],
+   "firstSeenAt": 1794202543815
+  },
+  {
+   "id": "itviec:embedded-software-engineer-hella-vietnam-1558",
+   "title": "Embedded Software Engineer",
+   "company": "Hella Vietnam",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/embedded-software-engineer-hella-vietnam-1558",
+   "source": "itviec",
+   "postedAt": "2026-11-06",
+   "snippet": "",
+   "skills": [
+    "Embedded C",
+    "English",
+    "AUTOSAR",
+    "Embedded"
+   ],
+   "firstSeenAt": 1793352945492
+  },
+  {
+   "id": "itviec:fullstack-dev-ai-products-python-tecalliance-vietnam-4728",
+   "title": "Fullstack Dev - AI products (Python)",
+   "company": "TecAlliance Vietnam",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/fullstack-dev-ai-products-python-tecalliance-vietnam-4728",
+   "source": "itviec",
+   "postedAt": "2026-11-06",
+   "snippet": "",
+   "skills": [
+    "Fullstack",
+    "English",
+    "SQL",
+    "AWS",
+    "AI",
+    "Python"
+   ],
+   "firstSeenAt": 1793955944469
+  },
   {
    "id": "linkedin:4486940462",
    "title": "Java Developer (3+ YOE)",
@@ -271,55 +490,16 @@
    "firstSeenAt": 1793946237832
   },
   {
-   "id": "itviec:embedded-software-engineer-hella-vietnam-1558",
-   "title": "Embedded Software Engineer",
-   "company": "Hella Vietnam",
-   "location": "Ho Chi Minh",
-   "url": "https://itviec.com/it-jobs/embedded-software-engineer-hella-vietnam-1558",
-   "source": "itviec",
+   "id": "linkedin:4486242264",
+   "title": "CW | PHP Engineer",
+   "company": "CBTW APAC",
+   "location": "Ho Chi Minh City",
+   "url": "https://vn.linkedin.com/jobs/view/cw-php-engineer-at-cbtw-apac-4486242264",
+   "source": "linkedin",
    "postedAt": "2026-11-06",
    "snippet": "",
-   "skills": [
-    "Embedded C",
-    "English",
-    "AUTOSAR",
-    "Embedded"
-   ],
-   "firstSeenAt": 1793352945492
-  },
-  {
-   "id": "itviec:fullstack-dev-ai-products-python-tecalliance-vietnam-4728",
-   "title": "Fullstack Dev - AI products (Python)",
-   "company": "TecAlliance Vietnam",
-   "location": "Ho Chi Minh",
-   "url": "https://itviec.com/it-jobs/fullstack-dev-ai-products-python-tecalliance-vietnam-4728",
-   "source": "itviec",
-   "postedAt": "2026-11-06",
-   "snippet": "",
-   "skills": [
-    "Fullstack",
-    "English",
-    "SQL",
-    "AWS",
-    "AI",
-    "Python"
-   ],
-   "firstSeenAt": 1793955944469
-  },
-  {
-   "id": "topdev:2144332",
-   "title": "Chuyên viên lập trình Back-end (Java)",
-   "company": "",
-   "location": "Vietnam",
-   "url": "https://topdev.vn/detail-jobs/chuyen-vien-lap-trinh-back-end-java-mobifone-it-2144332",
-   "source": "topdev",
-   "postedAt": "2026-11-05",
-   "snippet": "",
-   "skills": [
-    "MySQL",
-    "Spring Boot"
-   ],
-   "firstSeenAt": 1793846121810
+   "skills": [],
+   "firstSeenAt": 1794387624195
   },
   {
    "id": "itviec:software-development-engineer-in-test-sdet-datalogic-viet-nam-4633",
@@ -359,18 +539,6 @@
    "firstSeenAt": 1792659333407
   },
   {
-   "id": "linkedin:4485581493",
-   "title": "Junior Software Engineer, Java",
-   "company": "MoMo (M_Service)",
-   "location": "Ho Chi Minh City, Vietnam",
-   "url": "https://vn.linkedin.com/jobs/view/junior-software-engineer-java-at-momo-m-service-4485581493",
-   "source": "linkedin",
-   "postedAt": "2026-11-05",
-   "snippet": "",
-   "skills": [],
-   "firstSeenAt": 1793865940460
-  },
-  {
    "id": "itviec:software-developer-asp-net-c-english-cong-ty-tnhh-salary-viet-nam-2439",
    "title": "Software Developer (ASP.NET, C#, English)",
    "company": "Công ty TNHH Salary (Việt Nam)",
@@ -388,6 +556,37 @@
     "CSS"
    ],
    "firstSeenAt": 1793873140049
+  },
+  {
+   "id": "topdev:2144332",
+   "title": "Chuyên viên lập trình Back-end (Java)",
+   "company": "MobiFone IT",
+   "location": "Hà Nội",
+   "url": "https://topdev.vn/detail-jobs/chuyen-vien-lap-trinh-back-end-java-mobifone-it-2144332",
+   "source": "topdev",
+   "postedAt": "2026-11-05",
+   "snippet": "",
+   "skills": [
+    "Android",
+    "iOS",
+    "JavaScript",
+    "SQL",
+    "MySQL",
+    "Spring Boot"
+   ],
+   "firstSeenAt": 1793846121810
+  },
+  {
+   "id": "linkedin:4485581493",
+   "title": "Junior Software Engineer, Java",
+   "company": "MoMo (M_Service)",
+   "location": "Ho Chi Minh City, Vietnam",
+   "url": "https://vn.linkedin.com/jobs/view/junior-software-engineer-java-at-momo-m-service-4485581493",
+   "source": "linkedin",
+   "postedAt": "2026-11-05",
+   "snippet": "",
+   "skills": [],
+   "firstSeenAt": 1793865940460
   },
   {
    "id": "linkedin:4486598753",
@@ -454,24 +653,6 @@
     ".NET"
    ],
    "firstSeenAt": 1793779002097
-  },
-  {
-   "id": "itviec:software-development-engineer-in-test-sdet-andpad-vietnam-co-ltd-4158",
-   "title": "Software Development Engineer in Test (SDET)",
-   "company": "ANDPAD VietNam Co., Ltd",
-   "location": "Ho Chi Minh",
-   "url": "https://itviec.com/it-jobs/software-development-engineer-in-test-sdet-andpad-vietnam-co-ltd-4158",
-   "source": "itviec",
-   "postedAt": "2026-11-04",
-   "snippet": "",
-   "skills": [
-    "QA QC",
-    "Automation Test",
-    "Tester",
-    "Agile",
-    "English"
-   ],
-   "firstSeenAt": 1793169342494
   },
   {
    "id": "itviec:adas-embedded-software-developer-joining-bonus-bosch-global-software-technologies-company-limited-4836",
@@ -593,25 +774,6 @@
    "firstSeenAt": 1793691341276
   },
   {
-   "id": "itviec:bridge-software-engineer-n2-jlpt-itviec-recruitment-consulting-5139",
-   "title": "Bridge Software Engineer (N2 JLPT)",
-   "company": "ITviec Recruitment Consulting",
-   "location": "Ho Chi Minh",
-   "url": "https://itviec.com/it-jobs/bridge-software-engineer-n2-jlpt-itviec-recruitment-consulting-5139",
-   "source": "itviec",
-   "postedAt": "2026-11-03",
-   "snippet": "",
-   "skills": [
-    "Japanese IT Communication",
-    "Java",
-    "Bridge Engineer",
-    "Japanese",
-    "Project Management",
-    "Python"
-   ],
-   "firstSeenAt": 1793691341276
-  },
-  {
    "id": "itviec:team-leader-japanese-n2-cube-system-viet-nam-1603",
    "title": "Team Leader (Japanese N2+)",
    "company": "Cube System Việt Nam",
@@ -628,24 +790,6 @@
     "Japanese"
    ],
    "firstSeenAt": 1792721143172
-  },
-  {
-   "id": "itviec:automotive-embedded-software-engineer-asap-hitachi-digital-services-1115",
-   "title": "Automotive Embedded Software Engineer (ASAP)",
-   "company": "Hitachi Digital Services",
-   "location": "Ho Chi Minh",
-   "url": "https://itviec.com/it-jobs/automotive-embedded-software-engineer-asap-hitachi-digital-services-1115",
-   "source": "itviec",
-   "postedAt": "2026-11-03",
-   "snippet": "",
-   "skills": [
-    "Zephyr",
-    "Hardware Design",
-    "AUTOSAR",
-    "Linux",
-    "Embedded"
-   ],
-   "firstSeenAt": 1793064948346
   },
   {
    "id": "topdev:2143575",
@@ -752,23 +896,6 @@
     "English"
    ],
    "firstSeenAt": 1793610343624
-  },
-  {
-   "id": "itviec:unity-game-developer-c-nexon-dev-vina-4134",
-   "title": "Unity Game Developer (C#)",
-   "company": "NEXON DEV VINA",
-   "location": "Ho Chi Minh",
-   "url": "https://itviec.com/it-jobs/unity-game-developer-c-nexon-dev-vina-4134",
-   "source": "itviec",
-   "postedAt": "2026-11-02",
-   "snippet": "",
-   "skills": [
-    "Unity",
-    "C#",
-    "C++",
-    "English"
-   ],
-   "firstSeenAt": 1792991145846
   },
   {
    "id": "itviec:fullstack-developer-java-golang-python-rontech-2456",
@@ -1383,7 +1510,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/java-fullstack-developer-react-elasticsearch-aws-hitachi-digital-services-4739",
    "source": "itviec",
-   "postedAt": "2026-10-22",
+   "postedAt": "2026-10-23",
    "snippet": "",
    "skills": [
     "Java",
@@ -1804,8 +1931,8 @@
   {
    "id": "topdev:2138248",
    "title": "C/C++ Software Developer – Telecom (All Levels)",
-   "company": "RemotePeople",
-   "location": "Hà Nội, Hồ Chí Minh",
+   "company": "",
+   "location": "Vietnam",
    "url": "https://topdev.vn/detail-jobs/c-c-software-developer-telecom-all-levels-remotepeople-2138248",
    "source": "topdev",
    "postedAt": "2026-10-15",
@@ -1866,141 +1993,6 @@
     "PHP",
     "Java",
     "MySQL"
-   ],
-   "firstSeenAt": 1792483383856
-  },
-  {
-   "id": "linkedin:4433342968",
-   "title": "Java Developer (Middle)",
-   "company": "Amaris Consulting | Part of Mantu",
-   "location": "Ho Chi Minh City Metropolitan Area",
-   "url": "https://vn.linkedin.com/jobs/view/java-developer-middle-at-amaris-consulting-part-of-mantu-4433342968",
-   "source": "linkedin",
-   "postedAt": "2026-10-12",
-   "snippet": "Job Description ABOUT THE JOB Develop and maintain scalable microservices-based applications using Java and Spring Boot. Design, implement and maintain secure APIs for third-party integration. Work on security features including Spring Security, JWT authentication, and HTTPS conf",
-   "skills": [
-    "Java",
-    "Spring Boot",
-    "Microservices",
-    "SQL"
-   ],
-   "firstSeenAt": 1792570814703
-  },
-  {
-   "id": "itviec:software-engineer-java-c-scala-beyondsoft-technology-vietnam-company-limited-4159",
-   "title": "Software Engineer (Java, C#, Scala)",
-   "company": "Beyondsoft Technology (Vietnam) Company Limited",
-   "location": "Ho Chi Minh",
-   "url": "https://itviec.com/it-jobs/software-engineer-java-c-scala-beyondsoft-technology-vietnam-company-limited-4159",
-   "source": "itviec",
-   "postedAt": "2026-10-09",
-   "snippet": "",
-   "skills": [
-    "C#",
-    "Azure",
-    "SQL",
-    "Scala",
-    "Java",
-    "Python"
-   ],
-   "firstSeenAt": 1792483383856
-  },
-  {
-   "id": "itviec:middle-senior-backend-developer-aws-api-ci-cd-cong-ty-tnhh-cong-nghe-angle-ai-4422",
-   "title": "[Middle] Backend Developer (AWS, API, CI/CD)",
-   "company": "Công ty TNHH Công Nghệ Angle AI",
-   "location": "Ho Chi Minh",
-   "url": "https://itviec.com/it-jobs/middle-senior-backend-developer-aws-api-ci-cd-cong-ty-tnhh-cong-nghe-angle-ai-4422",
-   "source": "itviec",
-   "postedAt": "2026-10-08",
-   "snippet": "",
-   "skills": [
-    "Cloud",
-    "Docker",
-    "CI/CD",
-    "DynamoDB",
-    "API",
-    "AWS"
-   ],
-   "firstSeenAt": 1792483383856
-  },
-  {
-   "id": "itviec:software-engineer-ai-coding-agent-net-java-ol-vietnam-1338",
-   "title": "Software Engineer (AI Coding Agent/.Net/Java)",
-   "company": "OL Vietnam",
-   "location": "Ho Chi Minh",
-   "url": "https://itviec.com/it-jobs/software-engineer-ai-coding-agent-net-java-ol-vietnam-1338",
-   "source": "itviec",
-   "postedAt": "2026-10-08",
-   "snippet": "",
-   "skills": [
-    ".NET",
-    "Java",
-    "PostgreSQL",
-    "AI",
-    "Software Architecture",
-    "English"
-   ],
-   "firstSeenAt": 1792483383856
-  },
-  {
-   "id": "linkedin:4475784526",
-   "title": "Backend Engineer – Ruby on Rails",
-   "company": "Hello Clever",
-   "location": "Ho Chi Minh City, Vietnam",
-   "url": "https://vn.linkedin.com/jobs/view/backend-engineer-%E2%80%93-ruby-on-rails-at-hello-clever-4475784526",
-   "source": "linkedin",
-   "postedAt": "2026-10-08",
-   "snippet": "About Us Hello Clever is building the next generation of payments and loyalty infrastructure by turning every transaction into growth for merchants. We’re an AI-powered fintech operating across 26+ markets, helping businesses move money in real time and convert payments into meas",
-   "skills": [
-    "PostgreSQL",
-    "MySQL",
-    "Redis",
-    "Kafka",
-    "Ruby",
-    "Rails",
-    "SQL"
-   ],
-   "firstSeenAt": 1792483383856
-  },
-  {
-   "id": "linkedin:4475767407",
-   "title": "Java Developer",
-   "company": "Capgemini",
-   "location": "Ho Chi Minh City, Vietnam",
-   "url": "https://vn.linkedin.com/jobs/view/java-developer-at-capgemini-4475767407",
-   "source": "linkedin",
-   "postedAt": "2026-10-08",
-   "snippet": "",
-   "skills": [],
-   "firstSeenAt": 1792483383856
-  },
-  {
-   "id": "topdev:2137421",
-   "title": "Cobol Developer (English speaking)",
-   "company": "",
-   "location": "Vietnam",
-   "url": "https://topdev.vn/detail-jobs/cobol-developer-english-speaking-cong-ty-tnhh-capgemini-viet-nam-2137421",
-   "source": "topdev",
-   "postedAt": "2026-10-08",
-   "snippet": "",
-   "skills": [
-    "COBOL"
-   ],
-   "firstSeenAt": 1792483383856
-  },
-  {
-   "id": "topdev:2137416",
-   "title": "Associate Quality Engineer (Automation)",
-   "company": "",
-   "location": "Vietnam",
-   "url": "https://topdev.vn/detail-jobs/associate-quality-engineer-automation-cong-ty-tnhh-capgemini-viet-nam-2137416",
-   "source": "topdev",
-   "postedAt": "2026-10-08",
-   "snippet": "",
-   "skills": [
-    "Java",
-    "Selenium"
    ],
    "firstSeenAt": 1792483383856
   },
