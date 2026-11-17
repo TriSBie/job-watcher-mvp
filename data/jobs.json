@@ -1,27 +1,11 @@
 {
- "updatedAt": "2026-11-17T08:00:04.367Z",
+ "updatedAt": "2026-11-17T08:23:32.153Z",
  "sourceStatus": {
   "linkedin": "ok",
   "itviec": "ok",
   "topdev": "ok"
  },
  "runs": [
-  {
-   "at": "2026-11-17T00:35:57.503Z",
-   "fetched": 184,
-   "added": 4,
-   "total": 111,
-   "perSource": {
-    "linkedin": 0,
-    "itviec": 100,
-    "topdev": 84
-   },
-   "sourceStatus": {
-    "linkedin": "error",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
   {
    "at": "2026-11-17T01:05:44.810Z",
    "fetched": 184,
@@ -197,6 +181,22 @@
     "itviec": "ok",
     "topdev": "ok"
    }
+  },
+  {
+   "at": "2026-11-17T08:23:32.153Z",
+   "fetched": 204,
+   "added": 10,
+   "total": 113,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 84
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
   }
  ],
  "jobs": [
@@ -218,6 +218,18 @@
     "Python"
    ],
    "firstSeenAt": 1793691341276
+  },
+  {
+   "id": "linkedin:4490412449",
+   "title": "Backend Java Developer - VN",
+   "company": "Colonial Surety Company",
+   "location": "Củ Chi",
+   "url": "https://vn.linkedin.com/jobs/view/backend-java-developer-vn-at-colonial-surety-company-4490412449",
+   "source": "linkedin",
+   "postedAt": "2026-11-17",
+   "snippet": "",
+   "skills": [],
+   "firstSeenAt": 1794903812153
   },
   {
    "id": "itviec:java-software-engineer-data-management-bbv-vietnam-0438",
@@ -1372,7 +1384,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/embedded-software-engineer-ban-vien-corporation-0636",
    "source": "itviec",
-   "postedAt": "2026-10-30",
+   "postedAt": "2026-10-29",
    "snippet": "",
    "skills": [
     "Embedded C",
