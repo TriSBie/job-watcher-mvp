@@ -1,80 +1,16 @@
 {
- "updatedAt": "2026-11-17T08:23:32.153Z",
+ "updatedAt": "2026-11-18T03:39:54.599Z",
  "sourceStatus": {
-  "linkedin": "ok",
+  "linkedin": "error",
   "itviec": "ok",
   "topdev": "ok"
  },
  "runs": [
   {
-   "at": "2026-11-17T01:05:44.810Z",
-   "fetched": 184,
-   "added": 4,
-   "total": 111,
-   "perSource": {
-    "linkedin": 0,
-    "itviec": 100,
-    "topdev": 84
-   },
-   "sourceStatus": {
-    "linkedin": "error",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-11-17T01:35:46.170Z",
-   "fetched": 184,
-   "added": 4,
-   "total": 111,
-   "perSource": {
-    "linkedin": 0,
-    "itviec": 100,
-    "topdev": 84
-   },
-   "sourceStatus": {
-    "linkedin": "error",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-11-17T02:05:46.275Z",
-   "fetched": 184,
-   "added": 4,
-   "total": 111,
-   "perSource": {
-    "linkedin": 0,
-    "itviec": 100,
-    "topdev": 84
-   },
-   "sourceStatus": {
-    "linkedin": "error",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-11-17T02:35:44.938Z",
-   "fetched": 184,
-   "added": 4,
-   "total": 111,
-   "perSource": {
-    "linkedin": 0,
-    "itviec": 100,
-    "topdev": 84
-   },
-   "sourceStatus": {
-    "linkedin": "error",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-11-17T03:05:45.932Z",
+   "at": "2026-11-17T18:05:43.752Z",
    "fetched": 204,
-   "added": 11,
-   "total": 112,
+   "added": 9,
+   "total": 113,
    "perSource": {
     "linkedin": 20,
     "itviec": 100,
@@ -87,10 +23,10 @@
    }
   },
   {
-   "at": "2026-11-17T03:35:51.616Z",
+   "at": "2026-11-17T18:35:51.484Z",
    "fetched": 204,
-   "added": 10,
-   "total": 112,
+   "added": 9,
+   "total": 113,
    "perSource": {
     "linkedin": 20,
     "itviec": 100,
@@ -103,87 +39,7 @@
    }
   },
   {
-   "at": "2026-11-17T05:11:42.569Z",
-   "fetched": 204,
-   "added": 10,
-   "total": 112,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 84
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-11-17T05:59:38.316Z",
-   "fetched": 204,
-   "added": 10,
-   "total": 112,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 84
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-11-17T06:49:04.161Z",
-   "fetched": 184,
-   "added": 4,
-   "total": 112,
-   "perSource": {
-    "linkedin": 0,
-    "itviec": 100,
-    "topdev": 84
-   },
-   "sourceStatus": {
-    "linkedin": "error",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-11-17T07:12:08.222Z",
-   "fetched": 204,
-   "added": 10,
-   "total": 112,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 84
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-11-17T08:00:04.367Z",
-   "fetched": 204,
-   "added": 10,
-   "total": 112,
-   "perSource": {
-    "linkedin": 20,
-    "itviec": 100,
-    "topdev": 84
-   },
-   "sourceStatus": {
-    "linkedin": "ok",
-    "itviec": "ok",
-    "topdev": "ok"
-   }
-  },
-  {
-   "at": "2026-11-17T08:23:32.153Z",
+   "at": "2026-11-17T19:05:46.667Z",
    "fetched": 204,
    "added": 10,
    "total": 113,
@@ -194,6 +50,150 @@
    },
    "sourceStatus": {
     "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-11-17T19:35:47.289Z",
+   "fetched": 204,
+   "added": 9,
+   "total": 113,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 84
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-11-17T20:05:55.096Z",
+   "fetched": 204,
+   "added": 9,
+   "total": 113,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 84
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-11-17T20:35:46.577Z",
+   "fetched": 204,
+   "added": 9,
+   "total": 113,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 84
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-11-17T21:05:58.807Z",
+   "fetched": 184,
+   "added": 4,
+   "total": 113,
+   "perSource": {
+    "linkedin": 0,
+    "itviec": 100,
+    "topdev": 84
+   },
+   "sourceStatus": {
+    "linkedin": "error",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-11-17T21:36:01.281Z",
+   "fetched": 204,
+   "added": 9,
+   "total": 113,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 84
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-11-17T22:05:44.105Z",
+   "fetched": 204,
+   "added": 9,
+   "total": 113,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 84
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-11-17T22:35:56.942Z",
+   "fetched": 204,
+   "added": 9,
+   "total": 113,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 84
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-11-17T23:05:49.514Z",
+   "fetched": 204,
+   "added": 9,
+   "total": 113,
+   "perSource": {
+    "linkedin": 20,
+    "itviec": 100,
+    "topdev": 84
+   },
+   "sourceStatus": {
+    "linkedin": "ok",
+    "itviec": "ok",
+    "topdev": "ok"
+   }
+  },
+  {
+   "at": "2026-11-18T03:39:54.599Z",
+   "fetched": 184,
+   "added": 4,
+   "total": 110,
+   "perSource": {
+    "linkedin": 0,
+    "itviec": 100,
+    "topdev": 84
+   },
+   "sourceStatus": {
+    "linkedin": "error",
     "itviec": "ok",
     "topdev": "ok"
    }
@@ -232,13 +232,31 @@
    "firstSeenAt": 1794903812153
   },
   {
+   "id": "linkedin:4467494099",
+   "title": "Golang Software Engineer",
+   "company": "AS White Global",
+   "location": "Ho Chi Minh City, Vietnam",
+   "url": "https://vn.linkedin.com/jobs/view/golang-software-engineer-at-as-white-global-4467494099",
+   "source": "linkedin",
+   "postedAt": "2026-11-17",
+   "snippet": "If you are looking to join an Australian Telco company recognized as Australia’s most trusted Telco that upholds value and focus on continuously delivering excellent results and customer experience, then this is for you! The Opportunity Build and shape the technology that powers ",
+   "skills": [
+    "PostgreSQL",
+    "Go",
+    "Kubernetes",
+    "CI/CD",
+    "iOS"
+   ],
+   "firstSeenAt": 1792483383856
+  },
+  {
    "id": "itviec:java-software-engineer-data-management-bbv-vietnam-0438",
    "title": "Java Software Engineer - Data Management",
    "company": "bbv Vietnam",
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/java-software-engineer-data-management-bbv-vietnam-0438",
    "source": "itviec",
-   "postedAt": "2026-11-16",
+   "postedAt": "2026-11-17",
    "snippet": "",
    "skills": [
     "Java",
@@ -249,6 +267,44 @@
     "Data modeling"
    ],
    "firstSeenAt": 1794202543815
+  },
+  {
+   "id": "itviec:software-engineer-backend-fluent-in-english-geocomply-geotech-hub-vietnam-0526",
+   "title": "Software Engineer (Backend, Fluent in English)",
+   "company": "GeoComply (GeoTech Hub Vietnam)",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/software-engineer-backend-fluent-in-english-geocomply-geotech-hub-vietnam-0526",
+   "source": "itviec",
+   "postedAt": "2026-11-17",
+   "snippet": "",
+   "skills": [
+    "Go",
+    "DevOps",
+    "Kubernetes",
+    "CI/CD",
+    "English",
+    "GCP"
+   ],
+   "firstSeenAt": 1794805241845
+  },
+  {
+   "id": "itviec:fullstack-developer-ai-augmented-java-python-linux-etp-tesol-2701",
+   "title": "Fullstack Developer (AI-Augmented, Java, Python, Linux)",
+   "company": "ETP TESOL",
+   "location": "Ho Chi Minh",
+   "url": "https://itviec.com/it-jobs/fullstack-developer-ai-augmented-java-python-linux-etp-tesol-2701",
+   "source": "itviec",
+   "postedAt": "2026-11-17",
+   "snippet": "",
+   "skills": [
+    "Fullstack",
+    "Linux",
+    "Python",
+    "JavaScript",
+    "Prompt Engineering",
+    "AI"
+   ],
+   "firstSeenAt": 1794826908722
   },
   {
    "id": "itviec:backend-developer-shinhan-ds-3750",
@@ -266,25 +322,6 @@
     "SQL",
     "HTML5",
     "JavaScript"
-   ],
-   "firstSeenAt": 1794805241845
-  },
-  {
-   "id": "itviec:software-engineer-backend-fluent-in-english-geocomply-geotech-hub-vietnam-0526",
-   "title": "Software Engineer (Backend, Fluent in English)",
-   "company": "GeoComply (GeoTech Hub Vietnam)",
-   "location": "Ho Chi Minh",
-   "url": "https://itviec.com/it-jobs/software-engineer-backend-fluent-in-english-geocomply-geotech-hub-vietnam-0526",
-   "source": "itviec",
-   "postedAt": "2026-11-16",
-   "snippet": "",
-   "skills": [
-    "Go",
-    "DevOps",
-    "Kubernetes",
-    "CI/CD",
-    "English",
-    "GCP"
    ],
    "firstSeenAt": 1794805241845
   },
@@ -322,25 +359,6 @@
    "firstSeenAt": 1794826908722
   },
   {
-   "id": "itviec:fullstack-developer-ai-augmented-java-python-linux-etp-tesol-2701",
-   "title": "Fullstack Developer (AI-Augmented, Java, Python, Linux)",
-   "company": "ETP TESOL",
-   "location": "Ho Chi Minh",
-   "url": "https://itviec.com/it-jobs/fullstack-developer-ai-augmented-java-python-linux-etp-tesol-2701",
-   "source": "itviec",
-   "postedAt": "2026-11-16",
-   "snippet": "",
-   "skills": [
-    "Fullstack",
-    "Linux",
-    "Python",
-    "JavaScript",
-    "Prompt Engineering",
-    "AI"
-   ],
-   "firstSeenAt": 1794826908722
-  },
-  {
    "id": "linkedin:4490290244",
    "title": "Backend(Java/.NET) Developer",
    "company": "Tinhvan Software JSC.",
@@ -348,8 +366,13 @@
    "url": "https://vn.linkedin.com/jobs/view/backend-java-net-developer-at-tinhvan-software-jsc-4490290244",
    "source": "linkedin",
    "postedAt": "2026-11-16",
-   "snippet": "",
-   "skills": [],
+   "snippet": "1.Chuyên viên lập trình Backend .NET Developer Yêu cầu công việc: Thành thạo lập trình 4 năm kinh nghiệm với ngôn ngữ .NET Core. Có kinh nghiệm làm việc với cơ sở dữ liệu PostgreSQL hoặc MS SQL Server. Hiểu biết về kiến trúc Microservice và các nguyên tắc thiết kế hệ thống phân t",
+   "skills": [
+    "Java",
+    "PostgreSQL",
+    ".NET",
+    "SQL"
+   ],
    "firstSeenAt": 1794884745932
   },
   {
@@ -443,7 +466,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/fullstack-dev-ai-products-python-tecalliance-vietnam-4728",
    "source": "itviec",
-   "postedAt": "2026-11-13",
+   "postedAt": "2026-11-14",
    "snippet": "",
    "skills": [
     "Fullstack",
@@ -462,7 +485,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/software-engineer-ai-coding-agent-net-java-ol-vietnam-3923",
    "source": "itviec",
-   "postedAt": "2026-11-13",
+   "postedAt": "2026-11-14",
    "snippet": "",
    "skills": [
     ".NET",
@@ -591,7 +614,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/software-development-engineer-in-test-sdet-datalogic-viet-nam-4633",
    "source": "itviec",
-   "postedAt": "2026-11-12",
+   "postedAt": "2026-11-13",
    "snippet": "",
    "skills": [
     "Automation Test",
@@ -644,7 +667,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/ios-developer-swift-hcmc-gotymex-4328",
    "source": "itviec",
-   "postedAt": "2026-11-11",
+   "postedAt": "2026-11-12",
    "snippet": "",
    "skills": [
     "iOS",
@@ -661,7 +684,7 @@
    "location": "Remote",
    "url": "https://itviec.com/it-jobs/database-developer-oracle-postgresql-cesa-vietnam-part-of-ceva-logistic-4657",
    "source": "itviec",
-   "postedAt": "2026-11-11",
+   "postedAt": "2026-11-12",
    "snippet": "",
    "skills": [
     "SQL",
@@ -680,7 +703,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/software-development-engineer-in-test-sdet-andpad-vietnam-co-ltd-4158",
    "source": "itviec",
-   "postedAt": "2026-11-11",
+   "postedAt": "2026-11-12",
    "snippet": "",
    "skills": [
     "QA QC",
@@ -698,7 +721,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/fullstack-software-engineerall-levels-cloud-ci-cd-vietlink-5823",
    "source": "itviec",
-   "postedAt": "2026-11-11",
+   "postedAt": "2026-11-12",
    "snippet": "",
    "skills": [
     "AWS",
@@ -789,7 +812,7 @@
    "location": "remote",
    "url": "https://itviec.com/it-jobs/remote-mobile-game-developer-up-to-2-000-ateam-viet-nam-3425",
    "source": "itviec",
-   "postedAt": "2026-11-06",
+   "postedAt": "2026-11-07",
    "snippet": "",
    "skills": [
     "Games",
@@ -977,7 +1000,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/fullstack-developer-net-c-tma-solutions-4346",
    "source": "itviec",
-   "postedAt": "2026-11-04",
+   "postedAt": "2026-11-05",
    "snippet": "",
    "skills": [
     "C#",
@@ -1205,7 +1228,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/mid-sr-back-end-developer-java-kotlin-rust-go-reliccell-5521",
    "source": "itviec",
-   "postedAt": "2026-11-02",
+   "postedAt": "2026-11-03",
    "snippet": "",
    "skills": [
     "Java",
@@ -1384,7 +1407,7 @@
    "location": "Ho Chi Minh",
    "url": "https://itviec.com/it-jobs/embedded-software-engineer-ban-vien-corporation-0636",
    "source": "itviec",
-   "postedAt": "2026-10-29",
+   "postedAt": "2026-10-30",
    "snippet": "",
    "skills": [
     "Embedded C",
@@ -1630,24 +1653,6 @@
    "snippet": "",
    "skills": [],
    "firstSeenAt": 1793100941621
-  },
-  {
-   "id": "linkedin:4467494099",
-   "title": "Golang Software Engineer",
-   "company": "AS White Global",
-   "location": "Ho Chi Minh City, Vietnam",
-   "url": "https://vn.linkedin.com/jobs/view/golang-software-engineer-at-as-white-global-4467494099",
-   "source": "linkedin",
-   "postedAt": "2026-10-27",
-   "snippet": "If you are looking to join an Australian Telco company recognized as Australia’s most trusted Telco that upholds value and focus on continuously delivering excellent results and customer experience, then this is for you! The Opportunity Build and shape the technology that powers ",
-   "skills": [
-    "PostgreSQL",
-    "Go",
-    "Kubernetes",
-    "CI/CD",
-    "iOS"
-   ],
-   "firstSeenAt": 1792483383856
   },
   {
    "id": "topdev:2140702",
@@ -2100,61 +2105,6 @@
     "C#",
     "C++",
     "English"
-   ],
-   "firstSeenAt": 1792483383856
-  },
-  {
-   "id": "linkedin:4479969081",
-   "title": "Ruby on Rails Developer",
-   "company": "L4 Studio - Software Development Company",
-   "location": "Quận 7",
-   "url": "https://vn.linkedin.com/jobs/view/ruby-on-rails-developer-at-l4-studio-software-development-company-4479969081",
-   "source": "linkedin",
-   "postedAt": "2026-10-19",
-   "snippet": "Working location: Tan My Ward, (District 7), HCMC Salary range: Up to VND 80,000,000 gross RESPONSIBILITIES ● Design, build, and operate reliable backend services for payment products using Ruby and Ruby on Rails. ● Build and maintain APIs, services, and third-party integrations.",
-   "skills": [
-    "PostgreSQL",
-    "MySQL",
-    "Redis",
-    "Kafka",
-    "Ruby",
-    "Rails",
-    "SQL"
-   ],
-   "firstSeenAt": 1792483383856
-  },
-  {
-   "id": "linkedin:4479965519",
-   "title": "Backend Engineer",
-   "company": "Stravo Vietnam",
-   "location": "Ho Chi Minh City, Vietnam",
-   "url": "https://vn.linkedin.com/jobs/view/backend-engineer-4479965519",
-   "source": "linkedin",
-   "postedAt": "2026-10-19",
-   "snippet": "",
-   "skills": [],
-   "firstSeenAt": 1792483383856
-  },
-  {
-   "id": "topdev:2139307",
-   "title": "Back-end Developer (trên 3 năm kinh nghiệm)",
-   "company": "DaouKiwoom Innovation",
-   "location": "Hồ Chí Minh, Hồ Chí Minh",
-   "url": "https://topdev.vn/detail-jobs/back-end-developer-tren-3-nam-kinh-nghiem-daoukiwoom-innovation-2139307",
-   "source": "topdev",
-   "postedAt": "2026-10-19",
-   "snippet": "",
-   "skills": [
-    "PHP",
-    "Java",
-    "JavaScript",
-    "Node.js",
-    "React",
-    "Vue.js",
-    "Angular",
-    "Linux",
-    "MySQL",
-    "REST APIs"
    ],
    "firstSeenAt": 1792483383856
   },
